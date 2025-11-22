@@ -166,6 +166,14 @@ func (j *jsiiProxy_TaskScheduleOutputReference) validateSetComplexObjectIsFromSe
 	return nil
 }
 
+func (j *jsiiProxy_TaskScheduleOutputReference) validateSetHoursParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TaskScheduleOutputReference) validateSetInternalValueParameters(val *TaskSchedule) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -175,6 +183,14 @@ func (j *jsiiProxy_TaskScheduleOutputReference) validateSetInternalValueParamete
 }
 
 func (j *jsiiProxy_TaskScheduleOutputReference) validateSetMinutesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference) validateSetSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

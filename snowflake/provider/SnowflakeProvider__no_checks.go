@@ -51,6 +51,14 @@ func (j *jsiiProxy_SnowflakeProvider) validateSetKeepSessionAliveParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SnowflakeProvider) validateSetLogQueryParametersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnowflakeProvider) validateSetLogQueryTextParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnowflakeProvider) validateSetPasscodeInPasswordParameters(val interface{}) error {
 	return nil
 }

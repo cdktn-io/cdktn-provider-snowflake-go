@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs snowflake}.
 type SnowflakeProvider interface {
 	cdktf.TerraformProvider
 	AccountName() *string
@@ -86,6 +86,12 @@ type SnowflakeProvider interface {
 	LoginTimeout() *float64
 	SetLoginTimeout(val *float64)
 	LoginTimeoutInput() *float64
+	LogQueryParameters() interface{}
+	SetLogQueryParameters(val interface{})
+	LogQueryParametersInput() interface{}
+	LogQueryText() interface{}
+	SetLogQueryText(val interface{})
+	LogQueryTextInput() interface{}
 	MaxRetryCount() *float64
 	SetMaxRetryCount(val *float64)
 	MaxRetryCountInput() *float64
@@ -220,6 +226,8 @@ type SnowflakeProvider interface {
 	ResetJwtExpireTimeout()
 	ResetKeepSessionAlive()
 	ResetLoginTimeout()
+	ResetLogQueryParameters()
+	ResetLogQueryText()
 	ResetMaxRetryCount()
 	ResetOauthAuthorizationUrl()
 	ResetOauthClientId()
@@ -728,6 +736,46 @@ func (j *jsiiProxy_SnowflakeProvider) LoginTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"loginTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) LogQueryParameters() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logQueryParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) LogQueryParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logQueryParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) LogQueryText() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logQueryText",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) LogQueryTextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logQueryTextInput",
 		&returns,
 	)
 	return returns
@@ -1434,7 +1482,7 @@ func (j *jsiiProxy_SnowflakeProvider) WorkloadIdentityProviderInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs snowflake} Resource.
 func NewSnowflakeProvider(scope constructs.Construct, id *string, config *SnowflakeProviderConfig) SnowflakeProvider {
 	_init_.Initialize()
 
@@ -1452,7 +1500,7 @@ func NewSnowflakeProvider(scope constructs.Construct, id *string, config *Snowfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs snowflake} Resource.
 func NewSnowflakeProvider_Override(s SnowflakeProvider, scope constructs.Construct, id *string, config *SnowflakeProviderConfig) {
 	_init_.Initialize()
 
@@ -1642,6 +1690,28 @@ func (j *jsiiProxy_SnowflakeProvider)SetLoginTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"loginTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnowflakeProvider)SetLogQueryParameters(val interface{}) {
+	if err := j.validateSetLogQueryParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logQueryParameters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnowflakeProvider)SetLogQueryText(val interface{}) {
+	if err := j.validateSetLogQueryTextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logQueryText",
 		val,
 	)
 }
@@ -2203,6 +2273,22 @@ func (s *jsiiProxy_SnowflakeProvider) ResetLoginTimeout() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLoginTimeout",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnowflakeProvider) ResetLogQueryParameters() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogQueryParameters",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnowflakeProvider) ResetLogQueryText() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogQueryText",
 		nil, // no parameters
 	)
 }

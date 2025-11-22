@@ -30,11 +30,17 @@ type TaskScheduleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hours() *float64
+	SetHours(val *float64)
+	HoursInput() *float64
 	InternalValue() *TaskSchedule
 	SetInternalValue(val *TaskSchedule)
 	Minutes() *float64
 	SetMinutes(val *float64)
 	MinutesInput() *float64
+	Seconds() *float64
+	SetSeconds(val *float64)
+	SecondsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +76,9 @@ type TaskScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetHours()
 	ResetMinutes()
+	ResetSeconds()
 	ResetUsingCron()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -127,6 +135,26 @@ func (j *jsiiProxy_TaskScheduleOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TaskScheduleOutputReference) Hours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference) HoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hoursInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TaskScheduleOutputReference) InternalValue() *TaskSchedule {
 	var returns *TaskSchedule
 	_jsii_.Get(
@@ -152,6 +180,26 @@ func (j *jsiiProxy_TaskScheduleOutputReference) MinutesInput() *float64 {
 	_jsii_.Get(
 		j,
 		"minutesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference) Seconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"seconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference) SecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondsInput",
 		&returns,
 	)
 	return returns
@@ -247,6 +295,17 @@ func (j *jsiiProxy_TaskScheduleOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
+func (j *jsiiProxy_TaskScheduleOutputReference)SetHours(val *float64) {
+	if err := j.validateSetHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hours",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TaskScheduleOutputReference)SetInternalValue(val *TaskSchedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -265,6 +324,17 @@ func (j *jsiiProxy_TaskScheduleOutputReference)SetMinutes(val *float64) {
 	_jsii_.Set(
 		j,
 		"minutes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference)SetSeconds(val *float64) {
+	if err := j.validateSetSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"seconds",
 		val,
 	)
 }
@@ -488,10 +558,26 @@ func (t *jsiiProxy_TaskScheduleOutputReference) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (t *jsiiProxy_TaskScheduleOutputReference) ResetHours() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetHours",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TaskScheduleOutputReference) ResetMinutes() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetMinutes",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TaskScheduleOutputReference) ResetSeconds() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSeconds",
 		nil, // no parameters
 	)
 }

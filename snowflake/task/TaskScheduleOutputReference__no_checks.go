@@ -59,11 +59,19 @@ func (j *jsiiProxy_TaskScheduleOutputReference) validateSetComplexObjectIsFromSe
 	return nil
 }
 
+func (j *jsiiProxy_TaskScheduleOutputReference) validateSetHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_TaskScheduleOutputReference) validateSetInternalValueParameters(val *TaskSchedule) error {
 	return nil
 }
 
 func (j *jsiiProxy_TaskScheduleOutputReference) validateSetMinutesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_TaskScheduleOutputReference) validateSetSecondsParameters(val *float64) error {
 	return nil
 }
 
