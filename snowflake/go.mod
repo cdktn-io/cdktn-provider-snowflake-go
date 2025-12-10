@@ -1,3 +1,8 @@
+// Deprecated: HashiCorp is no longer publishing new versions of the prebuilt provider for snowflake.
+// Previously-published versions of this prebuilt provider will still continue to be available as installable Go modules,
+// but these will not be compatible with newer versions of CDK for Terraform and are not eligible for commercial support.
+// You can continue to use the snowflake provider in your CDK for Terraform projects with newer versions of CDKTF,
+// but you will need to generate the bindings locally. See https://cdk.tf/imports for details.
 module github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15
 
 go 1.23
