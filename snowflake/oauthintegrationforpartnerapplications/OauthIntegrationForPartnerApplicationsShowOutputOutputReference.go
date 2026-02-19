@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oauthintegrationforpartnerapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/oauthintegrationforpartnerapplications/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/oauthintegrationforpartnerapplications/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OauthIntegrationForPartnerApplicationsShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Category() *string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -31,7 +31,7 @@ type OauthIntegrationForPartnerApplicationsShowOutputOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	IntegrationType() *string
@@ -43,15 +43,15 @@ type OauthIntegrationForPartnerApplicationsShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type OauthIntegrationForPartnerApplicationsShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type OauthIntegrationForPartnerApplicationsShowOutputOutputReference interface {
 
 // The jsii proxy struct for OauthIntegrationForPartnerApplicationsShowOutputOutputReference
 type jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) Category() *string {
@@ -145,8 +145,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 }
 
 
-func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsShowOutputOutputReference {
+func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOauthIntegrationForPartnerApplicationsShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -225,7 +225,7 @@ func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference(terrafor
 	j := jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference(terrafor
 	return &j
 }
 
-func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference_Override(o OauthIntegrationForPartnerApplicationsShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference_Override(o OauthIntegrationForPartnerApplicationsShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	)
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -455,8 +455,8 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -468,11 +468,11 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -484,7 +484,7 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReferen
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

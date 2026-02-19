@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakegrants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegrants/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakegrants/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeGrantsGrantsOnOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Account() interface{}
 	SetAccount(val interface{})
 	AccountInput() interface{}
@@ -46,15 +46,15 @@ type DataSnowflakeGrantsGrantsOnOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type DataSnowflakeGrantsGrantsOnOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccount()
 	ResetObjectName()
 	ResetObjectType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataSnowflakeGrantsGrantsOnOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeGrantsGrantsOnOutputReference
 type jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) Account() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) TerraformResource
 }
 
 
-func NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOnOutputReference {
+func NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOnOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeGrantsGrantsOnOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewDataSnowflakeGrantsGrantsOnOutputReference_Override(d DataSnowflakeGrantsGrantsOnOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataSnowflakeGrantsGrantsOnOutputReference_Override(d DataSnowflakeGrantsGrantsOnOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,8 +494,8 @@ func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -507,11 +507,11 @@ func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) ResetObjectType()
 	)
 }
 
-func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeGrantsGrantsOnOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

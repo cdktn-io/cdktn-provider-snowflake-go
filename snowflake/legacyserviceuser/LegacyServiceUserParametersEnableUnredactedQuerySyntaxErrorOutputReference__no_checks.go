@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (l *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOu
 	return nil
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOu
 	return nil
 }
 
-func (j *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

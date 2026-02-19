@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantprivilegestoaccountrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantprivilegestoaccountrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	All() GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference
 	AllInput() *GrantPrivilegesToAccountRoleOnSchemaObjectAll
 	// the index of the complex object in a list.
@@ -47,15 +47,15 @@ type GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAll(value *GrantPrivilegesToAccountRoleOnSchemaObjectAll)
 	PutFuture(value *GrantPrivilegesToAccountRoleOnSchemaObjectFuture)
 	ResetAll()
@@ -82,7 +82,7 @@ type GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference interface {
 	ResetObjectType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference interface {
 
 // The jsii proxy struct for GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference
 type jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) All() GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Te
 }
 
 
-func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference {
+func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference(terraformResou
 	j := jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference(terraformResou
 	return &j
 }
 
-func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference_Override(g GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference_Override(g GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,11 +379,11 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -507,8 +507,8 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -520,11 +520,11 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -590,7 +590,7 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

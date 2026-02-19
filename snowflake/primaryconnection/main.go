@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package primaryconnection
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnection",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnection",
 		reflect.TypeOf((*PrimaryConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -76,20 +76,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PrimaryConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionConfig",
 		reflect.TypeOf((*PrimaryConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutput",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionShowOutput",
 		reflect.TypeOf((*PrimaryConnectionShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputList",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputList",
 		reflect.TypeOf((*PrimaryConnectionShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -105,12 +105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PrimaryConnectionShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputOutputReference",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputOutputReference",
 		reflect.TypeOf((*PrimaryConnectionShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLocator", GoGetter: "AccountLocator"},
@@ -149,16 +149,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PrimaryConnectionShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts",
 		reflect.TypeOf((*PrimaryConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.primaryConnection.PrimaryConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*PrimaryConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,7 +197,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PrimaryConnectionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

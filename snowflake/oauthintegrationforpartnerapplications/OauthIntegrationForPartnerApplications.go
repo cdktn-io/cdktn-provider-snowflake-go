@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oauthintegrationforpartnerapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/oauthintegrationforpartnerapplications/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/oauthintegrationforpartnerapplications/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications}.
 type OauthIntegrationForPartnerApplications interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	BlockedRolesList() *[]*string
 	SetBlockedRolesList(val *[]*string)
 	BlockedRolesListInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -42,9 +42,9 @@ type OauthIntegrationForPartnerApplications interface {
 	SetEnabled(val *string)
 	EnabledInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,9 +54,9 @@ type OauthIntegrationForPartnerApplications interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -78,9 +78,9 @@ type OauthIntegrationForPartnerApplications interface {
 	SetOauthUseSecondaryRoles(val *string)
 	OauthUseSecondaryRolesInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -90,7 +90,7 @@ type OauthIntegrationForPartnerApplications interface {
 	RelatedParameters() OauthIntegrationForPartnerApplicationsRelatedParametersList
 	ShowOutput() OauthIntegrationForPartnerApplicationsShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -105,7 +105,7 @@ type OauthIntegrationForPartnerApplications interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,9 +123,9 @@ type OauthIntegrationForPartnerApplications interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -168,7 +168,7 @@ type OauthIntegrationForPartnerApplications interface {
 
 // The jsii proxy struct for OauthIntegrationForPartnerApplications
 type jsiiProxy_OauthIntegrationForPartnerApplications struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_OauthIntegrationForPartnerApplications) BlockedRolesList() *[]*string {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) BlockedRolesListInput
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) EnabledInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) OauthUseSecondaryRole
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) ShowOutput() OauthInt
 	return returns
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -592,7 +592,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
 func NewOauthIntegrationForPartnerApplications(scope constructs.Construct, id *string, config *OauthIntegrationForPartnerApplicationsConfig) OauthIntegrationForPartnerApplications {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewOauthIntegrationForPartnerApplications(scope constructs.Construct, id *s
 	j := jsiiProxy_OauthIntegrationForPartnerApplications{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -610,12 +610,12 @@ func NewOauthIntegrationForPartnerApplications(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
 func NewOauthIntegrationForPartnerApplications_Override(o OauthIntegrationForPartnerApplications, scope constructs.Construct, id *string, config *OauthIntegrationForPartnerApplicationsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -684,7 +684,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetEnabled(val *string
 	)
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -703,7 +703,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +780,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetOauthUseSecondaryRo
 	)
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -799,17 +799,17 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications)SetProvisioners(val *[
 	)
 }
 
-// Generates CDKTF code for importing a OauthIntegrationForPartnerApplications resource upon running "cdktf plan <stack-name>".
-func OauthIntegrationForPartnerApplications_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OauthIntegrationForPartnerApplications resource upon running "cdktn plan <stack-name>".
+func OauthIntegrationForPartnerApplications_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOauthIntegrationForPartnerApplications_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -844,7 +844,7 @@ func OauthIntegrationForPartnerApplications_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func OauthIntegrationForPartnerApplications_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -882,7 +882,7 @@ func OauthIntegrationForPartnerApplications_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -895,7 +895,7 @@ func OauthIntegrationForPartnerApplications_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
+		"@cdktn/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications",
 		"tfResourceType",
 		&returns,
 	)
@@ -940,11 +940,11 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) GetAnyMapAttribute(te
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplications) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -1081,7 +1081,7 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) HasResourceMove() int
 	return returns
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplications) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1092,11 +1092,11 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) ImportFrom(id *string
 	)
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplications) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,

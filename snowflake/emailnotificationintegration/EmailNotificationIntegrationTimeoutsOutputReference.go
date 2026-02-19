@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailnotificationintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/emailnotificationintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type EmailNotificationIntegrationTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type EmailNotificationIntegrationTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -57,7 +57,7 @@ type EmailNotificationIntegrationTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type EmailNotificationIntegrationTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type EmailNotificationIntegrationTimeoutsOutputReference interface {
 
 // The jsii proxy struct for EmailNotificationIntegrationTimeoutsOutputReference
 type jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewEmailNotificationIntegrationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmailNotificationIntegrationTimeoutsOutputReference {
+func NewEmailNotificationIntegrationTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EmailNotificationIntegrationTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmailNotificationIntegrationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewEmailNotificationIntegrationTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewEmailNotificationIntegrationTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewEmailNotificationIntegrationTimeoutsOutputReference_Override(e EmailNotificationIntegrationTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEmailNotificationIntegrationTimeoutsOutputReference_Override(e EmailNotificationIntegrationTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -529,8 +529,8 @@ func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -542,11 +542,11 @@ func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -590,7 +590,7 @@ func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmailNotificationIntegrationTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

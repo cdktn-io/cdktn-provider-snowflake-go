@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package table
@@ -7,11 +7,11 @@ package table
 type TablePrimaryKey struct {
 	// Columns to use in primary key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table#keys Table#keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table#keys Table#keys}
 	Keys *[]*string `field:"required" json:"keys" yaml:"keys"`
 	// Name of constraint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table#name Table#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table#name Table#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

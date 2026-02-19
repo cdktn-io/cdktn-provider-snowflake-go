@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gitrepository
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepository",
+		"@cdktn/provider-snowflake.gitRepository.GitRepository",
 		reflect.TypeOf((*GitRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,20 +84,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepository{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryConfig",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryConfig",
 		reflect.TypeOf((*GitRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryDescribeOutput",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryDescribeOutput",
 		reflect.TypeOf((*GitRepositoryDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryDescribeOutputList",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryDescribeOutputList",
 		reflect.TypeOf((*GitRepositoryDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -113,12 +113,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepositoryDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryDescribeOutputOutputReference",
 		reflect.TypeOf((*GitRepositoryDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiIntegration", GoGetter: "ApiIntegration"},
@@ -156,16 +156,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepositoryDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryShowOutput",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryShowOutput",
 		reflect.TypeOf((*GitRepositoryShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
 		reflect.TypeOf((*GitRepositoryShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -181,12 +181,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepositoryShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryShowOutputOutputReference",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryShowOutputOutputReference",
 		reflect.TypeOf((*GitRepositoryShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiIntegration", GoGetter: "ApiIntegration"},
@@ -224,16 +224,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepositoryShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryTimeouts",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryTimeouts",
 		reflect.TypeOf((*GitRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*GitRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,7 +272,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GitRepositoryTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package alert
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.alert.Alert",
+		"@cdktn/provider-snowflake.alert.Alert",
 		reflect.TypeOf((*Alert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -88,20 +88,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Alert{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.alert.AlertAlertSchedule",
+		"@cdktn/provider-snowflake.alert.AlertAlertSchedule",
 		reflect.TypeOf((*AlertAlertSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.alert.AlertAlertScheduleCron",
+		"@cdktn/provider-snowflake.alert.AlertAlertScheduleCron",
 		reflect.TypeOf((*AlertAlertScheduleCron)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.alert.AlertAlertScheduleCronOutputReference",
+		"@cdktn/provider-snowflake.alert.AlertAlertScheduleCronOutputReference",
 		reflect.TypeOf((*AlertAlertScheduleCronOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,12 +132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertAlertScheduleCronOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.alert.AlertAlertScheduleOutputReference",
+		"@cdktn/provider-snowflake.alert.AlertAlertScheduleOutputReference",
 		reflect.TypeOf((*AlertAlertScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,20 +171,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertAlertScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.alert.AlertConfig",
+		"@cdktn/provider-snowflake.alert.AlertConfig",
 		reflect.TypeOf((*AlertConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.alert.AlertTimeouts",
+		"@cdktn/provider-snowflake.alert.AlertTimeouts",
 		reflect.TypeOf((*AlertTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.alert.AlertTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.alert.AlertTimeoutsOutputReference",
 		reflect.TypeOf((*AlertTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +223,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlertTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

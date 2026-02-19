@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package currentorganizationaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentorganizationaccount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_organization_account snowflake_current_organization_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account}.
 type CurrentOrganizationAccount interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
 	SetAbortDetachedQuery(val interface{})
 	AbortDetachedQueryInput() interface{}
@@ -46,7 +46,7 @@ type CurrentOrganizationAccount interface {
 	SetCatalogSync(val *string)
 	CatalogSyncInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientEnableLogInfoStatementParameters() interface{}
 	SetClientEnableLogInfoStatementParameters(val interface{})
 	ClientEnableLogInfoStatementParametersInput() interface{}
@@ -185,9 +185,9 @@ type CurrentOrganizationAccount interface {
 	SetExternalVolume(val *string)
 	ExternalVolumeInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -223,9 +223,9 @@ type CurrentOrganizationAccount interface {
 	SetJsTreatIntegerAsBigint(val interface{})
 	JsTreatIntegerAsBigintInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ListingAutoFulfillmentReplicationRefreshSchedule() *string
 	SetListingAutoFulfillmentReplicationRefreshSchedule(val *string)
 	ListingAutoFulfillmentReplicationRefreshScheduleInput() *string
@@ -283,9 +283,9 @@ type CurrentOrganizationAccount interface {
 	SetPreventUnloadToInternalStages(val interface{})
 	PreventUnloadToInternalStagesInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -322,9 +322,6 @@ type CurrentOrganizationAccount interface {
 	S3StageVpceDnsName() *string
 	SetS3StageVpceDnsName(val *string)
 	S3StageVpceDnsNameInput() *string
-	SamlIdentityProvider() *string
-	SetSamlIdentityProvider(val *string)
-	SamlIdentityProviderInput() *string
 	SearchPath() *string
 	SetSearchPath(val *string)
 	SearchPathInput() *string
@@ -363,7 +360,7 @@ type CurrentOrganizationAccount interface {
 	SetTaskAutoRetryAttempts(val *float64)
 	TaskAutoRetryAttemptsInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -441,7 +438,7 @@ type CurrentOrganizationAccount interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -459,9 +456,9 @@ type CurrentOrganizationAccount interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -568,7 +565,6 @@ type CurrentOrganizationAccount interface {
 	ResetResourceMonitor()
 	ResetRowsPerResultset()
 	ResetS3StageVpceDnsName()
-	ResetSamlIdentityProvider()
 	ResetSearchPath()
 	ResetServerlessTaskMaxStatementSize()
 	ResetServerlessTaskMinStatementSize()
@@ -618,7 +614,7 @@ type CurrentOrganizationAccount interface {
 
 // The jsii proxy struct for CurrentOrganizationAccount
 type jsiiProxy_CurrentOrganizationAccount struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) AbortDetachedQuery() interface{} {
@@ -821,8 +817,8 @@ func (j *jsiiProxy_CurrentOrganizationAccount) CatalogSyncInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CurrentOrganizationAccount) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -1691,8 +1687,8 @@ func (j *jsiiProxy_CurrentOrganizationAccount) ExternalVolumeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CurrentOrganizationAccount) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -1921,8 +1917,8 @@ func (j *jsiiProxy_CurrentOrganizationAccount) JsTreatIntegerAsBigintInput() int
 	return returns
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CurrentOrganizationAccount) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -2301,8 +2297,8 @@ func (j *jsiiProxy_CurrentOrganizationAccount) PreventUnloadToInternalStagesInpu
 	return returns
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CurrentOrganizationAccount) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -2526,26 +2522,6 @@ func (j *jsiiProxy_CurrentOrganizationAccount) S3StageVpceDnsNameInput() *string
 	_jsii_.Get(
 		j,
 		"s3StageVpceDnsNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CurrentOrganizationAccount) SamlIdentityProvider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"samlIdentityProvider",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CurrentOrganizationAccount) SamlIdentityProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"samlIdentityProviderInput",
 		&returns,
 	)
 	return returns
@@ -2801,8 +2777,8 @@ func (j *jsiiProxy_CurrentOrganizationAccount) TaskAutoRetryAttemptsInput() *flo
 	return returns
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CurrentOrganizationAccount) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -3272,7 +3248,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) CurrentOrganizationAccount {
 	_init_.Initialize()
 
@@ -3282,7 +3258,7 @@ func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_CurrentOrganizationAccount{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -3290,12 +3266,12 @@ func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount_Override(c CurrentOrganizationAccount, scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -3892,7 +3868,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetExternalVolume(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CurrentOrganizationAccount)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -4010,7 +3986,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetJsTreatIntegerAsBigint(val inte
 	)
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CurrentOrganizationAccount)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -4219,7 +4195,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetPreventUnloadToInternalStages(v
 	)
 }
 
-func (j *jsiiProxy_CurrentOrganizationAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CurrentOrganizationAccount)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -4344,17 +4320,6 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetS3StageVpceDnsName(val *string)
 	_jsii_.Set(
 		j,
 		"s3StageVpceDnsName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CurrentOrganizationAccount)SetSamlIdentityProvider(val *string) {
-	if err := j.validateSetSamlIdentityProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"samlIdentityProvider",
 		val,
 	)
 }
@@ -4722,17 +4687,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetWeekStart(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a CurrentOrganizationAccount resource upon running "cdktf plan <stack-name>".
-func CurrentOrganizationAccount_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CurrentOrganizationAccount resource upon running "cdktn plan <stack-name>".
+func CurrentOrganizationAccount_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCurrentOrganizationAccount_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -4767,7 +4732,7 @@ func CurrentOrganizationAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -4786,7 +4751,7 @@ func CurrentOrganizationAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -4805,7 +4770,7 @@ func CurrentOrganizationAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -4818,7 +4783,7 @@ func CurrentOrganizationAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
+		"@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount",
 		"tfResourceType",
 		&returns,
 	)
@@ -4863,11 +4828,11 @@ func (c *jsiiProxy_CurrentOrganizationAccount) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (c *jsiiProxy_CurrentOrganizationAccount) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CurrentOrganizationAccount) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -5004,7 +4969,7 @@ func (c *jsiiProxy_CurrentOrganizationAccount) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CurrentOrganizationAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CurrentOrganizationAccount) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -5015,11 +4980,11 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ImportFrom(id *string, provider c
 	)
 }
 
-func (c *jsiiProxy_CurrentOrganizationAccount) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CurrentOrganizationAccount) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -5794,14 +5759,6 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetS3StageVpceDnsName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3StageVpceDnsName",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CurrentOrganizationAccount) ResetSamlIdentityProvider() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetSamlIdentityProvider",
 		nil, // no parameters
 	)
 }

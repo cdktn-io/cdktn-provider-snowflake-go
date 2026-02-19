@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamlit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/streamlit/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/streamlit snowflake_streamlit}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/streamlit snowflake_streamlit}.
 type Streamlit interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -45,9 +45,9 @@ type Streamlit interface {
 	SetExternalAccessIntegrations(val *[]*string)
 	ExternalAccessIntegrationsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -57,9 +57,9 @@ type Streamlit interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MainFile() *string
 	SetMainFile(val *string)
 	MainFileInput() *string
@@ -69,9 +69,9 @@ type Streamlit interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type Streamlit interface {
 	SetStage(val *string)
 	StageInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type Streamlit interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type Streamlit interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -168,11 +168,11 @@ type Streamlit interface {
 
 // The jsii proxy struct for Streamlit
 type jsiiProxy_Streamlit struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Streamlit) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Streamlit) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_Streamlit) ExternalAccessIntegrationsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Streamlit) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Streamlit) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_Streamlit) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Streamlit) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Streamlit) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_Streamlit) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Streamlit) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Streamlit) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_Streamlit) StageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Streamlit) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Streamlit) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -602,7 +602,7 @@ func (j *jsiiProxy_Streamlit) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/streamlit snowflake_streamlit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/streamlit snowflake_streamlit} Resource.
 func NewStreamlit(scope constructs.Construct, id *string, config *StreamlitConfig) Streamlit {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewStreamlit(scope constructs.Construct, id *string, config *StreamlitConfi
 	j := jsiiProxy_Streamlit{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -620,12 +620,12 @@ func NewStreamlit(scope constructs.Construct, id *string, config *StreamlitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/streamlit snowflake_streamlit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/streamlit snowflake_streamlit} Resource.
 func NewStreamlit_Override(s Streamlit, scope constructs.Construct, id *string, config *StreamlitConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -705,7 +705,7 @@ func (j *jsiiProxy_Streamlit)SetExternalAccessIntegrations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Streamlit)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Streamlit)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -724,7 +724,7 @@ func (j *jsiiProxy_Streamlit)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Streamlit)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Streamlit)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +757,7 @@ func (j *jsiiProxy_Streamlit)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Streamlit)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Streamlit)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -820,17 +820,17 @@ func (j *jsiiProxy_Streamlit)SetTitle(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Streamlit resource upon running "cdktf plan <stack-name>".
-func Streamlit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Streamlit resource upon running "cdktn plan <stack-name>".
+func Streamlit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStreamlit_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -865,7 +865,7 @@ func Streamlit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func Streamlit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -903,7 +903,7 @@ func Streamlit_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -916,7 +916,7 @@ func Streamlit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		"tfResourceType",
 		&returns,
 	)
@@ -961,11 +961,11 @@ func (s *jsiiProxy_Streamlit) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (s *jsiiProxy_Streamlit) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Streamlit) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1102,7 +1102,7 @@ func (s *jsiiProxy_Streamlit) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Streamlit) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_Streamlit) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1113,11 +1113,11 @@ func (s *jsiiProxy_Streamlit) ImportFrom(id *string, provider cdktf.TerraformPro
 	)
 }
 
-func (s *jsiiProxy_Streamlit) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Streamlit) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

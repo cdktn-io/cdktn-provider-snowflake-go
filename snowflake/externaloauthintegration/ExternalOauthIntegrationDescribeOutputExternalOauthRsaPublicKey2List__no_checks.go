@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicK
 	return nil
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List) validateResolveParameters(context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicK
 	return nil
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicK
 	return nil
 }
 
-func validateNewExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2ListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2ListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

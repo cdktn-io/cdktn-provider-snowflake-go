@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cortexsearchservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CortexSearchServiceDescribeOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type CortexSearchServiceDescribeOutputList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type CortexSearchServiceDescribeOutputList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) CortexSearchServiceDescribeOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type CortexSearchServiceDescribeOutputList interface {
 
 // The jsii proxy struct for CortexSearchServiceDescribeOutputList
 type jsiiProxy_CortexSearchServiceDescribeOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_CortexSearchServiceDescribeOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputList) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_CortexSearchServiceDescribeOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputList) WrapsSet() *bool {
 }
 
 
-func NewCortexSearchServiceDescribeOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexSearchServiceDescribeOutputList {
+func NewCortexSearchServiceDescribeOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexSearchServiceDescribeOutputList {
 	_init_.Initialize()
 
 	if err := validateNewCortexSearchServiceDescribeOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewCortexSearchServiceDescribeOutputList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CortexSearchServiceDescribeOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewCortexSearchServiceDescribeOutputList(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewCortexSearchServiceDescribeOutputList_Override(c CortexSearchServiceDescribeOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewCortexSearchServiceDescribeOutputList_Override(c CortexSearchServiceDescribeOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CortexSearchServiceDescribeOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputList)SetWrapsSet(val *bool) 
 	)
 }
 
-func (c *jsiiProxy_CortexSearchServiceDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_CortexSearchServiceDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -208,7 +208,7 @@ func (c *jsiiProxy_CortexSearchServiceDescribeOutputList) Get(index *float64) Co
 	return returns
 }
 
-func (c *jsiiProxy_CortexSearchServiceDescribeOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CortexSearchServiceDescribeOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

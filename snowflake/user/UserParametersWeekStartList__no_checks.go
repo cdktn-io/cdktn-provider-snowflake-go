@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserParametersWeekStartList) validateGetParameters(index *flo
 	return nil
 }
 
-func (u *jsiiProxy_UserParametersWeekStartList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserParametersWeekStartList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_UserParametersWeekStartList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_UserParametersWeekStartList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserParametersWeekStartList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_UserParametersWeekStartList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewUserParametersWeekStartListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewUserParametersWeekStartListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

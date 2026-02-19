@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaskParametersTimeInputFormatList) validateGetParameters(inde
 	return nil
 }
 
-func (t *jsiiProxy_TaskParametersTimeInputFormatList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaskParametersTimeInputFormatList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_TaskParametersTimeInputFormatList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_TaskParametersTimeInputFormatList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TaskParametersTimeInputFormatList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_TaskParametersTimeInputFormatList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewTaskParametersTimeInputFormatListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTaskParametersTimeInputFormatListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

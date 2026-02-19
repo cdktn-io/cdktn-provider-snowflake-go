@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutIn
 	return nil
 }
 
-func (d *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutIn
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersStatementTimeoutIn
 	return nil
 }
 
-func validateNewDataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package procedurejavascript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
 type ProcedureJavascript interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Arguments() ProcedureJavascriptArgumentsList
 	ArgumentsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -46,9 +46,9 @@ type ProcedureJavascript interface {
 	SetExecuteAs(val *string)
 	ExecuteAsInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,9 +61,9 @@ type ProcedureJavascript interface {
 	SetIsSecure(val *string)
 	IsSecureInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -84,9 +84,9 @@ type ProcedureJavascript interface {
 	ProcedureDefinitionInput() *string
 	ProcedureLanguage() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -101,7 +101,7 @@ type ProcedureJavascript interface {
 	SchemaInput() *string
 	ShowOutput() ProcedureJavascriptShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -119,7 +119,7 @@ type ProcedureJavascript interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -137,9 +137,9 @@ type ProcedureJavascript interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -185,7 +185,7 @@ type ProcedureJavascript interface {
 
 // The jsii proxy struct for ProcedureJavascript
 type jsiiProxy_ProcedureJavascript struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ProcedureJavascript) Arguments() ProcedureJavascriptArgumentsList {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ProcedureJavascript) ArgumentsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavascript) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ProcedureJavascript) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ProcedureJavascript) ExecuteAsInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavascript) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ProcedureJavascript) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_ProcedureJavascript) IsSecureInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavascript) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ProcedureJavascript) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_ProcedureJavascript) ProcedureLanguage() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavascript) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ProcedureJavascript) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -638,8 +638,8 @@ func (j *jsiiProxy_ProcedureJavascript) ShowOutput() ProcedureJavascriptShowOutp
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavascript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ProcedureJavascript) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -709,7 +709,7 @@ func (j *jsiiProxy_ProcedureJavascript) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript(scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) ProcedureJavascript {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewProcedureJavascript(scope constructs.Construct, id *string, config *Proc
 	j := jsiiProxy_ProcedureJavascript{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -727,12 +727,12 @@ func NewProcedureJavascript(scope constructs.Construct, id *string, config *Proc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript_Override(p ProcedureJavascript, scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -812,7 +812,7 @@ func (j *jsiiProxy_ProcedureJavascript)SetExecuteAs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProcedureJavascript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProcedureJavascript)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -842,7 +842,7 @@ func (j *jsiiProxy_ProcedureJavascript)SetIsSecure(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProcedureJavascript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProcedureJavascript)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +908,7 @@ func (j *jsiiProxy_ProcedureJavascript)SetProcedureDefinition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProcedureJavascript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProcedureJavascript)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -960,17 +960,17 @@ func (j *jsiiProxy_ProcedureJavascript)SetTraceLevel(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ProcedureJavascript resource upon running "cdktf plan <stack-name>".
-func ProcedureJavascript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ProcedureJavascript resource upon running "cdktn plan <stack-name>".
+func ProcedureJavascript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateProcedureJavascript_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1005,7 +1005,7 @@ func ProcedureJavascript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1024,7 +1024,7 @@ func ProcedureJavascript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1043,7 +1043,7 @@ func ProcedureJavascript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1056,7 +1056,7 @@ func ProcedureJavascript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript",
+		"@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript",
 		"tfResourceType",
 		&returns,
 	)
@@ -1101,11 +1101,11 @@ func (p *jsiiProxy_ProcedureJavascript) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureJavascript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureJavascript) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1242,7 +1242,7 @@ func (p *jsiiProxy_ProcedureJavascript) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureJavascript) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_ProcedureJavascript) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1253,11 +1253,11 @@ func (p *jsiiProxy_ProcedureJavascript) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (p *jsiiProxy_ProcedureJavascript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureJavascript) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

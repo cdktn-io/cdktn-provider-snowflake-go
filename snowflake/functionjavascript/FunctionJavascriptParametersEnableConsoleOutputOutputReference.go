@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionjavascript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionjavascript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjavascript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionJavascriptParametersEnableConsoleOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type FunctionJavascriptParametersEnableConsoleOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type FunctionJavascriptParametersEnableConsoleOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type FunctionJavascriptParametersEnableConsoleOutputOutputReference interface {
 
 // The jsii proxy struct for FunctionJavascriptParametersEnableConsoleOutputOutputReference
 type jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 }
 
 
-func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionJavascriptParametersEnableConsoleOutputOutputReference {
+func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionJavascriptParametersEnableConsoleOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFunctionJavascriptParametersEnableConsoleOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference(terraform
 	j := jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputOutputReference",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference(terraform
 	return &j
 }
 
-func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference_Override(f FunctionJavascriptParametersEnableConsoleOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewFunctionJavascriptParametersEnableConsoleOutputOutputReference_Override(f FunctionJavascriptParametersEnableConsoleOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputOutputReference",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -444,8 +444,8 @@ func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -457,11 +457,11 @@ func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -473,7 +473,7 @@ func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReferenc
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionJavascriptParametersEnableConsoleOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

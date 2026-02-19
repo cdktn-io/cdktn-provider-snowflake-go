@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantdatabaserole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantDatabaseRole.GrantDatabaseRole",
+		"@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole",
 		reflect.TypeOf((*GrantDatabaseRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -76,20 +76,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantDatabaseRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig",
+		"@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig",
 		reflect.TypeOf((*GrantDatabaseRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts",
+		"@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts",
 		reflect.TypeOf((*GrantDatabaseRoleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeoutsOutputReference",
 		reflect.TypeOf((*GrantDatabaseRoleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,7 +128,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantDatabaseRoleTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

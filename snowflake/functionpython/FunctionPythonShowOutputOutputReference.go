@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionpython
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionpython/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionpython/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionPythonShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArgumentsRaw() *string
 	CatalogName() *string
 	// the index of the complex object in a list.
@@ -37,14 +37,14 @@ type FunctionPythonShowOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *FunctionPythonShowOutput
 	SetInternalValue(val *FunctionPythonShowOutput)
-	IsAggregate() cdktf.IResolvable
-	IsAnsi() cdktf.IResolvable
-	IsBuiltin() cdktf.IResolvable
-	IsDataMetric() cdktf.IResolvable
-	IsExternalFunction() cdktf.IResolvable
-	IsMemoizable() cdktf.IResolvable
-	IsSecure() cdktf.IResolvable
-	IsTableFunction() cdktf.IResolvable
+	IsAggregate() cdktn.IResolvable
+	IsAnsi() cdktn.IResolvable
+	IsBuiltin() cdktn.IResolvable
+	IsDataMetric() cdktn.IResolvable
+	IsExternalFunction() cdktn.IResolvable
+	IsMemoizable() cdktn.IResolvable
+	IsSecure() cdktn.IResolvable
+	IsTableFunction() cdktn.IResolvable
 	Language() *string
 	MaxNumArguments() *float64
 	MinNumArguments() *float64
@@ -56,16 +56,16 @@ type FunctionPythonShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	ValidForClustering() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	ValidForClustering() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,12 +81,12 @@ type FunctionPythonShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type FunctionPythonShowOutputOutputReference interface {
 
 // The jsii proxy struct for FunctionPythonShowOutputOutputReference
 type jsiiProxy_FunctionPythonShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) ArgumentsRaw() *string {
@@ -199,8 +199,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) InternalValue() *Fun
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAggregate() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAggregate() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAggregate",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAggregate() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAnsi() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAnsi() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAnsi",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsAnsi() cdktf.IReso
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsBuiltin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsBuiltin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isBuiltin",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsBuiltin() cdktf.IR
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsDataMetric() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsDataMetric() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isDataMetric",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsDataMetric() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsExternalFunction() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsExternalFunction() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isExternalFunction",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsExternalFunction()
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsMemoizable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsMemoizable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isMemoizable",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsMemoizable() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsSecure() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsSecure() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isSecure",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsSecure() cdktf.IRe
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsTableFunction() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) IsTableFunction() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isTableFunction",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) TerraformResource() 
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) ValidForClustering() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) ValidForClustering() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"validForClustering",
@@ -370,7 +370,7 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference) ValidForClustering()
 }
 
 
-func NewFunctionPythonShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionPythonShowOutputOutputReference {
+func NewFunctionPythonShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionPythonShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFunctionPythonShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -379,7 +379,7 @@ func NewFunctionPythonShowOutputOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_FunctionPythonShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionPython.FunctionPythonShowOutputOutputReference",
+		"@cdktn/provider-snowflake.functionPython.FunctionPythonShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -387,11 +387,11 @@ func NewFunctionPythonShowOutputOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewFunctionPythonShowOutputOutputReference_Override(f FunctionPythonShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewFunctionPythonShowOutputOutputReference_Override(f FunctionPythonShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionPython.FunctionPythonShowOutputOutputReference",
+		"@cdktn/provider-snowflake.functionPython.FunctionPythonShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
@@ -441,7 +441,7 @@ func (j *jsiiProxy_FunctionPythonShowOutputOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_FunctionPythonShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionPythonShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,11 +481,11 @@ func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -609,8 +609,8 @@ func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -622,11 +622,11 @@ func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -638,7 +638,7 @@ func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionPythonShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

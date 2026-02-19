@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package semanticview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/semanticview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SemanticViewMetricsSemanticExpressionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -49,15 +49,15 @@ type SemanticViewMetricsSemanticExpressionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,14 +73,14 @@ type SemanticViewMetricsSemanticExpressionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetComment()
 	ResetSynonym()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type SemanticViewMetricsSemanticExpressionOutputReference interface {
 
 // The jsii proxy struct for SemanticViewMetricsSemanticExpressionOutputReference
 type jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Comment() *string {
@@ -233,8 +233,8 @@ func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Terrafo
 }
 
 
-func NewSemanticViewMetricsSemanticExpressionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsSemanticExpressionOutputReference {
+func NewSemanticViewMetricsSemanticExpressionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsSemanticExpressionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSemanticViewMetricsSemanticExpressionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -253,7 +253,7 @@ func NewSemanticViewMetricsSemanticExpressionOutputReference(terraformResource c
 	j := jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,11 +261,11 @@ func NewSemanticViewMetricsSemanticExpressionOutputReference(terraformResource c
 	return &j
 }
 
-func NewSemanticViewMetricsSemanticExpressionOutputReference_Override(s SemanticViewMetricsSemanticExpressionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSemanticViewMetricsSemanticExpressionOutputReference_Override(s SemanticViewMetricsSemanticExpressionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,11 +399,11 @@ func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) GetAnyM
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -527,8 +527,8 @@ func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) GetStri
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -540,11 +540,11 @@ func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Interpo
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -572,7 +572,7 @@ func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) ResetSy
 	)
 }
 
-func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

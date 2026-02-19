@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceUserShowOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type ServiceUserShowOutputList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type ServiceUserShowOutputList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ServiceUserShowOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type ServiceUserShowOutputList interface {
 
 // The jsii proxy struct for ServiceUserShowOutputList
 type jsiiProxy_ServiceUserShowOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ServiceUserShowOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_ServiceUserShowOutputList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUserShowOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceUserShowOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_ServiceUserShowOutputList) WrapsSet() *bool {
 }
 
 
-func NewServiceUserShowOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceUserShowOutputList {
+func NewServiceUserShowOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceUserShowOutputList {
 	_init_.Initialize()
 
 	if err := validateNewServiceUserShowOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewServiceUserShowOutputList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_ServiceUserShowOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserShowOutputList",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserShowOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewServiceUserShowOutputList(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewServiceUserShowOutputList_Override(s ServiceUserShowOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewServiceUserShowOutputList_Override(s ServiceUserShowOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserShowOutputList",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserShowOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_ServiceUserShowOutputList)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServiceUserShowOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceUserShowOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_ServiceUserShowOutputList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (s *jsiiProxy_ServiceUserShowOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_ServiceUserShowOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -208,7 +208,7 @@ func (s *jsiiProxy_ServiceUserShowOutputList) Get(index *float64) ServiceUserSho
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserShowOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceUserShowOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

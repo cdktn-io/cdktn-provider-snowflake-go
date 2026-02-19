@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (l *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_LegacyServiceUserParametersTimeInputFormatList) validateSetWr
 	return nil
 }
 
-func validateNewLegacyServiceUserParametersTimeInputFormatListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLegacyServiceUserParametersTimeInputFormatListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

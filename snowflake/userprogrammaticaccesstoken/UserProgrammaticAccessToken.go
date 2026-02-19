@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userprogrammaticaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userprogrammaticaccesstoken/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/userprogrammaticaccesstoken/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
 type UserProgrammaticAccessToken interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -44,9 +44,9 @@ type UserProgrammaticAccessToken interface {
 	SetExpireRotatedTokenAfterHours(val *float64)
 	ExpireRotatedTokenAfterHoursInput() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -58,9 +58,9 @@ type UserProgrammaticAccessToken interface {
 	SetKeeper(val *string)
 	KeeperInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MinsToBypassNetworkPolicyRequirement() *float64
 	SetMinsToBypassNetworkPolicyRequirement(val *float64)
 	MinsToBypassNetworkPolicyRequirementInput() *float64
@@ -70,9 +70,9 @@ type UserProgrammaticAccessToken interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type UserProgrammaticAccessToken interface {
 	RotatedTokenName() *string
 	ShowOutput() UserProgrammaticAccessTokenShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -104,7 +104,7 @@ type UserProgrammaticAccessToken interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -122,9 +122,9 @@ type UserProgrammaticAccessToken interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -167,11 +167,11 @@ type UserProgrammaticAccessToken interface {
 
 // The jsii proxy struct for UserProgrammaticAccessToken
 type jsiiProxy_UserProgrammaticAccessToken struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_UserProgrammaticAccessToken) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) ExpireRotatedTokenAfterHoursInpu
 	return returns
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_UserProgrammaticAccessToken) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) KeeperInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_UserProgrammaticAccessToken) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_UserProgrammaticAccessToken) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) ShowOutput() UserProgrammaticAcc
 	return returns
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_UserProgrammaticAccessToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -581,7 +581,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) UserProgrammaticAccessToken {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_UserProgrammaticAccessToken{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -599,12 +599,12 @@ func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken_Override(u UserProgrammaticAccessToken, scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -684,7 +684,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken)SetExpireRotatedTokenAfterHours(v
 	)
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserProgrammaticAccessToken)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -714,7 +714,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken)SetKeeper(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserProgrammaticAccessToken)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +747,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserProgrammaticAccessToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserProgrammaticAccessToken)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -788,17 +788,17 @@ func (j *jsiiProxy_UserProgrammaticAccessToken)SetUser(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a UserProgrammaticAccessToken resource upon running "cdktf plan <stack-name>".
-func UserProgrammaticAccessToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a UserProgrammaticAccessToken resource upon running "cdktn plan <stack-name>".
+func UserProgrammaticAccessToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateUserProgrammaticAccessToken_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -833,7 +833,7 @@ func UserProgrammaticAccessToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func UserProgrammaticAccessToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func UserProgrammaticAccessToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func UserProgrammaticAccessToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		"tfResourceType",
 		&returns,
 	)
@@ -929,11 +929,11 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (u *jsiiProxy_UserProgrammaticAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserProgrammaticAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -1070,7 +1070,7 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) HasResourceMove() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserProgrammaticAccessToken) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (u *jsiiProxy_UserProgrammaticAccessToken) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1081,11 +1081,11 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) ImportFrom(id *string, provider 
 	)
 }
 
-func (u *jsiiProxy_UserProgrammaticAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserProgrammaticAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,

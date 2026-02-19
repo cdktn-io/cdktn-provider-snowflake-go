@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaskParametersBinaryInputFormatList) validateGetParameters(in
 	return nil
 }
 
-func (t *jsiiProxy_TaskParametersBinaryInputFormatList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaskParametersBinaryInputFormatList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_TaskParametersBinaryInputFormatList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_TaskParametersBinaryInputFormatList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TaskParametersBinaryInputFormatList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_TaskParametersBinaryInputFormatList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewTaskParametersBinaryInputFormatListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTaskParametersBinaryInputFormatListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

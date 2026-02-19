@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package procedurepython
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurepython/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurepython/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ProcedurePythonParametersMetricLevelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type ProcedurePythonParametersMetricLevelOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type ProcedurePythonParametersMetricLevelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ProcedurePythonParametersMetricLevelOutputReference interface {
 
 // The jsii proxy struct for ProcedurePythonParametersMetricLevelOutputReference
 type jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Value() 
 }
 
 
-func NewProcedurePythonParametersMetricLevelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedurePythonParametersMetricLevelOutputReference {
+func NewProcedurePythonParametersMetricLevelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedurePythonParametersMetricLevelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewProcedurePythonParametersMetricLevelOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewProcedurePythonParametersMetricLevelOutputReference(terraformResource cd
 	j := jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelOutputReference",
+		"@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewProcedurePythonParametersMetricLevelOutputReference(terraformResource cd
 	return &j
 }
 
-func NewProcedurePythonParametersMetricLevelOutputReference_Override(p ProcedurePythonParametersMetricLevelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewProcedurePythonParametersMetricLevelOutputReference_Override(p ProcedurePythonParametersMetricLevelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelOutputReference",
+		"@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) GetAnyMa
 	return returns
 }
 
-func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -444,8 +444,8 @@ func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) GetStrin
 	return returns
 }
 
-func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -457,11 +457,11 @@ func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -473,7 +473,7 @@ func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProcedurePythonParametersMetricLevelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

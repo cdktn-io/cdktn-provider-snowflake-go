@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionsql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionsql/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionSqlParametersEnableConsoleOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type FunctionSqlParametersEnableConsoleOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type FunctionSqlParametersEnableConsoleOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type FunctionSqlParametersEnableConsoleOutputOutputReference interface {
 
 // The jsii proxy struct for FunctionSqlParametersEnableConsoleOutputOutputReference
 type jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Valu
 }
 
 
-func NewFunctionSqlParametersEnableConsoleOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionSqlParametersEnableConsoleOutputOutputReference {
+func NewFunctionSqlParametersEnableConsoleOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionSqlParametersEnableConsoleOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFunctionSqlParametersEnableConsoleOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewFunctionSqlParametersEnableConsoleOutputOutputReference(terraformResourc
 	j := jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputOutputReference",
+		"@cdktn/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewFunctionSqlParametersEnableConsoleOutputOutputReference(terraformResourc
 	return &j
 }
 
-func NewFunctionSqlParametersEnableConsoleOutputOutputReference_Override(f FunctionSqlParametersEnableConsoleOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewFunctionSqlParametersEnableConsoleOutputOutputReference_Override(f FunctionSqlParametersEnableConsoleOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputOutputReference",
+		"@cdktn/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) GetA
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -444,8 +444,8 @@ func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) GetS
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -457,11 +457,11 @@ func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Inte
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -473,7 +473,7 @@ func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Inte
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionSqlParametersEnableConsoleOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

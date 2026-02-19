@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeprocedures
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProcedures",
+		"@cdktn/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProcedures",
 		reflect.TypeOf((*DataSnowflakeProcedures)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,20 +58,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeProcedures{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresConfig",
+		"@cdktn/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresConfig",
 		reflect.TypeOf((*DataSnowflakeProceduresConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProcedures",
+		"@cdktn/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProcedures",
 		reflect.TypeOf((*DataSnowflakeProceduresProcedures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProceduresList",
+		"@cdktn/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProceduresList",
 		reflect.TypeOf((*DataSnowflakeProceduresProceduresList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -87,12 +87,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeProceduresProceduresList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProceduresOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeProcedures.DataSnowflakeProceduresProceduresOutputReference",
 		reflect.TypeOf((*DataSnowflakeProceduresProceduresOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argumentTypes", GoGetter: "ArgumentTypes"},
@@ -125,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeProceduresProceduresOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

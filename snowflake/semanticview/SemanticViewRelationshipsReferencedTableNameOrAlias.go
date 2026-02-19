@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package semanticview
@@ -9,13 +9,13 @@ type SemanticViewRelationshipsReferencedTableNameOrAlias struct {
 	//
 	// This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
 	TableAlias *string `field:"optional" json:"tableAlias" yaml:"tableAlias"`
 	// The name of the logical table, cannot be used in combination with the `table_alias`.
 	//
 	// This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_name SemanticView#table_name}
 	TableName *string `field:"optional" json:"tableName" yaml:"tableName"`
 }
 

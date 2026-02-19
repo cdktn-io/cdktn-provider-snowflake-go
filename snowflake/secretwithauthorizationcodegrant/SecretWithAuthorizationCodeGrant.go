@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretwithauthorizationcodegrant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithauthorizationcodegrant/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithauthorizationcodegrant/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant}.
 type SecretWithAuthorizationCodeGrant interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApiAuthentication() *string
 	SetApiAuthentication(val *string)
 	ApiAuthenticationInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -42,9 +42,9 @@ type SecretWithAuthorizationCodeGrant interface {
 	SetDependsOn(val *[]*string)
 	DescribeOutput() SecretWithAuthorizationCodeGrantDescribeOutputList
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,9 +54,9 @@ type SecretWithAuthorizationCodeGrant interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -69,9 +69,9 @@ type SecretWithAuthorizationCodeGrant interface {
 	OauthRefreshTokenExpiryTimeInput() *string
 	OauthRefreshTokenInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type SecretWithAuthorizationCodeGrant interface {
 	SecretType() *string
 	ShowOutput() SecretWithAuthorizationCodeGrantShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -99,7 +99,7 @@ type SecretWithAuthorizationCodeGrant interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -117,9 +117,9 @@ type SecretWithAuthorizationCodeGrant interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -156,7 +156,7 @@ type SecretWithAuthorizationCodeGrant interface {
 
 // The jsii proxy struct for SecretWithAuthorizationCodeGrant
 type jsiiProxy_SecretWithAuthorizationCodeGrant struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) ApiAuthentication() *string {
@@ -179,8 +179,8 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) ApiAuthenticationInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) DescribeOutput() SecretWith
 	return returns
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) OauthRefreshTokenInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) ShowOutput() SecretWithAuth
 	return returns
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -540,7 +540,7 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant} Resource.
 func NewSecretWithAuthorizationCodeGrant(scope constructs.Construct, id *string, config *SecretWithAuthorizationCodeGrantConfig) SecretWithAuthorizationCodeGrant {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewSecretWithAuthorizationCodeGrant(scope constructs.Construct, id *string,
 	j := jsiiProxy_SecretWithAuthorizationCodeGrant{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,12 +558,12 @@ func NewSecretWithAuthorizationCodeGrant(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_authorization_code_grant snowflake_secret_with_authorization_code_grant} Resource.
 func NewSecretWithAuthorizationCodeGrant_Override(s SecretWithAuthorizationCodeGrant, scope constructs.Construct, id *string, config *SecretWithAuthorizationCodeGrantConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -632,7 +632,7 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -651,7 +651,7 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +695,7 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetOauthRefreshTokenExpiryTi
 	)
 }
 
-func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -725,17 +725,17 @@ func (j *jsiiProxy_SecretWithAuthorizationCodeGrant)SetSchema(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SecretWithAuthorizationCodeGrant resource upon running "cdktf plan <stack-name>".
-func SecretWithAuthorizationCodeGrant_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SecretWithAuthorizationCodeGrant resource upon running "cdktn plan <stack-name>".
+func SecretWithAuthorizationCodeGrant_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSecretWithAuthorizationCodeGrant_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -770,7 +770,7 @@ func SecretWithAuthorizationCodeGrant_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func SecretWithAuthorizationCodeGrant_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func SecretWithAuthorizationCodeGrant_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func SecretWithAuthorizationCodeGrant_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
+		"@cdktn/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant",
 		"tfResourceType",
 		&returns,
 	)
@@ -866,11 +866,11 @@ func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1007,7 +1007,7 @@ func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) HasResourceMove() interface
 	return returns
 }
 
-func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1018,11 +1018,11 @@ func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) ImportFrom(id *string, prov
 	)
 }
 
-func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretWithAuthorizationCodeGrant) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

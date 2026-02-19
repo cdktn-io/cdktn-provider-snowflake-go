@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_DataSnowflakeDatabaseRolesDatabaseRolesList) validateSetWraps
 	return nil
 }
 
-func validateNewDataSnowflakeDatabaseRolesDatabaseRolesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataSnowflakeDatabaseRolesDatabaseRolesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,21 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakecomputepools
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecomputepools/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecomputepools/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActiveNodes() *float64
 	Application() *string
-	AutoResume() cdktf.IResolvable
+	AutoResume() cdktn.IResolvable
 	AutoSuspendSecs() *float64
 	Comment() *string
 	// the index of the complex object in a list.
@@ -40,7 +40,7 @@ type DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference interface {
 	InstanceFamily() *string
 	InternalValue() *DataSnowflakeComputePoolsComputePoolsShowOutput
 	SetInternalValue(val *DataSnowflakeComputePoolsComputePoolsShowOutput)
-	IsExclusive() cdktf.IResolvable
+	IsExclusive() cdktn.IResolvable
 	MaxNodes() *float64
 	MinNodes() *float64
 	Name() *string
@@ -55,16 +55,16 @@ type DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedOn() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,12 +80,12 @@ type DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference
 type jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) ActiveNodes() *float64 {
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) AutoResume() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) AutoResume() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoResume",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) IsExclusive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) IsExclusive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isExclusive",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 }
 
 
-func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference {
+func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -368,7 +368,7 @@ func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference(terraform
 	j := jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeComputePools.DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeComputePools.DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -376,11 +376,11 @@ func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference(terraform
 	return &j
 }
 
-func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference_Override(d DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeComputePoolsComputePoolsShowOutputOutputReference_Override(d DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeComputePools.DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeComputePools.DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,11 +470,11 @@ func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -598,8 +598,8 @@ func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -611,11 +611,11 @@ func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -627,7 +627,7 @@ func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeComputePoolsComputePoolsShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

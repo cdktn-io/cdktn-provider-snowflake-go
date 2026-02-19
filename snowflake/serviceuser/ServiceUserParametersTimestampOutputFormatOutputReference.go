@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceUserParametersTimestampOutputFormatOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type ServiceUserParametersTimestampOutputFormatOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type ServiceUserParametersTimestampOutputFormatOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ServiceUserParametersTimestampOutputFormatOutputReference interface {
 
 // The jsii proxy struct for ServiceUserParametersTimestampOutputFormatOutputReference
 type jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Va
 }
 
 
-func NewServiceUserParametersTimestampOutputFormatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersTimestampOutputFormatOutputReference {
+func NewServiceUserParametersTimestampOutputFormatOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersTimestampOutputFormatOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceUserParametersTimestampOutputFormatOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewServiceUserParametersTimestampOutputFormatOutputReference(terraformResou
 	j := jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampOutputFormatOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampOutputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewServiceUserParametersTimestampOutputFormatOutputReference(terraformResou
 	return &j
 }
 
-func NewServiceUserParametersTimestampOutputFormatOutputReference_Override(s ServiceUserParametersTimestampOutputFormatOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewServiceUserParametersTimestampOutputFormatOutputReference_Override(s ServiceUserParametersTimestampOutputFormatOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampOutputFormatOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampOutputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,11 +457,11 @@ func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) In
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -473,7 +473,7 @@ func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) In
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceUserParametersTimestampOutputFormatOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

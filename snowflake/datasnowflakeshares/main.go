@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeshares
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares",
+		"@cdktn/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares",
 		reflect.TypeOf((*DataSnowflakeShares)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,20 +57,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeShares{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig",
+		"@cdktn/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig",
 		reflect.TypeOf((*DataSnowflakeSharesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesShares",
+		"@cdktn/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesShares",
 		reflect.TypeOf((*DataSnowflakeSharesShares)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList",
+		"@cdktn/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList",
 		reflect.TypeOf((*DataSnowflakeSharesSharesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -86,12 +86,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeSharesSharesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesOutputReference",
 		reflect.TypeOf((*DataSnowflakeSharesSharesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -123,7 +123,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeSharesSharesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

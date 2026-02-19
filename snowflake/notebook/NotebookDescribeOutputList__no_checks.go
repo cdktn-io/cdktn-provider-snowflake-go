@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotebookDescribeOutputList) validateGetParameters(index *floa
 	return nil
 }
 
-func (n *jsiiProxy_NotebookDescribeOutputList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebookDescribeOutputList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_NotebookDescribeOutputList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_NotebookDescribeOutputList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotebookDescribeOutputList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_NotebookDescribeOutputList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewNotebookDescribeOutputListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNotebookDescribeOutputListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

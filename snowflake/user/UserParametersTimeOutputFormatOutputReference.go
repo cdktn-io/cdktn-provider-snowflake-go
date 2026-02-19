@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package user
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/user/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/user/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type UserParametersTimeOutputFormatOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type UserParametersTimeOutputFormatOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type UserParametersTimeOutputFormatOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type UserParametersTimeOutputFormatOutputReference interface {
 
 // The jsii proxy struct for UserParametersTimeOutputFormatOutputReference
 type jsiiProxy_UserParametersTimeOutputFormatOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference) Value() *strin
 }
 
 
-func NewUserParametersTimeOutputFormatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) UserParametersTimeOutputFormatOutputReference {
+func NewUserParametersTimeOutputFormatOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) UserParametersTimeOutputFormatOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewUserParametersTimeOutputFormatOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewUserParametersTimeOutputFormatOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_UserParametersTimeOutputFormatOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.user.UserParametersTimeOutputFormatOutputReference",
+		"@cdktn/provider-snowflake.user.UserParametersTimeOutputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewUserParametersTimeOutputFormatOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewUserParametersTimeOutputFormatOutputReference_Override(u UserParametersTimeOutputFormatOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewUserParametersTimeOutputFormatOutputReference_Override(u UserParametersTimeOutputFormatOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.user.UserParametersTimeOutputFormatOutputReference",
+		"@cdktn/provider-snowflake.user.UserParametersTimeOutputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		u,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserParametersTimeOutputFormatOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -444,8 +444,8 @@ func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) GetStringMapAt
 	return returns
 }
 
-func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -457,11 +457,11 @@ func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationA
 	return returns
 }
 
-func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -473,7 +473,7 @@ func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) InterpolationF
 	return returns
 }
 
-func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserParametersTimeOutputFormatOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := u.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

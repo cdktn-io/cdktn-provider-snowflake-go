@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externaloauthintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaloauthintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaloauthintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	Value() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputRefe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputRefe
 
 // The jsii proxy struct for ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference
 type jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	return returns
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 }
 
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputR
 	j := jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputR
 	return &j
 }
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	)
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -433,8 +433,8 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -446,11 +446,11 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -462,7 +462,7 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelim
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

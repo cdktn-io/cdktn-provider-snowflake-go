@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package warehouse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/warehouse/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/warehouse/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WarehouseShowOutputOutputReference interface {
-	cdktf.ComplexObject
-	AutoResume() cdktf.IResolvable
+	cdktn.ComplexObject
+	AutoResume() cdktn.IResolvable
 	AutoSuspend() *float64
 	Available() *float64
 	Comment() *string
@@ -33,14 +33,14 @@ type WarehouseShowOutputOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableQueryAcceleration() cdktf.IResolvable
+	EnableQueryAcceleration() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Generation() *string
 	InternalValue() *WarehouseShowOutput
 	SetInternalValue(val *WarehouseShowOutput)
-	IsCurrent() cdktf.IResolvable
-	IsDefault() cdktf.IResolvable
+	IsCurrent() cdktn.IResolvable
+	IsDefault() cdktn.IResolvable
 	MaxClusterCount() *float64
 	MinClusterCount() *float64
 	Name() *string
@@ -64,9 +64,9 @@ type WarehouseShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	UpdatedOn() *string
 	// Experimental.
@@ -74,7 +74,7 @@ type WarehouseShowOutputOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,12 +90,12 @@ type WarehouseShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,11 +105,11 @@ type WarehouseShowOutputOutputReference interface {
 
 // The jsii proxy struct for WarehouseShowOutputOutputReference
 type jsiiProxy_WarehouseShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference) AutoResume() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WarehouseShowOutputOutputReference) AutoResume() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoResume",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference) CreationStack() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference) EnableQueryAcceleration() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WarehouseShowOutputOutputReference) EnableQueryAcceleration() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableQueryAcceleration",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference) InternalValue() *Warehous
 	return returns
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference) IsCurrent() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WarehouseShowOutputOutputReference) IsCurrent() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isCurrent",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference) IsCurrent() cdktf.IResolv
 	return returns
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference) IsDefault() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WarehouseShowOutputOutputReference) IsDefault() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isDefault",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WarehouseShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -469,7 +469,7 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference) UpdatedOn() *string {
 }
 
 
-func NewWarehouseShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WarehouseShowOutputOutputReference {
+func NewWarehouseShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WarehouseShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWarehouseShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -478,7 +478,7 @@ func NewWarehouseShowOutputOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_WarehouseShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -486,11 +486,11 @@ func NewWarehouseShowOutputOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewWarehouseShowOutputOutputReference_Override(w WarehouseShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWarehouseShowOutputOutputReference_Override(w WarehouseShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -540,7 +540,7 @@ func (j *jsiiProxy_WarehouseShowOutputOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WarehouseShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WarehouseShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,11 +580,11 @@ func (w *jsiiProxy_WarehouseShowOutputOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (w *jsiiProxy_WarehouseShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WarehouseShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -708,8 +708,8 @@ func (w *jsiiProxy_WarehouseShowOutputOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -721,11 +721,11 @@ func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -737,7 +737,7 @@ func (w *jsiiProxy_WarehouseShowOutputOutputReference) InterpolationForAttribute
 	return returns
 }
 
-func (w *jsiiProxy_WarehouseShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WarehouseShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

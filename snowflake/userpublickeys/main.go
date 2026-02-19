@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userpublickeys
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys",
+		"@cdktn/provider-snowflake.userPublicKeys.UserPublicKeys",
 		reflect.TypeOf((*UserPublicKeys)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,20 +73,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserPublicKeys{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysConfig",
+		"@cdktn/provider-snowflake.userPublicKeys.UserPublicKeysConfig",
 		reflect.TypeOf((*UserPublicKeysConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysTimeouts",
+		"@cdktn/provider-snowflake.userPublicKeys.UserPublicKeysTimeouts",
 		reflect.TypeOf((*UserPublicKeysTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.userPublicKeys.UserPublicKeysTimeoutsOutputReference",
 		reflect.TypeOf((*UserPublicKeysTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserPublicKeysTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

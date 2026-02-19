@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeauthenticationpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeauthenticationpolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeauthenticationpolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeAuthenticationPoliciesInOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Account() interface{}
 	SetAccount(val interface{})
 	AccountInput() interface{}
@@ -52,15 +52,15 @@ type DataSnowflakeAuthenticationPoliciesInOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type DataSnowflakeAuthenticationPoliciesInOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccount()
 	ResetApplication()
 	ResetApplicationPackage()
@@ -86,7 +86,7 @@ type DataSnowflakeAuthenticationPoliciesInOutputReference interface {
 	ResetSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataSnowflakeAuthenticationPoliciesInOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeAuthenticationPoliciesInOutputReference
 type jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Account() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Terrafo
 }
 
 
-func NewDataSnowflakeAuthenticationPoliciesInOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataSnowflakeAuthenticationPoliciesInOutputReference {
+func NewDataSnowflakeAuthenticationPoliciesInOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataSnowflakeAuthenticationPoliciesInOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeAuthenticationPoliciesInOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewDataSnowflakeAuthenticationPoliciesInOutputReference(terraformResource c
 	j := jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesInOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesInOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewDataSnowflakeAuthenticationPoliciesInOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataSnowflakeAuthenticationPoliciesInOutputReference_Override(d DataSnowflakeAuthenticationPoliciesInOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataSnowflakeAuthenticationPoliciesInOutputReference_Override(d DataSnowflakeAuthenticationPoliciesInOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesInOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesInOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -564,8 +564,8 @@ func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -577,11 +577,11 @@ func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) ResetSc
 	)
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesInOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

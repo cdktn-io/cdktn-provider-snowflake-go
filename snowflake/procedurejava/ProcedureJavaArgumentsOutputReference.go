@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package procedurejava
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejava/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejava/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ProcedureJavaArgumentsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArgDataType() *string
 	SetArgDataType(val *string)
 	ArgDataTypeInput() *string
@@ -46,15 +46,15 @@ type ProcedureJavaArgumentsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type ProcedureJavaArgumentsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetArgDefaultValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type ProcedureJavaArgumentsOutputReference interface {
 
 // The jsii proxy struct for ProcedureJavaArgumentsOutputReference
 type jsiiProxy_ProcedureJavaArgumentsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference) ArgDataType() *string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference) TerraformResource() cd
 }
 
 
-func NewProcedureJavaArgumentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedureJavaArgumentsOutputReference {
+func NewProcedureJavaArgumentsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedureJavaArgumentsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewProcedureJavaArgumentsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -229,7 +229,7 @@ func NewProcedureJavaArgumentsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ProcedureJavaArgumentsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureJava.ProcedureJavaArgumentsOutputReference",
+		"@cdktn/provider-snowflake.procedureJava.ProcedureJavaArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewProcedureJavaArgumentsOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewProcedureJavaArgumentsOutputReference_Override(p ProcedureJavaArgumentsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewProcedureJavaArgumentsOutputReference_Override(p ProcedureJavaArgumentsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureJava.ProcedureJavaArgumentsOutputReference",
+		"@cdktn/provider-snowflake.procedureJava.ProcedureJavaArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProcedureJavaArgumentsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -492,8 +492,8 @@ func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -505,11 +505,11 @@ func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -529,7 +529,7 @@ func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) ResetArgDefaultValue()
 	)
 }
 
-func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProcedureJavaArgumentsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

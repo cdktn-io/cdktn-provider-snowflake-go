@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -76,6 +76,10 @@ func (t *jsiiProxy_Task) validateOverrideLogicalIdParameters(newLogicalId *strin
 }
 
 func (t *jsiiProxy_Task) validatePutScheduleParameters(value *TaskSchedule) error {
+	return nil
+}
+
+func (t *jsiiProxy_Task) validatePutTargetCompletionIntervalParameters(value *TaskTargetCompletionInterval) error {
 	return nil
 }
 
@@ -227,7 +231,7 @@ func (j *jsiiProxy_Task) validateSetJsonIndentParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_Task) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Task) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -280,6 +284,14 @@ func (j *jsiiProxy_Task) validateSetSchemaParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Task) validateSetSearchPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Task) validateSetServerlessTaskMaxStatementSizeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Task) validateSetServerlessTaskMinStatementSizeParameters(val *string) error {
 	return nil
 }
 

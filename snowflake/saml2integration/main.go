@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package saml2integration
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2Integration",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2Integration",
 		reflect.TypeOf((*Saml2Integration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -114,24 +114,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2Integration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationConfig",
 		reflect.TypeOf((*Saml2IntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutput",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutput",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatterns",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatterns",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedEmailPatterns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedEmailPatternsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -147,12 +147,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputAllowedEmailPatternsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,16 +183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomains",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomains",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedUserDomains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedUserDomainsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -208,12 +208,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputAllowedUserDomainsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,16 +244,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputComment",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputComment",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputComment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputCommentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -269,12 +269,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputCommentList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputCommentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -305,12 +305,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputCommentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -326,12 +326,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedEmailPatterns", GoGetter: "AllowedEmailPatterns"},
@@ -375,16 +375,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -400,12 +400,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,16 +436,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiated",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiated",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2EnableSpInitiated)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -461,12 +461,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -497,16 +497,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthn",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthn",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2ForceAuthn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2ForceAuthnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -522,12 +522,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2ForceAuthnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -558,16 +558,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Issuer",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Issuer",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2Issuer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2IssuerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -583,12 +583,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2IssuerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2IssuerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -619,16 +619,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2IssuerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -644,12 +644,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -680,16 +680,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Provider",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Provider",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2Provider)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2ProviderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -705,12 +705,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2ProviderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2ProviderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -741,16 +741,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2ProviderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -766,12 +766,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -802,16 +802,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequest",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequest",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -827,12 +827,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SignRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -863,16 +863,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -888,12 +888,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -924,16 +924,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -949,12 +949,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -985,16 +985,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1010,12 +1010,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1046,16 +1046,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1071,12 +1071,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1107,16 +1107,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1132,12 +1132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1168,16 +1168,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrl",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrl",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SsoUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlList",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SsoUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1193,12 +1193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SsoUrlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference",
 		reflect.TypeOf((*Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1229,16 +1229,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutput",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationShowOutput",
 		reflect.TypeOf((*Saml2IntegrationShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputList",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputList",
 		reflect.TypeOf((*Saml2IntegrationShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1254,12 +1254,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputOutputReference",
 		reflect.TypeOf((*Saml2IntegrationShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -1292,16 +1292,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts",
 		reflect.TypeOf((*Saml2IntegrationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference",
 		reflect.TypeOf((*Saml2IntegrationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1340,7 +1340,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Saml2IntegrationTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externaltable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table}.
 type ExternalTable interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AutoRefresh() interface{}
 	SetAutoRefresh(val interface{})
 	AutoRefreshInput() interface{}
@@ -22,7 +22,7 @@ type ExternalTable interface {
 	SetAwsSnsTopic(val *string)
 	AwsSnsTopicInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Column() ExternalTableColumnList
 	ColumnInput() interface{}
 	Comment() *string
@@ -52,9 +52,9 @@ type ExternalTable interface {
 	SetFileFormat(val *string)
 	FileFormatInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -64,9 +64,9 @@ type ExternalTable interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -83,9 +83,9 @@ type ExternalTable interface {
 	SetPattern(val *string)
 	PatternInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -104,7 +104,7 @@ type ExternalTable interface {
 	Tag() ExternalTableTagList
 	TagInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -119,7 +119,7 @@ type ExternalTable interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -137,9 +137,9 @@ type ExternalTable interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -186,7 +186,7 @@ type ExternalTable interface {
 
 // The jsii proxy struct for ExternalTable
 type jsiiProxy_ExternalTable struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ExternalTable) AutoRefresh() interface{} {
@@ -229,8 +229,8 @@ func (j *jsiiProxy_ExternalTable) AwsSnsTopicInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalTable) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ExternalTable) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_ExternalTable) FileFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalTable) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ExternalTable) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_ExternalTable) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalTable) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ExternalTable) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_ExternalTable) PatternInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalTable) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ExternalTable) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -659,8 +659,8 @@ func (j *jsiiProxy_ExternalTable) TagInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ExternalTable) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -710,7 +710,7 @@ func (j *jsiiProxy_ExternalTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTableConfig) ExternalTable {
 	_init_.Initialize()
 
@@ -720,7 +720,7 @@ func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTa
 	j := jsiiProxy_ExternalTable{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -728,12 +728,12 @@ func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable_Override(e ExternalTable, scope constructs.Construct, id *string, config *ExternalTableConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -835,7 +835,7 @@ func (j *jsiiProxy_ExternalTable)SetFileFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalTable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExternalTable)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -854,7 +854,7 @@ func (j *jsiiProxy_ExternalTable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExternalTable)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +909,7 @@ func (j *jsiiProxy_ExternalTable)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalTable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExternalTable)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -961,17 +961,17 @@ func (j *jsiiProxy_ExternalTable)SetTableFormat(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ExternalTable resource upon running "cdktf plan <stack-name>".
-func ExternalTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ExternalTable resource upon running "cdktn plan <stack-name>".
+func ExternalTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateExternalTable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1006,7 +1006,7 @@ func ExternalTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1025,7 +1025,7 @@ func ExternalTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1044,7 +1044,7 @@ func ExternalTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1057,7 +1057,7 @@ func ExternalTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		"tfResourceType",
 		&returns,
 	)
@@ -1102,11 +1102,11 @@ func (e *jsiiProxy_ExternalTable) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (e *jsiiProxy_ExternalTable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalTable) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1243,7 +1243,7 @@ func (e *jsiiProxy_ExternalTable) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ExternalTable) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_ExternalTable) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1254,11 +1254,11 @@ func (e *jsiiProxy_ExternalTable) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (e *jsiiProxy_ExternalTable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalTable) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,

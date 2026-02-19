@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantownership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantownership/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_ownership snowflake_grant_ownership}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_ownership snowflake_grant_ownership}.
 type GrantOwnership interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountRoleName() *string
 	SetAccountRoleName(val *string)
 	AccountRoleNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type GrantOwnership interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,9 +49,9 @@ type GrantOwnership interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	On() GrantOwnershipOnOutputReference
@@ -60,9 +60,9 @@ type GrantOwnership interface {
 	SetOutboundPrivileges(val *string)
 	OutboundPrivilegesInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type GrantOwnership interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type GrantOwnership interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type GrantOwnership interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -145,7 +145,7 @@ type GrantOwnership interface {
 
 // The jsii proxy struct for GrantOwnership
 type jsiiProxy_GrantOwnership struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_GrantOwnership) AccountRoleName() *string {
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GrantOwnership) AccountRoleNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantOwnership) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GrantOwnership) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GrantOwnership) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantOwnership) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GrantOwnership) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_GrantOwnership) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantOwnership) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GrantOwnership) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_GrantOwnership) OutboundPrivilegesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantOwnership) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GrantOwnership) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_GrantOwnership) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GrantOwnership) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GrantOwnership) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GrantOwnership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
 func NewGrantOwnership(scope constructs.Construct, id *string, config *GrantOwnershipConfig) GrantOwnership {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewGrantOwnership(scope constructs.Construct, id *string, config *GrantOwne
 	j := jsiiProxy_GrantOwnership{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,12 +447,12 @@ func NewGrantOwnership(scope constructs.Construct, id *string, config *GrantOwne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
 func NewGrantOwnership_Override(g GrantOwnership, scope constructs.Construct, id *string, config *GrantOwnershipConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GrantOwnership)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GrantOwnership)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GrantOwnership)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -529,7 +529,7 @@ func (j *jsiiProxy_GrantOwnership)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrantOwnership)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GrantOwnership)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +551,7 @@ func (j *jsiiProxy_GrantOwnership)SetOutboundPrivileges(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrantOwnership)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GrantOwnership)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -570,17 +570,17 @@ func (j *jsiiProxy_GrantOwnership)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a GrantOwnership resource upon running "cdktf plan <stack-name>".
-func GrantOwnership_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GrantOwnership resource upon running "cdktn plan <stack-name>".
+func GrantOwnership_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGrantOwnership_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -615,7 +615,7 @@ func GrantOwnership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GrantOwnership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GrantOwnership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GrantOwnership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		"tfResourceType",
 		&returns,
 	)
@@ -711,11 +711,11 @@ func (g *jsiiProxy_GrantOwnership) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (g *jsiiProxy_GrantOwnership) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantOwnership) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -852,7 +852,7 @@ func (g *jsiiProxy_GrantOwnership) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GrantOwnership) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GrantOwnership) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -863,11 +863,11 @@ func (g *jsiiProxy_GrantOwnership) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (g *jsiiProxy_GrantOwnership) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantOwnership) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

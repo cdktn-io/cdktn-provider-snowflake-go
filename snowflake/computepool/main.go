@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package computepool
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePool",
+		"@cdktn/provider-snowflake.computePool.ComputePool",
 		reflect.TypeOf((*ComputePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,20 +91,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.computePool.ComputePoolConfig",
+		"@cdktn/provider-snowflake.computePool.ComputePoolConfig",
 		reflect.TypeOf((*ComputePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutput",
+		"@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutput",
 		reflect.TypeOf((*ComputePoolDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputList",
+		"@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputList",
 		reflect.TypeOf((*ComputePoolDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -120,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePoolDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
 		reflect.TypeOf((*ComputePoolDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeNodes", GoGetter: "ActiveNodes"},
@@ -173,16 +173,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePoolDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.computePool.ComputePoolShowOutput",
+		"@cdktn/provider-snowflake.computePool.ComputePoolShowOutput",
 		reflect.TypeOf((*ComputePoolShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePoolShowOutputList",
+		"@cdktn/provider-snowflake.computePool.ComputePoolShowOutputList",
 		reflect.TypeOf((*ComputePoolShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -198,12 +198,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePoolShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePoolShowOutputOutputReference",
+		"@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference",
 		reflect.TypeOf((*ComputePoolShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeNodes", GoGetter: "ActiveNodes"},
@@ -249,16 +249,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePoolShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.computePool.ComputePoolTimeouts",
+		"@cdktn/provider-snowflake.computePool.ComputePoolTimeouts",
 		reflect.TypeOf((*ComputePoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.computePool.ComputePoolTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.computePool.ComputePoolTimeoutsOutputReference",
 		reflect.TypeOf((*ComputePoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,7 +297,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputePoolTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

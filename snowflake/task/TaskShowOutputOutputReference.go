@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package task
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/task/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/task/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TaskShowOutputOutputReference interface {
-	cdktf.ComplexObject
-	AllowOverlappingExecution() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowOverlappingExecution() cdktn.IResolvable
 	Budget() *string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -52,22 +52,23 @@ type TaskShowOutputOutputReference interface {
 	Schedule() *string
 	SchemaName() *string
 	State() *string
+	TargetCompletionInterval() TaskShowOutputTargetCompletionIntervalList
 	TaskRelations() TaskShowOutputTaskRelationsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Warehouse() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,12 +84,12 @@ type TaskShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,11 +99,11 @@ type TaskShowOutputOutputReference interface {
 
 // The jsii proxy struct for TaskShowOutputOutputReference
 type jsiiProxy_TaskShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_TaskShowOutputOutputReference) AllowOverlappingExecution() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_TaskShowOutputOutputReference) AllowOverlappingExecution() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowOverlappingExecution",
@@ -351,6 +352,16 @@ func (j *jsiiProxy_TaskShowOutputOutputReference) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TaskShowOutputOutputReference) TargetCompletionInterval() TaskShowOutputTargetCompletionIntervalList {
+	var returns TaskShowOutputTargetCompletionIntervalList
+	_jsii_.Get(
+		j,
+		"targetCompletionInterval",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TaskShowOutputOutputReference) TaskRelations() TaskShowOutputTaskRelationsList {
 	var returns TaskShowOutputTaskRelationsList
 	_jsii_.Get(
@@ -371,8 +382,8 @@ func (j *jsiiProxy_TaskShowOutputOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TaskShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TaskShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -392,7 +403,7 @@ func (j *jsiiProxy_TaskShowOutputOutputReference) Warehouse() *string {
 }
 
 
-func NewTaskShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskShowOutputOutputReference {
+func NewTaskShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTaskShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -401,7 +412,7 @@ func NewTaskShowOutputOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_TaskShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskShowOutputOutputReference",
+		"@cdktn/provider-snowflake.task.TaskShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -409,11 +420,11 @@ func NewTaskShowOutputOutputReference(terraformResource cdktf.IInterpolatingPare
 	return &j
 }
 
-func NewTaskShowOutputOutputReference_Override(t TaskShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewTaskShowOutputOutputReference_Override(t TaskShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskShowOutputOutputReference",
+		"@cdktn/provider-snowflake.task.TaskShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
@@ -463,7 +474,7 @@ func (j *jsiiProxy_TaskShowOutputOutputReference)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_TaskShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TaskShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +514,11 @@ func (t *jsiiProxy_TaskShowOutputOutputReference) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (t *jsiiProxy_TaskShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -631,8 +642,8 @@ func (t *jsiiProxy_TaskShowOutputOutputReference) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -644,11 +655,11 @@ func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationAsList() cdktf.IR
 	return returns
 }
 
-func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -660,7 +671,7 @@ func (t *jsiiProxy_TaskShowOutputOutputReference) InterpolationForAttribute(terr
 	return returns
 }
 
-func (t *jsiiProxy_TaskShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TaskShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

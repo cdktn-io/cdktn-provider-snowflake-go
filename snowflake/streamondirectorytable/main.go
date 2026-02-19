@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamondirectorytable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable",
 		reflect.TypeOf((*StreamOnDirectoryTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,20 +84,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig",
 		reflect.TypeOf((*StreamOnDirectoryTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutput",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutput",
 		reflect.TypeOf((*StreamOnDirectoryTableDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputList",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputList",
 		reflect.TypeOf((*StreamOnDirectoryTableDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -113,12 +113,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTableDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputOutputReference",
 		reflect.TypeOf((*StreamOnDirectoryTableDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseTables", GoGetter: "BaseTables"},
@@ -160,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTableDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutput",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutput",
 		reflect.TypeOf((*StreamOnDirectoryTableShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputList",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputList",
 		reflect.TypeOf((*StreamOnDirectoryTableShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -185,12 +185,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTableShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputOutputReference",
 		reflect.TypeOf((*StreamOnDirectoryTableShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseTables", GoGetter: "BaseTables"},
@@ -232,16 +232,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTableShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts",
 		reflect.TypeOf((*StreamOnDirectoryTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeoutsOutputReference",
 		reflect.TypeOf((*StreamOnDirectoryTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,7 +280,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnDirectoryTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

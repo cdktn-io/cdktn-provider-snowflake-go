@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantownership
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnership",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnership",
 		reflect.TypeOf((*GrantOwnership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountRoleName", GoGetter: "AccountRoleName"},
@@ -77,24 +77,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantOwnership{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipConfig",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipConfig",
 		reflect.TypeOf((*GrantOwnershipConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOn",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOn",
 		reflect.TypeOf((*GrantOwnershipOn)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnAll",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOnAll",
 		reflect.TypeOf((*GrantOwnershipOnAll)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnAllOutputReference",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOnAllOutputReference",
 		reflect.TypeOf((*GrantOwnershipOnAllOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,16 +129,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantOwnershipOnAllOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnFuture",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOnFuture",
 		reflect.TypeOf((*GrantOwnershipOnFuture)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnFutureOutputReference",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOnFutureOutputReference",
 		reflect.TypeOf((*GrantOwnershipOnFutureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,12 +173,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantOwnershipOnFutureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnOutputReference",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipOnOutputReference",
 		reflect.TypeOf((*GrantOwnershipOnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -219,16 +219,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantOwnershipOnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipTimeouts",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipTimeouts",
 		reflect.TypeOf((*GrantOwnershipTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantOwnership.GrantOwnershipTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.grantOwnership.GrantOwnershipTimeoutsOutputReference",
 		reflect.TypeOf((*GrantOwnershipTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,7 +267,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantOwnershipTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externaloauthintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaloauthintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaloauthintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimLis
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimLis
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimLis
 
 // The jsii proxy struct for ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList
 type jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserM
 	return returns
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserM
 }
 
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList {
 	_init_.Initialize()
 
 	if err := validateNewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaim
 	j := jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaim
 	return &j
 }
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserM
 	)
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserM
 	)
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		e,
@@ -208,7 +208,7 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserM
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

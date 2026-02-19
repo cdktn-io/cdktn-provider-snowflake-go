@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (u *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateInterpolationF
 	return nil
 }
 
-func (u *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_UserPublicKeysTimeoutsOutputReference) validateSetUpdateParam
 	return nil
 }
 
-func validateNewUserPublicKeysTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewUserPublicKeysTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

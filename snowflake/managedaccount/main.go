@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedaccount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.managedAccount.ManagedAccount",
+		"@cdktn/provider-snowflake.managedAccount.ManagedAccount",
 		reflect.TypeOf((*ManagedAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -83,20 +83,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig",
+		"@cdktn/provider-snowflake.managedAccount.ManagedAccountConfig",
 		reflect.TypeOf((*ManagedAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts",
+		"@cdktn/provider-snowflake.managedAccount.ManagedAccountTimeouts",
 		reflect.TypeOf((*ManagedAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference",
 		reflect.TypeOf((*ManagedAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,7 +135,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedAccountTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

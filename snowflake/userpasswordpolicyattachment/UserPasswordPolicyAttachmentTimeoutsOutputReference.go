@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userpasswordpolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpasswordpolicyattachment/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/userpasswordpolicyattachment/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type UserPasswordPolicyAttachmentTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type UserPasswordPolicyAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -57,7 +57,7 @@ type UserPasswordPolicyAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type UserPasswordPolicyAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type UserPasswordPolicyAttachmentTimeoutsOutputReference interface {
 
 // The jsii proxy struct for UserPasswordPolicyAttachmentTimeoutsOutputReference
 type jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewUserPasswordPolicyAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) UserPasswordPolicyAttachmentTimeoutsOutputReference {
+func NewUserPasswordPolicyAttachmentTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) UserPasswordPolicyAttachmentTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewUserPasswordPolicyAttachmentTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewUserPasswordPolicyAttachmentTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewUserPasswordPolicyAttachmentTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewUserPasswordPolicyAttachmentTimeoutsOutputReference_Override(u UserPasswordPolicyAttachmentTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewUserPasswordPolicyAttachmentTimeoutsOutputReference_Override(u UserPasswordPolicyAttachmentTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		u,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -529,8 +529,8 @@ func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -542,11 +542,11 @@ func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -590,7 +590,7 @@ func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserPasswordPolicyAttachmentTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := u.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

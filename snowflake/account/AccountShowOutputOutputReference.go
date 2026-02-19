@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package account
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/account/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AccountShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountLocator() *string
 	AccountLocatorUrl() *string
 	AccountName() *string
@@ -43,9 +43,9 @@ type AccountShowOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *AccountShowOutput
 	SetInternalValue(val *AccountShowOutput)
-	IsEventsAccount() cdktf.IResolvable
-	IsOrgAdmin() cdktf.IResolvable
-	IsOrganizationAccount() cdktf.IResolvable
+	IsEventsAccount() cdktn.IResolvable
+	IsOrgAdmin() cdktn.IResolvable
+	IsOrganizationAccount() cdktn.IResolvable
 	ManagedAccounts() *float64
 	MarketplaceConsumerBillingEntityName() *string
 	MarketplaceProviderBillingEntityName() *string
@@ -66,15 +66,15 @@ type AccountShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,12 +90,12 @@ type AccountShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type AccountShowOutputOutputReference interface {
 
 // The jsii proxy struct for AccountShowOutputOutputReference
 type jsiiProxy_AccountShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AccountShowOutputOutputReference) AccountLocator() *string {
@@ -268,8 +268,8 @@ func (j *jsiiProxy_AccountShowOutputOutputReference) InternalValue() *AccountSho
 	return returns
 }
 
-func (j *jsiiProxy_AccountShowOutputOutputReference) IsEventsAccount() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AccountShowOutputOutputReference) IsEventsAccount() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isEventsAccount",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_AccountShowOutputOutputReference) IsEventsAccount() cdktf.IRe
 	return returns
 }
 
-func (j *jsiiProxy_AccountShowOutputOutputReference) IsOrgAdmin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AccountShowOutputOutputReference) IsOrgAdmin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isOrgAdmin",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_AccountShowOutputOutputReference) IsOrgAdmin() cdktf.IResolva
 	return returns
 }
 
-func (j *jsiiProxy_AccountShowOutputOutputReference) IsOrganizationAccount() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AccountShowOutputOutputReference) IsOrganizationAccount() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isOrganizationAccount",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_AccountShowOutputOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_AccountShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccountShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -469,7 +469,7 @@ func (j *jsiiProxy_AccountShowOutputOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewAccountShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccountShowOutputOutputReference {
+func NewAccountShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccountShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAccountShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -478,7 +478,7 @@ func NewAccountShowOutputOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AccountShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.account.AccountShowOutputOutputReference",
+		"@cdktn/provider-snowflake.account.AccountShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -486,11 +486,11 @@ func NewAccountShowOutputOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewAccountShowOutputOutputReference_Override(a AccountShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAccountShowOutputOutputReference_Override(a AccountShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.account.AccountShowOutputOutputReference",
+		"@cdktn/provider-snowflake.account.AccountShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -540,7 +540,7 @@ func (j *jsiiProxy_AccountShowOutputOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_AccountShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,11 +580,11 @@ func (a *jsiiProxy_AccountShowOutputOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (a *jsiiProxy_AccountShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -708,8 +708,8 @@ func (a *jsiiProxy_AccountShowOutputOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -721,11 +721,11 @@ func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -737,7 +737,7 @@ func (a *jsiiProxy_AccountShowOutputOutputReference) InterpolationForAttribute(t
 	return returns
 }
 
-func (a *jsiiProxy_AccountShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeauthenticationpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeauthenticationpolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeauthenticationpolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList
 
 // The jsii proxy struct for DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList
 type jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 }
 
 
-func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList {
+func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputL
 	j := jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList",
+		"@cdktn/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputL
 	return &j
 }
 
-func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList_Override(d DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList_Override(d DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList",
+		"@cdktn/provider-snowflake.dataSnowflakeAuthenticationPolicies.DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	)
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -208,7 +208,7 @@ func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

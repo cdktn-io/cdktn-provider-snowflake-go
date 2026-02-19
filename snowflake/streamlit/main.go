@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamlit
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.Streamlit",
+		"@cdktn/provider-snowflake.streamlit.Streamlit",
 		reflect.TypeOf((*Streamlit)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -93,20 +93,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Streamlit{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamlit.StreamlitConfig",
+		"@cdktn/provider-snowflake.streamlit.StreamlitConfig",
 		reflect.TypeOf((*StreamlitConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutput",
+		"@cdktn/provider-snowflake.streamlit.StreamlitDescribeOutput",
 		reflect.TypeOf((*StreamlitDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutputList",
+		"@cdktn/provider-snowflake.streamlit.StreamlitDescribeOutputList",
 		reflect.TypeOf((*StreamlitDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -122,12 +122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamlitDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.streamlit.StreamlitDescribeOutputOutputReference",
 		reflect.TypeOf((*StreamlitDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,16 +165,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamlitDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamlit.StreamlitShowOutput",
+		"@cdktn/provider-snowflake.streamlit.StreamlitShowOutput",
 		reflect.TypeOf((*StreamlitShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.StreamlitShowOutputList",
+		"@cdktn/provider-snowflake.streamlit.StreamlitShowOutputList",
 		reflect.TypeOf((*StreamlitShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -190,12 +190,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamlitShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.StreamlitShowOutputOutputReference",
+		"@cdktn/provider-snowflake.streamlit.StreamlitShowOutputOutputReference",
 		reflect.TypeOf((*StreamlitShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -232,16 +232,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamlitShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamlit.StreamlitTimeouts",
+		"@cdktn/provider-snowflake.streamlit.StreamlitTimeouts",
 		reflect.TypeOf((*StreamlitTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamlit.StreamlitTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.streamlit.StreamlitTimeoutsOutputReference",
 		reflect.TypeOf((*StreamlitTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,7 +280,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamlitTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

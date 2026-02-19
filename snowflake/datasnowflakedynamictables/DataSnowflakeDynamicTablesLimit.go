@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakedynamictables
@@ -9,11 +9,11 @@ type DataSnowflakeDynamicTablesLimit struct {
 	//
 	// This enables fetching the specified number of rows following the first row whose object name matches the specified string
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
 	From *string `field:"optional" json:"from" yaml:"from"`
 	// Specifies the maximum number of rows to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
 	Rows *float64 `field:"optional" json:"rows" yaml:"rows"`
 }
 

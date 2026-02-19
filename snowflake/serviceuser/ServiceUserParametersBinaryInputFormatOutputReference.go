@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceUserParametersBinaryInputFormatOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type ServiceUserParametersBinaryInputFormatOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type ServiceUserParametersBinaryInputFormatOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ServiceUserParametersBinaryInputFormatOutputReference interface {
 
 // The jsii proxy struct for ServiceUserParametersBinaryInputFormatOutputReference
 type jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Value(
 }
 
 
-func NewServiceUserParametersBinaryInputFormatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersBinaryInputFormatOutputReference {
+func NewServiceUserParametersBinaryInputFormatOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersBinaryInputFormatOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceUserParametersBinaryInputFormatOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewServiceUserParametersBinaryInputFormatOutputReference(terraformResource 
 	j := jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersBinaryInputFormatOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersBinaryInputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewServiceUserParametersBinaryInputFormatOutputReference(terraformResource 
 	return &j
 }
 
-func NewServiceUserParametersBinaryInputFormatOutputReference_Override(s ServiceUserParametersBinaryInputFormatOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewServiceUserParametersBinaryInputFormatOutputReference_Override(s ServiceUserParametersBinaryInputFormatOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersBinaryInputFormatOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersBinaryInputFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) GetAny
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) GetStr
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,11 +457,11 @@ func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -473,7 +473,7 @@ func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceUserParametersBinaryInputFormatOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

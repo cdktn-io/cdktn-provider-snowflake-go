@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dynamictable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTable",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTable",
 		reflect.TypeOf((*DynamicTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -103,20 +103,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DynamicTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTableConfig",
 		reflect.TypeOf((*DynamicTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTableTargetLag",
 		reflect.TypeOf((*DynamicTableTargetLag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLagOutputReference",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTableTargetLagOutputReference",
 		reflect.TypeOf((*DynamicTableTargetLagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,16 +149,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DynamicTableTargetLagOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTableTimeouts",
 		reflect.TypeOf((*DynamicTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference",
 		reflect.TypeOf((*DynamicTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,7 +197,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DynamicTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

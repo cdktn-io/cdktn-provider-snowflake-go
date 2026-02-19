@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tableconstraint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tableconstraint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tableconstraint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TableConstraintForeignKeyPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,15 +48,15 @@ type TableConstraintForeignKeyPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,16 +72,16 @@ type TableConstraintForeignKeyPropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutReferences(value *TableConstraintForeignKeyPropertiesReferences)
 	ResetMatch()
 	ResetOnDelete()
 	ResetOnUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type TableConstraintForeignKeyPropertiesOutputReference interface {
 
 // The jsii proxy struct for TableConstraintForeignKeyPropertiesOutputReference
 type jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -234,8 +234,8 @@ func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -245,7 +245,7 @@ func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) Terraform
 }
 
 
-func NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesOutputReference {
+func NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTableConstraintForeignKeyPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -254,7 +254,7 @@ func NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource cdk
 	j := jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,11 +262,11 @@ func NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewTableConstraintForeignKeyPropertiesOutputReference_Override(t TableConstraintForeignKeyPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTableConstraintForeignKeyPropertiesOutputReference_Override(t TableConstraintForeignKeyPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,11 +389,11 @@ func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) GetAnyMap
 	return returns
 }
 
-func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -517,8 +517,8 @@ func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) GetString
 	return returns
 }
 
-func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -530,11 +530,11 @@ func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) Interpola
 	return returns
 }
 
-func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -581,7 +581,7 @@ func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) ResetOnUp
 	)
 }
 
-func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

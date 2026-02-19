@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cortexsearchservice
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchService",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchService",
 		reflect.TypeOf((*CortexSearchService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,20 +91,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CortexSearchService{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig",
 		reflect.TypeOf((*CortexSearchServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput",
 		reflect.TypeOf((*CortexSearchServiceDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList",
 		reflect.TypeOf((*CortexSearchServiceDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -120,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CortexSearchServiceDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference",
 		reflect.TypeOf((*CortexSearchServiceDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeColumns", GoGetter: "AttributeColumns"},
@@ -169,16 +169,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CortexSearchServiceDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts",
 		reflect.TypeOf((*CortexSearchServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference",
 		reflect.TypeOf((*CortexSearchServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,7 +217,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CortexSearchServiceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

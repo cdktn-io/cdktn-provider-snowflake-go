@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package materializedview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/materializedview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MaterializedViewTagOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type MaterializedViewTagOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -57,7 +57,7 @@ type MaterializedViewTagOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,14 +73,14 @@ type MaterializedViewTagOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDatabase()
 	ResetSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type MaterializedViewTagOutputReference interface {
 
 // The jsii proxy struct for MaterializedViewTagOutputReference
 type jsiiProxy_MaterializedViewTagOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MaterializedViewTagOutputReference) ComplexObjectIndex() interface{} {
@@ -213,8 +213,8 @@ func (j *jsiiProxy_MaterializedViewTagOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_MaterializedViewTagOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MaterializedViewTagOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_MaterializedViewTagOutputReference) ValueInput() *string {
 }
 
 
-func NewMaterializedViewTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MaterializedViewTagOutputReference {
+func NewMaterializedViewTagOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MaterializedViewTagOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMaterializedViewTagOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -253,7 +253,7 @@ func NewMaterializedViewTagOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_MaterializedViewTagOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.materializedView.MaterializedViewTagOutputReference",
+		"@cdktn/provider-snowflake.materializedView.MaterializedViewTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,11 +261,11 @@ func NewMaterializedViewTagOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewMaterializedViewTagOutputReference_Override(m MaterializedViewTagOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMaterializedViewTagOutputReference_Override(m MaterializedViewTagOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.materializedView.MaterializedViewTagOutputReference",
+		"@cdktn/provider-snowflake.materializedView.MaterializedViewTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_MaterializedViewTagOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_MaterializedViewTagOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MaterializedViewTagOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,11 +399,11 @@ func (m *jsiiProxy_MaterializedViewTagOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (m *jsiiProxy_MaterializedViewTagOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaterializedViewTagOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -527,8 +527,8 @@ func (m *jsiiProxy_MaterializedViewTagOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (m *jsiiProxy_MaterializedViewTagOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MaterializedViewTagOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -540,11 +540,11 @@ func (m *jsiiProxy_MaterializedViewTagOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (m *jsiiProxy_MaterializedViewTagOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaterializedViewTagOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -572,7 +572,7 @@ func (m *jsiiProxy_MaterializedViewTagOutputReference) ResetSchema() {
 	)
 }
 
-func (m *jsiiProxy_MaterializedViewTagOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MaterializedViewTagOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

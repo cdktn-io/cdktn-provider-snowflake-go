@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package authenticationpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy",
 		reflect.TypeOf((*AuthenticationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -104,20 +104,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig",
 		reflect.TypeOf((*AuthenticationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutput",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutput",
 		reflect.TypeOf((*AuthenticationPolicyDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputList",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputList",
 		reflect.TypeOf((*AuthenticationPolicyDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -133,12 +133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationMethods", GoGetter: "AuthenticationMethods"},
@@ -176,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicy",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicy",
 		reflect.TypeOf((*AuthenticationPolicyMfaPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicyOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicyOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyMfaPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedMethods", GoGetter: "AllowedMethods"},
@@ -218,16 +218,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyMfaPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy",
 		reflect.TypeOf((*AuthenticationPolicyPatPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyPatPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,16 +263,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyPatPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutput",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutput",
 		reflect.TypeOf((*AuthenticationPolicyShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputList",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputList",
 		reflect.TypeOf((*AuthenticationPolicyShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -288,12 +288,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -329,16 +329,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts",
 		reflect.TypeOf((*AuthenticationPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -377,16 +377,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicy",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicy",
 		reflect.TypeOf((*AuthenticationPolicyWorkloadIdentityPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicyOutputReference",
+		"@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicyOutputReference",
 		reflect.TypeOf((*AuthenticationPolicyWorkloadIdentityPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedAwsAccounts", GoGetter: "AllowedAwsAccounts"},
@@ -425,7 +425,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticationPolicyWorkloadIdentityPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

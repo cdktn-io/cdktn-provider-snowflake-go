@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionpython
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionpython/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionpython/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionPythonArgumentsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type FunctionPythonArgumentsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type FunctionPythonArgumentsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) FunctionPythonArgumentsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type FunctionPythonArgumentsList interface {
 
 // The jsii proxy struct for FunctionPythonArgumentsList
 type jsiiProxy_FunctionPythonArgumentsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_FunctionPythonArgumentsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_FunctionPythonArgumentsList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionPythonArgumentsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionPythonArgumentsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_FunctionPythonArgumentsList) WrapsSet() *bool {
 }
 
 
-func NewFunctionPythonArgumentsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionPythonArgumentsList {
+func NewFunctionPythonArgumentsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionPythonArgumentsList {
 	_init_.Initialize()
 
 	if err := validateNewFunctionPythonArgumentsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewFunctionPythonArgumentsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_FunctionPythonArgumentsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionPython.FunctionPythonArgumentsList",
+		"@cdktn/provider-snowflake.functionPython.FunctionPythonArgumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewFunctionPythonArgumentsList(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewFunctionPythonArgumentsList_Override(f FunctionPythonArgumentsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewFunctionPythonArgumentsList_Override(f FunctionPythonArgumentsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionPython.FunctionPythonArgumentsList",
+		"@cdktn/provider-snowflake.functionPython.FunctionPythonArgumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_FunctionPythonArgumentsList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_FunctionPythonArgumentsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionPythonArgumentsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_FunctionPythonArgumentsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (f *jsiiProxy_FunctionPythonArgumentsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (f *jsiiProxy_FunctionPythonArgumentsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := f.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		f,
@@ -231,7 +231,7 @@ func (f *jsiiProxy_FunctionPythonArgumentsList) Get(index *float64) FunctionPyth
 	return returns
 }
 
-func (f *jsiiProxy_FunctionPythonArgumentsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionPythonArgumentsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

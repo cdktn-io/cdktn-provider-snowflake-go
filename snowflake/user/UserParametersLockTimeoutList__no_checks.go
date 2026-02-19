@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserParametersLockTimeoutList) validateGetParameters(index *f
 	return nil
 }
 
-func (u *jsiiProxy_UserParametersLockTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserParametersLockTimeoutList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_UserParametersLockTimeoutList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_UserParametersLockTimeoutList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserParametersLockTimeoutList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_UserParametersLockTimeoutList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewUserParametersLockTimeoutListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewUserParametersLockTimeoutListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

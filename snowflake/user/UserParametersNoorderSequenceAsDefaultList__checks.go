@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -8,7 +8,7 @@ package user
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (u *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -27,7 +27,7 @@ func (u *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateGetParame
 	return nil
 }
 
-func (u *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -43,7 +43,7 @@ func (j *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -59,7 +59,7 @@ func (j *jsiiProxy_UserParametersNoorderSequenceAsDefaultList) validateSetWrapsS
 	return nil
 }
 
-func validateNewUserParametersNoorderSequenceAsDefaultListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewUserParametersNoorderSequenceAsDefaultListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

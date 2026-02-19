@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakealerts
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts",
+		"@cdktn/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts",
 		reflect.TypeOf((*DataSnowflakeAlerts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,16 +63,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeAlerts{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlerts",
+		"@cdktn/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlerts",
 		reflect.TypeOf((*DataSnowflakeAlertsAlerts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsList",
+		"@cdktn/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsList",
 		reflect.TypeOf((*DataSnowflakeAlertsAlertsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +88,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeAlertsAlertsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsOutputReference",
 		reflect.TypeOf((*DataSnowflakeAlertsAlertsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -127,12 +127,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeAlertsAlertsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig",
+		"@cdktn/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig",
 		reflect.TypeOf((*DataSnowflakeAlertsConfig)(nil)).Elem(),
 	)
 }

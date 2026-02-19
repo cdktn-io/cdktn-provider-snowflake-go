@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRo
 	return nil
 }
 
-func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRo
 	return nil
 }
 
-func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOauthIntegrationForCustomClientsDescribeOutputPreAuthorizedRolesListStructOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

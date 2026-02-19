@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package storageintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/storageintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	Value() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference interfa
 
 // The jsii proxy struct for StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference
 type jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 }
 
 
-func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference {
+func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference(terr
 	j := jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.storageIntegration.StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference",
+		"@cdktn/provider-snowflake.storageIntegration.StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference(terr
 	return &j
 }
 
-func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference_Override(s StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewStorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference_Override(s StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.storageIntegration.StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference",
+		"@cdktn/provider-snowflake.storageIntegration.StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	)
 }
 
-func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -433,8 +433,8 @@ func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -446,11 +446,11 @@ func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -462,7 +462,7 @@ func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

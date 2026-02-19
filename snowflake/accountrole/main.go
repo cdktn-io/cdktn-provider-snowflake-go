@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountrole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.accountRole.AccountRole",
+		"@cdktn/provider-snowflake.accountRole.AccountRole",
 		reflect.TypeOf((*AccountRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,20 +72,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleConfig",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleConfig",
 		reflect.TypeOf((*AccountRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleShowOutput",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleShowOutput",
 		reflect.TypeOf((*AccountRoleShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList",
 		reflect.TypeOf((*AccountRoleShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -101,12 +101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountRoleShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference",
 		reflect.TypeOf((*AccountRoleShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignedToUsers", GoGetter: "AssignedToUsers"},
@@ -143,16 +143,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountRoleShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts",
 		reflect.TypeOf((*AccountRoleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference",
 		reflect.TypeOf((*AccountRoleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,7 +191,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountRoleTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package task
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/task/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/task/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task snowflake_task}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task snowflake_task}.
 type Task interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
 	SetAbortDetachedQuery(val interface{})
 	AbortDetachedQueryInput() interface{}
@@ -34,7 +34,7 @@ type Task interface {
 	SetBinaryOutputFormat(val *string)
 	BinaryOutputFormatInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientMemoryLimit() *float64
 	SetClientMemoryLimit(val *float64)
 	ClientMemoryLimitInput() *float64
@@ -104,9 +104,9 @@ type Task interface {
 	SetFinalize(val *string)
 	FinalizeInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -131,9 +131,9 @@ type Task interface {
 	SetJsonIndent(val *float64)
 	JsonIndentInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
@@ -156,9 +156,9 @@ type Task interface {
 	OdbcTreatDecimalAsIntInput() interface{}
 	Parameters() TaskParametersList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -185,6 +185,12 @@ type Task interface {
 	SearchPath() *string
 	SetSearchPath(val *string)
 	SearchPathInput() *string
+	ServerlessTaskMaxStatementSize() *string
+	SetServerlessTaskMaxStatementSize(val *string)
+	ServerlessTaskMaxStatementSizeInput() *string
+	ServerlessTaskMinStatementSize() *string
+	SetServerlessTaskMinStatementSize(val *string)
+	ServerlessTaskMinStatementSizeInput() *string
 	ShowOutput() TaskShowOutputList
 	SqlStatement() *string
 	SetSqlStatement(val *string)
@@ -204,11 +210,13 @@ type Task interface {
 	SuspendTaskAfterNumFailures() *float64
 	SetSuspendTaskAfterNumFailures(val *float64)
 	SuspendTaskAfterNumFailuresInput() *float64
+	TargetCompletionInterval() TaskTargetCompletionIntervalOutputReference
+	TargetCompletionIntervalInput() *TaskTargetCompletionInterval
 	TaskAutoRetryAttempts() *float64
 	SetTaskAutoRetryAttempts(val *float64)
 	TaskAutoRetryAttemptsInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -292,7 +300,7 @@ type Task interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -310,9 +318,9 @@ type Task interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -328,6 +336,7 @@ type Task interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSchedule(value *TaskSchedule)
+	PutTargetCompletionInterval(value *TaskTargetCompletionInterval)
 	PutTimeouts(value *TaskTimeouts)
 	ResetAbortDetachedQuery()
 	ResetAfter()
@@ -372,10 +381,13 @@ type Task interface {
 	ResetS3StageVpceDnsName()
 	ResetSchedule()
 	ResetSearchPath()
+	ResetServerlessTaskMaxStatementSize()
+	ResetServerlessTaskMinStatementSize()
 	ResetStatementQueuedTimeoutInSeconds()
 	ResetStatementTimeoutInSeconds()
 	ResetStrictJsonOutput()
 	ResetSuspendTaskAfterNumFailures()
+	ResetTargetCompletionInterval()
 	ResetTaskAutoRetryAttempts()
 	ResetTimeInputFormat()
 	ResetTimeOutputFormat()
@@ -416,7 +428,7 @@ type Task interface {
 
 // The jsii proxy struct for Task
 type jsiiProxy_Task struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Task) AbortDetachedQuery() interface{} {
@@ -539,8 +551,8 @@ func (j *jsiiProxy_Task) BinaryOutputFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Task) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Task) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -949,8 +961,8 @@ func (j *jsiiProxy_Task) FinalizeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Task) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Task) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -1109,8 +1121,8 @@ func (j *jsiiProxy_Task) JsonIndentInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Task) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Task) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -1259,8 +1271,8 @@ func (j *jsiiProxy_Task) Parameters() TaskParametersList {
 	return returns
 }
 
-func (j *jsiiProxy_Task) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Task) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1429,6 +1441,46 @@ func (j *jsiiProxy_Task) SearchPathInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Task) ServerlessTaskMaxStatementSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessTaskMaxStatementSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) ServerlessTaskMaxStatementSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessTaskMaxStatementSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) ServerlessTaskMinStatementSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessTaskMinStatementSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) ServerlessTaskMinStatementSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessTaskMinStatementSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Task) ShowOutput() TaskShowOutputList {
 	var returns TaskShowOutputList
 	_jsii_.Get(
@@ -1559,6 +1611,26 @@ func (j *jsiiProxy_Task) SuspendTaskAfterNumFailuresInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Task) TargetCompletionInterval() TaskTargetCompletionIntervalOutputReference {
+	var returns TaskTargetCompletionIntervalOutputReference
+	_jsii_.Get(
+		j,
+		"targetCompletionInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) TargetCompletionIntervalInput() *TaskTargetCompletionInterval {
+	var returns *TaskTargetCompletionInterval
+	_jsii_.Get(
+		j,
+		"targetCompletionIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Task) TaskAutoRetryAttempts() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1579,8 +1651,8 @@ func (j *jsiiProxy_Task) TaskAutoRetryAttemptsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Task) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Task) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -2090,7 +2162,7 @@ func (j *jsiiProxy_Task) WhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task snowflake_task} Resource.
 func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	_init_.Initialize()
 
@@ -2100,7 +2172,7 @@ func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	j := jsiiProxy_Task{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -2108,12 +2180,12 @@ func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task snowflake_task} Resource.
 func NewTask_Override(t Task, scope constructs.Construct, id *string, config *TaskConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -2413,7 +2485,7 @@ func (j *jsiiProxy_Task)SetFinalize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Task)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Task)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2487,7 +2559,7 @@ func (j *jsiiProxy_Task)SetJsonIndent(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Task)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Task)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2564,7 +2636,7 @@ func (j *jsiiProxy_Task)SetOdbcTreatDecimalAsInt(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Task)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Task)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2645,6 +2717,28 @@ func (j *jsiiProxy_Task)SetSearchPath(val *string) {
 	_jsii_.Set(
 		j,
 		"searchPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Task)SetServerlessTaskMaxStatementSize(val *string) {
+	if err := j.validateSetServerlessTaskMaxStatementSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverlessTaskMaxStatementSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Task)SetServerlessTaskMinStatementSize(val *string) {
+	if err := j.validateSetServerlessTaskMinStatementSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverlessTaskMinStatementSize",
 		val,
 	)
 }
@@ -2979,17 +3073,17 @@ func (j *jsiiProxy_Task)SetWhen(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Task resource upon running "cdktf plan <stack-name>".
-func Task_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Task resource upon running "cdktn plan <stack-name>".
+func Task_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTask_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -3024,7 +3118,7 @@ func Task_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -3043,7 +3137,7 @@ func Task_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -3062,7 +3156,7 @@ func Task_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -3075,7 +3169,7 @@ func Task_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.task.Task",
+		"@cdktn/provider-snowflake.task.Task",
 		"tfResourceType",
 		&returns,
 	)
@@ -3120,11 +3214,11 @@ func (t *jsiiProxy_Task) GetAnyMapAttribute(terraformAttribute *string) *map[str
 	return returns
 }
 
-func (t *jsiiProxy_Task) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_Task) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -3261,7 +3355,7 @@ func (t *jsiiProxy_Task) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_Task) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_Task) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -3272,11 +3366,11 @@ func (t *jsiiProxy_Task) ImportFrom(id *string, provider cdktf.TerraformProvider
 	)
 }
 
-func (t *jsiiProxy_Task) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_Task) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -3339,6 +3433,17 @@ func (t *jsiiProxy_Task) PutSchedule(value *TaskSchedule) {
 	_jsii_.InvokeVoid(
 		t,
 		"putSchedule",
+		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_Task) PutTargetCompletionInterval(value *TaskTargetCompletionInterval) {
+	if err := t.validatePutTargetCompletionIntervalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putTargetCompletionInterval",
 		[]interface{}{value},
 	)
 }
@@ -3682,6 +3787,22 @@ func (t *jsiiProxy_Task) ResetSearchPath() {
 	)
 }
 
+func (t *jsiiProxy_Task) ResetServerlessTaskMaxStatementSize() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetServerlessTaskMaxStatementSize",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Task) ResetServerlessTaskMinStatementSize() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetServerlessTaskMinStatementSize",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Task) ResetStatementQueuedTimeoutInSeconds() {
 	_jsii_.InvokeVoid(
 		t,
@@ -3710,6 +3831,14 @@ func (t *jsiiProxy_Task) ResetSuspendTaskAfterNumFailures() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetSuspendTaskAfterNumFailures",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Task) ResetTargetCompletionInterval() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTargetCompletionInterval",
 		nil, // no parameters
 	)
 }

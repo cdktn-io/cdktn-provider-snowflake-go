@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externalvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalvolume/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalVolumeShowOutputOutputReference interface {
-	cdktf.ComplexObject
-	AllowWrites() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowWrites() cdktn.IResolvable
 	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -40,15 +40,15 @@ type ExternalVolumeShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ExternalVolumeShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,11 +79,11 @@ type ExternalVolumeShowOutputOutputReference interface {
 
 // The jsii proxy struct for ExternalVolumeShowOutputOutputReference
 type jsiiProxy_ExternalVolumeShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) AllowWrites() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) AllowWrites() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowWrites",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference) TerraformResource() 
 }
 
 
-func NewExternalVolumeShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalVolumeShowOutputOutputReference {
+func NewExternalVolumeShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalVolumeShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewExternalVolumeShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -192,7 +192,7 @@ func NewExternalVolumeShowOutputOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ExternalVolumeShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewExternalVolumeShowOutputOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewExternalVolumeShowOutputOutputReference_Override(e ExternalVolumeShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewExternalVolumeShowOutputOutputReference_Override(e ExternalVolumeShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalVolumeShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -422,8 +422,8 @@ func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -435,11 +435,11 @@ func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -451,7 +451,7 @@ func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalVolumeShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

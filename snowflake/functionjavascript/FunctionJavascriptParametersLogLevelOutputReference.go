@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionjavascript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionjavascript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjavascript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionJavascriptParametersLogLevelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type FunctionJavascriptParametersLogLevelOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type FunctionJavascriptParametersLogLevelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type FunctionJavascriptParametersLogLevelOutputReference interface {
 
 // The jsii proxy struct for FunctionJavascriptParametersLogLevelOutputReference
 type jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Value() 
 }
 
 
-func NewFunctionJavascriptParametersLogLevelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionJavascriptParametersLogLevelOutputReference {
+func NewFunctionJavascriptParametersLogLevelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FunctionJavascriptParametersLogLevelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFunctionJavascriptParametersLogLevelOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewFunctionJavascriptParametersLogLevelOutputReference(terraformResource cd
 	j := jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelOutputReference",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewFunctionJavascriptParametersLogLevelOutputReference(terraformResource cd
 	return &j
 }
 
-func NewFunctionJavascriptParametersLogLevelOutputReference_Override(f FunctionJavascriptParametersLogLevelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewFunctionJavascriptParametersLogLevelOutputReference_Override(f FunctionJavascriptParametersLogLevelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelOutputReference",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) GetAnyMa
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -444,8 +444,8 @@ func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) GetStrin
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -457,11 +457,11 @@ func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Interpol
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -473,7 +473,7 @@ func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Interpol
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionJavascriptParametersLogLevelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantprivilegestoshare
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShare",
+		"@cdktn/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShare",
 		reflect.TypeOf((*GrantPrivilegesToShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -90,20 +90,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantPrivilegesToShare{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig",
+		"@cdktn/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig",
 		reflect.TypeOf((*GrantPrivilegesToShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareTimeouts",
+		"@cdktn/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareTimeouts",
 		reflect.TypeOf((*GrantPrivilegesToShareTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareTimeoutsOutputReference",
 		reflect.TypeOf((*GrantPrivilegesToShareTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,7 +142,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GrantPrivilegesToShareTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

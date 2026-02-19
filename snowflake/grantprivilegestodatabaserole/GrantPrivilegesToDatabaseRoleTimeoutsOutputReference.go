@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantprivilegestodatabaserole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestodatabaserole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantprivilegestodatabaserole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GrantPrivilegesToDatabaseRoleTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type GrantPrivilegesToDatabaseRoleTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -57,7 +57,7 @@ type GrantPrivilegesToDatabaseRoleTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type GrantPrivilegesToDatabaseRoleTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GrantPrivilegesToDatabaseRoleTimeoutsOutputReference interface {
 
 // The jsii proxy struct for GrantPrivilegesToDatabaseRoleTimeoutsOutputReference
 type jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) UpdateI
 }
 
 
-func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToDatabaseRoleTimeoutsOutputReference {
+func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToDatabaseRoleTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGrantPrivilegesToDatabaseRoleTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference(terraformResource c
 	return &j
 }
 
-func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference_Override(g GrantPrivilegesToDatabaseRoleTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGrantPrivilegesToDatabaseRoleTimeoutsOutputReference_Override(g GrantPrivilegesToDatabaseRoleTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) GetAnyM
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -529,8 +529,8 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) GetStri
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -542,11 +542,11 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) Interpo
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -590,7 +590,7 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) ResetUp
 	)
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

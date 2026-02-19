@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package maskingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/maskingpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MaskingPolicyArgumentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type MaskingPolicyArgumentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -51,7 +51,7 @@ type MaskingPolicyArgumentOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type MaskingPolicyArgumentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type MaskingPolicyArgumentOutputReference interface {
 
 // The jsii proxy struct for MaskingPolicyArgumentOutputReference
 type jsiiProxy_MaskingPolicyArgumentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MaskingPolicyArgumentOutputReference) ComplexObjectIndex() interface{} {
@@ -165,8 +165,8 @@ func (j *jsiiProxy_MaskingPolicyArgumentOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicyArgumentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MaskingPolicyArgumentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_MaskingPolicyArgumentOutputReference) TypeInput() *string {
 }
 
 
-func NewMaskingPolicyArgumentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MaskingPolicyArgumentOutputReference {
+func NewMaskingPolicyArgumentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MaskingPolicyArgumentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMaskingPolicyArgumentOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -205,7 +205,7 @@ func NewMaskingPolicyArgumentOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MaskingPolicyArgumentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyArgumentOutputReference",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyArgumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewMaskingPolicyArgumentOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewMaskingPolicyArgumentOutputReference_Override(m MaskingPolicyArgumentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMaskingPolicyArgumentOutputReference_Override(m MaskingPolicyArgumentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyArgumentOutputReference",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyArgumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -278,7 +278,7 @@ func (j *jsiiProxy_MaskingPolicyArgumentOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_MaskingPolicyArgumentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MaskingPolicyArgumentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -457,8 +457,8 @@ func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -470,11 +470,11 @@ func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -486,7 +486,7 @@ func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MaskingPolicyArgumentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

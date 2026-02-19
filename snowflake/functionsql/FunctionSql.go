@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionsql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionsql/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_sql snowflake_function_sql}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_sql snowflake_function_sql}.
 type FunctionSql interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Arguments() FunctionSqlArgumentsList
 	ArgumentsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -43,9 +43,9 @@ type FunctionSql interface {
 	SetEnableConsoleOutput(val interface{})
 	EnableConsoleOutputInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -62,9 +62,9 @@ type FunctionSql interface {
 	SetIsSecure(val *string)
 	IsSecureInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -78,9 +78,9 @@ type FunctionSql interface {
 	Node() constructs.Node
 	Parameters() FunctionSqlParametersList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -98,7 +98,7 @@ type FunctionSql interface {
 	SchemaInput() *string
 	ShowOutput() FunctionSqlShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -116,7 +116,7 @@ type FunctionSql interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -134,9 +134,9 @@ type FunctionSql interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -181,7 +181,7 @@ type FunctionSql interface {
 
 // The jsii proxy struct for FunctionSql
 type jsiiProxy_FunctionSql struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_FunctionSql) Arguments() FunctionSqlArgumentsList {
@@ -204,8 +204,8 @@ func (j *jsiiProxy_FunctionSql) ArgumentsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSql) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_FunctionSql) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_FunctionSql) EnableConsoleOutputInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSql) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_FunctionSql) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_FunctionSql) IsSecureInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSql) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_FunctionSql) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_FunctionSql) Parameters() FunctionSqlParametersList {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSql) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_FunctionSql) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_FunctionSql) ShowOutput() FunctionSqlShowOutputList {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionSql) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_FunctionSql) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -685,7 +685,7 @@ func (j *jsiiProxy_FunctionSql) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_sql snowflake_function_sql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_sql snowflake_function_sql} Resource.
 func NewFunctionSql(scope constructs.Construct, id *string, config *FunctionSqlConfig) FunctionSql {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewFunctionSql(scope constructs.Construct, id *string, config *FunctionSqlC
 	j := jsiiProxy_FunctionSql{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -703,12 +703,12 @@ func NewFunctionSql(scope constructs.Construct, id *string, config *FunctionSqlC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_sql snowflake_function_sql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_sql snowflake_function_sql} Resource.
 func NewFunctionSql_Override(f FunctionSql, scope constructs.Construct, id *string, config *FunctionSqlConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -777,7 +777,7 @@ func (j *jsiiProxy_FunctionSql)SetEnableConsoleOutput(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FunctionSql)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FunctionSql)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -818,7 +818,7 @@ func (j *jsiiProxy_FunctionSql)SetIsSecure(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionSql)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FunctionSql)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +862,7 @@ func (j *jsiiProxy_FunctionSql)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionSql)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FunctionSql)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -925,17 +925,17 @@ func (j *jsiiProxy_FunctionSql)SetTraceLevel(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a FunctionSql resource upon running "cdktf plan <stack-name>".
-func FunctionSql_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a FunctionSql resource upon running "cdktn plan <stack-name>".
+func FunctionSql_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateFunctionSql_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -970,7 +970,7 @@ func FunctionSql_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -989,7 +989,7 @@ func FunctionSql_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1008,7 +1008,7 @@ func FunctionSql_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1021,7 +1021,7 @@ func FunctionSql_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.functionSql.FunctionSql",
+		"@cdktn/provider-snowflake.functionSql.FunctionSql",
 		"tfResourceType",
 		&returns,
 	)
@@ -1066,11 +1066,11 @@ func (f *jsiiProxy_FunctionSql) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSql) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionSql) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -1207,7 +1207,7 @@ func (f *jsiiProxy_FunctionSql) HasResourceMove() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FunctionSql) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (f *jsiiProxy_FunctionSql) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1218,11 +1218,11 @@ func (f *jsiiProxy_FunctionSql) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (f *jsiiProxy_FunctionSql) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionSql) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,

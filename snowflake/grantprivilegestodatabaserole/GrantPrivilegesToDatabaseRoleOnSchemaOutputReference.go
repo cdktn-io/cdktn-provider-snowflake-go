@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantprivilegestodatabaserole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestodatabaserole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantprivilegestodatabaserole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GrantPrivilegesToDatabaseRoleOnSchemaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllSchemasInDatabase() *string
 	SetAllSchemasInDatabase(val *string)
 	AllSchemasInDatabaseInput() *string
@@ -46,15 +46,15 @@ type GrantPrivilegesToDatabaseRoleOnSchemaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type GrantPrivilegesToDatabaseRoleOnSchemaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllSchemasInDatabase()
 	ResetFutureSchemasInDatabase()
 	ResetSchemaName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GrantPrivilegesToDatabaseRoleOnSchemaOutputReference interface {
 
 // The jsii proxy struct for GrantPrivilegesToDatabaseRoleOnSchemaOutputReference
 type jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) AllSchemasInDatabase() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) Terrafo
 }
 
 
-func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToDatabaseRoleOnSchemaOutputReference {
+func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToDatabaseRoleOnSchemaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGrantPrivilegesToDatabaseRoleOnSchemaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference(terraformResource c
 	j := jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleOnSchemaOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleOnSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference(terraformResource c
 	return &j
 }
 
-func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference_Override(g GrantPrivilegesToDatabaseRoleOnSchemaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGrantPrivilegesToDatabaseRoleOnSchemaOutputReference_Override(g GrantPrivilegesToDatabaseRoleOnSchemaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleOnSchemaOutputReference",
+		"@cdktn/provider-snowflake.grantPrivilegesToDatabaseRole.GrantPrivilegesToDatabaseRoleOnSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) GetAnyM
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -494,8 +494,8 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) GetStri
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -507,11 +507,11 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) Interpo
 	return returns
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -547,7 +547,7 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) ResetSc
 	)
 }
 
-func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

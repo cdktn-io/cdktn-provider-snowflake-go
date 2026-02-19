@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package failovergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/failovergroup/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/failovergroup/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FailoverGroupReplicationScheduleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type FailoverGroupReplicationScheduleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,15 +66,15 @@ type FailoverGroupReplicationScheduleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCron(value *FailoverGroupReplicationScheduleCron)
 	ResetCron()
 	ResetInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type FailoverGroupReplicationScheduleOutputReference interface {
 
 // The jsii proxy struct for FailoverGroupReplicationScheduleOutputReference
 type jsiiProxy_FailoverGroupReplicationScheduleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) TerraformRes
 }
 
 
-func NewFailoverGroupReplicationScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FailoverGroupReplicationScheduleOutputReference {
+func NewFailoverGroupReplicationScheduleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FailoverGroupReplicationScheduleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFailoverGroupReplicationScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewFailoverGroupReplicationScheduleOutputReference(terraformResource cdktf.
 	j := jsiiProxy_FailoverGroupReplicationScheduleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewFailoverGroupReplicationScheduleOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewFailoverGroupReplicationScheduleOutputReference_Override(f FailoverGroupReplicationScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFailoverGroupReplicationScheduleOutputReference_Override(f FailoverGroupReplicationScheduleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FailoverGroupReplicationScheduleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,11 +320,11 @@ func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -448,8 +448,8 @@ func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) GetStringMap
 	return returns
 }
 
-func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -461,11 +461,11 @@ func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) Interpolatio
 	return returns
 }
 
-func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -504,7 +504,7 @@ func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) ResetInterva
 	)
 }
 
-func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FailoverGroupReplicationScheduleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

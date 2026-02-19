@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package semanticview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/semanticview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SemanticViewMetricsWindowFunctionOverClauseOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type SemanticViewMetricsWindowFunctionOverClauseOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WindowFrameClause() *string
 	SetWindowFrameClause(val *string)
 	WindowFrameClauseInput() *string
@@ -54,7 +54,7 @@ type SemanticViewMetricsWindowFunctionOverClauseOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type SemanticViewMetricsWindowFunctionOverClauseOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOrderBy()
 	ResetPartitionBy()
 	ResetWindowFrameClause()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type SemanticViewMetricsWindowFunctionOverClauseOutputReference interface {
 
 // The jsii proxy struct for SemanticViewMetricsWindowFunctionOverClauseOutputReference
 type jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) W
 }
 
 
-func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsWindowFunctionOverClauseOutputReference {
+func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsWindowFunctionOverClauseOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSemanticViewMetricsWindowFunctionOverClauseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference(terraformReso
 	j := jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference(terraformReso
 	return &j
 }
 
-func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference_Override(s SemanticViewMetricsWindowFunctionOverClauseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSemanticViewMetricsWindowFunctionOverClauseOutputReference_Override(s SemanticViewMetricsWindowFunctionOverClauseOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -494,8 +494,8 @@ func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -507,11 +507,11 @@ func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) I
 	return returns
 }
 
-func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -547,7 +547,7 @@ func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) R
 	)
 }
 
-func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

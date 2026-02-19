@@ -1,21 +1,21 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package computepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/computepool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ComputePoolDescribeOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActiveNodes() *float64
 	Application() *string
-	AutoResume() cdktf.IResolvable
+	AutoResume() cdktn.IResolvable
 	AutoSuspendSecs() *float64
 	Comment() *string
 	// the index of the complex object in a list.
@@ -41,7 +41,7 @@ type ComputePoolDescribeOutputOutputReference interface {
 	InstanceFamily() *string
 	InternalValue() *ComputePoolDescribeOutput
 	SetInternalValue(val *ComputePoolDescribeOutput)
-	IsExclusive() cdktf.IResolvable
+	IsExclusive() cdktn.IResolvable
 	MaxNodes() *float64
 	MinNodes() *float64
 	Name() *string
@@ -57,16 +57,16 @@ type ComputePoolDescribeOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedOn() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,12 +82,12 @@ type ComputePoolDescribeOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type ComputePoolDescribeOutputOutputReference interface {
 
 // The jsii proxy struct for ComputePoolDescribeOutputOutputReference
 type jsiiProxy_ComputePoolDescribeOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) ActiveNodes() *float64 {
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) Application() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) AutoResume() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) AutoResume() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoResume",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) InternalValue() *Co
 	return returns
 }
 
-func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) IsExclusive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) IsExclusive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isExclusive",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference) UpdatedOn() *string
 }
 
 
-func NewComputePoolDescribeOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputePoolDescribeOutputOutputReference {
+func NewComputePoolDescribeOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputePoolDescribeOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputePoolDescribeOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -390,7 +390,7 @@ func NewComputePoolDescribeOutputOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputePoolDescribeOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -398,11 +398,11 @@ func NewComputePoolDescribeOutputOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewComputePoolDescribeOutputOutputReference_Override(c ComputePoolDescribeOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputePoolDescribeOutputOutputReference_Override(c ComputePoolDescribeOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePoolDescribeOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,11 +492,11 @@ func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -620,8 +620,8 @@ func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -633,11 +633,11 @@ func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationAsList
 	return returns
 }
 
-func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -649,7 +649,7 @@ func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) InterpolationForAtt
 	return returns
 }
 
-func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputePoolDescribeOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

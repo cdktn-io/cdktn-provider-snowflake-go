@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package fileformat
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.fileFormat.FileFormat",
+		"@cdktn/provider-snowflake.fileFormat.FileFormat",
 		reflect.TypeOf((*FileFormat)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -170,20 +170,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FileFormat{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.fileFormat.FileFormatConfig",
+		"@cdktn/provider-snowflake.fileFormat.FileFormatConfig",
 		reflect.TypeOf((*FileFormatConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts",
+		"@cdktn/provider-snowflake.fileFormat.FileFormatTimeouts",
 		reflect.TypeOf((*FileFormatTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference",
 		reflect.TypeOf((*FileFormatTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,7 +222,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FileFormatTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

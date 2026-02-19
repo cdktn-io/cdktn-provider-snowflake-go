@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionjavascript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionjavascript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjavascript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_javascript snowflake_function_javascript}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_javascript snowflake_function_javascript}.
 type FunctionJavascript interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Arguments() FunctionJavascriptArgumentsList
 	ArgumentsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -43,9 +43,9 @@ type FunctionJavascript interface {
 	SetEnableConsoleOutput(val interface{})
 	EnableConsoleOutputInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -62,9 +62,9 @@ type FunctionJavascript interface {
 	SetIsSecure(val *string)
 	IsSecureInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -81,9 +81,9 @@ type FunctionJavascript interface {
 	NullInputBehaviorInput() *string
 	Parameters() FunctionJavascriptParametersList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -101,7 +101,7 @@ type FunctionJavascript interface {
 	SchemaInput() *string
 	ShowOutput() FunctionJavascriptShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -119,7 +119,7 @@ type FunctionJavascript interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -137,9 +137,9 @@ type FunctionJavascript interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -185,7 +185,7 @@ type FunctionJavascript interface {
 
 // The jsii proxy struct for FunctionJavascript
 type jsiiProxy_FunctionJavascript struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_FunctionJavascript) Arguments() FunctionJavascriptArgumentsList {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_FunctionJavascript) ArgumentsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascript) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_FunctionJavascript) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_FunctionJavascript) EnableConsoleOutputInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascript) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_FunctionJavascript) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_FunctionJavascript) IsSecureInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascript) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_FunctionJavascript) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_FunctionJavascript) Parameters() FunctionJavascriptParameters
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascript) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_FunctionJavascript) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -638,8 +638,8 @@ func (j *jsiiProxy_FunctionJavascript) ShowOutput() FunctionJavascriptShowOutput
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJavascript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_FunctionJavascript) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -709,7 +709,7 @@ func (j *jsiiProxy_FunctionJavascript) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
 func NewFunctionJavascript(scope constructs.Construct, id *string, config *FunctionJavascriptConfig) FunctionJavascript {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewFunctionJavascript(scope constructs.Construct, id *string, config *Funct
 	j := jsiiProxy_FunctionJavascript{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -727,12 +727,12 @@ func NewFunctionJavascript(scope constructs.Construct, id *string, config *Funct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
 func NewFunctionJavascript_Override(f FunctionJavascript, scope constructs.Construct, id *string, config *FunctionJavascriptConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -801,7 +801,7 @@ func (j *jsiiProxy_FunctionJavascript)SetEnableConsoleOutput(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJavascript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FunctionJavascript)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -842,7 +842,7 @@ func (j *jsiiProxy_FunctionJavascript)SetIsSecure(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJavascript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FunctionJavascript)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +897,7 @@ func (j *jsiiProxy_FunctionJavascript)SetNullInputBehavior(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJavascript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FunctionJavascript)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -960,17 +960,17 @@ func (j *jsiiProxy_FunctionJavascript)SetTraceLevel(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a FunctionJavascript resource upon running "cdktf plan <stack-name>".
-func FunctionJavascript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a FunctionJavascript resource upon running "cdktn plan <stack-name>".
+func FunctionJavascript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateFunctionJavascript_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1005,7 +1005,7 @@ func FunctionJavascript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1024,7 +1024,7 @@ func FunctionJavascript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1043,7 +1043,7 @@ func FunctionJavascript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1056,7 +1056,7 @@ func FunctionJavascript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.functionJavascript.FunctionJavascript",
+		"@cdktn/provider-snowflake.functionJavascript.FunctionJavascript",
 		"tfResourceType",
 		&returns,
 	)
@@ -1101,11 +1101,11 @@ func (f *jsiiProxy_FunctionJavascript) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascript) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -1242,7 +1242,7 @@ func (f *jsiiProxy_FunctionJavascript) HasResourceMove() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJavascript) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (f *jsiiProxy_FunctionJavascript) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1253,11 +1253,11 @@ func (f *jsiiProxy_FunctionJavascript) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (f *jsiiProxy_FunctionJavascript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJavascript) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamontable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTable",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTable",
 		reflect.TypeOf((*StreamOnTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -98,16 +98,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableAt",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableAt",
 		reflect.TypeOf((*StreamOnTableAt)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableAtOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableAtOutputReference",
 		reflect.TypeOf((*StreamOnTableAtOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableAtOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableBefore",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableBefore",
 		reflect.TypeOf((*StreamOnTableBefore)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableBeforeOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableBeforeOutputReference",
 		reflect.TypeOf((*StreamOnTableBeforeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,20 +194,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableBeforeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableConfig",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableConfig",
 		reflect.TypeOf((*StreamOnTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableDescribeOutput",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableDescribeOutput",
 		reflect.TypeOf((*StreamOnTableDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableDescribeOutputList",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableDescribeOutputList",
 		reflect.TypeOf((*StreamOnTableDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -223,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableDescribeOutputOutputReference",
 		reflect.TypeOf((*StreamOnTableDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseTables", GoGetter: "BaseTables"},
@@ -270,16 +270,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableShowOutput",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableShowOutput",
 		reflect.TypeOf((*StreamOnTableShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableShowOutputList",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableShowOutputList",
 		reflect.TypeOf((*StreamOnTableShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -295,12 +295,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
 		reflect.TypeOf((*StreamOnTableShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseTables", GoGetter: "BaseTables"},
@@ -342,16 +342,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableTimeouts",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableTimeouts",
 		reflect.TypeOf((*StreamOnTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableTimeoutsOutputReference",
 		reflect.TypeOf((*StreamOnTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,7 +390,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamOnTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionjava
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionjava/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java snowflake_function_java}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java snowflake_function_java}.
 type FunctionJava interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Arguments() FunctionJavaArgumentsList
 	ArgumentsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -46,9 +46,9 @@ type FunctionJava interface {
 	SetExternalAccessIntegrations(val *[]*string)
 	ExternalAccessIntegrationsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -70,9 +70,9 @@ type FunctionJava interface {
 	SetIsSecure(val *string)
 	IsSecureInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -92,9 +92,9 @@ type FunctionJava interface {
 	PackagesInput() *[]*string
 	Parameters() FunctionJavaParametersList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -119,7 +119,7 @@ type FunctionJava interface {
 	TargetPath() FunctionJavaTargetPathOutputReference
 	TargetPathInput() *FunctionJavaTargetPath
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -137,7 +137,7 @@ type FunctionJava interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -155,9 +155,9 @@ type FunctionJava interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -213,7 +213,7 @@ type FunctionJava interface {
 
 // The jsii proxy struct for FunctionJava
 type jsiiProxy_FunctionJava struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_FunctionJava) Arguments() FunctionJavaArgumentsList {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_FunctionJava) ArgumentsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJava) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_FunctionJava) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_FunctionJava) ExternalAccessIntegrationsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJava) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_FunctionJava) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_FunctionJava) IsSecureInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJava) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_FunctionJava) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_FunctionJava) Parameters() FunctionJavaParametersList {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJava) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_FunctionJava) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -806,8 +806,8 @@ func (j *jsiiProxy_FunctionJava) TargetPathInput() *FunctionJavaTargetPath {
 	return returns
 }
 
-func (j *jsiiProxy_FunctionJava) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_FunctionJava) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -877,7 +877,7 @@ func (j *jsiiProxy_FunctionJava) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java snowflake_function_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java snowflake_function_java} Resource.
 func NewFunctionJava(scope constructs.Construct, id *string, config *FunctionJavaConfig) FunctionJava {
 	_init_.Initialize()
 
@@ -887,7 +887,7 @@ func NewFunctionJava(scope constructs.Construct, id *string, config *FunctionJav
 	j := jsiiProxy_FunctionJava{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -895,12 +895,12 @@ func NewFunctionJava(scope constructs.Construct, id *string, config *FunctionJav
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java snowflake_function_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java snowflake_function_java} Resource.
 func NewFunctionJava_Override(f FunctionJava, scope constructs.Construct, id *string, config *FunctionJavaConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -980,7 +980,7 @@ func (j *jsiiProxy_FunctionJava)SetExternalAccessIntegrations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJava)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FunctionJava)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1032,7 +1032,7 @@ func (j *jsiiProxy_FunctionJava)SetIsSecure(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJava)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FunctionJava)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1098,7 @@ func (j *jsiiProxy_FunctionJava)SetPackages(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FunctionJava)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FunctionJava)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1172,17 +1172,17 @@ func (j *jsiiProxy_FunctionJava)SetTraceLevel(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a FunctionJava resource upon running "cdktf plan <stack-name>".
-func FunctionJava_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a FunctionJava resource upon running "cdktn plan <stack-name>".
+func FunctionJava_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateFunctionJava_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1217,7 +1217,7 @@ func FunctionJava_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1236,7 +1236,7 @@ func FunctionJava_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1255,7 +1255,7 @@ func FunctionJava_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1268,7 +1268,7 @@ func FunctionJava_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		"tfResourceType",
 		&returns,
 	)
@@ -1313,11 +1313,11 @@ func (f *jsiiProxy_FunctionJava) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJava) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJava) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -1454,7 +1454,7 @@ func (f *jsiiProxy_FunctionJava) HasResourceMove() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FunctionJava) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (f *jsiiProxy_FunctionJava) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1465,11 +1465,11 @@ func (f *jsiiProxy_FunctionJava) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (f *jsiiProxy_FunctionJava) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FunctionJava) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,

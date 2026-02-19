@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package view
@@ -7,11 +7,11 @@ package view
 type ViewRowAccessPolicy struct {
 	// Defines which columns are affected by the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#on View#on}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#on View#on}
 	On *[]*string `field:"required" json:"on" yaml:"on"`
 	// Row access policy name. For more information about this resource, see [docs](./row_access_policy).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#policy_name View#policy_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#policy_name View#policy_name}
 	PolicyName *string `field:"required" json:"policyName" yaml:"policyName"`
 }
 

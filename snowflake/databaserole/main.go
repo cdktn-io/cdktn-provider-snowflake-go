@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package databaserole
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRole",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRole",
 		reflect.TypeOf((*DatabaseRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,20 +74,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseRole{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig",
 		reflect.TypeOf((*DatabaseRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutput",
 		reflect.TypeOf((*DatabaseRoleShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList",
 		reflect.TypeOf((*DatabaseRoleShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -103,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseRoleShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference",
 		reflect.TypeOf((*DatabaseRoleShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -147,16 +147,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseRoleShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts",
 		reflect.TypeOf((*DatabaseRoleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference",
 		reflect.TypeOf((*DatabaseRoleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,7 +195,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseRoleTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

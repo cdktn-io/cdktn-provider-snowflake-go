@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externalfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalfunction/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function snowflake_external_function}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function snowflake_external_function}.
 type ExternalFunction interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApiIntegration() *string
 	SetApiIntegration(val *string)
 	ApiIntegrationInput() *string
 	Arg() ExternalFunctionArgList
 	ArgInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -50,9 +50,9 @@ type ExternalFunction interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -64,9 +64,9 @@ type ExternalFunction interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxBatchRows() *float64
 	SetMaxBatchRows(val *float64)
 	MaxBatchRowsInput() *float64
@@ -79,9 +79,9 @@ type ExternalFunction interface {
 	SetNullInputBehavior(val *string)
 	NullInputBehaviorInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type ExternalFunction interface {
 	SetSchema(val *string)
 	SchemaInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -125,7 +125,7 @@ type ExternalFunction interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -143,9 +143,9 @@ type ExternalFunction interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -193,7 +193,7 @@ type ExternalFunction interface {
 
 // The jsii proxy struct for ExternalFunction
 type jsiiProxy_ExternalFunction struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ExternalFunction) ApiIntegration() *string {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ExternalFunction) ArgInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalFunction) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ExternalFunction) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_ExternalFunction) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalFunction) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ExternalFunction) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_ExternalFunction) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalFunction) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ExternalFunction) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_ExternalFunction) NullInputBehaviorInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalFunction) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ExternalFunction) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -686,8 +686,8 @@ func (j *jsiiProxy_ExternalFunction) SchemaInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalFunction) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ExternalFunction) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -757,7 +757,7 @@ func (j *jsiiProxy_ExternalFunction) UrlOfProxyAndResourceInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function snowflake_external_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function snowflake_external_function} Resource.
 func NewExternalFunction(scope constructs.Construct, id *string, config *ExternalFunctionConfig) ExternalFunction {
 	_init_.Initialize()
 
@@ -767,7 +767,7 @@ func NewExternalFunction(scope constructs.Construct, id *string, config *Externa
 	j := jsiiProxy_ExternalFunction{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -775,12 +775,12 @@ func NewExternalFunction(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function snowflake_external_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function snowflake_external_function} Resource.
 func NewExternalFunction_Override(e ExternalFunction, scope constructs.Construct, id *string, config *ExternalFunctionConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -871,7 +871,7 @@ func (j *jsiiProxy_ExternalFunction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalFunction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExternalFunction)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -890,7 +890,7 @@ func (j *jsiiProxy_ExternalFunction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalFunction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExternalFunction)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +934,7 @@ func (j *jsiiProxy_ExternalFunction)SetNullInputBehavior(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalFunction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExternalFunction)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1030,17 +1030,17 @@ func (j *jsiiProxy_ExternalFunction)SetUrlOfProxyAndResource(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ExternalFunction resource upon running "cdktf plan <stack-name>".
-func ExternalFunction_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ExternalFunction resource upon running "cdktn plan <stack-name>".
+func ExternalFunction_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateExternalFunction_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1075,7 +1075,7 @@ func ExternalFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1094,7 +1094,7 @@ func ExternalFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1113,7 +1113,7 @@ func ExternalFunction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1126,7 +1126,7 @@ func ExternalFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.externalFunction.ExternalFunction",
+		"@cdktn/provider-snowflake.externalFunction.ExternalFunction",
 		"tfResourceType",
 		&returns,
 	)
@@ -1171,11 +1171,11 @@ func (e *jsiiProxy_ExternalFunction) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (e *jsiiProxy_ExternalFunction) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalFunction) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -1312,7 +1312,7 @@ func (e *jsiiProxy_ExternalFunction) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ExternalFunction) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_ExternalFunction) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1323,11 +1323,11 @@ func (e *jsiiProxy_ExternalFunction) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (e *jsiiProxy_ExternalFunction) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalFunction) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,

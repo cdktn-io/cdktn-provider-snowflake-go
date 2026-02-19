@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package networkrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/networkrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_rule snowflake_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule}.
 type NetworkRule interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -38,9 +38,9 @@ type NetworkRule interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,9 +50,9 @@ type NetworkRule interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -62,9 +62,9 @@ type NetworkRule interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type NetworkRule interface {
 	SetSchema(val *string)
 	SchemaInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -96,7 +96,7 @@ type NetworkRule interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -114,9 +114,9 @@ type NetworkRule interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -153,11 +153,11 @@ type NetworkRule interface {
 
 // The jsii proxy struct for NetworkRule
 type jsiiProxy_NetworkRule struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_NetworkRule) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_NetworkRule) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_NetworkRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkRule) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_NetworkRule) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_NetworkRule) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_NetworkRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_NetworkRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkRule) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_NetworkRule) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_NetworkRule) SchemaInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_NetworkRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -507,7 +507,7 @@ func (j *jsiiProxy_NetworkRule) ValueListInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleConfig) NetworkRule {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleC
 	j := jsiiProxy_NetworkRule{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -525,12 +525,12 @@ func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule_Override(n NetworkRule, scope constructs.Construct, id *string, config *NetworkRuleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -588,7 +588,7 @@ func (j *jsiiProxy_NetworkRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkRule)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +607,7 @@ func (j *jsiiProxy_NetworkRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkRule)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +640,7 @@ func (j *jsiiProxy_NetworkRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkRule)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,17 +692,17 @@ func (j *jsiiProxy_NetworkRule)SetValueList(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a NetworkRule resource upon running "cdktf plan <stack-name>".
-func NetworkRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a NetworkRule resource upon running "cdktn plan <stack-name>".
+func NetworkRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateNetworkRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -737,7 +737,7 @@ func NetworkRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func NetworkRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func NetworkRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func NetworkRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.networkRule.NetworkRule",
+		"@cdktn/provider-snowflake.networkRule.NetworkRule",
 		"tfResourceType",
 		&returns,
 	)
@@ -833,11 +833,11 @@ func (n *jsiiProxy_NetworkRule) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (n *jsiiProxy_NetworkRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkRule) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -974,7 +974,7 @@ func (n *jsiiProxy_NetworkRule) HasResourceMove() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (n *jsiiProxy_NetworkRule) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -985,11 +985,11 @@ func (n *jsiiProxy_NetworkRule) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (n *jsiiProxy_NetworkRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkRule) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,

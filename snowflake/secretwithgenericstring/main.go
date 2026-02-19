@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretwithgenericstring
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericString",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString",
 		reflect.TypeOf((*SecretWithGenericString)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,20 +80,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericString{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringConfig",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringConfig",
 		reflect.TypeOf((*SecretWithGenericStringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutput",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutput",
 		reflect.TypeOf((*SecretWithGenericStringDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputList",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputList",
 		reflect.TypeOf((*SecretWithGenericStringDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -109,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericStringDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputOutputReference",
 		reflect.TypeOf((*SecretWithGenericStringDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -153,16 +153,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericStringDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutput",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutput",
 		reflect.TypeOf((*SecretWithGenericStringShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputList",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputList",
 		reflect.TypeOf((*SecretWithGenericStringShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -178,12 +178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericStringShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputOutputReference",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputOutputReference",
 		reflect.TypeOf((*SecretWithGenericStringShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -219,16 +219,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericStringShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeouts",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeouts",
 		reflect.TypeOf((*SecretWithGenericStringTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeoutsOutputReference",
 		reflect.TypeOf((*SecretWithGenericStringTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,7 +267,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithGenericStringTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

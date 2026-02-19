@@ -1,19 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakestorageintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestorageintegrations/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakestorageintegrations/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference interface {
-	cdktf.ComplexObject
-	Comment() *string
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,27 +28,26 @@ type DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	DescribeOutput() DataSnowflakeStorageIntegrationsStorageIntegrationsDescribeOutputList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeStorageIntegrationsStorageIntegrations
 	SetInternalValue(val *DataSnowflakeStorageIntegrationsStorageIntegrations)
-	Name() *string
+	ShowOutput() DataSnowflakeStorageIntegrationsStorageIntegrationsShowOutputList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Type() *string
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +63,12 @@ type DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,17 +78,7 @@ type DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference interfac
 
 // The jsii proxy struct for DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference
 type jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference struct {
-	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Comment() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"comment",
-		&returns,
-	)
-	return returns
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) ComplexObjectIndex() interface{} {
@@ -123,11 +111,11 @@ func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) DescribeOutput() DataSnowflakeStorageIntegrationsStorageIntegrationsDescribeOutputList {
+	var returns DataSnowflakeStorageIntegrationsStorageIntegrationsDescribeOutputList
 	_jsii_.Get(
 		j,
-		"enabled",
+		"describeOutput",
 		&returns,
 	)
 	return returns
@@ -153,11 +141,11 @@ func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Name() *string {
-	var returns *string
+func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) ShowOutput() DataSnowflakeStorageIntegrationsStorageIntegrationsShowOutputList {
+	var returns DataSnowflakeStorageIntegrationsStorageIntegrationsShowOutputList
 	_jsii_.Get(
 		j,
-		"name",
+		"showOutput",
 		&returns,
 	)
 	return returns
@@ -173,8 +161,8 @@ func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,18 +171,8 @@ func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference {
+func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +181,7 @@ func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terra
 	j := jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +189,11 @@ func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terra
 	return &j
 }
 
-func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference_Override(d DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference_Override(d DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -265,7 +243,7 @@ func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +283,11 @@ func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -433,8 +411,8 @@ func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -446,11 +424,11 @@ func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -462,7 +440,7 @@ func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

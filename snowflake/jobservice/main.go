@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package jobservice
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobService",
+		"@cdktn/provider-snowflake.jobService.JobService",
 		reflect.TypeOf((*JobService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -94,20 +94,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobService{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceConfig",
+		"@cdktn/provider-snowflake.jobService.JobServiceConfig",
 		reflect.TypeOf((*JobServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceDescribeOutput",
+		"@cdktn/provider-snowflake.jobService.JobServiceDescribeOutput",
 		reflect.TypeOf((*JobServiceDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceDescribeOutputList",
+		"@cdktn/provider-snowflake.jobService.JobServiceDescribeOutputList",
 		reflect.TypeOf((*JobServiceDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -123,12 +123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceDescribeOutputOutputReference",
 		reflect.TypeOf((*JobServiceDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoResume", GoGetter: "AutoResume"},
@@ -184,16 +184,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecification",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecification",
 		reflect.TypeOf((*JobServiceFromSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationOutputReference",
 		reflect.TypeOf((*JobServiceFromSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,16 +232,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceFromSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplate",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationTemplate",
 		reflect.TypeOf((*JobServiceFromSpecificationTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationTemplateOutputReference",
 		reflect.TypeOf((*JobServiceFromSpecificationTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,16 +283,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceFromSpecificationTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsing",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsing",
 		reflect.TypeOf((*JobServiceFromSpecificationTemplateUsing)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingList",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingList",
 		reflect.TypeOf((*JobServiceFromSpecificationTemplateUsingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -309,12 +309,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceFromSpecificationTemplateUsingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingOutputReference",
 		reflect.TypeOf((*JobServiceFromSpecificationTemplateUsingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,16 +345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceFromSpecificationTemplateUsingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceShowOutput",
+		"@cdktn/provider-snowflake.jobService.JobServiceShowOutput",
 		reflect.TypeOf((*JobServiceShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceShowOutputList",
+		"@cdktn/provider-snowflake.jobService.JobServiceShowOutputList",
 		reflect.TypeOf((*JobServiceShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -370,12 +370,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceShowOutputOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceShowOutputOutputReference",
 		reflect.TypeOf((*JobServiceShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoResume", GoGetter: "AutoResume"},
@@ -430,16 +430,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.jobService.JobServiceTimeouts",
+		"@cdktn/provider-snowflake.jobService.JobServiceTimeouts",
 		reflect.TypeOf((*JobServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.jobService.JobServiceTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.jobService.JobServiceTimeoutsOutputReference",
 		reflect.TypeOf((*JobServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,7 +478,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobServiceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

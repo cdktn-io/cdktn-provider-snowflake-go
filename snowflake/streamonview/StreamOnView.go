@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamonview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/streamonview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view snowflake_stream_on_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view snowflake_stream_on_view}.
 type StreamOnView interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AppendOnly() *string
 	SetAppendOnly(val *string)
 	AppendOnlyInput() *string
@@ -23,7 +23,7 @@ type StreamOnView interface {
 	Before() StreamOnViewBeforeOutputReference
 	BeforeInput() *StreamOnViewBefore
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -49,9 +49,9 @@ type StreamOnView interface {
 	SetDependsOn(val *[]*string)
 	DescribeOutput() StreamOnViewDescribeOutputList
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,18 +61,18 @@ type StreamOnView interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -86,10 +86,10 @@ type StreamOnView interface {
 	SetShowInitialRows(val *string)
 	ShowInitialRowsInput() *string
 	ShowOutput() StreamOnViewShowOutputList
-	Stale() cdktf.IResolvable
+	Stale() cdktn.IResolvable
 	StreamType() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type StreamOnView interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type StreamOnView interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -171,7 +171,7 @@ type StreamOnView interface {
 
 // The jsii proxy struct for StreamOnView
 type jsiiProxy_StreamOnView struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_StreamOnView) AppendOnly() *string {
@@ -234,8 +234,8 @@ func (j *jsiiProxy_StreamOnView) BeforeInput() *StreamOnViewBefore {
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_StreamOnView) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_StreamOnView) DescribeOutput() StreamOnViewDescribeOutputList
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_StreamOnView) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_StreamOnView) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_StreamOnView) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_StreamOnView) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_StreamOnView) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_StreamOnView) ShowOutput() StreamOnViewShowOutputList {
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) Stale() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_StreamOnView) Stale() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"stale",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_StreamOnView) StreamType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnView) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_StreamOnView) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -625,7 +625,7 @@ func (j *jsiiProxy_StreamOnView) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource.
 func NewStreamOnView(scope constructs.Construct, id *string, config *StreamOnViewConfig) StreamOnView {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewStreamOnView(scope constructs.Construct, id *string, config *StreamOnVie
 	j := jsiiProxy_StreamOnView{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -643,12 +643,12 @@ func NewStreamOnView(scope constructs.Construct, id *string, config *StreamOnVie
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource.
 func NewStreamOnView_Override(s StreamOnView, scope constructs.Construct, id *string, config *StreamOnViewConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -728,7 +728,7 @@ func (j *jsiiProxy_StreamOnView)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StreamOnView)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StreamOnView)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -747,7 +747,7 @@ func (j *jsiiProxy_StreamOnView)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamOnView)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StreamOnView)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +769,7 @@ func (j *jsiiProxy_StreamOnView)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamOnView)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StreamOnView)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -821,17 +821,17 @@ func (j *jsiiProxy_StreamOnView)SetView(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a StreamOnView resource upon running "cdktf plan <stack-name>".
-func StreamOnView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a StreamOnView resource upon running "cdktn plan <stack-name>".
+func StreamOnView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStreamOnView_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -866,7 +866,7 @@ func StreamOnView_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func StreamOnView_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -904,7 +904,7 @@ func StreamOnView_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -917,7 +917,7 @@ func StreamOnView_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.streamOnView.StreamOnView",
+		"@cdktn/provider-snowflake.streamOnView.StreamOnView",
 		"tfResourceType",
 		&returns,
 	)
@@ -962,11 +962,11 @@ func (s *jsiiProxy_StreamOnView) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnView) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamOnView) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1103,7 +1103,7 @@ func (s *jsiiProxy_StreamOnView) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnView) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_StreamOnView) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1114,11 +1114,11 @@ func (s *jsiiProxy_StreamOnView) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (s *jsiiProxy_StreamOnView) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamOnView) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

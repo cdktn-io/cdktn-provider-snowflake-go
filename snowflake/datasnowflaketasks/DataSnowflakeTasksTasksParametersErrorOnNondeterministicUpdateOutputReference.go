@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflaketasks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflaketasks/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketasks/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReferen
 
 // The jsii proxy struct for DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference
 type jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 }
 
 
-func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference {
+func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputRefe
 	j := jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputRefe
 	return &j
 }
 
-func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference_Override(d DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference_Override(d DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,8 +444,8 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,11 +457,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -473,7 +473,7 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdat
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package stage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/stage/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stage/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stage snowflake_stage}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage snowflake_stage}.
 type Stage interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AwsExternalId() *string
 	SetAwsExternalId(val *string)
 	AwsExternalIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -56,9 +56,9 @@ type Stage interface {
 	SetFileFormat(val *string)
 	FileFormatInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -68,18 +68,18 @@ type Stage interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -98,7 +98,7 @@ type Stage interface {
 	Tag() StageTagList
 	TagInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -116,7 +116,7 @@ type Stage interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -134,9 +134,9 @@ type Stage interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -184,7 +184,7 @@ type Stage interface {
 
 // The jsii proxy struct for Stage
 type jsiiProxy_Stage struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Stage) AwsExternalId() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_Stage) AwsExternalIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Stage) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Stage) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_Stage) FileFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Stage) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Stage) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_Stage) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Stage) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Stage) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_Stage) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Stage) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Stage) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_Stage) TagInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Stage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Stage) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -678,7 +678,7 @@ func (j *jsiiProxy_Stage) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stage snowflake_stage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage snowflake_stage} Resource.
 func NewStage(scope constructs.Construct, id *string, config *StageConfig) Stage {
 	_init_.Initialize()
 
@@ -688,7 +688,7 @@ func NewStage(scope constructs.Construct, id *string, config *StageConfig) Stage
 	j := jsiiProxy_Stage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -696,12 +696,12 @@ func NewStage(scope constructs.Construct, id *string, config *StageConfig) Stage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stage snowflake_stage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage snowflake_stage} Resource.
 func NewStage_Override(s Stage, scope constructs.Construct, id *string, config *StageConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -825,7 +825,7 @@ func (j *jsiiProxy_Stage)SetFileFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Stage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Stage)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -844,7 +844,7 @@ func (j *jsiiProxy_Stage)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Stage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Stage)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +866,7 @@ func (j *jsiiProxy_Stage)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Stage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Stage)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -929,17 +929,17 @@ func (j *jsiiProxy_Stage)SetUrl(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Stage resource upon running "cdktf plan <stack-name>".
-func Stage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Stage resource upon running "cdktn plan <stack-name>".
+func Stage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStage_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -974,7 +974,7 @@ func Stage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -993,7 +993,7 @@ func Stage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1012,7 +1012,7 @@ func Stage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1025,7 +1025,7 @@ func Stage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.stage.Stage",
+		"@cdktn/provider-snowflake.stage.Stage",
 		"tfResourceType",
 		&returns,
 	)
@@ -1070,11 +1070,11 @@ func (s *jsiiProxy_Stage) GetAnyMapAttribute(terraformAttribute *string) *map[st
 	return returns
 }
 
-func (s *jsiiProxy_Stage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Stage) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1211,7 +1211,7 @@ func (s *jsiiProxy_Stage) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Stage) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_Stage) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1222,11 +1222,11 @@ func (s *jsiiProxy_Stage) ImportFrom(id *string, provider cdktf.TerraformProvide
 	)
 }
 
-func (s *jsiiProxy_Stage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Stage) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package proceduresql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/proceduresql/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/proceduresql/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ProcedureSqlShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArgumentsRaw() *string
 	CatalogName() *string
 	// the index of the complex object in a list.
@@ -37,11 +37,11 @@ type ProcedureSqlShowOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *ProcedureSqlShowOutput
 	SetInternalValue(val *ProcedureSqlShowOutput)
-	IsAggregate() cdktf.IResolvable
-	IsAnsi() cdktf.IResolvable
-	IsBuiltin() cdktf.IResolvable
-	IsSecure() cdktf.IResolvable
-	IsTableFunction() cdktf.IResolvable
+	IsAggregate() cdktn.IResolvable
+	IsAnsi() cdktn.IResolvable
+	IsBuiltin() cdktn.IResolvable
+	IsSecure() cdktn.IResolvable
+	IsTableFunction() cdktn.IResolvable
 	MaxNumArguments() *float64
 	MinNumArguments() *float64
 	Name() *string
@@ -52,16 +52,16 @@ type ProcedureSqlShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	ValidForClustering() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	ValidForClustering() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,12 +77,12 @@ type ProcedureSqlShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ProcedureSqlShowOutputOutputReference interface {
 
 // The jsii proxy struct for ProcedureSqlShowOutputOutputReference
 type jsiiProxy_ProcedureSqlShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) ArgumentsRaw() *string {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) InternalValue() *Proce
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAggregate() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAggregate() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAggregate",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAggregate() cdktf.IR
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAnsi() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAnsi() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAnsi",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsAnsi() cdktf.IResolv
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsBuiltin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsBuiltin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isBuiltin",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsBuiltin() cdktf.IRes
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsSecure() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsSecure() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isSecure",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsSecure() cdktf.IReso
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsTableFunction() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) IsTableFunction() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isTableFunction",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) TerraformResource() cd
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) ValidForClustering() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) ValidForClustering() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"validForClustering",
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference) ValidForClustering() c
 }
 
 
-func NewProcedureSqlShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedureSqlShowOutputOutputReference {
+func NewProcedureSqlShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProcedureSqlShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewProcedureSqlShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -335,7 +335,7 @@ func NewProcedureSqlShowOutputOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ProcedureSqlShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureSql.ProcedureSqlShowOutputOutputReference",
+		"@cdktn/provider-snowflake.procedureSql.ProcedureSqlShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -343,11 +343,11 @@ func NewProcedureSqlShowOutputOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewProcedureSqlShowOutputOutputReference_Override(p ProcedureSqlShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewProcedureSqlShowOutputOutputReference_Override(p ProcedureSqlShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureSql.ProcedureSqlShowOutputOutputReference",
+		"@cdktn/provider-snowflake.procedureSql.ProcedureSqlShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -397,7 +397,7 @@ func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProcedureSqlShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,11 +437,11 @@ func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -565,8 +565,8 @@ func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -578,11 +578,11 @@ func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -594,7 +594,7 @@ func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) InterpolationForAttrib
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProcedureSqlShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

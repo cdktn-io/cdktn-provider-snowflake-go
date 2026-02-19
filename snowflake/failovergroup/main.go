@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package failovergroup
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroup",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroup",
 		reflect.TypeOf((*FailoverGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -94,20 +94,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FailoverGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupConfig",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig",
 		reflect.TypeOf((*FailoverGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupFromReplica",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupFromReplica",
 		reflect.TypeOf((*FailoverGroupFromReplica)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupFromReplicaOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupFromReplicaOutputReference",
 		reflect.TypeOf((*FailoverGroupFromReplicaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,20 +140,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FailoverGroupFromReplicaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationSchedule",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationSchedule",
 		reflect.TypeOf((*FailoverGroupReplicationSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCron",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCron",
 		reflect.TypeOf((*FailoverGroupReplicationScheduleCron)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCronOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCronOutputReference",
 		reflect.TypeOf((*FailoverGroupReplicationScheduleCronOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,12 +184,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FailoverGroupReplicationScheduleCronOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference",
 		reflect.TypeOf((*FailoverGroupReplicationScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,16 +223,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FailoverGroupReplicationScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupTimeouts",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts",
 		reflect.TypeOf((*FailoverGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.failoverGroup.FailoverGroupTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeoutsOutputReference",
 		reflect.TypeOf((*FailoverGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,7 +271,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FailoverGroupTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

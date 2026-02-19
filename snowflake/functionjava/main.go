@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionjava
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJava",
+		"@cdktn/provider-snowflake.functionJava.FunctionJava",
 		reflect.TypeOf((*FunctionJava)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -131,16 +131,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJava{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaArguments",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaArguments",
 		reflect.TypeOf((*FunctionJavaArguments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaArgumentsList",
 		reflect.TypeOf((*FunctionJavaArgumentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -157,12 +157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaArgumentsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference",
 		reflect.TypeOf((*FunctionJavaArgumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argDataType", GoGetter: "ArgDataType"},
@@ -196,20 +196,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaArgumentsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaConfig",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaConfig",
 		reflect.TypeOf((*FunctionJavaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaImports",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaImports",
 		reflect.TypeOf((*FunctionJavaImports)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaImportsList",
 		reflect.TypeOf((*FunctionJavaImportsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -226,12 +226,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaImportsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaImportsOutputReference",
 		reflect.TypeOf((*FunctionJavaImportsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,20 +262,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaImportsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParameters",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParameters",
 		reflect.TypeOf((*FunctionJavaParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutput",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutput",
 		reflect.TypeOf((*FunctionJavaParametersEnableConsoleOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputList",
 		reflect.TypeOf((*FunctionJavaParametersEnableConsoleOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -291,12 +291,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersEnableConsoleOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputOutputReference",
 		reflect.TypeOf((*FunctionJavaParametersEnableConsoleOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,12 +328,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersEnableConsoleOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersList",
 		reflect.TypeOf((*FunctionJavaParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -349,16 +349,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersLogLevel",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevel",
 		reflect.TypeOf((*FunctionJavaParametersLogLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersLogLevelList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevelList",
 		reflect.TypeOf((*FunctionJavaParametersLogLevelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -374,12 +374,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersLogLevelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersLogLevelOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevelOutputReference",
 		reflect.TypeOf((*FunctionJavaParametersLogLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -411,16 +411,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersLogLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersMetricLevel",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevel",
 		reflect.TypeOf((*FunctionJavaParametersMetricLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelList",
 		reflect.TypeOf((*FunctionJavaParametersMetricLevelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -436,12 +436,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersMetricLevelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelOutputReference",
 		reflect.TypeOf((*FunctionJavaParametersMetricLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -473,12 +473,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersMetricLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersOutputReference",
 		reflect.TypeOf((*FunctionJavaParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -509,16 +509,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersTraceLevel",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevel",
 		reflect.TypeOf((*FunctionJavaParametersTraceLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelList",
 		reflect.TypeOf((*FunctionJavaParametersTraceLevelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -534,12 +534,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersTraceLevelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelOutputReference",
 		reflect.TypeOf((*FunctionJavaParametersTraceLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -571,16 +571,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaParametersTraceLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaSecrets",
 		reflect.TypeOf((*FunctionJavaSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaSecretsList",
 		reflect.TypeOf((*FunctionJavaSecretsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -597,12 +597,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaSecretsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference",
 		reflect.TypeOf((*FunctionJavaSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -633,16 +633,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaSecretsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaShowOutput",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutput",
 		reflect.TypeOf((*FunctionJavaShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaShowOutputList",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutputList",
 		reflect.TypeOf((*FunctionJavaShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -658,12 +658,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaShowOutputOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutputOutputReference",
 		reflect.TypeOf((*FunctionJavaShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argumentsRaw", GoGetter: "ArgumentsRaw"},
@@ -710,16 +710,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPath",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaTargetPath",
 		reflect.TypeOf((*FunctionJavaTargetPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPathOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaTargetPathOutputReference",
 		reflect.TypeOf((*FunctionJavaTargetPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -750,16 +750,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaTargetPathOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaTimeouts",
 		reflect.TypeOf((*FunctionJavaTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference",
 		reflect.TypeOf((*FunctionJavaTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -798,7 +798,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FunctionJavaTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

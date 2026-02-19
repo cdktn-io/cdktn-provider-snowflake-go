@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeresourcemonitors
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeresourcemonitors/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeresourcemonitors/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/resource_monitors snowflake_resource_monitors}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/resource_monitors snowflake_resource_monitors}.
 type DataSnowflakeResourceMonitors interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataSnowflakeResourceMonitors interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,23 +39,23 @@ type DataSnowflakeResourceMonitors interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Like() *string
 	SetLike(val *string)
 	LikeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceMonitors() DataSnowflakeResourceMonitorsResourceMonitorsList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataSnowflakeResourceMonitors interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataSnowflakeResourceMonitors interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -106,11 +106,11 @@ type DataSnowflakeResourceMonitors interface {
 
 // The jsii proxy struct for DataSnowflakeResourceMonitors
 type jsiiProxy_DataSnowflakeResourceMonitors struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataSnowflakeResourceMonitors) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataSnowflakeResourceMonitors) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataSnowflakeResourceMonitors) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataSnowflakeResourceMonitors) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) ResourceMonitors() DataSnowfla
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataSnowflakeResourceMonitors) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
 func NewDataSnowflakeResourceMonitors(scope constructs.Construct, id *string, config *DataSnowflakeResourceMonitorsConfig) DataSnowflakeResourceMonitors {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataSnowflakeResourceMonitors(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataSnowflakeResourceMonitors{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -318,12 +318,12 @@ func NewDataSnowflakeResourceMonitors(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
 func NewDataSnowflakeResourceMonitors_Override(d DataSnowflakeResourceMonitors, scope constructs.Construct, id *string, config *DataSnowflakeResourceMonitorsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetLike(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -397,17 +397,17 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors)SetProvider(val cdktf.Terraform
 	)
 }
 
-// Generates CDKTF code for importing a DataSnowflakeResourceMonitors resource upon running "cdktf plan <stack-name>".
-func DataSnowflakeResourceMonitors_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataSnowflakeResourceMonitors resource upon running "cdktn plan <stack-name>".
+func DataSnowflakeResourceMonitors_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataSnowflakeResourceMonitors_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -442,7 +442,7 @@ func DataSnowflakeResourceMonitors_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -461,7 +461,7 @@ func DataSnowflakeResourceMonitors_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataSnowflakeResourceMonitors_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func DataSnowflakeResourceMonitors_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
+		"@cdktn/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors",
 		"tfResourceType",
 		&returns,
 	)
@@ -527,11 +527,11 @@ func (d *jsiiProxy_DataSnowflakeResourceMonitors) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeResourceMonitors) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeResourceMonitors) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -655,11 +655,11 @@ func (d *jsiiProxy_DataSnowflakeResourceMonitors) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeResourceMonitors) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeResourceMonitors) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

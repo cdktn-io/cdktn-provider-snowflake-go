@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secondaryconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secondaryconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SecondaryConnectionShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountLocator() *string
 	AccountName() *string
 	Comment() *string
@@ -38,7 +38,7 @@ type SecondaryConnectionShowOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *SecondaryConnectionShowOutput
 	SetInternalValue(val *SecondaryConnectionShowOutput)
-	IsPrimary() cdktf.IResolvable
+	IsPrimary() cdktn.IResolvable
 	Name() *string
 	OrganizationName() *string
 	Primary() *string
@@ -49,15 +49,15 @@ type SecondaryConnectionShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type SecondaryConnectionShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type SecondaryConnectionShowOutputOutputReference interface {
 
 // The jsii proxy struct for SecondaryConnectionShowOutputOutputReference
 type jsiiProxy_SecondaryConnectionShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) AccountLocator() *string {
@@ -201,8 +201,8 @@ func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) IsPrimary() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) IsPrimary() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isPrimary",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference) TerraformResour
 }
 
 
-func NewSecondaryConnectionShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecondaryConnectionShowOutputOutputReference {
+func NewSecondaryConnectionShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecondaryConnectionShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecondaryConnectionShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -291,7 +291,7 @@ func NewSecondaryConnectionShowOutputOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SecondaryConnectionShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference",
+		"@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -299,11 +299,11 @@ func NewSecondaryConnectionShowOutputOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewSecondaryConnectionShowOutputOutputReference_Override(s SecondaryConnectionShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecondaryConnectionShowOutputOutputReference_Override(s SecondaryConnectionShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference",
+		"@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -353,7 +353,7 @@ func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecondaryConnectionShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,11 +393,11 @@ func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -521,8 +521,8 @@ func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -534,11 +534,11 @@ func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationAs
 	return returns
 }
 
-func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -550,7 +550,7 @@ func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) InterpolationFo
 	return returns
 }
 
-func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecondaryConnectionShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

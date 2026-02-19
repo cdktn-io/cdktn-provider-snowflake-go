@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package grantapplicationrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantapplicationrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantapplicationrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role snowflake_grant_application_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role snowflake_grant_application_role}.
 type GrantApplicationRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApplicationName() *string
 	SetApplicationName(val *string)
 	ApplicationNameInput() *string
@@ -22,7 +22,7 @@ type GrantApplicationRole interface {
 	SetApplicationRoleName(val *string)
 	ApplicationRoleNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type GrantApplicationRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -49,18 +49,18 @@ type GrantApplicationRole interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	ParentAccountRoleName() *string
 	SetParentAccountRoleName(val *string)
 	ParentAccountRoleNameInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type GrantApplicationRole interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type GrantApplicationRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -101,9 +101,9 @@ type GrantApplicationRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -141,7 +141,7 @@ type GrantApplicationRole interface {
 
 // The jsii proxy struct for GrantApplicationRole
 type jsiiProxy_GrantApplicationRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_GrantApplicationRole) ApplicationName() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GrantApplicationRole) ApplicationRoleNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantApplicationRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GrantApplicationRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_GrantApplicationRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantApplicationRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_GrantApplicationRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GrantApplicationRole) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantApplicationRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_GrantApplicationRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_GrantApplicationRole) ParentAccountRoleNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GrantApplicationRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_GrantApplicationRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_GrantApplicationRole) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GrantApplicationRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GrantApplicationRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GrantApplicationRole) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource.
 func NewGrantApplicationRole(scope constructs.Construct, id *string, config *GrantApplicationRoleConfig) GrantApplicationRole {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewGrantApplicationRole(scope constructs.Construct, id *string, config *Gra
 	j := jsiiProxy_GrantApplicationRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,12 +423,12 @@ func NewGrantApplicationRole(scope constructs.Construct, id *string, config *Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource.
 func NewGrantApplicationRole_Override(g GrantApplicationRole, scope constructs.Construct, id *string, config *GrantApplicationRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_GrantApplicationRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GrantApplicationRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GrantApplicationRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GrantApplicationRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrantApplicationRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GrantApplicationRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +527,7 @@ func (j *jsiiProxy_GrantApplicationRole)SetParentAccountRoleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrantApplicationRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GrantApplicationRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -546,17 +546,17 @@ func (j *jsiiProxy_GrantApplicationRole)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a GrantApplicationRole resource upon running "cdktf plan <stack-name>".
-func GrantApplicationRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GrantApplicationRole resource upon running "cdktn plan <stack-name>".
+func GrantApplicationRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGrantApplicationRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -591,7 +591,7 @@ func GrantApplicationRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GrantApplicationRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GrantApplicationRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GrantApplicationRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.grantApplicationRole.GrantApplicationRole",
+		"@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -687,11 +687,11 @@ func (g *jsiiProxy_GrantApplicationRole) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (g *jsiiProxy_GrantApplicationRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantApplicationRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -828,7 +828,7 @@ func (g *jsiiProxy_GrantApplicationRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GrantApplicationRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (g *jsiiProxy_GrantApplicationRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -839,11 +839,11 @@ func (g *jsiiProxy_GrantApplicationRole) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (g *jsiiProxy_GrantApplicationRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GrantApplicationRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,

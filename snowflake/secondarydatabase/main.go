@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secondarydatabase
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secondaryDatabase.SecondaryDatabase",
+		"@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase",
 		reflect.TypeOf((*SecondaryDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -124,20 +124,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecondaryDatabase{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig",
+		"@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig",
 		reflect.TypeOf((*SecondaryDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts",
+		"@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts",
 		reflect.TypeOf((*SecondaryDatabaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeoutsOutputReference",
 		reflect.TypeOf((*SecondaryDatabaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,7 +176,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecondaryDatabaseTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

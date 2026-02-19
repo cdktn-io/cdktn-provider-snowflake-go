@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service_user snowflake_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user}.
 type ServiceUser interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
 	SetAbortDetachedQuery(val interface{})
 	AbortDetachedQueryInput() interface{}
@@ -28,7 +28,7 @@ type ServiceUser interface {
 	SetBinaryOutputFormat(val *string)
 	BinaryOutputFormatInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientMemoryLimit() *float64
 	SetClientMemoryLimit(val *float64)
 	ClientMemoryLimitInput() *float64
@@ -87,6 +87,8 @@ type ServiceUser interface {
 	DefaultWarehouse() *string
 	SetDefaultWarehouse(val *string)
 	DefaultWarehouseInput() *string
+	DefaultWorkloadIdentity() ServiceUserDefaultWorkloadIdentityOutputReference
+	DefaultWorkloadIdentityInput() *ServiceUserDefaultWorkloadIdentity
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -113,9 +115,9 @@ type ServiceUser interface {
 	SetErrorOnNondeterministicUpdate(val interface{})
 	ErrorOnNondeterministicUpdateInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -143,9 +145,9 @@ type ServiceUser interface {
 	SetJsonIndent(val *float64)
 	JsonIndentInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
@@ -180,9 +182,9 @@ type ServiceUser interface {
 	SetPreventUnloadToInternalStages(val interface{})
 	PreventUnloadToInternalStagesInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -224,7 +226,7 @@ type ServiceUser interface {
 	SetStrictJsonOutput(val interface{})
 	StrictJsonOutputInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -292,7 +294,7 @@ type ServiceUser interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -310,9 +312,9 @@ type ServiceUser interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -327,6 +329,7 @@ type ServiceUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultWorkloadIdentity(value *ServiceUserDefaultWorkloadIdentity)
 	ResetAbortDetachedQuery()
 	ResetAutocommit()
 	ResetBinaryInputFormat()
@@ -347,6 +350,7 @@ type ServiceUser interface {
 	ResetDefaultRole()
 	ResetDefaultSecondaryRolesOption()
 	ResetDefaultWarehouse()
+	ResetDefaultWorkloadIdentity()
 	ResetDisabled()
 	ResetDisplayName()
 	ResetEmail()
@@ -417,7 +421,7 @@ type ServiceUser interface {
 
 // The jsii proxy struct for ServiceUser
 type jsiiProxy_ServiceUser struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ServiceUser) AbortDetachedQuery() interface{} {
@@ -500,8 +504,8 @@ func (j *jsiiProxy_ServiceUser) BinaryOutputFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUser) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ServiceUser) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -860,6 +864,26 @@ func (j *jsiiProxy_ServiceUser) DefaultWarehouseInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceUser) DefaultWorkloadIdentity() ServiceUserDefaultWorkloadIdentityOutputReference {
+	var returns ServiceUserDefaultWorkloadIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"defaultWorkloadIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceUser) DefaultWorkloadIdentityInput() *ServiceUserDefaultWorkloadIdentity {
+	var returns *ServiceUserDefaultWorkloadIdentity
+	_jsii_.Get(
+		j,
+		"defaultWorkloadIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1010,8 +1034,8 @@ func (j *jsiiProxy_ServiceUser) ErrorOnNondeterministicUpdateInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUser) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ServiceUser) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -1190,8 +1214,8 @@ func (j *jsiiProxy_ServiceUser) JsonIndentInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ServiceUser) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -1420,8 +1444,8 @@ func (j *jsiiProxy_ServiceUser) PreventUnloadToInternalStagesInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUser) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ServiceUser) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1680,8 +1704,8 @@ func (j *jsiiProxy_ServiceUser) StrictJsonOutputInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ServiceUser) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -2081,7 +2105,7 @@ func (j *jsiiProxy_ServiceUser) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserConfig) ServiceUser {
 	_init_.Initialize()
 
@@ -2091,7 +2115,7 @@ func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserC
 	j := jsiiProxy_ServiceUser{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -2099,12 +2123,12 @@ func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser_Override(s ServiceUser, scope constructs.Construct, id *string, config *ServiceUserConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -2437,7 +2461,7 @@ func (j *jsiiProxy_ServiceUser)SetErrorOnNondeterministicUpdate(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ServiceUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceUser)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2522,7 +2546,7 @@ func (j *jsiiProxy_ServiceUser)SetJsonIndent(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServiceUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceUser)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2643,7 +2667,7 @@ func (j *jsiiProxy_ServiceUser)SetPreventUnloadToInternalStages(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ServiceUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceUser)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2981,17 +3005,17 @@ func (j *jsiiProxy_ServiceUser)SetWeekStart(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a ServiceUser resource upon running "cdktf plan <stack-name>".
-func ServiceUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ServiceUser resource upon running "cdktn plan <stack-name>".
+func ServiceUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateServiceUser_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -3026,7 +3050,7 @@ func ServiceUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -3045,7 +3069,7 @@ func ServiceUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -3064,7 +3088,7 @@ func ServiceUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -3077,7 +3101,7 @@ func ServiceUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUser",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUser",
 		"tfResourceType",
 		&returns,
 	)
@@ -3122,11 +3146,11 @@ func (s *jsiiProxy_ServiceUser) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUser) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUser) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -3263,7 +3287,7 @@ func (s *jsiiProxy_ServiceUser) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_ServiceUser) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -3274,11 +3298,11 @@ func (s *jsiiProxy_ServiceUser) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (s *jsiiProxy_ServiceUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUser) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -3331,6 +3355,17 @@ func (s *jsiiProxy_ServiceUser) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_ServiceUser) PutDefaultWorkloadIdentity(value *ServiceUserDefaultWorkloadIdentity) {
+	if err := s.validatePutDefaultWorkloadIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDefaultWorkloadIdentity",
+		[]interface{}{value},
 	)
 }
 
@@ -3490,6 +3525,14 @@ func (s *jsiiProxy_ServiceUser) ResetDefaultWarehouse() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultWarehouse",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceUser) ResetDefaultWorkloadIdentity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultWorkloadIdentity",
 		nil, // no parameters
 	)
 }

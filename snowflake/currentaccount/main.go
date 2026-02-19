@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package currentaccount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.currentAccount.CurrentAccount",
+		"@cdktn/provider-snowflake.currentAccount.CurrentAccount",
 		reflect.TypeOf((*CurrentAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortDetachedQuery", GoGetter: "AbortDetachedQuery"},
@@ -311,7 +311,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceMonitor", GoMethod: "ResetResourceMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowsPerResultset", GoMethod: "ResetRowsPerResultset"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3StageVpceDnsName", GoMethod: "ResetS3StageVpceDnsName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSamlIdentityProvider", GoMethod: "ResetSamlIdentityProvider"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSearchPath", GoMethod: "ResetSearchPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServerlessTaskMaxStatementSize", GoMethod: "ResetServerlessTaskMaxStatementSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServerlessTaskMinStatementSize", GoMethod: "ResetServerlessTaskMinStatementSize"},
@@ -352,8 +351,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rowsPerResultsetInput", GoGetter: "RowsPerResultsetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "s3StageVpceDnsName", GoGetter: "S3StageVpceDnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "s3StageVpceDnsNameInput", GoGetter: "S3StageVpceDnsNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "samlIdentityProvider", GoGetter: "SamlIdentityProvider"},
-			_jsii_.MemberProperty{JsiiProperty: "samlIdentityProviderInput", GoGetter: "SamlIdentityProviderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "searchPath", GoGetter: "SearchPath"},
 			_jsii_.MemberProperty{JsiiProperty: "searchPathInput", GoGetter: "SearchPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serverlessTaskMaxStatementSize", GoGetter: "ServerlessTaskMaxStatementSize"},
@@ -434,20 +431,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CurrentAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig",
+		"@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig",
 		reflect.TypeOf((*CurrentAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts",
+		"@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts",
 		reflect.TypeOf((*CurrentAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference",
 		reflect.TypeOf((*CurrentAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -486,7 +483,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CurrentAccountTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/notebook/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type NotebookFromList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type NotebookFromList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type NotebookFromList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) NotebookFromOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type NotebookFromList interface {
 
 // The jsii proxy struct for NotebookFromList
 type jsiiProxy_NotebookFromList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_NotebookFromList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_NotebookFromList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotebookFromList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotebookFromList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_NotebookFromList) WrapsSet() *bool {
 }
 
 
-func NewNotebookFromList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebookFromList {
+func NewNotebookFromList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebookFromList {
 	_init_.Initialize()
 
 	if err := validateNewNotebookFromListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewNotebookFromList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_NotebookFromList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.notebook.NotebookFromList",
+		"@cdktn/provider-snowflake.notebook.NotebookFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewNotebookFromList(terraformResource cdktf.IInterpolatingParent, terraform
 	return &j
 }
 
-func NewNotebookFromList_Override(n NotebookFromList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewNotebookFromList_Override(n NotebookFromList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.notebook.NotebookFromList",
+		"@cdktn/provider-snowflake.notebook.NotebookFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_NotebookFromList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebookFromList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebookFromList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_NotebookFromList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (n *jsiiProxy_NotebookFromList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (n *jsiiProxy_NotebookFromList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := n.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		n,
@@ -231,7 +231,7 @@ func (n *jsiiProxy_NotebookFromList) Get(index *float64) NotebookFromOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NotebookFromList) Resolve(context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebookFromList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

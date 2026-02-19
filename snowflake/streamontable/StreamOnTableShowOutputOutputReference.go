@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamontable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamontable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/streamontable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type StreamOnTableShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BaseTables() *[]*string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -43,7 +43,7 @@ type StreamOnTableShowOutputOutputReference interface {
 	OwnerRoleType() *string
 	SchemaName() *string
 	SourceType() *string
-	Stale() cdktf.IResolvable
+	Stale() cdktn.IResolvable
 	StaleAfter() *string
 	TableName() *string
 	// Experimental.
@@ -51,16 +51,16 @@ type StreamOnTableShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,12 +76,12 @@ type StreamOnTableShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type StreamOnTableShowOutputOutputReference interface {
 
 // The jsii proxy struct for StreamOnTableShowOutputOutputReference
 type jsiiProxy_StreamOnTableShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) BaseTables() *[]*string {
@@ -254,8 +254,8 @@ func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) SourceType() *string 
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) Stale() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) Stale() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"stale",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_StreamOnTableShowOutputOutputReference) Type() *string {
 }
 
 
-func NewStreamOnTableShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StreamOnTableShowOutputOutputReference {
+func NewStreamOnTableShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StreamOnTableShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStreamOnTableShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -324,7 +324,7 @@ func NewStreamOnTableShowOutputOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_StreamOnTableShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewStreamOnTableShowOutputOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewStreamOnTableShowOutputOutputReference_Override(s StreamOnTableShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewStreamOnTableShowOutputOutputReference_Override(s StreamOnTableShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
+		"@cdktn/provider-snowflake.streamOnTable.StreamOnTableShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -386,7 +386,7 @@ func (j *jsiiProxy_StreamOnTableShowOutputOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_StreamOnTableShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StreamOnTableShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,11 +426,11 @@ func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -554,8 +554,8 @@ func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -567,11 +567,11 @@ func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -583,7 +583,7 @@ func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StreamOnTableShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

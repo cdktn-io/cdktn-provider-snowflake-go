@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package task
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/task/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/task/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TaskParametersNoorderSequenceAsDefaultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type TaskParametersNoorderSequenceAsDefaultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type TaskParametersNoorderSequenceAsDefaultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type TaskParametersNoorderSequenceAsDefaultOutputReference interface {
 
 // The jsii proxy struct for TaskParametersNoorderSequenceAsDefaultOutputReference
 type jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Value(
 }
 
 
-func NewTaskParametersNoorderSequenceAsDefaultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskParametersNoorderSequenceAsDefaultOutputReference {
+func NewTaskParametersNoorderSequenceAsDefaultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskParametersNoorderSequenceAsDefaultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTaskParametersNoorderSequenceAsDefaultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewTaskParametersNoorderSequenceAsDefaultOutputReference(terraformResource 
 	j := jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersNoorderSequenceAsDefaultOutputReference",
+		"@cdktn/provider-snowflake.task.TaskParametersNoorderSequenceAsDefaultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewTaskParametersNoorderSequenceAsDefaultOutputReference(terraformResource 
 	return &j
 }
 
-func NewTaskParametersNoorderSequenceAsDefaultOutputReference_Override(t TaskParametersNoorderSequenceAsDefaultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewTaskParametersNoorderSequenceAsDefaultOutputReference_Override(t TaskParametersNoorderSequenceAsDefaultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersNoorderSequenceAsDefaultOutputReference",
+		"@cdktn/provider-snowflake.task.TaskParametersNoorderSequenceAsDefaultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) GetAny
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -444,8 +444,8 @@ func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) GetStr
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -457,11 +457,11 @@ func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Interp
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -473,7 +473,7 @@ func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Interp
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TaskParametersNoorderSequenceAsDefaultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

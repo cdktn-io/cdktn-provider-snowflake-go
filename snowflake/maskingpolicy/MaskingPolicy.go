@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package maskingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/maskingpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/masking_policy snowflake_masking_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/masking_policy snowflake_masking_policy}.
 type MaskingPolicy interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Argument() MaskingPolicyArgumentList
 	ArgumentInput() interface{}
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -47,9 +47,9 @@ type MaskingPolicy interface {
 	SetExemptOtherPolicies(val *string)
 	ExemptOtherPoliciesInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -59,18 +59,18 @@ type MaskingPolicy interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type MaskingPolicy interface {
 	SchemaInput() *string
 	ShowOutput() MaskingPolicyShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +100,7 @@ type MaskingPolicy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +118,9 @@ type MaskingPolicy interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -159,7 +159,7 @@ type MaskingPolicy interface {
 
 // The jsii proxy struct for MaskingPolicy
 type jsiiProxy_MaskingPolicy struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MaskingPolicy) Argument() MaskingPolicyArgumentList {
@@ -202,8 +202,8 @@ func (j *jsiiProxy_MaskingPolicy) BodyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MaskingPolicy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_MaskingPolicy) ExemptOtherPoliciesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MaskingPolicy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_MaskingPolicy) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MaskingPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_MaskingPolicy) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MaskingPolicy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_MaskingPolicy) ShowOutput() MaskingPolicyShowOutputList {
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MaskingPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -553,7 +553,7 @@ func (j *jsiiProxy_MaskingPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/masking_policy snowflake_masking_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/masking_policy snowflake_masking_policy} Resource.
 func NewMaskingPolicy(scope constructs.Construct, id *string, config *MaskingPolicyConfig) MaskingPolicy {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewMaskingPolicy(scope constructs.Construct, id *string, config *MaskingPol
 	j := jsiiProxy_MaskingPolicy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,12 +571,12 @@ func NewMaskingPolicy(scope constructs.Construct, id *string, config *MaskingPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/masking_policy snowflake_masking_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/masking_policy snowflake_masking_policy} Resource.
 func NewMaskingPolicy_Override(m MaskingPolicy, scope constructs.Construct, id *string, config *MaskingPolicyConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -656,7 +656,7 @@ func (j *jsiiProxy_MaskingPolicy)SetExemptOtherPolicies(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MaskingPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MaskingPolicy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -675,7 +675,7 @@ func (j *jsiiProxy_MaskingPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MaskingPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MaskingPolicy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +697,7 @@ func (j *jsiiProxy_MaskingPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MaskingPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MaskingPolicy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -738,17 +738,17 @@ func (j *jsiiProxy_MaskingPolicy)SetSchema(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a MaskingPolicy resource upon running "cdktf plan <stack-name>".
-func MaskingPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MaskingPolicy resource upon running "cdktn plan <stack-name>".
+func MaskingPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMaskingPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -783,7 +783,7 @@ func MaskingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func MaskingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func MaskingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -834,7 +834,7 @@ func MaskingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy",
 		"tfResourceType",
 		&returns,
 	)
@@ -879,11 +879,11 @@ func (m *jsiiProxy_MaskingPolicy) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaskingPolicy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1020,7 +1020,7 @@ func (m *jsiiProxy_MaskingPolicy) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MaskingPolicy) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1031,11 +1031,11 @@ func (m *jsiiProxy_MaskingPolicy) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (m *jsiiProxy_MaskingPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaskingPolicy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

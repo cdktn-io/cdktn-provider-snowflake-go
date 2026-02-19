@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package semanticview
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticView",
+		"@cdktn/provider-snowflake.semanticView.SemanticView",
 		reflect.TypeOf((*SemanticView)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -95,20 +95,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticView{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewConfig",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewConfig",
 		reflect.TypeOf((*SemanticViewConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewDimensions",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewDimensions",
 		reflect.TypeOf((*SemanticViewDimensions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewDimensionsList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewDimensionsList",
 		reflect.TypeOf((*SemanticViewDimensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -125,12 +125,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewDimensionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewDimensionsOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewDimensionsOutputReference",
 		reflect.TypeOf((*SemanticViewDimensionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -167,16 +167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewDimensionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewFacts",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewFacts",
 		reflect.TypeOf((*SemanticViewFacts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewFactsList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewFactsList",
 		reflect.TypeOf((*SemanticViewFactsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -193,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewFactsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewFactsOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewFactsOutputReference",
 		reflect.TypeOf((*SemanticViewFactsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -235,16 +235,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewFactsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetrics",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetrics",
 		reflect.TypeOf((*SemanticViewMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsList",
 		reflect.TypeOf((*SemanticViewMetricsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -261,12 +261,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewMetricsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsOutputReference",
 		reflect.TypeOf((*SemanticViewMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,16 +301,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpression",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpression",
 		reflect.TypeOf((*SemanticViewMetricsSemanticExpression)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference",
 		reflect.TypeOf((*SemanticViewMetricsSemanticExpressionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -347,16 +347,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewMetricsSemanticExpressionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunction",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunction",
 		reflect.TypeOf((*SemanticViewMetricsWindowFunction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOutputReference",
 		reflect.TypeOf((*SemanticViewMetricsWindowFunctionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,16 +390,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewMetricsWindowFunctionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClause",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClause",
 		reflect.TypeOf((*SemanticViewMetricsWindowFunctionOverClause)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference",
 		reflect.TypeOf((*SemanticViewMetricsWindowFunctionOverClauseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -435,16 +435,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewMetricsWindowFunctionOverClauseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationships",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationships",
 		reflect.TypeOf((*SemanticViewRelationships)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsList",
 		reflect.TypeOf((*SemanticViewRelationshipsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -461,12 +461,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewRelationshipsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsOutputReference",
 		reflect.TypeOf((*SemanticViewRelationshipsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -507,16 +507,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewRelationshipsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAlias",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAlias",
 		reflect.TypeOf((*SemanticViewRelationshipsReferencedTableNameOrAlias)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference",
 		reflect.TypeOf((*SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -549,16 +549,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAlias",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAlias",
 		reflect.TypeOf((*SemanticViewRelationshipsTableNameOrAlias)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAliasOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAliasOutputReference",
 		reflect.TypeOf((*SemanticViewRelationshipsTableNameOrAliasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -591,16 +591,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewRelationshipsTableNameOrAliasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewShowOutput",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewShowOutput",
 		reflect.TypeOf((*SemanticViewShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewShowOutputList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewShowOutputList",
 		reflect.TypeOf((*SemanticViewShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -616,12 +616,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewShowOutputOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewShowOutputOutputReference",
 		reflect.TypeOf((*SemanticViewShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -656,16 +656,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTables",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTables",
 		reflect.TypeOf((*SemanticViewTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTablesList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTablesList",
 		reflect.TypeOf((*SemanticViewTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -682,12 +682,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewTablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTablesOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTablesOutputReference",
 		reflect.TypeOf((*SemanticViewTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -731,16 +731,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewTablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTablesUnique",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTablesUnique",
 		reflect.TypeOf((*SemanticViewTablesUnique)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTablesUniqueList",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTablesUniqueList",
 		reflect.TypeOf((*SemanticViewTablesUniqueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -757,12 +757,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewTablesUniqueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTablesUniqueOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTablesUniqueOutputReference",
 		reflect.TypeOf((*SemanticViewTablesUniqueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -791,16 +791,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewTablesUniqueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTimeouts",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTimeouts",
 		reflect.TypeOf((*SemanticViewTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.semanticView.SemanticViewTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.semanticView.SemanticViewTimeoutsOutputReference",
 		reflect.TypeOf((*SemanticViewTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -839,7 +839,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SemanticViewTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

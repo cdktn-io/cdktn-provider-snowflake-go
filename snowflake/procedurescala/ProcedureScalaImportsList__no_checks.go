@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProcedureScalaImportsList) validateGetParameters(index *float
 	return nil
 }
 
-func (p *jsiiProxy_ProcedureScalaImportsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProcedureScalaImportsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_ProcedureScalaImportsList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_ProcedureScalaImportsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ProcedureScalaImportsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_ProcedureScalaImportsList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewProcedureScalaImportsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewProcedureScalaImportsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

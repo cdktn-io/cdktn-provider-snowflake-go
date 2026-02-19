@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountauthenticationpolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/accountauthenticationpolicyattachment/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountauthenticationpolicyattachment/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}.
 type AccountAuthenticationPolicyAttachment interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AuthenticationPolicy() *string
 	SetAuthenticationPolicy(val *string)
 	AuthenticationPolicyInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type AccountAuthenticationPolicyAttachment interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,15 +46,15 @@ type AccountAuthenticationPolicyAttachment interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type AccountAuthenticationPolicyAttachment interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type AccountAuthenticationPolicyAttachment interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -95,9 +95,9 @@ type AccountAuthenticationPolicyAttachment interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -133,7 +133,7 @@ type AccountAuthenticationPolicyAttachment interface {
 
 // The jsii proxy struct for AccountAuthenticationPolicyAttachment
 type jsiiProxy_AccountAuthenticationPolicyAttachment struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) AuthenticationPolicy() *string {
@@ -156,8 +156,8 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) AuthenticationPolicyIn
 	return returns
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) DependsOn() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) Node() constructs.Node
 	return returns
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) RawOverrides() interfa
 	return returns
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
 func NewAccountAuthenticationPolicyAttachment(scope constructs.Construct, id *string, config *AccountAuthenticationPolicyAttachmentConfig) AccountAuthenticationPolicyAttachment {
 	_init_.Initialize()
 
@@ -367,7 +367,7 @@ func NewAccountAuthenticationPolicyAttachment(scope constructs.Construct, id *st
 	j := jsiiProxy_AccountAuthenticationPolicyAttachment{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -375,12 +375,12 @@ func NewAccountAuthenticationPolicyAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
 func NewAccountAuthenticationPolicyAttachment_Override(a AccountAuthenticationPolicyAttachment, scope constructs.Construct, id *string, config *AccountAuthenticationPolicyAttachmentConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +446,7 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -476,17 +476,17 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetProvisioners(val *[]
 	)
 }
 
-// Generates CDKTF code for importing a AccountAuthenticationPolicyAttachment resource upon running "cdktf plan <stack-name>".
-func AccountAuthenticationPolicyAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AccountAuthenticationPolicyAttachment resource upon running "cdktn plan <stack-name>".
+func AccountAuthenticationPolicyAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAccountAuthenticationPolicyAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -521,7 +521,7 @@ func AccountAuthenticationPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AccountAuthenticationPolicyAttachment_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func AccountAuthenticationPolicyAttachment_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func AccountAuthenticationPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
+		"@cdktn/provider-snowflake.accountAuthenticationPolicyAttachment.AccountAuthenticationPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)
@@ -617,11 +617,11 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -758,7 +758,7 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) HasResourceMove() inte
 	return returns
 }
 
-func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -769,11 +769,11 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) ImportFrom(id *string,
 	)
 }
 
-func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

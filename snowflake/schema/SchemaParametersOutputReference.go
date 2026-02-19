@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package schema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/schema/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/schema/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SchemaParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Catalog() SchemaParametersCatalogList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -50,9 +50,9 @@ type SchemaParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TraceLevel() SchemaParametersTraceLevelList
 	UserTaskManagedInitialWarehouseSize() SchemaParametersUserTaskManagedInitialWarehouseSizeList
 	UserTaskMinimumTriggerIntervalInSeconds() SchemaParametersUserTaskMinimumTriggerIntervalInSecondsList
@@ -62,7 +62,7 @@ type SchemaParametersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,12 +78,12 @@ type SchemaParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type SchemaParametersOutputReference interface {
 
 // The jsii proxy struct for SchemaParametersOutputReference
 type jsiiProxy_SchemaParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SchemaParametersOutputReference) Catalog() SchemaParametersCatalogList {
@@ -286,8 +286,8 @@ func (j *jsiiProxy_SchemaParametersOutputReference) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_SchemaParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SchemaParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_SchemaParametersOutputReference) UserTaskTimeoutMs() SchemaPa
 }
 
 
-func NewSchemaParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchemaParametersOutputReference {
+func NewSchemaParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchemaParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSchemaParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -346,7 +346,7 @@ func NewSchemaParametersOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_SchemaParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.schema.SchemaParametersOutputReference",
+		"@cdktn/provider-snowflake.schema.SchemaParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -354,11 +354,11 @@ func NewSchemaParametersOutputReference(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewSchemaParametersOutputReference_Override(s SchemaParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSchemaParametersOutputReference_Override(s SchemaParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.schema.SchemaParametersOutputReference",
+		"@cdktn/provider-snowflake.schema.SchemaParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -408,7 +408,7 @@ func (j *jsiiProxy_SchemaParametersOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_SchemaParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchemaParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,11 +448,11 @@ func (s *jsiiProxy_SchemaParametersOutputReference) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SchemaParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -576,8 +576,8 @@ func (s *jsiiProxy_SchemaParametersOutputReference) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -589,11 +589,11 @@ func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -605,7 +605,7 @@ func (s *jsiiProxy_SchemaParametersOutputReference) InterpolationForAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SchemaParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package task
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/task/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/task/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TaskParametersUseCachedResultList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type TaskParametersUseCachedResultList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type TaskParametersUseCachedResultList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) TaskParametersUseCachedResultOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type TaskParametersUseCachedResultList interface {
 
 // The jsii proxy struct for TaskParametersUseCachedResultList
 type jsiiProxy_TaskParametersUseCachedResultList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_TaskParametersUseCachedResultList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_TaskParametersUseCachedResultList) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_TaskParametersUseCachedResultList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TaskParametersUseCachedResultList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_TaskParametersUseCachedResultList) WrapsSet() *bool {
 }
 
 
-func NewTaskParametersUseCachedResultList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TaskParametersUseCachedResultList {
+func NewTaskParametersUseCachedResultList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TaskParametersUseCachedResultList {
 	_init_.Initialize()
 
 	if err := validateNewTaskParametersUseCachedResultListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewTaskParametersUseCachedResultList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_TaskParametersUseCachedResultList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersUseCachedResultList",
+		"@cdktn/provider-snowflake.task.TaskParametersUseCachedResultList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewTaskParametersUseCachedResultList(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewTaskParametersUseCachedResultList_Override(t TaskParametersUseCachedResultList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewTaskParametersUseCachedResultList_Override(t TaskParametersUseCachedResultList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersUseCachedResultList",
+		"@cdktn/provider-snowflake.task.TaskParametersUseCachedResultList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_TaskParametersUseCachedResultList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_TaskParametersUseCachedResultList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TaskParametersUseCachedResultList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_TaskParametersUseCachedResultList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (t *jsiiProxy_TaskParametersUseCachedResultList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (t *jsiiProxy_TaskParametersUseCachedResultList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := t.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		t,
@@ -208,7 +208,7 @@ func (t *jsiiProxy_TaskParametersUseCachedResultList) Get(index *float64) TaskPa
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersUseCachedResultList) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TaskParametersUseCachedResultList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

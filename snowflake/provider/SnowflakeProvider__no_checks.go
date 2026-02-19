@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -28,6 +28,18 @@ func validateSnowflakeProvider_IsTerraformElementParameters(x interface{}) error
 }
 
 func validateSnowflakeProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnowflakeProvider) validateSetCrlInMemoryCacheDisabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnowflakeProvider) validateSetCrlOnDiskCacheDisabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnowflakeProvider) validateSetDisableOcspChecksParameters(val interface{}) error {
 	return nil
 }
 

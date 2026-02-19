@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package maskingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/maskingpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MaskingPolicyDescribeOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type MaskingPolicyDescribeOutputList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type MaskingPolicyDescribeOutputList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MaskingPolicyDescribeOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type MaskingPolicyDescribeOutputList interface {
 
 // The jsii proxy struct for MaskingPolicyDescribeOutputList
 type jsiiProxy_MaskingPolicyDescribeOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_MaskingPolicyDescribeOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_MaskingPolicyDescribeOutputList) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_MaskingPolicyDescribeOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MaskingPolicyDescribeOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_MaskingPolicyDescribeOutputList) WrapsSet() *bool {
 }
 
 
-func NewMaskingPolicyDescribeOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyDescribeOutputList {
+func NewMaskingPolicyDescribeOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyDescribeOutputList {
 	_init_.Initialize()
 
 	if err := validateNewMaskingPolicyDescribeOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewMaskingPolicyDescribeOutputList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_MaskingPolicyDescribeOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputList",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewMaskingPolicyDescribeOutputList(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewMaskingPolicyDescribeOutputList_Override(m MaskingPolicyDescribeOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMaskingPolicyDescribeOutputList_Override(m MaskingPolicyDescribeOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputList",
+		"@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_MaskingPolicyDescribeOutputList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_MaskingPolicyDescribeOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MaskingPolicyDescribeOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_MaskingPolicyDescribeOutputList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (m *jsiiProxy_MaskingPolicyDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_MaskingPolicyDescribeOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -208,7 +208,7 @@ func (m *jsiiProxy_MaskingPolicyDescribeOutputList) Get(index *float64) MaskingP
 	return returns
 }
 
-func (m *jsiiProxy_MaskingPolicyDescribeOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MaskingPolicyDescribeOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

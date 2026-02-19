@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package warehouse
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.Warehouse",
+		"@cdktn/provider-snowflake.warehouse.Warehouse",
 		reflect.TypeOf((*Warehouse)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -121,20 +121,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Warehouse{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseConfig",
+		"@cdktn/provider-snowflake.warehouse.WarehouseConfig",
 		reflect.TypeOf((*WarehouseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParameters",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParameters",
 		reflect.TypeOf((*WarehouseParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersList",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersList",
 		reflect.TypeOf((*WarehouseParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -150,16 +150,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevel",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevel",
 		reflect.TypeOf((*WarehouseParametersMaxConcurrencyLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevelList",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevelList",
 		reflect.TypeOf((*WarehouseParametersMaxConcurrencyLevelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -175,12 +175,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersMaxConcurrencyLevelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevelOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersMaxConcurrencyLevelOutputReference",
 		reflect.TypeOf((*WarehouseParametersMaxConcurrencyLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,12 +212,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersMaxConcurrencyLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersOutputReference",
 		reflect.TypeOf((*WarehouseParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,16 +247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSeconds",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSeconds",
 		reflect.TypeOf((*WarehouseParametersStatementQueuedTimeoutInSeconds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSecondsList",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSecondsList",
 		reflect.TypeOf((*WarehouseParametersStatementQueuedTimeoutInSecondsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -272,12 +272,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersStatementQueuedTimeoutInSecondsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference",
 		reflect.TypeOf((*WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,16 +309,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSeconds",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSeconds",
 		reflect.TypeOf((*WarehouseParametersStatementTimeoutInSeconds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSecondsList",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSecondsList",
 		reflect.TypeOf((*WarehouseParametersStatementTimeoutInSecondsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -334,12 +334,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersStatementTimeoutInSecondsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSecondsOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseParametersStatementTimeoutInSecondsOutputReference",
 		reflect.TypeOf((*WarehouseParametersStatementTimeoutInSecondsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -371,16 +371,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseParametersStatementTimeoutInSecondsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseShowOutput",
+		"@cdktn/provider-snowflake.warehouse.WarehouseShowOutput",
 		reflect.TypeOf((*WarehouseShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseShowOutputList",
+		"@cdktn/provider-snowflake.warehouse.WarehouseShowOutputList",
 		reflect.TypeOf((*WarehouseShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -396,12 +396,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseShowOutputOutputReference",
 		reflect.TypeOf((*WarehouseShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoResume", GoGetter: "AutoResume"},
@@ -457,16 +457,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.warehouse.WarehouseTimeouts",
+		"@cdktn/provider-snowflake.warehouse.WarehouseTimeouts",
 		reflect.TypeOf((*WarehouseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference",
 		reflect.TypeOf((*WarehouseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -505,7 +505,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WarehouseTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

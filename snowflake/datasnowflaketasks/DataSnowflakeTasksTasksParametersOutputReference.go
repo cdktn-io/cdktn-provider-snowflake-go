@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflaketasks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflaketasks/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketasks/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeTasksTasksParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AbortDetachedQuery() DataSnowflakeTasksTasksParametersAbortDetachedQueryList
 	Autocommit() DataSnowflakeTasksTasksParametersAutocommitList
 	BinaryInputFormat() DataSnowflakeTasksTasksParametersBinaryInputFormatList
@@ -64,6 +64,8 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 	RowsPerResultset() DataSnowflakeTasksTasksParametersRowsPerResultsetList
 	S3StageVpceDnsName() DataSnowflakeTasksTasksParametersS3StageVpceDnsNameList
 	SearchPath() DataSnowflakeTasksTasksParametersSearchPathList
+	ServerlessTaskMaxStatementSize() DataSnowflakeTasksTasksParametersServerlessTaskMaxStatementSizeList
+	ServerlessTaskMinStatementSize() DataSnowflakeTasksTasksParametersServerlessTaskMinStatementSizeList
 	StatementQueuedTimeoutInSeconds() DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList
 	StatementTimeoutInSeconds() DataSnowflakeTasksTasksParametersStatementTimeoutInSecondsList
 	StrictJsonOutput() DataSnowflakeTasksTasksParametersStrictJsonOutputList
@@ -74,9 +76,9 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeInputFormat() DataSnowflakeTasksTasksParametersTimeInputFormatList
 	TimeOutputFormat() DataSnowflakeTasksTasksParametersTimeOutputFormatList
 	TimestampDayIsAlways24H() DataSnowflakeTasksTasksParametersTimestampDayIsAlways24HList
@@ -103,7 +105,7 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,12 +121,12 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -134,7 +136,7 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeTasksTasksParametersOutputReference
 type jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) AbortDetachedQuery() DataSnowflakeTasksTasksParametersAbortDetachedQueryList {
@@ -507,6 +509,26 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) SearchPath(
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) ServerlessTaskMaxStatementSize() DataSnowflakeTasksTasksParametersServerlessTaskMaxStatementSizeList {
+	var returns DataSnowflakeTasksTasksParametersServerlessTaskMaxStatementSizeList
+	_jsii_.Get(
+		j,
+		"serverlessTaskMaxStatementSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) ServerlessTaskMinStatementSize() DataSnowflakeTasksTasksParametersServerlessTaskMinStatementSizeList {
+	var returns DataSnowflakeTasksTasksParametersServerlessTaskMinStatementSizeList
+	_jsii_.Get(
+		j,
+		"serverlessTaskMinStatementSize",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) StatementQueuedTimeoutInSeconds() DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList {
 	var returns DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList
 	_jsii_.Get(
@@ -567,8 +589,8 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -788,7 +810,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) WeekStart()
 }
 
 
-func NewDataSnowflakeTasksTasksParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersOutputReference {
+func NewDataSnowflakeTasksTasksParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeTasksTasksParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -797,7 +819,7 @@ func NewDataSnowflakeTasksTasksParametersOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -805,11 +827,11 @@ func NewDataSnowflakeTasksTasksParametersOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDataSnowflakeTasksTasksParametersOutputReference_Override(d DataSnowflakeTasksTasksParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeTasksTasksParametersOutputReference_Override(d DataSnowflakeTasksTasksParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -859,7 +881,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,11 +921,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1027,8 +1049,8 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1040,11 +1062,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1056,7 +1078,7 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

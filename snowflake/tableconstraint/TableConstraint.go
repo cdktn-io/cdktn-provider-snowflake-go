@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tableconstraint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tableconstraint/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tableconstraint/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint snowflake_table_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint}.
 type TableConstraint interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Columns() *[]*string
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
@@ -47,9 +47,9 @@ type TableConstraint interface {
 	SetEnforced(val interface{})
 	EnforcedInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	ForeignKeyProperties() TableConstraintForeignKeyPropertiesOutputReference
 	ForeignKeyPropertiesInput() *TableConstraintForeignKeyProperties
 	// Experimental.
@@ -63,18 +63,18 @@ type TableConstraint interface {
 	SetInitially(val *string)
 	InitiallyInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type TableConstraint interface {
 	SetTableId(val *string)
 	TableIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -109,7 +109,7 @@ type TableConstraint interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -127,9 +127,9 @@ type TableConstraint interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -174,11 +174,11 @@ type TableConstraint interface {
 
 // The jsii proxy struct for TableConstraint
 type jsiiProxy_TableConstraint struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_TableConstraint) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TableConstraint) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_TableConstraint) EnforcedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TableConstraint) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_TableConstraint) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_TableConstraint) InitiallyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TableConstraint) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_TableConstraint) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_TableConstraint) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_TableConstraint) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_TableConstraint) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_TableConstraint) TableIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TableConstraint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TableConstraint) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -618,7 +618,7 @@ func (j *jsiiProxy_TableConstraint) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint(scope constructs.Construct, id *string, config *TableConstraintConfig) TableConstraint {
 	_init_.Initialize()
 
@@ -628,7 +628,7 @@ func NewTableConstraint(scope constructs.Construct, id *string, config *TableCon
 	j := jsiiProxy_TableConstraint{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -636,12 +636,12 @@ func NewTableConstraint(scope constructs.Construct, id *string, config *TableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint_Override(t TableConstraint, scope constructs.Construct, id *string, config *TableConstraintConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -732,7 +732,7 @@ func (j *jsiiProxy_TableConstraint)SetEnforced(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TableConstraint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TableConstraint)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -762,7 +762,7 @@ func (j *jsiiProxy_TableConstraint)SetInitially(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableConstraint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TableConstraint)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +784,7 @@ func (j *jsiiProxy_TableConstraint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableConstraint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TableConstraint)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -847,17 +847,17 @@ func (j *jsiiProxy_TableConstraint)SetValidate(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a TableConstraint resource upon running "cdktf plan <stack-name>".
-func TableConstraint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TableConstraint resource upon running "cdktn plan <stack-name>".
+func TableConstraint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTableConstraint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -892,7 +892,7 @@ func TableConstraint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -911,7 +911,7 @@ func TableConstraint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -930,7 +930,7 @@ func TableConstraint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -943,7 +943,7 @@ func TableConstraint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		"tfResourceType",
 		&returns,
 	)
@@ -988,11 +988,11 @@ func (t *jsiiProxy_TableConstraint) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (t *jsiiProxy_TableConstraint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TableConstraint) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -1129,7 +1129,7 @@ func (t *jsiiProxy_TableConstraint) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TableConstraint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_TableConstraint) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1140,11 +1140,11 @@ func (t *jsiiProxy_TableConstraint) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (t *jsiiProxy_TableConstraint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TableConstraint) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,

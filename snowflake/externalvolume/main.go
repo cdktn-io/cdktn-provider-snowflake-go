@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externalvolume
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolume",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolume",
 		reflect.TypeOf((*ExternalVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolume{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeConfig",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig",
 		reflect.TypeOf((*ExternalVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeDescribeOutput",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutput",
 		reflect.TypeOf((*ExternalVolumeDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputList",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputList",
 		reflect.TypeOf((*ExternalVolumeDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +108,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference",
 		reflect.TypeOf((*ExternalVolumeDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,16 +145,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeShowOutput",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutput",
 		reflect.TypeOf((*ExternalVolumeShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeShowOutputList",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputList",
 		reflect.TypeOf((*ExternalVolumeShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -170,12 +170,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference",
 		reflect.TypeOf((*ExternalVolumeShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowWrites", GoGetter: "AllowWrites"},
@@ -205,16 +205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeStorageLocation",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation",
 		reflect.TypeOf((*ExternalVolumeStorageLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeStorageLocationList",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationList",
 		reflect.TypeOf((*ExternalVolumeStorageLocationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -231,12 +231,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeStorageLocationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference",
 		reflect.TypeOf((*ExternalVolumeStorageLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureTenantId", GoGetter: "AzureTenantId"},
@@ -282,16 +282,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeStorageLocationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeTimeouts",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts",
 		reflect.TypeOf((*ExternalVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalVolume.ExternalVolumeTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*ExternalVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -330,7 +330,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalVolumeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

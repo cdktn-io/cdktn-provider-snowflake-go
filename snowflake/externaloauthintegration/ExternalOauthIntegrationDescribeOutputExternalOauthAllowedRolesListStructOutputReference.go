@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externaloauthintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaloauthintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaloauthintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOu
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	Value() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOu
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOu
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOu
 
 // The jsii proxy struct for ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference
 type jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	return returns
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 }
 
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStruc
 	j := jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStruc
 	return &j
 }
 
-func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference_Override(e ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference",
+		"@cdktn/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	)
 }
 
-func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -433,8 +433,8 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -446,11 +446,11 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -462,7 +462,7 @@ func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRol
 	return returns
 }
 
-func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

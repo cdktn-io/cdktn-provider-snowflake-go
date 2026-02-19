@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateGetParameters(i
 	return nil
 }
 
-func (u *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_UserParametersS3StageVpceDnsNameList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewUserParametersS3StageVpceDnsNameListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewUserParametersS3StageVpceDnsNameListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

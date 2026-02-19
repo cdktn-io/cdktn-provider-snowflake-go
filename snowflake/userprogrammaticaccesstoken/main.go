@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userprogrammaticaccesstoken
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessToken",
 		reflect.TypeOf((*UserProgrammaticAccessToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -93,20 +93,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserProgrammaticAccessToken{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenConfig",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenConfig",
 		reflect.TypeOf((*UserProgrammaticAccessTokenConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutput",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutput",
 		reflect.TypeOf((*UserProgrammaticAccessTokenShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutputList",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutputList",
 		reflect.TypeOf((*UserProgrammaticAccessTokenShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -122,12 +122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserProgrammaticAccessTokenShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutputOutputReference",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenShowOutputOutputReference",
 		reflect.TypeOf((*UserProgrammaticAccessTokenShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -164,16 +164,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserProgrammaticAccessTokenShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenTimeouts",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenTimeouts",
 		reflect.TypeOf((*UserProgrammaticAccessTokenTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.userProgrammaticAccessToken.UserProgrammaticAccessTokenTimeoutsOutputReference",
 		reflect.TypeOf((*UserProgrammaticAccessTokenTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +212,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserProgrammaticAccessTokenTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

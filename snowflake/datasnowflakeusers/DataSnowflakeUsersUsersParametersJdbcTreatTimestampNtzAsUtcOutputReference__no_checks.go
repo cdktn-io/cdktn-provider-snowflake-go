@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOu
 	return nil
 }
 
-func (d *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOu
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

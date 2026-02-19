@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package schema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/schema/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/schema/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference interface {
 
 // The jsii proxy struct for SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference
 type jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) V
 }
 
 
-func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference {
+func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformReso
 	j := jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference",
+		"@cdktn/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformReso
 	return &j
 }
 
-func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference_Override(s SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference_Override(s SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference",
+		"@cdktn/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,11 +457,11 @@ func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) I
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -473,7 +473,7 @@ func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) I
 	return returns
 }
 
-func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

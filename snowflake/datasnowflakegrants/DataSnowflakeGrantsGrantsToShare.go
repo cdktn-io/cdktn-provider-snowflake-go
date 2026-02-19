@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakegrants
@@ -7,7 +7,7 @@ package datasnowflakegrants
 type DataSnowflakeGrantsGrantsToShare struct {
 	// Lists all of the privileges and roles granted to the specified share.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
 	ShareName *string `field:"required" json:"shareName" yaml:"shareName"`
 }
 

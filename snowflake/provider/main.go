@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.provider.SnowflakeProvider",
+		"@cdktn/provider-snowflake.provider.SnowflakeProvider",
 		reflect.TypeOf((*SnowflakeProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
@@ -22,6 +22,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "authenticator", GoGetter: "Authenticator"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorInput", GoGetter: "AuthenticatorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "certRevocationCheckMode", GoGetter: "CertRevocationCheckMode"},
+			_jsii_.MemberProperty{JsiiProperty: "certRevocationCheckModeInput", GoGetter: "CertRevocationCheckModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIp", GoGetter: "ClientIp"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIpInput", GoGetter: "ClientIpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientRequestMfaToken", GoGetter: "ClientRequestMfaToken"},
@@ -31,10 +33,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientTimeout", GoGetter: "ClientTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTimeoutInput", GoGetter: "ClientTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "crlAllowCertificatesWithoutCrlUrl", GoGetter: "CrlAllowCertificatesWithoutCrlUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "crlAllowCertificatesWithoutCrlUrlInput", GoGetter: "CrlAllowCertificatesWithoutCrlUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "crlHttpClientTimeout", GoGetter: "CrlHttpClientTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "crlHttpClientTimeoutInput", GoGetter: "CrlHttpClientTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "crlInMemoryCacheDisabled", GoGetter: "CrlInMemoryCacheDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "crlInMemoryCacheDisabledInput", GoGetter: "CrlInMemoryCacheDisabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "crlOnDiskCacheDisabled", GoGetter: "CrlOnDiskCacheDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "crlOnDiskCacheDisabledInput", GoGetter: "CrlOnDiskCacheDisabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disableConsoleLogin", GoGetter: "DisableConsoleLogin"},
 			_jsii_.MemberProperty{JsiiProperty: "disableConsoleLoginInput", GoGetter: "DisableConsoleLoginInput"},
+			_jsii_.MemberProperty{JsiiProperty: "disableOcspChecks", GoGetter: "DisableOcspChecks"},
+			_jsii_.MemberProperty{JsiiProperty: "disableOcspChecksInput", GoGetter: "DisableOcspChecksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disableQueryContextCache", GoGetter: "DisableQueryContextCache"},
 			_jsii_.MemberProperty{JsiiProperty: "disableQueryContextCacheInput", GoGetter: "DisableQueryContextCacheInput"},
+			_jsii_.MemberProperty{JsiiProperty: "disableSamlUrlCheck", GoGetter: "DisableSamlUrlCheck"},
+			_jsii_.MemberProperty{JsiiProperty: "disableSamlUrlCheckInput", GoGetter: "DisableSamlUrlCheckInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disableTelemetry", GoGetter: "DisableTelemetry"},
 			_jsii_.MemberProperty{JsiiProperty: "disableTelemetryInput", GoGetter: "DisableTelemetryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "driverTracing", GoGetter: "DriverTracing"},
@@ -69,6 +83,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxRetryCountInput", GoGetter: "MaxRetryCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metaAttributes", GoGetter: "MetaAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "noProxy", GoGetter: "NoProxy"},
+			_jsii_.MemberProperty{JsiiProperty: "noProxyInput", GoGetter: "NoProxyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthAuthorizationUrl", GoGetter: "OauthAuthorizationUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthAuthorizationUrlInput", GoGetter: "OauthAuthorizationUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthClientId", GoGetter: "OauthClientId"},
@@ -108,18 +124,35 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "profileInput", GoGetter: "ProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
 			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyHost", GoGetter: "ProxyHost"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyHostInput", GoGetter: "ProxyHostInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyPassword", GoGetter: "ProxyPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyPasswordInput", GoGetter: "ProxyPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyPort", GoGetter: "ProxyPort"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyPortInput", GoGetter: "ProxyPortInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyProtocol", GoGetter: "ProxyProtocol"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyProtocolInput", GoGetter: "ProxyProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyUser", GoGetter: "ProxyUser"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyUserInput", GoGetter: "ProxyUserInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeout", GoGetter: "RequestTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeoutInput", GoGetter: "RequestTimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountName", GoMethod: "ResetAccountName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticator", GoMethod: "ResetAuthenticator"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCertRevocationCheckMode", GoMethod: "ResetCertRevocationCheckMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientIp", GoMethod: "ResetClientIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientRequestMfaToken", GoMethod: "ResetClientRequestMfaToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientStoreTemporaryCredential", GoMethod: "ResetClientStoreTemporaryCredential"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientTimeout", GoMethod: "ResetClientTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrlAllowCertificatesWithoutCrlUrl", GoMethod: "ResetCrlAllowCertificatesWithoutCrlUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrlHttpClientTimeout", GoMethod: "ResetCrlHttpClientTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrlInMemoryCacheDisabled", GoMethod: "ResetCrlInMemoryCacheDisabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrlOnDiskCacheDisabled", GoMethod: "ResetCrlOnDiskCacheDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableConsoleLogin", GoMethod: "ResetDisableConsoleLogin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableOcspChecks", GoMethod: "ResetDisableOcspChecks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableQueryContextCache", GoMethod: "ResetDisableQueryContextCache"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableSamlUrlCheck", GoMethod: "ResetDisableSamlUrlCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableTelemetry", GoMethod: "ResetDisableTelemetry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriverTracing", GoMethod: "ResetDriverTracing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableSingleUseRefreshTokens", GoMethod: "ResetEnableSingleUseRefreshTokens"},
@@ -135,6 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLogQueryParameters", GoMethod: "ResetLogQueryParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogQueryText", GoMethod: "ResetLogQueryText"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxRetryCount", GoMethod: "ResetMaxRetryCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNoProxy", GoMethod: "ResetNoProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOauthAuthorizationUrl", GoMethod: "ResetOauthAuthorizationUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOauthClientId", GoMethod: "ResetOauthClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOauthClientSecret", GoMethod: "ResetOauthClientSecret"},
@@ -155,6 +189,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKeyPassphrase", GoMethod: "ResetPrivateKeyPassphrase"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProfile", GoMethod: "ResetProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyHost", GoMethod: "ResetProxyHost"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyPassword", GoMethod: "ResetProxyPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyPort", GoMethod: "ResetProxyPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyProtocol", GoMethod: "ResetProxyProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyUser", GoMethod: "ResetProxyUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestTimeout", GoMethod: "ResetRequestTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRole", GoMethod: "ResetRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipTomlFilePermissionVerification", GoMethod: "ResetSkipTomlFilePermissionVerification"},
@@ -201,16 +240,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SnowflakeProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.provider.SnowflakeProviderConfig",
+		"@cdktn/provider-snowflake.provider.SnowflakeProviderConfig",
 		reflect.TypeOf((*SnowflakeProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor",
+		"@cdktn/provider-snowflake.provider.SnowflakeProviderTokenAccessor",
 		reflect.TypeOf((*SnowflakeProviderTokenAccessor)(nil)).Elem(),
 	)
 }

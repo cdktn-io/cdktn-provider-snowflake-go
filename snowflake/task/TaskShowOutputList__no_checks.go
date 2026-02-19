@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaskShowOutputList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (t *jsiiProxy_TaskShowOutputList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaskShowOutputList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_TaskShowOutputList) validateSetTerraformAttributeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_TaskShowOutputList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TaskShowOutputList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_TaskShowOutputList) validateSetWrapsSetParameters(val *bool) 
 	return nil
 }
 
-func validateNewTaskShowOutputListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTaskShowOutputListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

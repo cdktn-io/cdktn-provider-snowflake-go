@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package secretwithclientcredentials
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials",
 		reflect.TypeOf((*SecretWithClientCredentials)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -82,20 +82,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentials{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig",
 		reflect.TypeOf((*SecretWithClientCredentialsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutput",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutput",
 		reflect.TypeOf((*SecretWithClientCredentialsDescribeOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputList",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputList",
 		reflect.TypeOf((*SecretWithClientCredentialsDescribeOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentialsDescribeOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputOutputReference",
 		reflect.TypeOf((*SecretWithClientCredentialsDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -155,16 +155,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentialsDescribeOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutput",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutput",
 		reflect.TypeOf((*SecretWithClientCredentialsShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputList",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputList",
 		reflect.TypeOf((*SecretWithClientCredentialsShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -180,12 +180,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentialsShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputOutputReference",
 		reflect.TypeOf((*SecretWithClientCredentialsShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -221,16 +221,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentialsShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts",
 		reflect.TypeOf((*SecretWithClientCredentialsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeoutsOutputReference",
 		reflect.TypeOf((*SecretWithClientCredentialsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,7 +269,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretWithClientCredentialsTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

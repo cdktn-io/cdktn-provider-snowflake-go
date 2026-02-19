@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflaketables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflaketables/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketables/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeTablesTablesShowOutputOutputReference interface {
-	cdktf.ComplexObject
-	AutomaticClustering() cdktf.IResolvable
+	cdktn.ComplexObject
+	AutomaticClustering() cdktn.IResolvable
 	Budget() *string
 	Bytes() *float64
-	ChangeTracking() cdktf.IResolvable
+	ChangeTracking() cdktn.IResolvable
 	ClusterBy() *string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -37,13 +37,13 @@ type DataSnowflakeTablesTablesShowOutputOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseName() *string
 	DroppedOn() *string
-	EnableSchemaEvolution() cdktf.IResolvable
+	EnableSchemaEvolution() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeTablesTablesShowOutput
 	SetInternalValue(val *DataSnowflakeTablesTablesShowOutput)
-	IsEvent() cdktf.IResolvable
-	IsExternal() cdktf.IResolvable
+	IsEvent() cdktn.IResolvable
+	IsExternal() cdktn.IResolvable
 	Kind() *string
 	Name() *string
 	Owner() *string
@@ -51,7 +51,7 @@ type DataSnowflakeTablesTablesShowOutputOutputReference interface {
 	RetentionTime() *float64
 	Rows() *float64
 	SchemaName() *string
-	SearchOptimization() cdktf.IResolvable
+	SearchOptimization() cdktn.IResolvable
 	SearchOptimizationBytes() *float64
 	SearchOptimizationProgress() *string
 	// Experimental.
@@ -59,15 +59,15 @@ type DataSnowflakeTablesTablesShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,12 +83,12 @@ type DataSnowflakeTablesTablesShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,11 +98,11 @@ type DataSnowflakeTablesTablesShowOutputOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeTablesTablesShowOutputOutputReference
 type jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) AutomaticClustering() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) AutomaticClustering() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"automaticClustering",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Bytes() *
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) ChangeTracking() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) ChangeTracking() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"changeTracking",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) DroppedOn
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) EnableSchemaEvolution() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) EnableSchemaEvolution() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableSchemaEvolution",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) IsEvent() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) IsEvent() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isEvent",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) IsEvent()
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) IsExternal() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) IsExternal() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isExternal",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) SchemaNam
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) SearchOptimization() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) SearchOptimization() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"searchOptimization",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Terraform
 }
 
 
-func NewDataSnowflakeTablesTablesShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTablesTablesShowOutputOutputReference {
+func NewDataSnowflakeTablesTablesShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTablesTablesShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeTablesTablesShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -401,7 +401,7 @@ func NewDataSnowflakeTablesTablesShowOutputOutputReference(terraformResource cdk
 	j := jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -409,11 +409,11 @@ func NewDataSnowflakeTablesTablesShowOutputOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDataSnowflakeTablesTablesShowOutputOutputReference_Override(d DataSnowflakeTablesTablesShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeTablesTablesShowOutputOutputReference_Override(d DataSnowflakeTablesTablesShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -631,8 +631,8 @@ func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -644,11 +644,11 @@ func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -660,7 +660,7 @@ func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeTablesTablesShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

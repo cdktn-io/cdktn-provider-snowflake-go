@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakepipes
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes",
+		"@cdktn/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes",
 		reflect.TypeOf((*DataSnowflakePipes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,20 +58,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakePipes{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig",
+		"@cdktn/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig",
 		reflect.TypeOf((*DataSnowflakePipesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipes",
+		"@cdktn/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipes",
 		reflect.TypeOf((*DataSnowflakePipesPipes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesList",
+		"@cdktn/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesList",
 		reflect.TypeOf((*DataSnowflakePipesPipesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -87,12 +87,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakePipesPipesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesOutputReference",
 		reflect.TypeOf((*DataSnowflakePipesPipesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -124,7 +124,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakePipesPipesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

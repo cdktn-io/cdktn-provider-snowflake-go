@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package listing
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/listing/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ListingManifestFromStageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type ListingManifestFromStageOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VersionComment() *string
 	SetVersionComment(val *string)
 	VersionCommentInput() *string
@@ -57,7 +57,7 @@ type ListingManifestFromStageOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,15 +73,15 @@ type ListingManifestFromStageOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLocation()
 	ResetVersionComment()
 	ResetVersionName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type ListingManifestFromStageOutputReference interface {
 
 // The jsii proxy struct for ListingManifestFromStageOutputReference
 type jsiiProxy_ListingManifestFromStageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ListingManifestFromStageOutputReference) ComplexObjectIndex() interface{} {
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ListingManifestFromStageOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ListingManifestFromStageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ListingManifestFromStageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -245,7 +245,7 @@ func (j *jsiiProxy_ListingManifestFromStageOutputReference) VersionNameInput() *
 }
 
 
-func NewListingManifestFromStageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListingManifestFromStageOutputReference {
+func NewListingManifestFromStageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ListingManifestFromStageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewListingManifestFromStageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -254,7 +254,7 @@ func NewListingManifestFromStageOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ListingManifestFromStageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.listing.ListingManifestFromStageOutputReference",
+		"@cdktn/provider-snowflake.listing.ListingManifestFromStageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,11 +262,11 @@ func NewListingManifestFromStageOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewListingManifestFromStageOutputReference_Override(l ListingManifestFromStageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewListingManifestFromStageOutputReference_Override(l ListingManifestFromStageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.listing.ListingManifestFromStageOutputReference",
+		"@cdktn/provider-snowflake.listing.ListingManifestFromStageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_ListingManifestFromStageOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ListingManifestFromStageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ListingManifestFromStageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,11 +400,11 @@ func (l *jsiiProxy_ListingManifestFromStageOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (l *jsiiProxy_ListingManifestFromStageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_ListingManifestFromStageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -528,8 +528,8 @@ func (l *jsiiProxy_ListingManifestFromStageOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (l *jsiiProxy_ListingManifestFromStageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_ListingManifestFromStageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -541,11 +541,11 @@ func (l *jsiiProxy_ListingManifestFromStageOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (l *jsiiProxy_ListingManifestFromStageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_ListingManifestFromStageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -581,7 +581,7 @@ func (l *jsiiProxy_ListingManifestFromStageOutputReference) ResetVersionName() {
 	)
 }
 
-func (l *jsiiProxy_ListingManifestFromStageOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_ListingManifestFromStageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package saml2integration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/saml2integration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/saml2integration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type Saml2IntegrationDescribeOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedEmailPatterns() Saml2IntegrationDescribeOutputAllowedEmailPatternsList
 	AllowedUserDomains() Saml2IntegrationDescribeOutputAllowedUserDomainsList
 	Comment() Saml2IntegrationDescribeOutputCommentList
@@ -54,15 +54,15 @@ type Saml2IntegrationDescribeOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,12 +78,12 @@ type Saml2IntegrationDescribeOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type Saml2IntegrationDescribeOutputOutputReference interface {
 
 // The jsii proxy struct for Saml2IntegrationDescribeOutputOutputReference
 type jsiiProxy_Saml2IntegrationDescribeOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) AllowedEmailPatterns() Saml2IntegrationDescribeOutputAllowedEmailPatternsList {
@@ -326,8 +326,8 @@ func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) TerraformResou
 }
 
 
-func NewSaml2IntegrationDescribeOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputOutputReference {
+func NewSaml2IntegrationDescribeOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSaml2IntegrationDescribeOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -346,7 +346,7 @@ func NewSaml2IntegrationDescribeOutputOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_Saml2IntegrationDescribeOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -354,11 +354,11 @@ func NewSaml2IntegrationDescribeOutputOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewSaml2IntegrationDescribeOutputOutputReference_Override(s Saml2IntegrationDescribeOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSaml2IntegrationDescribeOutputOutputReference_Override(s Saml2IntegrationDescribeOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -408,7 +408,7 @@ func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,11 +448,11 @@ func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -576,8 +576,8 @@ func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) GetStringMapAt
 	return returns
 }
 
-func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -589,11 +589,11 @@ func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationA
 	return returns
 }
 
-func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -605,7 +605,7 @@ func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) InterpolationF
 	return returns
 }
 
-func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_Saml2IntegrationDescribeOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

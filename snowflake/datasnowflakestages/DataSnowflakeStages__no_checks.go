@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataSnowflakeStages) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeStages) validatePutInParameters(value *DataSnowflakeStagesIn) error {
+	return nil
+}
+
 func validateDataSnowflakeStages_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -75,19 +79,19 @@ func (j *jsiiProxy_DataSnowflakeStages) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeStages) validateSetDatabaseParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataSnowflakeStages) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeStages) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataSnowflakeStages) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeStages) validateSetSchemaParameters(val *string) error {
+func (j *jsiiProxy_DataSnowflakeStages) validateSetLikeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeStages) validateSetWithDescribeParameters(val interface{}) error {
 	return nil
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package gitrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/gitrepository/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/gitrepository/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type GitRepositoryShowOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type GitRepositoryShowOutputList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type GitRepositoryShowOutputList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) GitRepositoryShowOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type GitRepositoryShowOutputList interface {
 
 // The jsii proxy struct for GitRepositoryShowOutputList
 type jsiiProxy_GitRepositoryShowOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_GitRepositoryShowOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_GitRepositoryShowOutputList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GitRepositoryShowOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GitRepositoryShowOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_GitRepositoryShowOutputList) WrapsSet() *bool {
 }
 
 
-func NewGitRepositoryShowOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GitRepositoryShowOutputList {
+func NewGitRepositoryShowOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GitRepositoryShowOutputList {
 	_init_.Initialize()
 
 	if err := validateNewGitRepositoryShowOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewGitRepositoryShowOutputList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_GitRepositoryShowOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewGitRepositoryShowOutputList(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewGitRepositoryShowOutputList_Override(g GitRepositoryShowOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewGitRepositoryShowOutputList_Override(g GitRepositoryShowOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
+		"@cdktn/provider-snowflake.gitRepository.GitRepositoryShowOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_GitRepositoryShowOutputList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_GitRepositoryShowOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GitRepositoryShowOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_GitRepositoryShowOutputList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (g *jsiiProxy_GitRepositoryShowOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (g *jsiiProxy_GitRepositoryShowOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := g.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		g,
@@ -208,7 +208,7 @@ func (g *jsiiProxy_GitRepositoryShowOutputList) Get(index *float64) GitRepositor
 	return returns
 }
 
-func (g *jsiiProxy_GitRepositoryShowOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GitRepositoryShowOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/service/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceDescribeOutputOutputReference interface {
-	cdktf.ComplexObject
-	AutoResume() cdktf.IResolvable
+	cdktn.ComplexObject
+	AutoResume() cdktn.IResolvable
 	AutoSuspendSecs() *float64
 	Comment() *string
 	// the index of the complex object in a list.
@@ -41,9 +41,9 @@ type ServiceDescribeOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *ServiceDescribeOutput
 	SetInternalValue(val *ServiceDescribeOutput)
-	IsAsyncJob() cdktf.IResolvable
-	IsJob() cdktf.IResolvable
-	IsUpgrading() cdktf.IResolvable
+	IsAsyncJob() cdktn.IResolvable
+	IsJob() cdktn.IResolvable
+	IsUpgrading() cdktn.IResolvable
 	ManagingObjectDomain() *string
 	ManagingObjectName() *string
 	MaxInstances() *float64
@@ -65,16 +65,16 @@ type ServiceDescribeOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdatedOn() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,12 +90,12 @@ type ServiceDescribeOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,11 +105,11 @@ type ServiceDescribeOutputOutputReference interface {
 
 // The jsii proxy struct for ServiceDescribeOutputOutputReference
 type jsiiProxy_ServiceDescribeOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference) AutoResume() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference) AutoResume() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoResume",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference) InternalValue() *Servic
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsAsyncJob() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsAsyncJob() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAsyncJob",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsAsyncJob() cdktf.IRes
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsJob() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsJob() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isJob",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsJob() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsUpgrading() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference) IsUpgrading() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isUpgrading",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -469,7 +469,7 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference) UpdatedOn() *string {
 }
 
 
-func NewServiceDescribeOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceDescribeOutputOutputReference {
+func NewServiceDescribeOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceDescribeOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceDescribeOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -478,7 +478,7 @@ func NewServiceDescribeOutputOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ServiceDescribeOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -486,11 +486,11 @@ func NewServiceDescribeOutputOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewServiceDescribeOutputOutputReference_Override(s ServiceDescribeOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewServiceDescribeOutputOutputReference_Override(s ServiceDescribeOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference",
+		"@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -540,7 +540,7 @@ func (j *jsiiProxy_ServiceDescribeOutputOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ServiceDescribeOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceDescribeOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,11 +580,11 @@ func (s *jsiiProxy_ServiceDescribeOutputOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceDescribeOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -708,8 +708,8 @@ func (s *jsiiProxy_ServiceDescribeOutputOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -721,11 +721,11 @@ func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -737,7 +737,7 @@ func (s *jsiiProxy_ServiceDescribeOutputOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDescribeOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceDescribeOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

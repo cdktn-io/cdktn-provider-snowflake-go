@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package legacyserviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/legacyserviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/legacyserviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LegacyServiceUserParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AbortDetachedQuery() LegacyServiceUserParametersAbortDetachedQueryList
 	Autocommit() LegacyServiceUserParametersAutocommitList
 	BinaryInputFormat() LegacyServiceUserParametersBinaryInputFormatList
@@ -77,9 +77,9 @@ type LegacyServiceUserParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeInputFormat() LegacyServiceUserParametersTimeInputFormatList
 	TimeOutputFormat() LegacyServiceUserParametersTimeOutputFormatList
 	TimestampDayIsAlways24H() LegacyServiceUserParametersTimestampDayIsAlways24HList
@@ -103,7 +103,7 @@ type LegacyServiceUserParametersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,12 +119,12 @@ type LegacyServiceUserParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -134,7 +134,7 @@ type LegacyServiceUserParametersOutputReference interface {
 
 // The jsii proxy struct for LegacyServiceUserParametersOutputReference
 type jsiiProxy_LegacyServiceUserParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) AbortDetachedQuery() LegacyServiceUserParametersAbortDetachedQueryList {
@@ -597,8 +597,8 @@ func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -788,7 +788,7 @@ func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) WeekStart() Legac
 }
 
 
-func NewLegacyServiceUserParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LegacyServiceUserParametersOutputReference {
+func NewLegacyServiceUserParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LegacyServiceUserParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLegacyServiceUserParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -797,7 +797,7 @@ func NewLegacyServiceUserParametersOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LegacyServiceUserParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOutputReference",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -805,11 +805,11 @@ func NewLegacyServiceUserParametersOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewLegacyServiceUserParametersOutputReference_Override(l LegacyServiceUserParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLegacyServiceUserParametersOutputReference_Override(l LegacyServiceUserParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOutputReference",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -859,7 +859,7 @@ func (j *jsiiProxy_LegacyServiceUserParametersOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LegacyServiceUserParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LegacyServiceUserParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,11 +899,11 @@ func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1027,8 +1027,8 @@ func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1040,11 +1040,11 @@ func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1056,7 +1056,7 @@ func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) InterpolationForA
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LegacyServiceUserParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

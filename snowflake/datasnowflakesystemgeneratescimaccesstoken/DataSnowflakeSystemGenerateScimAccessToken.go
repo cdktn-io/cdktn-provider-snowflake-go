@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakesystemgeneratescimaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakesystemgeneratescimaccesstoken/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesystemgeneratescimaccesstoken/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}.
 type DataSnowflakeSystemGenerateScimAccessToken interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccessToken() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,9 +29,9 @@ type DataSnowflakeSystemGenerateScimAccessToken interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -43,19 +43,19 @@ type DataSnowflakeSystemGenerateScimAccessToken interface {
 	SetIntegrationName(val *string)
 	IntegrationNameInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataSnowflakeSystemGenerateScimAccessToken interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataSnowflakeSystemGenerateScimAccessToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -105,7 +105,7 @@ type DataSnowflakeSystemGenerateScimAccessToken interface {
 
 // The jsii proxy struct for DataSnowflakeSystemGenerateScimAccessToken
 type jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) AccessToken() *string {
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) AccessToken() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) DependsOn() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) IntegrationNameIn
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) Node() constructs
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) RawOverrides() in
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source.
 func NewDataSnowflakeSystemGenerateScimAccessToken(scope constructs.Construct, id *string, config *DataSnowflakeSystemGenerateScimAccessTokenConfig) DataSnowflakeSystemGenerateScimAccessToken {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataSnowflakeSystemGenerateScimAccessToken(scope constructs.Construct, i
 	j := jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -317,12 +317,12 @@ func NewDataSnowflakeSystemGenerateScimAccessToken(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source.
 func NewDataSnowflakeSystemGenerateScimAccessToken_Override(d DataSnowflakeSystemGenerateScimAccessToken, scope constructs.Construct, id *string, config *DataSnowflakeSystemGenerateScimAccessTokenConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetIntegrationName
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -396,17 +396,17 @@ func (j *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken)SetProvider(val cd
 	)
 }
 
-// Generates CDKTF code for importing a DataSnowflakeSystemGenerateScimAccessToken resource upon running "cdktf plan <stack-name>".
-func DataSnowflakeSystemGenerateScimAccessToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataSnowflakeSystemGenerateScimAccessToken resource upon running "cdktn plan <stack-name>".
+func DataSnowflakeSystemGenerateScimAccessToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataSnowflakeSystemGenerateScimAccessToken_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -441,7 +441,7 @@ func DataSnowflakeSystemGenerateScimAccessToken_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -460,7 +460,7 @@ func DataSnowflakeSystemGenerateScimAccessToken_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataSnowflakeSystemGenerateScimAccessToken_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DataSnowflakeSystemGenerateScimAccessToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
+		"@cdktn/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken",
 		"tfResourceType",
 		&returns,
 	)
@@ -526,11 +526,11 @@ func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -654,11 +654,11 @@ func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeSystemGenerateScimAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dynamictable
@@ -7,11 +7,11 @@ package dynamictable
 type DynamicTableTargetLag struct {
 	// Specifies whether the target lag time is downstream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
 	Downstream interface{} `field:"optional" json:"downstream" yaml:"downstream"`
 	// Specifies the maximum target lag time for the dynamic table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
 	MaximumDuration *string `field:"optional" json:"maximumDuration" yaml:"maximumDuration"`
 }
 

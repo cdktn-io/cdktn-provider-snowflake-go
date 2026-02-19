@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package user
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/user/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/user/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type UserParametersTimestampNtzOutputFormatList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type UserParametersTimestampNtzOutputFormatList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type UserParametersTimestampNtzOutputFormatList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) UserParametersTimestampNtzOutputFormatOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type UserParametersTimestampNtzOutputFormatList interface {
 
 // The jsii proxy struct for UserParametersTimestampNtzOutputFormatList
 type jsiiProxy_UserParametersTimestampNtzOutputFormatList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList) WrapsSet() *bool 
 }
 
 
-func NewUserParametersTimestampNtzOutputFormatList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserParametersTimestampNtzOutputFormatList {
+func NewUserParametersTimestampNtzOutputFormatList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserParametersTimestampNtzOutputFormatList {
 	_init_.Initialize()
 
 	if err := validateNewUserParametersTimestampNtzOutputFormatListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewUserParametersTimestampNtzOutputFormatList(terraformResource cdktf.IInte
 	j := jsiiProxy_UserParametersTimestampNtzOutputFormatList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.user.UserParametersTimestampNtzOutputFormatList",
+		"@cdktn/provider-snowflake.user.UserParametersTimestampNtzOutputFormatList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewUserParametersTimestampNtzOutputFormatList(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewUserParametersTimestampNtzOutputFormatList_Override(u UserParametersTimestampNtzOutputFormatList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewUserParametersTimestampNtzOutputFormatList_Override(u UserParametersTimestampNtzOutputFormatList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.user.UserParametersTimestampNtzOutputFormatList",
+		"@cdktn/provider-snowflake.user.UserParametersTimestampNtzOutputFormatList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		u,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_UserParametersTimestampNtzOutputFormatList)SetWrapsSet(val *b
 	)
 }
 
-func (u *jsiiProxy_UserParametersTimestampNtzOutputFormatList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (u *jsiiProxy_UserParametersTimestampNtzOutputFormatList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := u.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		u,
@@ -208,7 +208,7 @@ func (u *jsiiProxy_UserParametersTimestampNtzOutputFormatList) Get(index *float6
 	return returns
 }
 
-func (u *jsiiProxy_UserParametersTimestampNtzOutputFormatList) Resolve(context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserParametersTimestampNtzOutputFormatList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := u.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

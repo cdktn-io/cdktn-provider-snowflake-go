@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (t *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateGetPara
 	return nil
 }
 
-func (t *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_TaskParametersJdbcTreatTimestampNtzAsUtcList) validateSetWrap
 	return nil
 }
 
-func validateNewTaskParametersJdbcTreatTimestampNtzAsUtcListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTaskParametersJdbcTreatTimestampNtzAsUtcListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

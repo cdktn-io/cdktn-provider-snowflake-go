@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package scimintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/scimintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/scimintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ScimIntegrationDescribeOutputRunAsRoleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type ScimIntegrationDescribeOutputRunAsRoleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	Value() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ScimIntegrationDescribeOutputRunAsRoleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type ScimIntegrationDescribeOutputRunAsRoleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ScimIntegrationDescribeOutputRunAsRoleOutputReference interface {
 
 // The jsii proxy struct for ScimIntegrationDescribeOutputRunAsRoleOutputReference
 type jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Value(
 }
 
 
-func NewScimIntegrationDescribeOutputRunAsRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputRunAsRoleOutputReference {
+func NewScimIntegrationDescribeOutputRunAsRoleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputRunAsRoleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewScimIntegrationDescribeOutputRunAsRoleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewScimIntegrationDescribeOutputRunAsRoleOutputReference(terraformResource 
 	j := jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleOutputReference",
+		"@cdktn/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewScimIntegrationDescribeOutputRunAsRoleOutputReference(terraformResource 
 	return &j
 }
 
-func NewScimIntegrationDescribeOutputRunAsRoleOutputReference_Override(s ScimIntegrationDescribeOutputRunAsRoleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewScimIntegrationDescribeOutputRunAsRoleOutputReference_Override(s ScimIntegrationDescribeOutputRunAsRoleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleOutputReference",
+		"@cdktn/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) GetAny
 	return returns
 }
 
-func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -433,8 +433,8 @@ func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) GetStr
 	return returns
 }
 
-func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -446,11 +446,11 @@ func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -462,7 +462,7 @@ func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ScimIntegrationDescribeOutputRunAsRoleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

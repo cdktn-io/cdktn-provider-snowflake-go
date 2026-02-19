@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeconnections
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnections",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnections",
 		reflect.TypeOf((*DataSnowflakeConnections)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,20 +57,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeConnections{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig",
 		reflect.TypeOf((*DataSnowflakeConnectionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnections",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnections",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnections)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsList",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsList",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnectionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -86,12 +86,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeConnectionsConnectionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsOutputReference",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnectionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,16 +119,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeConnectionsConnectionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutput",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutput",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnectionsShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutputList",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutputList",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnectionsShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -144,12 +144,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeConnectionsConnectionsShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConnectionsShowOutputOutputReference",
 		reflect.TypeOf((*DataSnowflakeConnectionsConnectionsShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLocator", GoGetter: "AccountLocator"},
@@ -188,7 +188,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataSnowflakeConnectionsConnectionsShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

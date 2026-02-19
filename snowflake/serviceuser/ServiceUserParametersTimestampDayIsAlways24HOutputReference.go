@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceUserParametersTimestampDayIsAlways24HOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type ServiceUserParametersTimestampDayIsAlways24HOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type ServiceUserParametersTimestampDayIsAlways24HOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ServiceUserParametersTimestampDayIsAlways24HOutputReference interface {
 
 // The jsii proxy struct for ServiceUserParametersTimestampDayIsAlways24HOutputReference
 type jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 }
 
 
-func NewServiceUserParametersTimestampDayIsAlways24HOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersTimestampDayIsAlways24HOutputReference {
+func NewServiceUserParametersTimestampDayIsAlways24HOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceUserParametersTimestampDayIsAlways24HOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceUserParametersTimestampDayIsAlways24HOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewServiceUserParametersTimestampDayIsAlways24HOutputReference(terraformRes
 	j := jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewServiceUserParametersTimestampDayIsAlways24HOutputReference(terraformRes
 	return &j
 }
 
-func NewServiceUserParametersTimestampDayIsAlways24HOutputReference_Override(s ServiceUserParametersTimestampDayIsAlways24HOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewServiceUserParametersTimestampDayIsAlways24HOutputReference_Override(s ServiceUserParametersTimestampDayIsAlways24HOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HOutputReference",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,11 +457,11 @@ func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -473,7 +473,7 @@ func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

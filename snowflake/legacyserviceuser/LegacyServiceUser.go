@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package legacyserviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/legacyserviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/legacyserviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/legacy_service_user snowflake_legacy_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/legacy_service_user snowflake_legacy_service_user}.
 type LegacyServiceUser interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
 	SetAbortDetachedQuery(val interface{})
 	AbortDetachedQueryInput() interface{}
@@ -28,7 +28,7 @@ type LegacyServiceUser interface {
 	SetBinaryOutputFormat(val *string)
 	BinaryOutputFormatInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientMemoryLimit() *float64
 	SetClientMemoryLimit(val *float64)
 	ClientMemoryLimitInput() *float64
@@ -87,6 +87,8 @@ type LegacyServiceUser interface {
 	DefaultWarehouse() *string
 	SetDefaultWarehouse(val *string)
 	DefaultWarehouseInput() *string
+	DefaultWorkloadIdentity() LegacyServiceUserDefaultWorkloadIdentityOutputReference
+	DefaultWorkloadIdentityInput() *LegacyServiceUserDefaultWorkloadIdentity
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -113,9 +115,9 @@ type LegacyServiceUser interface {
 	SetErrorOnNondeterministicUpdate(val interface{})
 	ErrorOnNondeterministicUpdateInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -143,9 +145,9 @@ type LegacyServiceUser interface {
 	SetJsonIndent(val *float64)
 	JsonIndentInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
@@ -186,9 +188,9 @@ type LegacyServiceUser interface {
 	SetPreventUnloadToInternalStages(val interface{})
 	PreventUnloadToInternalStagesInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -230,7 +232,7 @@ type LegacyServiceUser interface {
 	SetStrictJsonOutput(val interface{})
 	StrictJsonOutputInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -298,7 +300,7 @@ type LegacyServiceUser interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -316,9 +318,9 @@ type LegacyServiceUser interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -333,6 +335,7 @@ type LegacyServiceUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultWorkloadIdentity(value *LegacyServiceUserDefaultWorkloadIdentity)
 	ResetAbortDetachedQuery()
 	ResetAutocommit()
 	ResetBinaryInputFormat()
@@ -353,6 +356,7 @@ type LegacyServiceUser interface {
 	ResetDefaultRole()
 	ResetDefaultSecondaryRolesOption()
 	ResetDefaultWarehouse()
+	ResetDefaultWorkloadIdentity()
 	ResetDisabled()
 	ResetDisplayName()
 	ResetEmail()
@@ -425,7 +429,7 @@ type LegacyServiceUser interface {
 
 // The jsii proxy struct for LegacyServiceUser
 type jsiiProxy_LegacyServiceUser struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_LegacyServiceUser) AbortDetachedQuery() interface{} {
@@ -508,8 +512,8 @@ func (j *jsiiProxy_LegacyServiceUser) BinaryOutputFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUser) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LegacyServiceUser) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -868,6 +872,26 @@ func (j *jsiiProxy_LegacyServiceUser) DefaultWarehouseInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LegacyServiceUser) DefaultWorkloadIdentity() LegacyServiceUserDefaultWorkloadIdentityOutputReference {
+	var returns LegacyServiceUserDefaultWorkloadIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"defaultWorkloadIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUser) DefaultWorkloadIdentityInput() *LegacyServiceUserDefaultWorkloadIdentity {
+	var returns *LegacyServiceUserDefaultWorkloadIdentity
+	_jsii_.Get(
+		j,
+		"defaultWorkloadIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LegacyServiceUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1018,8 +1042,8 @@ func (j *jsiiProxy_LegacyServiceUser) ErrorOnNondeterministicUpdateInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUser) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LegacyServiceUser) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -1198,8 +1222,8 @@ func (j *jsiiProxy_LegacyServiceUser) JsonIndentInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LegacyServiceUser) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -1468,8 +1492,8 @@ func (j *jsiiProxy_LegacyServiceUser) PreventUnloadToInternalStagesInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUser) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LegacyServiceUser) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1728,8 +1752,8 @@ func (j *jsiiProxy_LegacyServiceUser) StrictJsonOutputInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LegacyServiceUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LegacyServiceUser) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -2129,7 +2153,7 @@ func (j *jsiiProxy_LegacyServiceUser) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
 func NewLegacyServiceUser(scope constructs.Construct, id *string, config *LegacyServiceUserConfig) LegacyServiceUser {
 	_init_.Initialize()
 
@@ -2139,7 +2163,7 @@ func NewLegacyServiceUser(scope constructs.Construct, id *string, config *Legacy
 	j := jsiiProxy_LegacyServiceUser{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -2147,12 +2171,12 @@ func NewLegacyServiceUser(scope constructs.Construct, id *string, config *Legacy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
 func NewLegacyServiceUser_Override(l LegacyServiceUser, scope constructs.Construct, id *string, config *LegacyServiceUserConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -2485,7 +2509,7 @@ func (j *jsiiProxy_LegacyServiceUser)SetErrorOnNondeterministicUpdate(val interf
 	)
 }
 
-func (j *jsiiProxy_LegacyServiceUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LegacyServiceUser)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2570,7 +2594,7 @@ func (j *jsiiProxy_LegacyServiceUser)SetJsonIndent(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LegacyServiceUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LegacyServiceUser)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2713,7 +2737,7 @@ func (j *jsiiProxy_LegacyServiceUser)SetPreventUnloadToInternalStages(val interf
 	)
 }
 
-func (j *jsiiProxy_LegacyServiceUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LegacyServiceUser)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -3051,17 +3075,17 @@ func (j *jsiiProxy_LegacyServiceUser)SetWeekStart(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a LegacyServiceUser resource upon running "cdktf plan <stack-name>".
-func LegacyServiceUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LegacyServiceUser resource upon running "cdktn plan <stack-name>".
+func LegacyServiceUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLegacyServiceUser_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -3096,7 +3120,7 @@ func LegacyServiceUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -3115,7 +3139,7 @@ func LegacyServiceUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -3134,7 +3158,7 @@ func LegacyServiceUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -3147,7 +3171,7 @@ func LegacyServiceUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser",
+		"@cdktn/provider-snowflake.legacyServiceUser.LegacyServiceUser",
 		"tfResourceType",
 		&returns,
 	)
@@ -3192,11 +3216,11 @@ func (l *jsiiProxy_LegacyServiceUser) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUser) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LegacyServiceUser) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -3333,7 +3357,7 @@ func (l *jsiiProxy_LegacyServiceUser) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LegacyServiceUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LegacyServiceUser) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -3344,11 +3368,11 @@ func (l *jsiiProxy_LegacyServiceUser) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (l *jsiiProxy_LegacyServiceUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LegacyServiceUser) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -3401,6 +3425,17 @@ func (l *jsiiProxy_LegacyServiceUser) OverrideLogicalId(newLogicalId *string) {
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LegacyServiceUser) PutDefaultWorkloadIdentity(value *LegacyServiceUserDefaultWorkloadIdentity) {
+	if err := l.validatePutDefaultWorkloadIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDefaultWorkloadIdentity",
+		[]interface{}{value},
 	)
 }
 
@@ -3560,6 +3595,14 @@ func (l *jsiiProxy_LegacyServiceUser) ResetDefaultWarehouse() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDefaultWarehouse",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LegacyServiceUser) ResetDefaultWorkloadIdentity() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDefaultWorkloadIdentity",
 		nil, // no parameters
 	)
 }

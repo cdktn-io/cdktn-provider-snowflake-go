@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package functionscala
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionscala/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionscala/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type FunctionScalaParametersEnableConsoleOutputList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type FunctionScalaParametersEnableConsoleOutputList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type FunctionScalaParametersEnableConsoleOutputList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) FunctionScalaParametersEnableConsoleOutputOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type FunctionScalaParametersEnableConsoleOutputList interface {
 
 // The jsii proxy struct for FunctionScalaParametersEnableConsoleOutputList
 type jsiiProxy_FunctionScalaParametersEnableConsoleOutputList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) WrapsSet() *b
 }
 
 
-func NewFunctionScalaParametersEnableConsoleOutputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionScalaParametersEnableConsoleOutputList {
+func NewFunctionScalaParametersEnableConsoleOutputList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionScalaParametersEnableConsoleOutputList {
 	_init_.Initialize()
 
 	if err := validateNewFunctionScalaParametersEnableConsoleOutputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewFunctionScalaParametersEnableConsoleOutputList(terraformResource cdktf.I
 	j := jsiiProxy_FunctionScalaParametersEnableConsoleOutputList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionScala.FunctionScalaParametersEnableConsoleOutputList",
+		"@cdktn/provider-snowflake.functionScala.FunctionScalaParametersEnableConsoleOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewFunctionScalaParametersEnableConsoleOutputList(terraformResource cdktf.I
 	return &j
 }
 
-func NewFunctionScalaParametersEnableConsoleOutputList_Override(f FunctionScalaParametersEnableConsoleOutputList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewFunctionScalaParametersEnableConsoleOutputList_Override(f FunctionScalaParametersEnableConsoleOutputList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.functionScala.FunctionScalaParametersEnableConsoleOutputList",
+		"@cdktn/provider-snowflake.functionScala.FunctionScalaParametersEnableConsoleOutputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList)SetWrapsSet(va
 	)
 }
 
-func (f *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (f *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := f.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		f,
@@ -208,7 +208,7 @@ func (f *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) Get(index *fl
 	return returns
 }
 
-func (f *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) Resolve(context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FunctionScalaParametersEnableConsoleOutputList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (s *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) valid
 	return nil
 }
 
-func (s *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) valid
 	return nil
 }
 
-func (j *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList) valid
 	return nil
 }
 
-func validateNewSaml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSaml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package materializedview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/materializedview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/materialized_view snowflake_materialized_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view}.
 type MaterializedView interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -38,9 +38,9 @@ type MaterializedView interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -53,9 +53,9 @@ type MaterializedView interface {
 	SetIsSecure(val interface{})
 	IsSecureInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,9 +65,9 @@ type MaterializedView interface {
 	SetOrReplace(val interface{})
 	OrReplaceInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type MaterializedView interface {
 	Tag() MaterializedViewTagList
 	TagInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -101,7 +101,7 @@ type MaterializedView interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,9 +119,9 @@ type MaterializedView interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -162,11 +162,11 @@ type MaterializedView interface {
 
 // The jsii proxy struct for MaterializedView
 type jsiiProxy_MaterializedView struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_MaterializedView) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MaterializedView) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_MaterializedView) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_MaterializedView) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MaterializedView) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_MaterializedView) IsSecureInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MaterializedView) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MaterializedView) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_MaterializedView) OrReplaceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MaterializedView) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MaterializedView) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_MaterializedView) TagInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MaterializedView) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MaterializedView) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -556,7 +556,7 @@ func (j *jsiiProxy_MaterializedView) WarehouseInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView(scope constructs.Construct, id *string, config *MaterializedViewConfig) MaterializedView {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewMaterializedView(scope constructs.Construct, id *string, config *Materia
 	j := jsiiProxy_MaterializedView{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -574,12 +574,12 @@ func NewMaterializedView(scope constructs.Construct, id *string, config *Materia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView_Override(m MaterializedView, scope constructs.Construct, id *string, config *MaterializedViewConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -637,7 +637,7 @@ func (j *jsiiProxy_MaterializedView)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MaterializedView)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MaterializedView)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +667,7 @@ func (j *jsiiProxy_MaterializedView)SetIsSecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MaterializedView)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MaterializedView)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +700,7 @@ func (j *jsiiProxy_MaterializedView)SetOrReplace(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MaterializedView)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MaterializedView)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -752,17 +752,17 @@ func (j *jsiiProxy_MaterializedView)SetWarehouse(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a MaterializedView resource upon running "cdktf plan <stack-name>".
-func MaterializedView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MaterializedView resource upon running "cdktn plan <stack-name>".
+func MaterializedView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMaterializedView_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -797,7 +797,7 @@ func MaterializedView_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func MaterializedView_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -835,7 +835,7 @@ func MaterializedView_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -848,7 +848,7 @@ func MaterializedView_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.materializedView.MaterializedView",
+		"@cdktn/provider-snowflake.materializedView.MaterializedView",
 		"tfResourceType",
 		&returns,
 	)
@@ -893,11 +893,11 @@ func (m *jsiiProxy_MaterializedView) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (m *jsiiProxy_MaterializedView) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaterializedView) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1034,7 +1034,7 @@ func (m *jsiiProxy_MaterializedView) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MaterializedView) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MaterializedView) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1045,11 +1045,11 @@ func (m *jsiiProxy_MaterializedView) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (m *jsiiProxy_MaterializedView) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MaterializedView) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

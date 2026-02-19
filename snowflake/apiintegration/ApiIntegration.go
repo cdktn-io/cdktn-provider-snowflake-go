@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apiintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/apiintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_integration snowflake_api_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_integration snowflake_api_integration}.
 type ApiIntegration interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
 	SetApiAllowedPrefixes(val *[]*string)
 	ApiAllowedPrefixesInput() *[]*string
@@ -44,7 +44,7 @@ type ApiIntegration interface {
 	SetAzureTenantId(val *string)
 	AzureTenantIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -67,9 +67,9 @@ type ApiIntegration interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -82,18 +82,18 @@ type ApiIntegration interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -101,7 +101,7 @@ type ApiIntegration interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -116,7 +116,7 @@ type ApiIntegration interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -134,9 +134,9 @@ type ApiIntegration interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -181,7 +181,7 @@ type ApiIntegration interface {
 
 // The jsii proxy struct for ApiIntegration
 type jsiiProxy_ApiIntegration struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ApiIntegration) ApiAllowedPrefixes() *[]*string {
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ApiIntegration) AzureTenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ApiIntegration) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_ApiIntegration) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ApiIntegration) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_ApiIntegration) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ApiIntegration) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_ApiIntegration) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ApiIntegration) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -634,8 +634,8 @@ func (j *jsiiProxy_ApiIntegration) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ApiIntegration) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -685,7 +685,7 @@ func (j *jsiiProxy_ApiIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_integration snowflake_api_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_integration snowflake_api_integration} Resource.
 func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegrationConfig) ApiIntegration {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegr
 	j := jsiiProxy_ApiIntegration{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -703,12 +703,12 @@ func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_integration snowflake_api_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_integration snowflake_api_integration} Resource.
 func NewApiIntegration_Override(a ApiIntegration, scope constructs.Construct, id *string, config *ApiIntegrationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -854,7 +854,7 @@ func (j *jsiiProxy_ApiIntegration)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiIntegration)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -884,7 +884,7 @@ func (j *jsiiProxy_ApiIntegration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiIntegration)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +906,7 @@ func (j *jsiiProxy_ApiIntegration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiIntegration)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -925,17 +925,17 @@ func (j *jsiiProxy_ApiIntegration)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ApiIntegration resource upon running "cdktf plan <stack-name>".
-func ApiIntegration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ApiIntegration resource upon running "cdktn plan <stack-name>".
+func ApiIntegration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateApiIntegration_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -970,7 +970,7 @@ func ApiIntegration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -989,7 +989,7 @@ func ApiIntegration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1008,7 +1008,7 @@ func ApiIntegration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1021,7 +1021,7 @@ func ApiIntegration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.apiIntegration.ApiIntegration",
+		"@cdktn/provider-snowflake.apiIntegration.ApiIntegration",
 		"tfResourceType",
 		&returns,
 	)
@@ -1066,11 +1066,11 @@ func (a *jsiiProxy_ApiIntegration) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiIntegration) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1207,7 +1207,7 @@ func (a *jsiiProxy_ApiIntegration) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_ApiIntegration) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1218,11 +1218,11 @@ func (a *jsiiProxy_ApiIntegration) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiIntegration) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

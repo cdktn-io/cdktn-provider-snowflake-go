@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputO
 	return nil
 }
 
-func (d *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputO
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataSnowflakeDatabasesDatabasesParametersEnableConsoleOutputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

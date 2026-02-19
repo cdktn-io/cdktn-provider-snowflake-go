@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externalfunction
@@ -7,11 +7,11 @@ package externalfunction
 type ExternalFunctionArg struct {
 	// Argument name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#name ExternalFunction#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#name ExternalFunction#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Argument type, e.g. VARCHAR.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#type ExternalFunction#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#type ExternalFunction#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

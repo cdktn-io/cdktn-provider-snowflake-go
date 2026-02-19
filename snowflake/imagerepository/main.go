@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package imagerepository
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepository",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepository",
 		reflect.TypeOf((*ImageRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -76,20 +76,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageRepository{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryConfig",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig",
 		reflect.TypeOf((*ImageRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutput",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutput",
 		reflect.TypeOf((*ImageRepositoryShowOutput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutputList",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputList",
 		reflect.TypeOf((*ImageRepositoryShowOutputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -105,12 +105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageRepositoryShowOutputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference",
 		reflect.TypeOf((*ImageRepositoryShowOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -146,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageRepositoryShowOutputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryTimeouts",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts",
 		reflect.TypeOf((*ImageRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.imageRepository.ImageRepositoryTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*ImageRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,7 +194,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageRepositoryTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

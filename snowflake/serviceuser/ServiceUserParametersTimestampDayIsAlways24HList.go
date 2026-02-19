@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package serviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/serviceuser/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/serviceuser/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceUserParametersTimestampDayIsAlways24HList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type ServiceUserParametersTimestampDayIsAlways24HList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type ServiceUserParametersTimestampDayIsAlways24HList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ServiceUserParametersTimestampDayIsAlways24HOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type ServiceUserParametersTimestampDayIsAlways24HList interface {
 
 // The jsii proxy struct for ServiceUserParametersTimestampDayIsAlways24HList
 type jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) WrapsSet() 
 }
 
 
-func NewServiceUserParametersTimestampDayIsAlways24HList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceUserParametersTimestampDayIsAlways24HList {
+func NewServiceUserParametersTimestampDayIsAlways24HList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceUserParametersTimestampDayIsAlways24HList {
 	_init_.Initialize()
 
 	if err := validateNewServiceUserParametersTimestampDayIsAlways24HListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewServiceUserParametersTimestampDayIsAlways24HList(terraformResource cdktf
 	j := jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HList",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewServiceUserParametersTimestampDayIsAlways24HList(terraformResource cdktf
 	return &j
 }
 
-func NewServiceUserParametersTimestampDayIsAlways24HList_Override(s ServiceUserParametersTimestampDayIsAlways24HList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewServiceUserParametersTimestampDayIsAlways24HList_Override(s ServiceUserParametersTimestampDayIsAlways24HList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HList",
+		"@cdktn/provider-snowflake.serviceUser.ServiceUserParametersTimestampDayIsAlways24HList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList)SetWrapsSet(
 	)
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -208,7 +208,7 @@ func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) Get(index *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceUserParametersTimestampDayIsAlways24HList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apiauthenticationintegrationwithclientcredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/apiauthenticationintegrationwithclientcredentials/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiauthenticationintegrationwithclientcredentials/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials}.
 type ApiAuthenticationIntegrationWithClientCredentials interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -39,9 +39,9 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -81,9 +81,9 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	SetOauthTokenEndpoint(val *string)
 	OauthTokenEndpointInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -92,7 +92,7 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	RawOverrides() interface{}
 	ShowOutput() ApiAuthenticationIntegrationWithClientCredentialsShowOutputList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -169,11 +169,11 @@ type ApiAuthenticationIntegrationWithClientCredentials interface {
 
 // The jsii proxy struct for ApiAuthenticationIntegrationWithClientCredentials
 type jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) EnabledInp
 	return returns
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) IdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) OauthToken
 	return returns
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ShowOutput
 	return returns
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -603,7 +603,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) TimeoutsIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials} Resource.
 func NewApiAuthenticationIntegrationWithClientCredentials(scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithClientCredentialsConfig) ApiAuthenticationIntegrationWithClientCredentials {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewApiAuthenticationIntegrationWithClientCredentials(scope constructs.Const
 	j := jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -621,12 +621,12 @@ func NewApiAuthenticationIntegrationWithClientCredentials(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials} Resource.
 func NewApiAuthenticationIntegrationWithClientCredentials_Override(a ApiAuthenticationIntegrationWithClientCredentials, scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithClientCredentialsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -684,7 +684,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetEnabled(
 	)
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -703,7 +703,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetId(val *
 	)
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +802,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetOauthTok
 	)
 }
 
-func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -821,17 +821,17 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials)SetProvisio
 	)
 }
 
-// Generates CDKTF code for importing a ApiAuthenticationIntegrationWithClientCredentials resource upon running "cdktf plan <stack-name>".
-func ApiAuthenticationIntegrationWithClientCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ApiAuthenticationIntegrationWithClientCredentials resource upon running "cdktn plan <stack-name>".
+func ApiAuthenticationIntegrationWithClientCredentials_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateApiAuthenticationIntegrationWithClientCredentials_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -866,7 +866,7 @@ func ApiAuthenticationIntegrationWithClientCredentials_IsConstruct(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func ApiAuthenticationIntegrationWithClientCredentials_IsTerraformElement(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -904,7 +904,7 @@ func ApiAuthenticationIntegrationWithClientCredentials_IsTerraformResource(x int
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -917,7 +917,7 @@ func ApiAuthenticationIntegrationWithClientCredentials_TfResourceType() *string 
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
+		"@cdktn/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials",
 		"tfResourceType",
 		&returns,
 	)
@@ -962,11 +962,11 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) GetAnyMapA
 	return returns
 }
 
-func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1103,7 +1103,7 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) HasResourc
 	return returns
 }
 
-func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1114,11 +1114,11 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) ImportFrom
 	)
 }
 
-func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

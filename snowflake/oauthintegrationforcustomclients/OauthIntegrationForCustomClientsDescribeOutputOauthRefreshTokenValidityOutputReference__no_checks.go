@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTok
 	return nil
 }
 
-func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTok
 	return nil
 }
 
-func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOauthIntegrationForCustomClientsDescribeOutputOauthRefreshTokenValidityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

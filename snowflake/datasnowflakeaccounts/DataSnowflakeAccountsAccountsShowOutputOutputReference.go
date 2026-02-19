@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflakeaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeaccounts/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeaccounts/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeAccountsAccountsShowOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountLocator() *string
 	AccountLocatorUrl() *string
 	AccountName() *string
@@ -43,9 +43,9 @@ type DataSnowflakeAccountsAccountsShowOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataSnowflakeAccountsAccountsShowOutput
 	SetInternalValue(val *DataSnowflakeAccountsAccountsShowOutput)
-	IsEventsAccount() cdktf.IResolvable
-	IsOrgAdmin() cdktf.IResolvable
-	IsOrganizationAccount() cdktf.IResolvable
+	IsEventsAccount() cdktn.IResolvable
+	IsOrgAdmin() cdktn.IResolvable
+	IsOrganizationAccount() cdktn.IResolvable
 	ManagedAccounts() *float64
 	MarketplaceConsumerBillingEntityName() *string
 	MarketplaceProviderBillingEntityName() *string
@@ -66,15 +66,15 @@ type DataSnowflakeAccountsAccountsShowOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,12 +90,12 @@ type DataSnowflakeAccountsAccountsShowOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type DataSnowflakeAccountsAccountsShowOutputOutputReference interface {
 
 // The jsii proxy struct for DataSnowflakeAccountsAccountsShowOutputOutputReference
 type jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) AccountLocator() *string {
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsEventsAccount() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsEventsAccount() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isEventsAccount",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsEve
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsOrgAdmin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsOrgAdmin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isOrgAdmin",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsOrg
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsOrganizationAccount() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) IsOrganizationAccount() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isOrganizationAccount",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -469,7 +469,7 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Terra
 }
 
 
-func NewDataSnowflakeAccountsAccountsShowOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeAccountsAccountsShowOutputOutputReference {
+func NewDataSnowflakeAccountsAccountsShowOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeAccountsAccountsShowOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeAccountsAccountsShowOutputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -478,7 +478,7 @@ func NewDataSnowflakeAccountsAccountsShowOutputOutputReference(terraformResource
 	j := jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -486,11 +486,11 @@ func NewDataSnowflakeAccountsAccountsShowOutputOutputReference(terraformResource
 	return &j
 }
 
-func NewDataSnowflakeAccountsAccountsShowOutputOutputReference_Override(d DataSnowflakeAccountsAccountsShowOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeAccountsAccountsShowOutputOutputReference_Override(d DataSnowflakeAccountsAccountsShowOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -540,7 +540,7 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,11 +580,11 @@ func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -708,8 +708,8 @@ func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -721,11 +721,11 @@ func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -737,7 +737,7 @@ func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsShowOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

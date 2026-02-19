@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tableconstraint
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraint",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraint",
 		reflect.TypeOf((*TableConstraint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -98,20 +98,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TableConstraint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintConfig",
 		reflect.TypeOf((*TableConstraintConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties",
 		reflect.TypeOf((*TableConstraintForeignKeyProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference",
 		reflect.TypeOf((*TableConstraintForeignKeyPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,16 +150,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TableConstraintForeignKeyPropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences",
 		reflect.TypeOf((*TableConstraintForeignKeyPropertiesReferences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferencesOutputReference",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferencesOutputReference",
 		reflect.TypeOf((*TableConstraintForeignKeyPropertiesReferencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -190,16 +190,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TableConstraintForeignKeyPropertiesReferencesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintTimeouts",
 		reflect.TypeOf((*TableConstraintTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference",
 		reflect.TypeOf((*TableConstraintTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,7 +238,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TableConstraintTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

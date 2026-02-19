@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputRef
 	return nil
 }
 
-func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOauthIntegrationForPartnerApplicationsDescribeOutputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOauthIntegrationForPartnerApplicationsDescribeOutputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

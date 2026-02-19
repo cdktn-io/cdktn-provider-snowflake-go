@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package proceduresql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/proceduresql/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/proceduresql/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ProcedureSqlParametersMetricLevelList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type ProcedureSqlParametersMetricLevelList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type ProcedureSqlParametersMetricLevelList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ProcedureSqlParametersMetricLevelOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type ProcedureSqlParametersMetricLevelList interface {
 
 // The jsii proxy struct for ProcedureSqlParametersMetricLevelList
 type jsiiProxy_ProcedureSqlParametersMetricLevelList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList) WrapsSet() *bool {
 }
 
 
-func NewProcedureSqlParametersMetricLevelList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureSqlParametersMetricLevelList {
+func NewProcedureSqlParametersMetricLevelList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureSqlParametersMetricLevelList {
 	_init_.Initialize()
 
 	if err := validateNewProcedureSqlParametersMetricLevelListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewProcedureSqlParametersMetricLevelList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ProcedureSqlParametersMetricLevelList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureSql.ProcedureSqlParametersMetricLevelList",
+		"@cdktn/provider-snowflake.procedureSql.ProcedureSqlParametersMetricLevelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewProcedureSqlParametersMetricLevelList(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewProcedureSqlParametersMetricLevelList_Override(p ProcedureSqlParametersMetricLevelList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewProcedureSqlParametersMetricLevelList_Override(p ProcedureSqlParametersMetricLevelList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.procedureSql.ProcedureSqlParametersMetricLevelList",
+		"@cdktn/provider-snowflake.procedureSql.ProcedureSqlParametersMetricLevelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_ProcedureSqlParametersMetricLevelList)SetWrapsSet(val *bool) 
 	)
 }
 
-func (p *jsiiProxy_ProcedureSqlParametersMetricLevelList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_ProcedureSqlParametersMetricLevelList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -208,7 +208,7 @@ func (p *jsiiProxy_ProcedureSqlParametersMetricLevelList) Get(index *float64) Pr
 	return returns
 }
 
-func (p *jsiiProxy_ProcedureSqlParametersMetricLevelList) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProcedureSqlParametersMetricLevelList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package networkpolicyattachment
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment",
+		"@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment",
 		reflect.TypeOf((*NetworkPolicyAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,20 +73,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkPolicyAttachment{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig",
+		"@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig",
 		reflect.TypeOf((*NetworkPolicyAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts",
+		"@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts",
 		reflect.TypeOf((*NetworkPolicyAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkPolicyAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkPolicyAttachmentTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package task
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/task/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/task/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference interface
 
 // The jsii proxy struct for TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference
 type jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 }
 
 
-func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference {
+func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraf
 	j := jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference",
+		"@cdktn/provider-snowflake.task.TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraf
 	return &j
 }
 
-func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference_Override(t TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewTaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference_Override(t TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.task.TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference",
+		"@cdktn/provider-snowflake.task.TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -444,8 +444,8 @@ func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -457,11 +457,11 @@ func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -473,7 +473,7 @@ func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputRefer
 	return returns
 }
 
-func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

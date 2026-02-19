@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datasnowflaketasks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflaketasks/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketasks/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference interf
 
 // The jsii proxy struct for DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference
 type jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 }
 
 
-func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference {
+func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference(ter
 	j := jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference(ter
 	return &j
 }
 
-func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference_Override(d DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference_Override(d DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference",
+		"@cdktn/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,8 +444,8 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,11 +457,11 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -473,7 +473,7 @@ func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package externaltable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTable",
+		"@cdktn/provider-snowflake.externalTable.ExternalTable",
 		reflect.TypeOf((*ExternalTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -108,16 +108,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableColumn",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableColumn",
 		reflect.TypeOf((*ExternalTableColumn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableColumnList",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableColumnList",
 		reflect.TypeOf((*ExternalTableColumnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -134,12 +134,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTableColumnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference",
 		reflect.TypeOf((*ExternalTableColumnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "as", GoGetter: "As"},
@@ -172,20 +172,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTableColumnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableConfig",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableConfig",
 		reflect.TypeOf((*ExternalTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableTag",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableTag",
 		reflect.TypeOf((*ExternalTableTag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableTagList",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableTagList",
 		reflect.TypeOf((*ExternalTableTagList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -202,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTableTagList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference",
 		reflect.TypeOf((*ExternalTableTagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,16 +244,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTableTagOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts",
 		reflect.TypeOf((*ExternalTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference",
+		"@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference",
 		reflect.TypeOf((*ExternalTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -292,7 +292,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
