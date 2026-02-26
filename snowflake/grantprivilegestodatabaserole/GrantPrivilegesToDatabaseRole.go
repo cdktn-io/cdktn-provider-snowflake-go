@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role}.
 type GrantPrivilegesToDatabaseRole interface {
 	cdktn.TerraformResource
 	AllPrivileges() interface{}
@@ -161,6 +161,15 @@ type GrantPrivilegesToDatabaseRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GrantPrivilegesToDatabaseRole
@@ -549,7 +558,7 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRole) WithGrantOptionInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource.
 func NewGrantPrivilegesToDatabaseRole(scope constructs.Construct, id *string, config *GrantPrivilegesToDatabaseRoleConfig) GrantPrivilegesToDatabaseRole {
 	_init_.Initialize()
 
@@ -567,7 +576,7 @@ func NewGrantPrivilegesToDatabaseRole(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource.
 func NewGrantPrivilegesToDatabaseRole_Override(g GrantPrivilegesToDatabaseRole, scope constructs.Construct, id *string, config *GrantPrivilegesToDatabaseRoleConfig) {
 	_init_.Initialize()
 
@@ -1280,6 +1289,24 @@ func (g *jsiiProxy_GrantPrivilegesToDatabaseRole) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GrantPrivilegesToDatabaseRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

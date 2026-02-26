@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role snowflake_account_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/account_role snowflake_account_role}.
 type AccountRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -135,6 +135,15 @@ type AccountRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AccountRole
@@ -403,7 +412,7 @@ func (j *jsiiProxy_AccountRole) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role snowflake_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/account_role snowflake_account_role} Resource.
 func NewAccountRole(scope constructs.Construct, id *string, config *AccountRoleConfig) AccountRole {
 	_init_.Initialize()
 
@@ -421,7 +430,7 @@ func NewAccountRole(scope constructs.Construct, id *string, config *AccountRoleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role snowflake_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/account_role snowflake_account_role} Resource.
 func NewAccountRole_Override(a AccountRole, scope constructs.Construct, id *string, config *AccountRoleConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1010,24 @@ func (a *jsiiProxy_AccountRole) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccountRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

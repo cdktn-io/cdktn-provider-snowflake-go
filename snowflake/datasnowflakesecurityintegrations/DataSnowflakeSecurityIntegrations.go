@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/security_integrations snowflake_security_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/security_integrations snowflake_security_integrations}.
 type DataSnowflakeSecurityIntegrations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -106,6 +106,15 @@ type DataSnowflakeSecurityIntegrations interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataSnowflakeSecurityIntegrations
@@ -324,7 +333,7 @@ func (j *jsiiProxy_DataSnowflakeSecurityIntegrations) WithDescribeInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source.
 func NewDataSnowflakeSecurityIntegrations(scope constructs.Construct, id *string, config *DataSnowflakeSecurityIntegrationsConfig) DataSnowflakeSecurityIntegrations {
 	_init_.Initialize()
 
@@ -342,7 +351,7 @@ func NewDataSnowflakeSecurityIntegrations(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source.
 func NewDataSnowflakeSecurityIntegrations_Override(d DataSnowflakeSecurityIntegrations, scope constructs.Construct, id *string, config *DataSnowflakeSecurityIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -821,6 +830,24 @@ func (d *jsiiProxy_DataSnowflakeSecurityIntegrations) ToTerraform() interface{} 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataSnowflakeSecurityIntegrations) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

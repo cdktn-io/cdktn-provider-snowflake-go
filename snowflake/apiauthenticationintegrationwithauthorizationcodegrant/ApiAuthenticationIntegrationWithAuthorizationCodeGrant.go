@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant}.
 type ApiAuthenticationIntegrationWithAuthorizationCodeGrant interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -169,6 +169,15 @@ type ApiAuthenticationIntegrationWithAuthorizationCodeGrant interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ApiAuthenticationIntegrationWithAuthorizationCodeGrant
@@ -627,7 +636,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) Timeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource.
 func NewApiAuthenticationIntegrationWithAuthorizationCodeGrant(scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithAuthorizationCodeGrantConfig) ApiAuthenticationIntegrationWithAuthorizationCodeGrant {
 	_init_.Initialize()
 
@@ -645,7 +654,7 @@ func NewApiAuthenticationIntegrationWithAuthorizationCodeGrant(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource.
 func NewApiAuthenticationIntegrationWithAuthorizationCodeGrant_Override(a ApiAuthenticationIntegrationWithAuthorizationCodeGrant, scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithAuthorizationCodeGrantConfig) {
 	_init_.Initialize()
 
@@ -1372,6 +1381,24 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) ToTer
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

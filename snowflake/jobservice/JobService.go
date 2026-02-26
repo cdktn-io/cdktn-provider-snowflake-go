@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service snowflake_job_service}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/job_service snowflake_job_service}.
 type JobService interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -162,6 +162,15 @@ type JobService interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for JobService
@@ -590,7 +599,7 @@ func (j *jsiiProxy_JobService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service snowflake_job_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/job_service snowflake_job_service} Resource.
 func NewJobService(scope constructs.Construct, id *string, config *JobServiceConfig) JobService {
 	_init_.Initialize()
 
@@ -608,7 +617,7 @@ func NewJobService(scope constructs.Construct, id *string, config *JobServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service snowflake_job_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/job_service snowflake_job_service} Resource.
 func NewJobService_Override(j JobService, scope constructs.Construct, id *string, config *JobServiceConfig) {
 	_init_.Initialize()
 
@@ -1297,6 +1306,24 @@ func (j *jsiiProxy_JobService) ToTerraform() interface{} {
 		j,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JobService) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		j,
+		"with",
+		args,
 		&returns,
 	)
 

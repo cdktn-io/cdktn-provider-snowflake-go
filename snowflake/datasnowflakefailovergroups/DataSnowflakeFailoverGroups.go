@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/failover_groups snowflake_failover_groups}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/failover_groups snowflake_failover_groups}.
 type DataSnowflakeFailoverGroups interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -102,6 +102,15 @@ type DataSnowflakeFailoverGroups interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataSnowflakeFailoverGroups
@@ -300,7 +309,7 @@ func (j *jsiiProxy_DataSnowflakeFailoverGroups) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/failover_groups snowflake_failover_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/failover_groups snowflake_failover_groups} Data Source.
 func NewDataSnowflakeFailoverGroups(scope constructs.Construct, id *string, config *DataSnowflakeFailoverGroupsConfig) DataSnowflakeFailoverGroups {
 	_init_.Initialize()
 
@@ -318,7 +327,7 @@ func NewDataSnowflakeFailoverGroups(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/failover_groups snowflake_failover_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/failover_groups snowflake_failover_groups} Data Source.
 func NewDataSnowflakeFailoverGroups_Override(d DataSnowflakeFailoverGroups, scope constructs.Construct, id *string, config *DataSnowflakeFailoverGroupsConfig) {
 	_init_.Initialize()
 
@@ -778,6 +787,24 @@ func (d *jsiiProxy_DataSnowflakeFailoverGroups) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataSnowflakeFailoverGroups) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

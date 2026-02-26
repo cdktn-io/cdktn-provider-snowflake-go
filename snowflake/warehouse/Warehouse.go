@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse snowflake_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/warehouse snowflake_warehouse}.
 type Warehouse interface {
 	cdktn.TerraformResource
 	AutoResume() *string
@@ -200,6 +200,15 @@ type Warehouse interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Warehouse
@@ -798,7 +807,7 @@ func (j *jsiiProxy_Warehouse) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse snowflake_warehouse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/warehouse snowflake_warehouse} Resource.
 func NewWarehouse(scope constructs.Construct, id *string, config *WarehouseConfig) Warehouse {
 	_init_.Initialize()
 
@@ -816,7 +825,7 @@ func NewWarehouse(scope constructs.Construct, id *string, config *WarehouseConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse snowflake_warehouse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/warehouse snowflake_warehouse} Resource.
 func NewWarehouse_Override(w Warehouse, scope constructs.Construct, id *string, config *WarehouseConfig) {
 	_init_.Initialize()
 
@@ -1700,6 +1709,24 @@ func (w *jsiiProxy_Warehouse) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_Warehouse) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

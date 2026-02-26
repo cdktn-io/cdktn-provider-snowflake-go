@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_organization_account snowflake_current_organization_account}.
 type CurrentOrganizationAccount interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -610,6 +610,15 @@ type CurrentOrganizationAccount interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for CurrentOrganizationAccount
@@ -3248,7 +3257,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) CurrentOrganizationAccount {
 	_init_.Initialize()
 
@@ -3266,7 +3275,7 @@ func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount_Override(c CurrentOrganizationAccount, scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) {
 	_init_.Initialize()
 
@@ -6107,6 +6116,24 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ToTerraform() interface{} {
 		c,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		c,
+		"with",
+		args,
 		&returns,
 	)
 

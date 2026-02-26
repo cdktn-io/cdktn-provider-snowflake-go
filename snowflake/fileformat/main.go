@@ -167,6 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trimSpace", GoGetter: "TrimSpace"},
 			_jsii_.MemberProperty{JsiiProperty: "trimSpaceInput", GoGetter: "TrimSpaceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FileFormat{}

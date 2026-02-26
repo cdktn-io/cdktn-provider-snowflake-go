@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_scala snowflake_function_scala}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_scala snowflake_function_scala}.
 type FunctionScala interface {
 	cdktn.TerraformResource
 	Arguments() FunctionScalaArgumentsList
@@ -208,6 +208,15 @@ type FunctionScala interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for FunctionScala
@@ -876,7 +885,7 @@ func (j *jsiiProxy_FunctionScala) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_scala snowflake_function_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_scala snowflake_function_scala} Resource.
 func NewFunctionScala(scope constructs.Construct, id *string, config *FunctionScalaConfig) FunctionScala {
 	_init_.Initialize()
 
@@ -894,7 +903,7 @@ func NewFunctionScala(scope constructs.Construct, id *string, config *FunctionSc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_scala snowflake_function_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_scala snowflake_function_scala} Resource.
 func NewFunctionScala_Override(f FunctionScala, scope constructs.Construct, id *string, config *FunctionScalaConfig) {
 	_init_.Initialize()
 
@@ -1795,6 +1804,24 @@ func (f *jsiiProxy_FunctionScala) ToTerraform() interface{} {
 		f,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FunctionScala) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		f,
+		"with",
+		args,
 		&returns,
 	)
 

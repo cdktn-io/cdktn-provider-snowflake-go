@@ -34,6 +34,7 @@ type StageExternalS3DescribeOutputDirectoryTableOutputReference interface {
 	Fqn() *string
 	InternalValue() *StageExternalS3DescribeOutputDirectoryTable
 	SetInternalValue(val *StageExternalS3DescribeOutputDirectoryTable)
+	LastRefreshedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_StageExternalS3DescribeOutputDirectoryTableOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageExternalS3DescribeOutputDirectoryTableOutputReference) LastRefreshedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastRefreshedOn",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible}.
 type StageExternalS3Compatible interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -162,6 +162,15 @@ type StageExternalS3Compatible interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for StageExternalS3Compatible
@@ -600,7 +609,7 @@ func (j *jsiiProxy_StageExternalS3Compatible) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
 func NewStageExternalS3Compatible(scope constructs.Construct, id *string, config *StageExternalS3CompatibleConfig) StageExternalS3Compatible {
 	_init_.Initialize()
 
@@ -618,7 +627,7 @@ func NewStageExternalS3Compatible(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
 func NewStageExternalS3Compatible_Override(s StageExternalS3Compatible, scope constructs.Construct, id *string, config *StageExternalS3CompatibleConfig) {
 	_init_.Initialize()
 
@@ -1299,6 +1308,24 @@ func (s *jsiiProxy_StageExternalS3Compatible) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StageExternalS3Compatible) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

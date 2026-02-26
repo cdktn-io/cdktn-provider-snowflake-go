@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association snowflake_tag_association}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag_association snowflake_tag_association}.
 type TagAssociation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -142,6 +142,15 @@ type TagAssociation interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TagAssociation
@@ -450,7 +459,7 @@ func (j *jsiiProxy_TagAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association snowflake_tag_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag_association snowflake_tag_association} Resource.
 func NewTagAssociation(scope constructs.Construct, id *string, config *TagAssociationConfig) TagAssociation {
 	_init_.Initialize()
 
@@ -468,7 +477,7 @@ func NewTagAssociation(scope constructs.Construct, id *string, config *TagAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association snowflake_tag_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag_association snowflake_tag_association} Resource.
 func NewTagAssociation_Override(t TagAssociation, scope constructs.Construct, id *string, config *TagAssociationConfig) {
 	_init_.Initialize()
 
@@ -1081,6 +1090,24 @@ func (t *jsiiProxy_TagAssociation) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TagAssociation) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

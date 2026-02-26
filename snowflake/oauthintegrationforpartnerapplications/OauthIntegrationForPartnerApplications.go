@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications}.
 type OauthIntegrationForPartnerApplications interface {
 	cdktn.TerraformResource
 	BlockedRolesList() *[]*string
@@ -164,6 +164,15 @@ type OauthIntegrationForPartnerApplications interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OauthIntegrationForPartnerApplications
@@ -592,7 +601,7 @@ func (j *jsiiProxy_OauthIntegrationForPartnerApplications) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
 func NewOauthIntegrationForPartnerApplications(scope constructs.Construct, id *string, config *OauthIntegrationForPartnerApplicationsConfig) OauthIntegrationForPartnerApplications {
 	_init_.Initialize()
 
@@ -610,7 +619,7 @@ func NewOauthIntegrationForPartnerApplications(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_partner_applications snowflake_oauth_integration_for_partner_applications} Resource.
 func NewOauthIntegrationForPartnerApplications_Override(o OauthIntegrationForPartnerApplications, scope constructs.Construct, id *string, config *OauthIntegrationForPartnerApplicationsConfig) {
 	_init_.Initialize()
 
@@ -1315,6 +1324,24 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) ToTerraform() interfa
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

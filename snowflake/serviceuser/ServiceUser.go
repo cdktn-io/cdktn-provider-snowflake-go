@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/service_user snowflake_service_user}.
 type ServiceUser interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -417,6 +417,15 @@ type ServiceUser interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ServiceUser
@@ -2105,7 +2114,7 @@ func (j *jsiiProxy_ServiceUser) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserConfig) ServiceUser {
 	_init_.Initialize()
 
@@ -2123,7 +2132,7 @@ func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser_Override(s ServiceUser, scope constructs.Construct, id *string, config *ServiceUserConfig) {
 	_init_.Initialize()
 
@@ -4033,6 +4042,24 @@ func (s *jsiiProxy_ServiceUser) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_ServiceUser) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

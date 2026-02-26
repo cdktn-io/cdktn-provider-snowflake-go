@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/secrets snowflake_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/secrets snowflake_secrets}.
 type DataSnowflakeSecrets interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -110,6 +110,15 @@ type DataSnowflakeSecrets interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataSnowflakeSecrets
@@ -348,7 +357,7 @@ func (j *jsiiProxy_DataSnowflakeSecrets) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/secrets snowflake_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/secrets snowflake_secrets} Data Source.
 func NewDataSnowflakeSecrets(scope constructs.Construct, id *string, config *DataSnowflakeSecretsConfig) DataSnowflakeSecrets {
 	_init_.Initialize()
 
@@ -366,7 +375,7 @@ func NewDataSnowflakeSecrets(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/secrets snowflake_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/secrets snowflake_secrets} Data Source.
 func NewDataSnowflakeSecrets_Override(d DataSnowflakeSecrets, scope constructs.Construct, id *string, config *DataSnowflakeSecretsConfig) {
 	_init_.Initialize()
 
@@ -864,6 +873,24 @@ func (d *jsiiProxy_DataSnowflakeSecrets) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataSnowflakeSecrets) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

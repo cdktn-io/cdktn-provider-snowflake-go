@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/sequence snowflake_sequence}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/sequence snowflake_sequence}.
 type Sequence interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -149,6 +149,15 @@ type Sequence interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Sequence
@@ -497,7 +506,7 @@ func (j *jsiiProxy_Sequence) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/sequence snowflake_sequence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/sequence snowflake_sequence} Resource.
 func NewSequence(scope constructs.Construct, id *string, config *SequenceConfig) Sequence {
 	_init_.Initialize()
 
@@ -515,7 +524,7 @@ func NewSequence(scope constructs.Construct, id *string, config *SequenceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/sequence snowflake_sequence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/sequence snowflake_sequence} Resource.
 func NewSequence_Override(s Sequence, scope constructs.Construct, id *string, config *SequenceConfig) {
 	_init_.Initialize()
 
@@ -1155,6 +1164,24 @@ func (s *jsiiProxy_Sequence) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_Sequence) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

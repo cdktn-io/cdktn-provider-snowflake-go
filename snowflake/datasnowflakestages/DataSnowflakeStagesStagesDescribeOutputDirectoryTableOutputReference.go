@@ -34,6 +34,7 @@ type DataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputReference interf
 	Fqn() *string
 	InternalValue() *DataSnowflakeStagesStagesDescribeOutputDirectoryTable
 	SetInternalValue(val *DataSnowflakeStagesStagesDescribeOutputDirectoryTable)
+	LastRefreshedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputReference) LastRefreshedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastRefreshedOn",
 		&returns,
 	)
 	return returns

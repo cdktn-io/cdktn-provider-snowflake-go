@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_table snowflake_stream_on_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stream_on_table snowflake_stream_on_table}.
 type StreamOnTable interface {
 	cdktn.TerraformResource
 	AppendOnly() *string
@@ -167,6 +167,15 @@ type StreamOnTable interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for StreamOnTable
@@ -625,7 +634,7 @@ func (j *jsiiProxy_StreamOnTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
 func NewStreamOnTable(scope constructs.Construct, id *string, config *StreamOnTableConfig) StreamOnTable {
 	_init_.Initialize()
 
@@ -643,7 +652,7 @@ func NewStreamOnTable(scope constructs.Construct, id *string, config *StreamOnTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
 func NewStreamOnTable_Override(s StreamOnTable, scope constructs.Construct, id *string, config *StreamOnTableConfig) {
 	_init_.Initialize()
 
@@ -1351,6 +1360,24 @@ func (s *jsiiProxy_StreamOnTable) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StreamOnTable) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

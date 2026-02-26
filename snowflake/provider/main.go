@@ -233,6 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateDefaultParametersInput", GoGetter: "ValidateDefaultParametersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouse", GoGetter: "Warehouse"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseInput", GoGetter: "WarehouseInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEntraResource", GoGetter: "WorkloadIdentityEntraResource"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEntraResourceInput", GoGetter: "WorkloadIdentityEntraResourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityProvider", GoGetter: "WorkloadIdentityProvider"},

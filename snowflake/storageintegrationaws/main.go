@@ -90,6 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usePrivatelinkEndpoint", GoGetter: "UsePrivatelinkEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "usePrivatelinkEndpointInput", GoGetter: "UsePrivatelinkEndpointInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageIntegrationAws{}

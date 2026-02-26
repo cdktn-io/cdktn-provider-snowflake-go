@@ -110,6 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlOfProxyAndResource", GoGetter: "UrlOfProxyAndResource"},
 			_jsii_.MemberProperty{JsiiProperty: "urlOfProxyAndResourceInput", GoGetter: "UrlOfProxyAndResourceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ExternalFunction{}

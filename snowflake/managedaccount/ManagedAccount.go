@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/managed_account snowflake_managed_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/managed_account snowflake_managed_account}.
 type ManagedAccount interface {
 	cdktn.TerraformResource
 	AdminName() *string
@@ -149,6 +149,15 @@ type ManagedAccount interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ManagedAccount
@@ -517,7 +526,7 @@ func (j *jsiiProxy_ManagedAccount) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/managed_account snowflake_managed_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/managed_account snowflake_managed_account} Resource.
 func NewManagedAccount(scope constructs.Construct, id *string, config *ManagedAccountConfig) ManagedAccount {
 	_init_.Initialize()
 
@@ -535,7 +544,7 @@ func NewManagedAccount(scope constructs.Construct, id *string, config *ManagedAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/managed_account snowflake_managed_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/managed_account snowflake_managed_account} Resource.
 func NewManagedAccount_Override(m ManagedAccount, scope constructs.Construct, id *string, config *ManagedAccountConfig) {
 	_init_.Initialize()
 
@@ -1156,6 +1165,24 @@ func (m *jsiiProxy_ManagedAccount) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_ManagedAccount) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

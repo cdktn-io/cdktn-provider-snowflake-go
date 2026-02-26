@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/table_constraint snowflake_table_constraint}.
 type TableConstraint interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -170,6 +170,15 @@ type TableConstraint interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TableConstraint
@@ -618,7 +627,7 @@ func (j *jsiiProxy_TableConstraint) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint(scope constructs.Construct, id *string, config *TableConstraintConfig) TableConstraint {
 	_init_.Initialize()
 
@@ -636,7 +645,7 @@ func NewTableConstraint(scope constructs.Construct, id *string, config *TableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint_Override(t TableConstraint, scope constructs.Construct, id *string, config *TableConstraintConfig) {
 	_init_.Initialize()
 
@@ -1382,6 +1391,24 @@ func (t *jsiiProxy_TableConstraint) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TableConstraint) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

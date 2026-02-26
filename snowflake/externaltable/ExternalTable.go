@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_table snowflake_external_table}.
 type ExternalTable interface {
 	cdktn.TerraformResource
 	AutoRefresh() interface{}
@@ -182,6 +182,15 @@ type ExternalTable interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ExternalTable
@@ -710,7 +719,7 @@ func (j *jsiiProxy_ExternalTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTableConfig) ExternalTable {
 	_init_.Initialize()
 
@@ -728,7 +737,7 @@ func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable_Override(e ExternalTable, scope constructs.Construct, id *string, config *ExternalTableConfig) {
 	_init_.Initialize()
 
@@ -1515,6 +1524,24 @@ func (e *jsiiProxy_ExternalTable) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ExternalTable) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule snowflake_network_rule}.
 type NetworkRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -37,6 +37,7 @@ type NetworkRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DescribeOutput() NetworkRuleDescribeOutputList
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -74,6 +75,7 @@ type NetworkRule interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	ShowOutput() NetworkRuleShowOutputList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,6 +151,15 @@ type NetworkRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for NetworkRule
@@ -241,6 +252,16 @@ func (j *jsiiProxy_NetworkRule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkRule) DescribeOutput() NetworkRuleDescribeOutputList {
+	var returns NetworkRuleDescribeOutputList
+	_jsii_.Get(
+		j,
+		"describeOutput",
 		&returns,
 	)
 	return returns
@@ -416,6 +437,16 @@ func (j *jsiiProxy_NetworkRule) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkRule) ShowOutput() NetworkRuleShowOutputList {
+	var returns NetworkRuleShowOutputList
+	_jsii_.Get(
+		j,
+		"showOutput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -507,7 +538,7 @@ func (j *jsiiProxy_NetworkRule) ValueListInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleConfig) NetworkRule {
 	_init_.Initialize()
 
@@ -525,7 +556,7 @@ func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule_Override(n NetworkRule, scope constructs.Construct, id *string, config *NetworkRuleConfig) {
 	_init_.Initialize()
 
@@ -1160,6 +1191,24 @@ func (n *jsiiProxy_NetworkRule) ToTerraform() interface{} {
 		n,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		n,
+		"with",
+		args,
 		&returns,
 	)
 

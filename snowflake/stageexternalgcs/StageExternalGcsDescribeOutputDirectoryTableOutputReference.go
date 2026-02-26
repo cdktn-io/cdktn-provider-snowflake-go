@@ -34,6 +34,7 @@ type StageExternalGcsDescribeOutputDirectoryTableOutputReference interface {
 	Fqn() *string
 	InternalValue() *StageExternalGcsDescribeOutputDirectoryTable
 	SetInternalValue(val *StageExternalGcsDescribeOutputDirectoryTable)
+	LastRefreshedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) LastRefreshedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastRefreshedOn",
 		&returns,
 	)
 	return returns

@@ -121,6 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTaskMinimumTriggerIntervalInSecondsInput", GoGetter: "UserTaskMinimumTriggerIntervalInSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userTaskTimeoutMs", GoGetter: "UserTaskTimeoutMs"},
 			_jsii_.MemberProperty{JsiiProperty: "userTaskTimeoutMsInput", GoGetter: "UserTaskTimeoutMsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SecondaryDatabase{}

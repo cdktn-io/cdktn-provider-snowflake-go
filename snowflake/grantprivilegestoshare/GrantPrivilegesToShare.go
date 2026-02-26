@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
 type GrantPrivilegesToShare interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -160,6 +160,15 @@ type GrantPrivilegesToShare interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GrantPrivilegesToShare
@@ -548,7 +557,7 @@ func (j *jsiiProxy_GrantPrivilegesToShare) ToShareInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
 func NewGrantPrivilegesToShare(scope constructs.Construct, id *string, config *GrantPrivilegesToShareConfig) GrantPrivilegesToShare {
 	_init_.Initialize()
 
@@ -566,7 +575,7 @@ func NewGrantPrivilegesToShare(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
 func NewGrantPrivilegesToShare_Override(g GrantPrivilegesToShare, scope constructs.Construct, id *string, config *GrantPrivilegesToShareConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1280,24 @@ func (g *jsiiProxy_GrantPrivilegesToShare) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GrantPrivilegesToShare) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

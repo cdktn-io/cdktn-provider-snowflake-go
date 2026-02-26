@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment}.
 type UserAuthenticationPolicyAttachment interface {
 	cdktn.TerraformResource
 	AuthenticationPolicyName() *string
@@ -132,6 +132,15 @@ type UserAuthenticationPolicyAttachment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for UserAuthenticationPolicyAttachment
@@ -380,7 +389,7 @@ func (j *jsiiProxy_UserAuthenticationPolicyAttachment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
 func NewUserAuthenticationPolicyAttachment(scope constructs.Construct, id *string, config *UserAuthenticationPolicyAttachmentConfig) UserAuthenticationPolicyAttachment {
 	_init_.Initialize()
 
@@ -398,7 +407,7 @@ func NewUserAuthenticationPolicyAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
 func NewUserAuthenticationPolicyAttachment_Override(u UserAuthenticationPolicyAttachment, scope constructs.Construct, id *string, config *UserAuthenticationPolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -970,6 +979,24 @@ func (u *jsiiProxy_UserAuthenticationPolicyAttachment) ToTerraform() interface{}
 		u,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserAuthenticationPolicyAttachment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		u,
+		"with",
+		args,
 		&returns,
 	)
 

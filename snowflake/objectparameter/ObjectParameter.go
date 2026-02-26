@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter snowflake_object_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/object_parameter snowflake_object_parameter}.
 type ObjectParameter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -144,6 +144,15 @@ type ObjectParameter interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ObjectParameter
@@ -452,7 +461,7 @@ func (j *jsiiProxy_ObjectParameter) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter snowflake_object_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/object_parameter snowflake_object_parameter} Resource.
 func NewObjectParameter(scope constructs.Construct, id *string, config *ObjectParameterConfig) ObjectParameter {
 	_init_.Initialize()
 
@@ -470,7 +479,7 @@ func NewObjectParameter(scope constructs.Construct, id *string, config *ObjectPa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter snowflake_object_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/object_parameter snowflake_object_parameter} Resource.
 func NewObjectParameter_Override(o ObjectParameter, scope constructs.Construct, id *string, config *ObjectParameterConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1108,24 @@ func (o *jsiiProxy_ObjectParameter) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_ObjectParameter) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

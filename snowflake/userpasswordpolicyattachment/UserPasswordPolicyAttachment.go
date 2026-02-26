@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
 type UserPasswordPolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -132,6 +132,15 @@ type UserPasswordPolicyAttachment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for UserPasswordPolicyAttachment
@@ -380,7 +389,7 @@ func (j *jsiiProxy_UserPasswordPolicyAttachment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
 func NewUserPasswordPolicyAttachment(scope constructs.Construct, id *string, config *UserPasswordPolicyAttachmentConfig) UserPasswordPolicyAttachment {
 	_init_.Initialize()
 
@@ -398,7 +407,7 @@ func NewUserPasswordPolicyAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
 func NewUserPasswordPolicyAttachment_Override(u UserPasswordPolicyAttachment, scope constructs.Construct, id *string, config *UserPasswordPolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -970,6 +979,24 @@ func (u *jsiiProxy_UserPasswordPolicyAttachment) ToTerraform() interface{} {
 		u,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserPasswordPolicyAttachment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		u,
+		"with",
+		args,
 		&returns,
 	)
 

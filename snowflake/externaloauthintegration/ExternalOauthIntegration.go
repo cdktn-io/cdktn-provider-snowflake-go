@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration}.
 type ExternalOauthIntegration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -188,6 +188,15 @@ type ExternalOauthIntegration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ExternalOauthIntegration
@@ -756,7 +765,7 @@ func (j *jsiiProxy_ExternalOauthIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource.
 func NewExternalOauthIntegration(scope constructs.Construct, id *string, config *ExternalOauthIntegrationConfig) ExternalOauthIntegration {
 	_init_.Initialize()
 
@@ -774,7 +783,7 @@ func NewExternalOauthIntegration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource.
 func NewExternalOauthIntegration_Override(e ExternalOauthIntegration, scope constructs.Construct, id *string, config *ExternalOauthIntegrationConfig) {
 	_init_.Initialize()
 
@@ -1580,6 +1589,24 @@ func (e *jsiiProxy_ExternalOauthIntegration) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ExternalOauthIntegration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

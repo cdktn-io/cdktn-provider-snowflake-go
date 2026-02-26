@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
 type UserProgrammaticAccessToken interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -163,6 +163,15 @@ type UserProgrammaticAccessToken interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for UserProgrammaticAccessToken
@@ -581,7 +590,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) UserProgrammaticAccessToken {
 	_init_.Initialize()
 
@@ -599,7 +608,7 @@ func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken_Override(u UserProgrammaticAccessToken, scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -1304,6 +1313,24 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) ToTerraform() interface{} {
 		u,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserProgrammaticAccessToken) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		u,
+		"with",
+		args,
 		&returns,
 	)
 

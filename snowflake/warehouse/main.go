@@ -118,6 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warehouseSizeInput", GoGetter: "WarehouseSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseType", GoGetter: "WarehouseType"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseTypeInput", GoGetter: "WarehouseTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Warehouse{}

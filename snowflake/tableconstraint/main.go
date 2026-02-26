@@ -95,6 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validate", GoGetter: "Validate"},
 			_jsii_.MemberProperty{JsiiProperty: "validateInput", GoGetter: "ValidateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TableConstraint{}

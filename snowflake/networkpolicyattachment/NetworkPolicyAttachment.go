@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}.
 type NetworkPolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -137,6 +137,15 @@ type NetworkPolicyAttachment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for NetworkPolicyAttachment
@@ -405,7 +414,7 @@ func (j *jsiiProxy_NetworkPolicyAttachment) UsersInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource.
 func NewNetworkPolicyAttachment(scope constructs.Construct, id *string, config *NetworkPolicyAttachmentConfig) NetworkPolicyAttachment {
 	_init_.Initialize()
 
@@ -423,7 +432,7 @@ func NewNetworkPolicyAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource.
 func NewNetworkPolicyAttachment_Override(n NetworkPolicyAttachment, scope constructs.Construct, id *string, config *NetworkPolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1031,24 @@ func (n *jsiiProxy_NetworkPolicyAttachment) ToTerraform() interface{} {
 		n,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkPolicyAttachment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		n,
+		"with",
+		args,
 		&returns,
 	)
 

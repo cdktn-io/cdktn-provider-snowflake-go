@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/email_notification_integration snowflake_email_notification_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/email_notification_integration snowflake_email_notification_integration}.
 type EmailNotificationIntegration interface {
 	cdktn.TerraformResource
 	AllowedRecipients() *[]*string
@@ -141,6 +141,15 @@ type EmailNotificationIntegration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for EmailNotificationIntegration
@@ -439,7 +448,7 @@ func (j *jsiiProxy_EmailNotificationIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource.
 func NewEmailNotificationIntegration(scope constructs.Construct, id *string, config *EmailNotificationIntegrationConfig) EmailNotificationIntegration {
 	_init_.Initialize()
 
@@ -457,7 +466,7 @@ func NewEmailNotificationIntegration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource.
 func NewEmailNotificationIntegration_Override(e EmailNotificationIntegration, scope constructs.Construct, id *string, config *EmailNotificationIntegrationConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1076,24 @@ func (e *jsiiProxy_EmailNotificationIntegration) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmailNotificationIntegration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -34,6 +34,7 @@ type StageInternalDescribeOutputDirectoryTableOutputReference interface {
 	Fqn() *string
 	InternalValue() *StageInternalDescribeOutputDirectoryTable
 	SetInternalValue(val *StageInternalDescribeOutputDirectoryTable)
+	LastRefreshedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_StageInternalDescribeOutputDirectoryTableOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageInternalDescribeOutputDirectoryTableOutputReference) LastRefreshedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastRefreshedOn",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role snowflake_database_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/database_role snowflake_database_role}.
 type DatabaseRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -138,6 +138,15 @@ type DatabaseRole interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DatabaseRole
@@ -426,7 +435,7 @@ func (j *jsiiProxy_DatabaseRole) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role snowflake_database_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/database_role snowflake_database_role} Resource.
 func NewDatabaseRole(scope constructs.Construct, id *string, config *DatabaseRoleConfig) DatabaseRole {
 	_init_.Initialize()
 
@@ -444,7 +453,7 @@ func NewDatabaseRole(scope constructs.Construct, id *string, config *DatabaseRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role snowflake_database_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/database_role snowflake_database_role} Resource.
 func NewDatabaseRole_Override(d DatabaseRole, scope constructs.Construct, id *string, config *DatabaseRoleConfig) {
 	_init_.Initialize()
 
@@ -1035,6 +1044,24 @@ func (d *jsiiProxy_DatabaseRole) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseRole) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

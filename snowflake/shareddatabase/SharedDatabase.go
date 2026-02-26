@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database snowflake_shared_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/shared_database snowflake_shared_database}.
 type SharedDatabase interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -193,6 +193,15 @@ type SharedDatabase interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SharedDatabase
@@ -751,7 +760,7 @@ func (j *jsiiProxy_SharedDatabase) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database snowflake_shared_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/shared_database snowflake_shared_database} Resource.
 func NewSharedDatabase(scope constructs.Construct, id *string, config *SharedDatabaseConfig) SharedDatabase {
 	_init_.Initialize()
 
@@ -769,7 +778,7 @@ func NewSharedDatabase(scope constructs.Construct, id *string, config *SharedDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database snowflake_shared_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/shared_database snowflake_shared_database} Resource.
 func NewSharedDatabase_Override(s SharedDatabase, scope constructs.Construct, id *string, config *SharedDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1626,6 +1635,24 @@ func (s *jsiiProxy_SharedDatabase) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SharedDatabase) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

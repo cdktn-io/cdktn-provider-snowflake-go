@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration snowflake_saml2_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/saml2_integration snowflake_saml2_integration}.
 type Saml2Integration interface {
 	cdktn.TerraformResource
 	AllowedEmailPatterns() *[]*string
@@ -192,6 +192,15 @@ type Saml2Integration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Saml2Integration
@@ -770,7 +779,7 @@ func (j *jsiiProxy_Saml2Integration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
 func NewSaml2Integration(scope constructs.Construct, id *string, config *Saml2IntegrationConfig) Saml2Integration {
 	_init_.Initialize()
 
@@ -788,7 +797,7 @@ func NewSaml2Integration(scope constructs.Construct, id *string, config *Saml2In
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
 func NewSaml2Integration_Override(s Saml2Integration, scope constructs.Construct, id *string, config *Saml2IntegrationConfig) {
 	_init_.Initialize()
 
@@ -1621,6 +1630,24 @@ func (s *jsiiProxy_Saml2Integration) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_Saml2Integration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

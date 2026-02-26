@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients}.
 type OauthIntegrationForCustomClients interface {
 	cdktn.TerraformResource
 	BlockedRolesList() *[]*string
@@ -187,6 +187,15 @@ type OauthIntegrationForCustomClients interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OauthIntegrationForCustomClients
@@ -735,7 +744,7 @@ func (j *jsiiProxy_OauthIntegrationForCustomClients) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients} Resource.
 func NewOauthIntegrationForCustomClients(scope constructs.Construct, id *string, config *OauthIntegrationForCustomClientsConfig) OauthIntegrationForCustomClients {
 	_init_.Initialize()
 
@@ -753,7 +762,7 @@ func NewOauthIntegrationForCustomClients(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/oauth_integration_for_custom_clients snowflake_oauth_integration_for_custom_clients} Resource.
 func NewOauthIntegrationForCustomClients_Override(o OauthIntegrationForCustomClients, scope constructs.Construct, id *string, config *OauthIntegrationForCustomClientsConfig) {
 	_init_.Initialize()
 
@@ -1564,6 +1573,24 @@ func (o *jsiiProxy_OauthIntegrationForCustomClients) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OauthIntegrationForCustomClients) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

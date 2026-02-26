@@ -425,6 +425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekOfYearPolicyInput", GoGetter: "WeekOfYearPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "weekStart", GoGetter: "WeekStart"},
 			_jsii_.MemberProperty{JsiiProperty: "weekStartInput", GoGetter: "WeekStartInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CurrentOrganizationAccount{}

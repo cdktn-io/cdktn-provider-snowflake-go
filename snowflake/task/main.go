@@ -287,6 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekStartInput", GoGetter: "WeekStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "when", GoGetter: "When"},
 			_jsii_.MemberProperty{JsiiProperty: "whenInput", GoGetter: "WhenInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Task{}

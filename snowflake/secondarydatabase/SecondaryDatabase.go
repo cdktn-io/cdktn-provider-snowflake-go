@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database snowflake_secondary_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secondary_database snowflake_secondary_database}.
 type SecondaryDatabase interface {
 	cdktn.TerraformResource
 	AsReplicaOf() *string
@@ -205,6 +205,15 @@ type SecondaryDatabase interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SecondaryDatabase
@@ -823,7 +832,7 @@ func (j *jsiiProxy_SecondaryDatabase) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase(scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) SecondaryDatabase {
 	_init_.Initialize()
 
@@ -841,7 +850,7 @@ func NewSecondaryDatabase(scope constructs.Construct, id *string, config *Second
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase_Override(s SecondaryDatabase, scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1755,6 +1764,24 @@ func (s *jsiiProxy_SecondaryDatabase) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecondaryDatabase) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

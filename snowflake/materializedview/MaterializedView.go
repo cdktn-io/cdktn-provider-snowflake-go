@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/materialized_view snowflake_materialized_view}.
 type MaterializedView interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -158,6 +158,15 @@ type MaterializedView interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MaterializedView
@@ -556,7 +565,7 @@ func (j *jsiiProxy_MaterializedView) WarehouseInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView(scope constructs.Construct, id *string, config *MaterializedViewConfig) MaterializedView {
 	_init_.Initialize()
 
@@ -574,7 +583,7 @@ func NewMaterializedView(scope constructs.Construct, id *string, config *Materia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView_Override(m MaterializedView, scope constructs.Construct, id *string, config *MaterializedViewConfig) {
 	_init_.Initialize()
 
@@ -1255,6 +1264,24 @@ func (m *jsiiProxy_MaterializedView) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MaterializedView) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 
