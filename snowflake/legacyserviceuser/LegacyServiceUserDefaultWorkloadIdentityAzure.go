@@ -7,11 +7,11 @@ package legacyserviceuser
 type LegacyServiceUserDefaultWorkloadIdentityAzure struct {
 	// The Azure issuer URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/legacy_service_user#issuer LegacyServiceUser#issuer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/legacy_service_user#issuer LegacyServiceUser#issuer}
 	Issuer *string `field:"required" json:"issuer" yaml:"issuer"`
 	// The Azure subject identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/legacy_service_user#subject LegacyServiceUser#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/legacy_service_user#subject LegacyServiceUser#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_python snowflake_function_python}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/function_python snowflake_function_python}.
 type FunctionPython interface {
 	cdktn.TerraformResource
 	Arguments() FunctionPythonArgumentsList
@@ -885,7 +885,7 @@ func (j *jsiiProxy_FunctionPython) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_python snowflake_function_python} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/function_python snowflake_function_python} Resource.
 func NewFunctionPython(scope constructs.Construct, id *string, config *FunctionPythonConfig) FunctionPython {
 	_init_.Initialize()
 
@@ -903,7 +903,7 @@ func NewFunctionPython(scope constructs.Construct, id *string, config *FunctionP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/function_python snowflake_function_python} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/function_python snowflake_function_python} Resource.
 func NewFunctionPython_Override(f FunctionPython, scope constructs.Construct, id *string, config *FunctionPythonConfig) {
 	_init_.Initialize()
 

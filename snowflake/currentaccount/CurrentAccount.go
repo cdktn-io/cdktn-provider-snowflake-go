@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_account snowflake_current_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/current_account snowflake_current_account}.
 type CurrentAccount interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -3271,7 +3271,7 @@ func (j *jsiiProxy_CurrentAccount) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_account snowflake_current_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/current_account snowflake_current_account} Resource.
 func NewCurrentAccount(scope constructs.Construct, id *string, config *CurrentAccountConfig) CurrentAccount {
 	_init_.Initialize()
 
@@ -3289,7 +3289,7 @@ func NewCurrentAccount(scope constructs.Construct, id *string, config *CurrentAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/current_account snowflake_current_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/current_account snowflake_current_account} Resource.
 func NewCurrentAccount_Override(c CurrentAccount, scope constructs.Construct, id *string, config *CurrentAccountConfig) {
 	_init_.Initialize()
 

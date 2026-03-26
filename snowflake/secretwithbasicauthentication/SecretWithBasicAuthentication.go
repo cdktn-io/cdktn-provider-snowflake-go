@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}.
 type SecretWithBasicAuthentication interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -526,7 +526,7 @@ func (j *jsiiProxy_SecretWithBasicAuthentication) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource.
 func NewSecretWithBasicAuthentication(scope constructs.Construct, id *string, config *SecretWithBasicAuthenticationConfig) SecretWithBasicAuthentication {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewSecretWithBasicAuthentication(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource.
 func NewSecretWithBasicAuthentication_Override(s SecretWithBasicAuthentication, scope constructs.Construct, id *string, config *SecretWithBasicAuthenticationConfig) {
 	_init_.Initialize()
 

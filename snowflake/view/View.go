@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/view snowflake_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/view snowflake_view}.
 type View interface {
 	cdktn.TerraformResource
 	AggregationPolicy() ViewAggregationPolicyOutputReference
@@ -732,7 +732,7 @@ func (j *jsiiProxy_View) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/view snowflake_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/view snowflake_view} Resource.
 func NewView(scope constructs.Construct, id *string, config *ViewConfig) View {
 	_init_.Initialize()
 
@@ -750,7 +750,7 @@ func NewView(scope constructs.Construct, id *string, config *ViewConfig) View {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/view snowflake_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/view snowflake_view} Resource.
 func NewView_Override(v View, scope constructs.Construct, id *string, config *ViewConfig) {
 	_init_.Initialize()
 

@@ -35,7 +35,6 @@ type AuthenticationPolicyDescribeOutputOutputReference interface {
 	Fqn() *string
 	InternalValue() *AuthenticationPolicyDescribeOutput
 	SetInternalValue(val *AuthenticationPolicyDescribeOutput)
-	MfaAuthenticationMethods() *string
 	MfaEnrollment() *string
 	MfaPolicy() *string
 	Name() *string
@@ -165,16 +164,6 @@ func (j *jsiiProxy_AuthenticationPolicyDescribeOutputOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticationPolicyDescribeOutputOutputReference) MfaAuthenticationMethods() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"mfaAuthenticationMethods",
 		&returns,
 	)
 	return returns

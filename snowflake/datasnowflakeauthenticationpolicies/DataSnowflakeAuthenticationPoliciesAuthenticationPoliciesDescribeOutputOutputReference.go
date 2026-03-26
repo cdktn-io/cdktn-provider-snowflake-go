@@ -35,7 +35,6 @@ type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutp
 	Fqn() *string
 	InternalValue() *DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutput
 	SetInternalValue(val *DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutput)
-	MfaAuthenticationMethods() *string
 	MfaEnrollment() *string
 	MfaPolicy() *string
 	Name() *string
@@ -165,16 +164,6 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference) MfaAuthenticationMethods() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"mfaAuthenticationMethods",
 		&returns,
 	)
 	return returns

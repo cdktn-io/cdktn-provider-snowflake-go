@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/streamlits snowflake_streamlits}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/streamlits snowflake_streamlits}.
 type DataSnowflakeStreamlits interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataSnowflakeStreamlits) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/streamlits snowflake_streamlits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/streamlits snowflake_streamlits} Data Source.
 func NewDataSnowflakeStreamlits(scope constructs.Construct, id *string, config *DataSnowflakeStreamlitsConfig) DataSnowflakeStreamlits {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataSnowflakeStreamlits(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/streamlits snowflake_streamlits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/streamlits snowflake_streamlits} Data Source.
 func NewDataSnowflakeStreamlits_Override(d DataSnowflakeStreamlits, scope constructs.Construct, id *string, config *DataSnowflakeStreamlitsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/shares snowflake_shares}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/shares snowflake_shares}.
 type DataSnowflakeShares interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataSnowflakeShares) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/shares snowflake_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/shares snowflake_shares} Data Source.
 func NewDataSnowflakeShares(scope constructs.Construct, id *string, config *DataSnowflakeSharesConfig) DataSnowflakeShares {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataSnowflakeShares(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/shares snowflake_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/shares snowflake_shares} Data Source.
 func NewDataSnowflakeShares_Override(d DataSnowflakeShares, scope constructs.Construct, id *string, config *DataSnowflakeSharesConfig) {
 	_init_.Initialize()
 

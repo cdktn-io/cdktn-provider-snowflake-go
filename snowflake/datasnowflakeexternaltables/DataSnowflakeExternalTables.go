@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/external_tables snowflake_external_tables}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/external_tables snowflake_external_tables}.
 type DataSnowflakeExternalTables interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataSnowflakeExternalTables) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/external_tables snowflake_external_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/external_tables snowflake_external_tables} Data Source.
 func NewDataSnowflakeExternalTables(scope constructs.Construct, id *string, config *DataSnowflakeExternalTablesConfig) DataSnowflakeExternalTables {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataSnowflakeExternalTables(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/external_tables snowflake_external_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/external_tables snowflake_external_tables} Data Source.
 func NewDataSnowflakeExternalTables_Override(d DataSnowflakeExternalTables, scope constructs.Construct, id *string, config *DataSnowflakeExternalTablesConfig) {
 	_init_.Initialize()
 

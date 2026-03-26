@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/current_role snowflake_current_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/current_role snowflake_current_role}.
 type DataSnowflakeCurrentRole interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataSnowflakeCurrentRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/current_role snowflake_current_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/current_role snowflake_current_role} Data Source.
 func NewDataSnowflakeCurrentRole(scope constructs.Construct, id *string, config *DataSnowflakeCurrentRoleConfig) DataSnowflakeCurrentRole {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataSnowflakeCurrentRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/current_role snowflake_current_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/current_role snowflake_current_role} Data Source.
 func NewDataSnowflakeCurrentRole_Override(d DataSnowflakeCurrentRole, scope constructs.Construct, id *string, config *DataSnowflakeCurrentRoleConfig) {
 	_init_.Initialize()
 
