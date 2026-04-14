@@ -31,6 +31,7 @@ type DataSnowflakeImageRepositoriesImageRepositoriesShowOutputOutputReference in
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseName() *string
+	Encryption() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeImageRepositoriesImageRepositoriesShowOutput
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataSnowflakeImageRepositoriesImageRepositoriesShowOutputOutp
 	_jsii_.Get(
 		j,
 		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeImageRepositoriesImageRepositoriesShowOutputOutputReference) Encryption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryption",
 		&returns,
 	)
 	return returns

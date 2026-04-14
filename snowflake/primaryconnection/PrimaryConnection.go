@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/primary_connection snowflake_primary_connection}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/primary_connection snowflake_primary_connection}.
 type PrimaryConnection interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_PrimaryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/primary_connection snowflake_primary_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/primary_connection snowflake_primary_connection} Resource.
 func NewPrimaryConnection(scope constructs.Construct, id *string, config *PrimaryConnectionConfig) PrimaryConnection {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewPrimaryConnection(scope constructs.Construct, id *string, config *Primar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/primary_connection snowflake_primary_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/primary_connection snowflake_primary_connection} Resource.
 func NewPrimaryConnection_Override(p PrimaryConnection, scope constructs.Construct, id *string, config *PrimaryConnectionConfig) {
 	_init_.Initialize()
 

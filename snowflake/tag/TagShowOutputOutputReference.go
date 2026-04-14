@@ -39,6 +39,7 @@ type TagShowOutputOutputReference interface {
 	Name() *string
 	Owner() *string
 	OwnerRoleType() *string
+	Propagate() *string
 	SchemaName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_TagShowOutputOutputReference) OwnerRoleType() *string {
 	_jsii_.Get(
 		j,
 		"ownerRoleType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagShowOutputOutputReference) Propagate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagate",
 		&returns,
 	)
 	return returns

@@ -111,6 +111,10 @@ func (j *jsiiProxy_ImageRepository) validateSetDatabaseParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ImageRepository) validateSetEncryptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -164,6 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createdOn", GoGetter: "CreatedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
+			_jsii_.MemberProperty{JsiiProperty: "encryption", GoGetter: "Encryption"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

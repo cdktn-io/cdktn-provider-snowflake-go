@@ -214,6 +214,30 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsAccessPointArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsExternalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -222,7 +246,23 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStor
 	return nil
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsSecretKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageBaseUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageEndpointParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,6 +295,14 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetTerr
 }
 
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetUsePrivatelinkEndpointParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

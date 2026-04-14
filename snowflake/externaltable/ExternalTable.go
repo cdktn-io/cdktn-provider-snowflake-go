@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_table snowflake_external_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_table snowflake_external_table}.
 type ExternalTable interface {
 	cdktn.TerraformResource
 	AutoRefresh() interface{}
@@ -719,7 +719,7 @@ func (j *jsiiProxy_ExternalTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTableConfig) ExternalTable {
 	_init_.Initialize()
 
@@ -737,7 +737,7 @@ func NewExternalTable(scope constructs.Construct, id *string, config *ExternalTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_table snowflake_external_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_table snowflake_external_table} Resource.
 func NewExternalTable_Override(e ExternalTable, scope constructs.Construct, id *string, config *ExternalTableConfig) {
 	_init_.Initialize()
 

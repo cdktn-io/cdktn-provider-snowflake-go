@@ -42,6 +42,7 @@ type DataSnowflakeWarehousesWarehousesShowOutputOutputReference interface {
 	IsCurrent() cdktn.IResolvable
 	IsDefault() cdktn.IResolvable
 	MaxClusterCount() *float64
+	MaxQueryPerformanceLevel() *string
 	MinClusterCount() *float64
 	Name() *string
 	Other() *float64
@@ -49,6 +50,7 @@ type DataSnowflakeWarehousesWarehousesShowOutputOutputReference interface {
 	OwnerRoleType() *string
 	Provisioning() *float64
 	QueryAccelerationMaxScaleFactor() *float64
+	QueryThroughputMultiplier() *float64
 	Queued() *float64
 	Quiescing() *float64
 	ResourceConstraint() *string
@@ -258,6 +260,16 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) M
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) MaxQueryPerformanceLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxQueryPerformanceLevel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) MinClusterCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -323,6 +335,16 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) Q
 	_jsii_.Get(
 		j,
 		"queryAccelerationMaxScaleFactor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) QueryThroughputMultiplier() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryThroughputMultiplier",
 		&returns,
 	)
 	return returns

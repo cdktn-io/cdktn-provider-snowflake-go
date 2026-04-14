@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view snowflake_semantic_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/semantic_view snowflake_semantic_view}.
 type SemanticView interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -577,7 +577,7 @@ func (j *jsiiProxy_SemanticView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view snowflake_semantic_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/semantic_view snowflake_semantic_view} Resource.
 func NewSemanticView(scope constructs.Construct, id *string, config *SemanticViewConfig) SemanticView {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewSemanticView(scope constructs.Construct, id *string, config *SemanticVie
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view snowflake_semantic_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/semantic_view snowflake_semantic_view} Resource.
 func NewSemanticView_Override(s SemanticView, scope constructs.Construct, id *string, config *SemanticViewConfig) {
 	_init_.Initialize()
 

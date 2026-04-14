@@ -31,6 +31,7 @@ type ImageRepositoryShowOutputOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseName() *string
+	Encryption() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ImageRepositoryShowOutput
@@ -143,6 +144,16 @@ func (j *jsiiProxy_ImageRepositoryShowOutputOutputReference) DatabaseName() *str
 	_jsii_.Get(
 		j,
 		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageRepositoryShowOutputOutputReference) Encryption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryption",
 		&returns,
 	)
 	return returns

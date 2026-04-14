@@ -39,6 +39,7 @@ type DataSnowflakeTagsTagsShowOutputOutputReference interface {
 	Name() *string
 	Owner() *string
 	OwnerRoleType() *string
+	Propagate() *string
 	SchemaName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataSnowflakeTagsTagsShowOutputOutputReference) OwnerRoleType
 	_jsii_.Get(
 		j,
 		"ownerRoleType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeTagsTagsShowOutputOutputReference) Propagate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagate",
 		&returns,
 	)
 	return returns

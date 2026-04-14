@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role}.
 type GrantPrivilegesToAccountRole interface {
 	cdktn.TerraformResource
 	AccountRoleName() *string
@@ -606,7 +606,7 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRole) WithGrantOptionInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource.
 func NewGrantPrivilegesToAccountRole(scope constructs.Construct, id *string, config *GrantPrivilegesToAccountRoleConfig) GrantPrivilegesToAccountRole {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewGrantPrivilegesToAccountRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource.
 func NewGrantPrivilegesToAccountRole_Override(g GrantPrivilegesToAccountRole, scope constructs.Construct, id *string, config *GrantPrivilegesToAccountRoleConfig) {
 	_init_.Initialize()
 

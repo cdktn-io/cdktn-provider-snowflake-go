@@ -26,45 +26,45 @@ type StageExternalAzureConfig struct {
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#database StageExternalAzure#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#database StageExternalAzure#database}
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// Specifies the identifier for the stage;
 	//
 	// must be unique for the database and schema in which the stage is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#name StageExternalAzure#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#name StageExternalAzure#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The schema in which to create the stage.
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#schema StageExternalAzure#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#schema StageExternalAzure#schema}
 	Schema *string `field:"required" json:"schema" yaml:"schema"`
 	// Specifies the URL for the Azure storage container (e.g., 'azure://account.blob.core.windows.net/container').
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#url StageExternalAzure#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#url StageExternalAzure#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// Specifies a comment for the stage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#comment StageExternalAzure#comment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#comment StageExternalAzure#comment}
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
 	// credentials block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#credentials StageExternalAzure#credentials}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#credentials StageExternalAzure#credentials}
 	Credentials *StageExternalAzureCredentials `field:"optional" json:"credentials" yaml:"credentials"`
 	// directory block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#directory StageExternalAzure#directory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#directory StageExternalAzure#directory}
 	Directory *StageExternalAzureDirectory `field:"optional" json:"directory" yaml:"directory"`
 	// encryption block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#encryption StageExternalAzure#encryption}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#encryption StageExternalAzure#encryption}
 	Encryption *StageExternalAzureEncryption `field:"optional" json:"encryption" yaml:"encryption"`
 	// file_format block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#file_format StageExternalAzure#file_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#file_format StageExternalAzure#file_format}
 	FileFormat *StageExternalAzureFileFormat `field:"optional" json:"fileFormat" yaml:"fileFormat"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#id StageExternalAzure#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#id StageExternalAzure#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -73,15 +73,15 @@ type StageExternalAzureConfig struct {
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#storage_integration StageExternalAzure#storage_integration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#storage_integration StageExternalAzure#storage_integration}
 	StorageIntegration *string `field:"optional" json:"storageIntegration" yaml:"storageIntegration"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#timeouts StageExternalAzure#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#timeouts StageExternalAzure#timeouts}
 	Timeouts *StageExternalAzureTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a private link endpoint for Azure storage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure#use_privatelink_endpoint StageExternalAzure#use_privatelink_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure#use_privatelink_endpoint StageExternalAzure#use_privatelink_endpoint}
 	UsePrivatelinkEndpoint *string `field:"optional" json:"usePrivatelinkEndpoint" yaml:"usePrivatelinkEndpoint"`
 }
 

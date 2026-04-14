@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag}.
 type Tag interface {
 	cdktn.TerraformResource
 	AllowedValues() *[]*string
@@ -62,8 +62,19 @@ type Tag interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NoAllowedValues() interface{}
+	SetNoAllowedValues(val interface{})
+	NoAllowedValuesInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	OnConflict() TagOnConflictOutputReference
+	OnConflictInput() *TagOnConflict
+	OrderedAllowedValues() *[]*string
+	SetOrderedAllowedValues(val *[]*string)
+	OrderedAllowedValuesInput() *[]*string
+	Propagate() *string
+	SetPropagate(val *string)
+	PropagateInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -129,14 +140,19 @@ type Tag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOnConflict(value *TagOnConflict)
 	PutTimeouts(value *TagTimeouts)
 	ResetAllowedValues()
 	ResetComment()
 	ResetId()
 	ResetMaskingPolicies()
+	ResetNoAllowedValues()
+	ResetOnConflict()
+	ResetOrderedAllowedValues()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPropagate()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -385,11 +401,91 @@ func (j *jsiiProxy_Tag) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Tag) NoAllowedValues() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAllowedValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) NoAllowedValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAllowedValuesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Tag) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) OnConflict() TagOnConflictOutputReference {
+	var returns TagOnConflictOutputReference
+	_jsii_.Get(
+		j,
+		"onConflict",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) OnConflictInput() *TagOnConflict {
+	var returns *TagOnConflict
+	_jsii_.Get(
+		j,
+		"onConflictInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) OrderedAllowedValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"orderedAllowedValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) OrderedAllowedValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"orderedAllowedValuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) Propagate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tag) PropagateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagateInput",
 		&returns,
 	)
 	return returns
@@ -506,7 +602,7 @@ func (j *jsiiProxy_Tag) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag} Resource.
 func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	_init_.Initialize()
 
@@ -524,7 +620,7 @@ func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag} Resource.
 func NewTag_Override(t Tag, scope constructs.Construct, id *string, config *TagConfig) {
 	_init_.Initialize()
 
@@ -646,6 +742,39 @@ func (j *jsiiProxy_Tag)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Tag)SetNoAllowedValues(val interface{}) {
+	if err := j.validateSetNoAllowedValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAllowedValues",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Tag)SetOrderedAllowedValues(val *[]*string) {
+	if err := j.validateSetOrderedAllowedValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderedAllowedValues",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Tag)SetPropagate(val *string) {
+	if err := j.validateSetPropagateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"propagate",
 		val,
 	)
 }
@@ -1033,6 +1162,17 @@ func (t *jsiiProxy_Tag) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_Tag) PutOnConflict(value *TagOnConflict) {
+	if err := t.validatePutOnConflictParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putOnConflict",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_Tag) PutTimeouts(value *TagTimeouts) {
 	if err := t.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1076,10 +1216,42 @@ func (t *jsiiProxy_Tag) ResetMaskingPolicies() {
 	)
 }
 
+func (t *jsiiProxy_Tag) ResetNoAllowedValues() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNoAllowedValues",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Tag) ResetOnConflict() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOnConflict",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Tag) ResetOrderedAllowedValues() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOrderedAllowedValues",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Tag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Tag) ResetPropagate() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPropagate",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy snowflake_authentication_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy snowflake_authentication_policy}.
 type AuthenticationPolicy interface {
 	cdktn.TerraformResource
 	AuthenticationMethods() *[]*string
@@ -20,6 +20,8 @@ type AuthenticationPolicy interface {
 	AuthenticationMethodsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ClientPolicy() AuthenticationPolicyClientPolicyList
+	ClientPolicyInput() interface{}
 	ClientTypes() *[]*string
 	SetClientTypes(val *[]*string)
 	ClientTypesInput() *[]*string
@@ -145,11 +147,13 @@ type AuthenticationPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientPolicy(value interface{})
 	PutMfaPolicy(value *AuthenticationPolicyMfaPolicy)
 	PutPatPolicy(value *AuthenticationPolicyPatPolicy)
 	PutTimeouts(value *AuthenticationPolicyTimeouts)
 	PutWorkloadIdentityPolicy(value *AuthenticationPolicyWorkloadIdentityPolicy)
 	ResetAuthenticationMethods()
+	ResetClientPolicy()
 	ResetClientTypes()
 	ResetComment()
 	ResetId()
@@ -215,6 +219,26 @@ func (j *jsiiProxy_AuthenticationPolicy) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticationPolicy) ClientPolicy() AuthenticationPolicyClientPolicyList {
+	var returns AuthenticationPolicyClientPolicyList
+	_jsii_.Get(
+		j,
+		"clientPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticationPolicy) ClientPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clientPolicyInput",
 		&returns,
 	)
 	return returns
@@ -661,7 +685,7 @@ func (j *jsiiProxy_AuthenticationPolicy) WorkloadIdentityPolicyInput() *Authenti
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
 func NewAuthenticationPolicy(scope constructs.Construct, id *string, config *AuthenticationPolicyConfig) AuthenticationPolicy {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewAuthenticationPolicy(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
 func NewAuthenticationPolicy_Override(a AuthenticationPolicy, scope constructs.Construct, id *string, config *AuthenticationPolicyConfig) {
 	_init_.Initialize()
 
@@ -1221,6 +1245,17 @@ func (a *jsiiProxy_AuthenticationPolicy) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (a *jsiiProxy_AuthenticationPolicy) PutClientPolicy(value interface{}) {
+	if err := a.validatePutClientPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putClientPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AuthenticationPolicy) PutMfaPolicy(value *AuthenticationPolicyMfaPolicy) {
 	if err := a.validatePutMfaPolicyParameters(value); err != nil {
 		panic(err)
@@ -1269,6 +1304,14 @@ func (a *jsiiProxy_AuthenticationPolicy) ResetAuthenticationMethods() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAuthenticationMethods",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthenticationPolicy) ResetClientPolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientPolicy",
 		nil, // no parameters
 	)
 }

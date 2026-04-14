@@ -75,6 +75,10 @@ func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) validateSetNetw
 	return nil
 }
 
+func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) validateSetRequireRoleRestrictionForServiceUsersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

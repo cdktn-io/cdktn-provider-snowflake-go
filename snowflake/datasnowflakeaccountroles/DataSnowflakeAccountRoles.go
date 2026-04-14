@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/account_roles snowflake_account_roles}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/account_roles snowflake_account_roles}.
 type DataSnowflakeAccountRoles interface {
 	cdktn.TerraformDataSource
 	AccountRoles() DataSnowflakeAccountRolesAccountRolesList
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataSnowflakeAccountRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/account_roles snowflake_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/account_roles snowflake_account_roles} Data Source.
 func NewDataSnowflakeAccountRoles(scope constructs.Construct, id *string, config *DataSnowflakeAccountRolesConfig) DataSnowflakeAccountRoles {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataSnowflakeAccountRoles(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/account_roles snowflake_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/account_roles snowflake_account_roles} Data Source.
 func NewDataSnowflakeAccountRoles_Override(d DataSnowflakeAccountRoles, scope constructs.Construct, id *string, config *DataSnowflakeAccountRolesConfig) {
 	_init_.Initialize()
 

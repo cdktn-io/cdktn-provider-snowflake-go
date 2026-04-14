@@ -32,6 +32,9 @@ type SemanticViewMetricsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsPrivate() *string
+	SetIsPrivate(val *string)
+	IsPrivateInput() *string
 	SemanticExpression() SemanticViewMetricsSemanticExpressionOutputReference
 	SemanticExpressionInput() *SemanticViewMetricsSemanticExpression
 	// Experimental.
@@ -70,6 +73,7 @@ type SemanticViewMetricsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSemanticExpression(value *SemanticViewMetricsSemanticExpression)
 	PutWindowFunction(value *SemanticViewMetricsWindowFunction)
+	ResetIsPrivate()
 	ResetSemanticExpression()
 	ResetWindowFunction()
 	// Produce the Token's value at resolution time.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_SemanticViewMetricsOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SemanticViewMetricsOutputReference) IsPrivate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isPrivate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SemanticViewMetricsOutputReference) IsPrivateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isPrivateInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_SemanticViewMetricsOutputReference)SetInternalValue(val inter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SemanticViewMetricsOutputReference)SetIsPrivate(val *string) {
+	if err := j.validateSetIsPrivateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPrivate",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (s *jsiiProxy_SemanticViewMetricsOutputReference) PutWindowFunction(value *
 		s,
 		"putWindowFunction",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SemanticViewMetricsOutputReference) ResetIsPrivate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsPrivate",
+		nil, // no parameters
 	)
 }
 

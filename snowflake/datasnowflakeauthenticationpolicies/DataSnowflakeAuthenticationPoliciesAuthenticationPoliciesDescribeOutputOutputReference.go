@@ -14,6 +14,7 @@ import (
 type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference interface {
 	cdktn.ComplexObject
 	AuthenticationMethods() *string
+	ClientPolicy() *string
 	ClientTypes() *string
 	Comment() *string
 	// the index of the complex object in a list.
@@ -94,6 +95,16 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDesc
 	_jsii_.Get(
 		j,
 		"authenticationMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference) ClientPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientPolicy",
 		&returns,
 	)
 	return returns

@@ -67,6 +67,10 @@ func (j *jsiiProxy_SemanticViewFactsOutputReference) validateSetInternalValuePar
 	return nil
 }
 
+func (j *jsiiProxy_SemanticViewFactsOutputReference) validateSetIsPrivateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SemanticViewFactsOutputReference) validateSetQualifiedExpressionNameParameters(val *string) error {
 	return nil
 }

@@ -41,6 +41,9 @@ type AuthenticationPolicyPatPolicyOutputReference interface {
 	NetworkPolicyEvaluation() *string
 	SetNetworkPolicyEvaluation(val *string)
 	NetworkPolicyEvaluationInput() *string
+	RequireRoleRestrictionForServiceUsers() *string
+	SetRequireRoleRestrictionForServiceUsers(val *string)
+	RequireRoleRestrictionForServiceUsersInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type AuthenticationPolicyPatPolicyOutputReference interface {
 	ResetDefaultExpiryInDays()
 	ResetMaxExpiryInDays()
 	ResetNetworkPolicyEvaluation()
+	ResetRequireRoleRestrictionForServiceUsers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) NetworkPolicyEv
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) RequireRoleRestrictionForServiceUsers() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requireRoleRestrictionForServiceUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) RequireRoleRestrictionForServiceUsersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requireRoleRestrictionForServiceUsersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference)SetNetworkPolicy
 	_jsii_.Set(
 		j,
 		"networkPolicyEvaluation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference)SetRequireRoleRestrictionForServiceUsers(val *string) {
+	if err := j.validateSetRequireRoleRestrictionForServiceUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireRoleRestrictionForServiceUsers",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (a *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) ResetNetworkPol
 	_jsii_.InvokeVoid(
 		a,
 		"resetNetworkPolicyEvaluation",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthenticationPolicyPatPolicyOutputReference) ResetRequireRoleRestrictionForServiceUsers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRequireRoleRestrictionForServiceUsers",
 		nil, // no parameters
 	)
 }

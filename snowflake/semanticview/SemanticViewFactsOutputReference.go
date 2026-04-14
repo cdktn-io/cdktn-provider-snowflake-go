@@ -35,6 +35,9 @@ type SemanticViewFactsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsPrivate() *string
+	SetIsPrivate(val *string)
+	IsPrivateInput() *string
 	QualifiedExpressionName() *string
 	SetQualifiedExpressionName(val *string)
 	QualifiedExpressionNameInput() *string
@@ -77,6 +80,7 @@ type SemanticViewFactsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetComment()
+	ResetIsPrivate()
 	ResetSynonym()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -158,6 +162,26 @@ func (j *jsiiProxy_SemanticViewFactsOutputReference) InternalValue() interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SemanticViewFactsOutputReference) IsPrivate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isPrivate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SemanticViewFactsOutputReference) IsPrivateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isPrivateInput",
 		&returns,
 	)
 	return returns
@@ -311,6 +335,17 @@ func (j *jsiiProxy_SemanticViewFactsOutputReference)SetInternalValue(val interfa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SemanticViewFactsOutputReference)SetIsPrivate(val *string) {
+	if err := j.validateSetIsPrivateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPrivate",
 		val,
 	)
 }
@@ -560,6 +595,14 @@ func (s *jsiiProxy_SemanticViewFactsOutputReference) ResetComment() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SemanticViewFactsOutputReference) ResetIsPrivate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsPrivate",
 		nil, // no parameters
 	)
 }

@@ -114,6 +114,7 @@ func init() {
 		reflect.TypeOf((*DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationMethods", GoGetter: "AuthenticationMethods"},
+			_jsii_.MemberProperty{JsiiProperty: "clientPolicy", GoGetter: "ClientPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTypes", GoGetter: "ClientTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

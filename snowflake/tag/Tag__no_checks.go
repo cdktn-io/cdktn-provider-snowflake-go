@@ -75,6 +75,10 @@ func (t *jsiiProxy_Tag) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (t *jsiiProxy_Tag) validatePutOnConflictParameters(value *TagOnConflict) error {
+	return nil
+}
+
 func (t *jsiiProxy_Tag) validatePutTimeoutsParameters(value *TagTimeouts) error {
 	return nil
 }
@@ -128,6 +132,18 @@ func (j *jsiiProxy_Tag) validateSetMaskingPoliciesParameters(val *[]*string) err
 }
 
 func (j *jsiiProxy_Tag) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Tag) validateSetNoAllowedValuesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Tag) validateSetOrderedAllowedValuesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Tag) validateSetPropagateParameters(val *string) error {
 	return nil
 }
 

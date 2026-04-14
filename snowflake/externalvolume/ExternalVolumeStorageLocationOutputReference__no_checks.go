@@ -75,11 +75,31 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsAccessPointArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsExternalIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsRoleArnParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageAwsSecretKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageBaseUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetStorageEndpointParameters(val *string) error {
 	return nil
 }
 
@@ -96,6 +116,10 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetTerr
 }
 
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) validateSetUsePrivatelinkEndpointParameters(val *string) error {
 	return nil
 }
 

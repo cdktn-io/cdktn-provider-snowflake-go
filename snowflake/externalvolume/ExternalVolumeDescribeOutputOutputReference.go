@@ -13,6 +13,9 @@ import (
 
 type ExternalVolumeDescribeOutputOutputReference interface {
 	cdktn.ComplexObject
+	Active() *string
+	AllowWrites() *string
+	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,13 +31,11 @@ type ExternalVolumeDescribeOutputOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Default() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ExternalVolumeDescribeOutput
 	SetInternalValue(val *ExternalVolumeDescribeOutput)
-	Name() *string
-	Parent() *string
+	StorageLocations() ExternalVolumeDescribeOutputStorageLocationsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,8 +44,6 @@ type ExternalVolumeDescribeOutputOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	Type() *string
-	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -84,6 +83,36 @@ type jsiiProxy_ExternalVolumeDescribeOutputOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Active() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"active",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) AllowWrites() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowWrites",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Comment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comment",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -114,16 +143,6 @@ func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Default() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"default",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,21 +163,11 @@ func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Name() *string {
-	var returns *string
+func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) StorageLocations() ExternalVolumeDescribeOutputStorageLocationsList {
+	var returns ExternalVolumeDescribeOutputStorageLocationsList
 	_jsii_.Get(
 		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Parent() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"parent",
+		"storageLocations",
 		&returns,
 	)
 	return returns
@@ -179,26 +188,6 @@ func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalVolumeDescribeOutputOutputReference) Value() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"value",
 		&returns,
 	)
 	return returns

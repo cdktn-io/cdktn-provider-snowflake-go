@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/materialized_view snowflake_materialized_view}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/materialized_view snowflake_materialized_view}.
 type MaterializedView interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -565,7 +565,7 @@ func (j *jsiiProxy_MaterializedView) WarehouseInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView(scope constructs.Construct, id *string, config *MaterializedViewConfig) MaterializedView {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewMaterializedView(scope constructs.Construct, id *string, config *Materia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/materialized_view snowflake_materialized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/materialized_view snowflake_materialized_view} Resource.
 func NewMaterializedView_Override(m MaterializedView, scope constructs.Construct, id *string, config *MaterializedViewConfig) {
 	_init_.Initialize()
 

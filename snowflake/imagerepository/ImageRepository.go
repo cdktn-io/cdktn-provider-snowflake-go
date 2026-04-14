@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository}.
 type ImageRepository interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type ImageRepository interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Encryption() *string
+	SetEncryption(val *string)
+	EncryptionInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -125,6 +128,7 @@ type ImageRepository interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ImageRepositoryTimeouts)
 	ResetComment()
+	ResetEncryption()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -242,6 +246,26 @@ func (j *jsiiProxy_ImageRepository) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageRepository) Encryption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageRepository) EncryptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +482,7 @@ func (j *jsiiProxy_ImageRepository) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository} Resource.
 func NewImageRepository(scope constructs.Construct, id *string, config *ImageRepositoryConfig) ImageRepository {
 	_init_.Initialize()
 
@@ -476,7 +500,7 @@ func NewImageRepository(scope constructs.Construct, id *string, config *ImageRep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository} Resource.
 func NewImageRepository_Override(i ImageRepository, scope constructs.Construct, id *string, config *ImageRepositoryConfig) {
 	_init_.Initialize()
 
@@ -535,6 +559,17 @@ func (j *jsiiProxy_ImageRepository)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageRepository)SetEncryption(val *string) {
+	if err := j.validateSetEncryptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryption",
 		val,
 	)
 }
@@ -978,6 +1013,14 @@ func (i *jsiiProxy_ImageRepository) ResetComment() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageRepository) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEncryption",
 		nil, // no parameters
 	)
 }

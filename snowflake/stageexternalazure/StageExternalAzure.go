@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure snowflake_stage_external_azure}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure snowflake_stage_external_azure}.
 type StageExternalAzure interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -658,7 +658,7 @@ func (j *jsiiProxy_StageExternalAzure) UsePrivatelinkEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure snowflake_stage_external_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure snowflake_stage_external_azure} Resource.
 func NewStageExternalAzure(scope constructs.Construct, id *string, config *StageExternalAzureConfig) StageExternalAzure {
 	_init_.Initialize()
 
@@ -676,7 +676,7 @@ func NewStageExternalAzure(scope constructs.Construct, id *string, config *Stage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/stage_external_azure snowflake_stage_external_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_azure snowflake_stage_external_azure} Resource.
 func NewStageExternalAzure_Override(s StageExternalAzure, scope constructs.Construct, id *string, config *StageExternalAzureConfig) {
 	_init_.Initialize()
 

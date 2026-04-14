@@ -41,13 +41,27 @@ type ExternalVolumeStorageLocationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	StorageAwsAccessPointArn() *string
+	SetStorageAwsAccessPointArn(val *string)
+	StorageAwsAccessPointArnInput() *string
 	StorageAwsExternalId() *string
+	SetStorageAwsExternalId(val *string)
+	StorageAwsExternalIdInput() *string
+	StorageAwsKeyId() *string
+	SetStorageAwsKeyId(val *string)
+	StorageAwsKeyIdInput() *string
 	StorageAwsRoleArn() *string
 	SetStorageAwsRoleArn(val *string)
 	StorageAwsRoleArnInput() *string
+	StorageAwsSecretKey() *string
+	SetStorageAwsSecretKey(val *string)
+	StorageAwsSecretKeyInput() *string
 	StorageBaseUrl() *string
 	SetStorageBaseUrl(val *string)
 	StorageBaseUrlInput() *string
+	StorageEndpoint() *string
+	SetStorageEndpoint(val *string)
+	StorageEndpointInput() *string
 	StorageLocationName() *string
 	SetStorageLocationName(val *string)
 	StorageLocationNameInput() *string
@@ -62,6 +76,9 @@ type ExternalVolumeStorageLocationOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UsePrivatelinkEndpoint() *string
+	SetUsePrivatelinkEndpoint(val *string)
+	UsePrivatelinkEndpointInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,7 +106,13 @@ type ExternalVolumeStorageLocationOutputReference interface {
 	ResetAzureTenantId()
 	ResetEncryptionKmsKeyId()
 	ResetEncryptionType()
+	ResetStorageAwsAccessPointArn()
+	ResetStorageAwsExternalId()
+	ResetStorageAwsKeyId()
 	ResetStorageAwsRoleArn()
+	ResetStorageAwsSecretKey()
+	ResetStorageEndpoint()
+	ResetUsePrivatelinkEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -215,11 +238,61 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) InternalValue()
 	return returns
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsAccessPointArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsAccessPointArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsAccessPointArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsAccessPointArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsExternalId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"storageAwsExternalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsExternalIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +318,26 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsRoleA
 	return returns
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsSecretKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsSecretKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageAwsSecretKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAwsSecretKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageBaseUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -260,6 +353,26 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageBaseUrlI
 	_jsii_.Get(
 		j,
 		"storageBaseUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) StorageEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageEndpointInput",
 		&returns,
 	)
 	return returns
@@ -320,6 +433,26 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) TerraformResour
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) UsePrivatelinkEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usePrivatelinkEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference) UsePrivatelinkEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usePrivatelinkEndpointInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +552,39 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetInternalValue
 	)
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsAccessPointArn(val *string) {
+	if err := j.validateSetStorageAwsAccessPointArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAwsAccessPointArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsExternalId(val *string) {
+	if err := j.validateSetStorageAwsExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAwsExternalId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsKeyId(val *string) {
+	if err := j.validateSetStorageAwsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAwsKeyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsRoleArn(val *string) {
 	if err := j.validateSetStorageAwsRoleArnParameters(val); err != nil {
 		panic(err)
@@ -430,6 +596,17 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsRol
 	)
 }
 
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageAwsSecretKey(val *string) {
+	if err := j.validateSetStorageAwsSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAwsSecretKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageBaseUrl(val *string) {
 	if err := j.validateSetStorageBaseUrlParameters(val); err != nil {
 		panic(err)
@@ -437,6 +614,17 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageBaseUr
 	_jsii_.Set(
 		j,
 		"storageBaseUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetStorageEndpoint(val *string) {
+	if err := j.validateSetStorageEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageEndpoint",
 		val,
 	)
 }
@@ -481,6 +669,17 @@ func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetTerraformReso
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalVolumeStorageLocationOutputReference)SetUsePrivatelinkEndpoint(val *string) {
+	if err := j.validateSetUsePrivatelinkEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usePrivatelinkEndpoint",
 		val,
 	)
 }
@@ -695,10 +894,58 @@ func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetEncryption
 	)
 }
 
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageAwsAccessPointArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStorageAwsAccessPointArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageAwsExternalId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStorageAwsExternalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageAwsKeyId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStorageAwsKeyId",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageAwsRoleArn() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetStorageAwsRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageAwsSecretKey() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStorageAwsSecretKey",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetStorageEndpoint() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStorageEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalVolumeStorageLocationOutputReference) ResetUsePrivatelinkEndpoint() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUsePrivatelinkEndpoint",
 		nil, // no parameters
 	)
 }

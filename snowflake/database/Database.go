@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/database snowflake_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/database snowflake_database}.
 type Database interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -857,7 +857,7 @@ func (j *jsiiProxy_Database) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/database snowflake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/database snowflake_database} Resource.
 func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig) Database {
 	_init_.Initialize()
 
@@ -875,7 +875,7 @@ func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/database snowflake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/database snowflake_database} Resource.
 func NewDatabase_Override(d Database, scope constructs.Construct, id *string, config *DatabaseConfig) {
 	_init_.Initialize()
 

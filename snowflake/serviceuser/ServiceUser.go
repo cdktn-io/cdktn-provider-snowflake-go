@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/service_user snowflake_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/service_user snowflake_service_user}.
 type ServiceUser interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -2114,7 +2114,7 @@ func (j *jsiiProxy_ServiceUser) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserConfig) ServiceUser {
 	_init_.Initialize()
 
@@ -2132,7 +2132,7 @@ func NewServiceUser(scope constructs.Construct, id *string, config *ServiceUserC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/service_user snowflake_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/service_user snowflake_service_user} Resource.
 func NewServiceUser_Override(s ServiceUser, scope constructs.Construct, id *string, config *ServiceUserConfig) {
 	_init_.Initialize()
 
