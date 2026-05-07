@@ -5,9 +5,9 @@ package apiauthenticationintegrationwithjwtbearer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiauthenticationintegrationwithjwtbearer/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiauthenticationintegrationwithjwtbearer/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

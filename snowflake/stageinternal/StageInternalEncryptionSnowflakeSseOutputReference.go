@@ -5,9 +5,9 @@ package stageinternal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
