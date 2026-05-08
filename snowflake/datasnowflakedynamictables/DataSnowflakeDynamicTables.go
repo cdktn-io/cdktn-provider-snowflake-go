@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
 type DataSnowflakeDynamicTables interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataSnowflakeDynamicTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables} Data Source.
 func NewDataSnowflakeDynamicTables(scope constructs.Construct, id *string, config *DataSnowflakeDynamicTablesConfig) DataSnowflakeDynamicTables {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataSnowflakeDynamicTables(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables} Data Source.
 func NewDataSnowflakeDynamicTables_Override(d DataSnowflakeDynamicTables, scope constructs.Construct, id *string, config *DataSnowflakeDynamicTablesConfig) {
 	_init_.Initialize()
 

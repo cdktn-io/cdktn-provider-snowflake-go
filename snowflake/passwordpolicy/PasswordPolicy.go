@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/password_policy snowflake_password_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy snowflake_password_policy}.
 type PasswordPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -37,6 +37,7 @@ type PasswordPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DescribeOutput() PasswordPolicyDescribeOutputList
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -110,6 +111,7 @@ type PasswordPolicy interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	ShowOutput() PasswordPolicyShowOutputList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -293,6 +295,16 @@ func (j *jsiiProxy_PasswordPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PasswordPolicy) DescribeOutput() PasswordPolicyDescribeOutputList {
+	var returns PasswordPolicyDescribeOutputList
+	_jsii_.Get(
+		j,
+		"describeOutput",
 		&returns,
 	)
 	return returns
@@ -708,6 +720,16 @@ func (j *jsiiProxy_PasswordPolicy) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PasswordPolicy) ShowOutput() PasswordPolicyShowOutputList {
+	var returns PasswordPolicyShowOutputList
+	_jsii_.Get(
+		j,
+		"showOutput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PasswordPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -759,7 +781,7 @@ func (j *jsiiProxy_PasswordPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/password_policy snowflake_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy snowflake_password_policy} Resource.
 func NewPasswordPolicy(scope constructs.Construct, id *string, config *PasswordPolicyConfig) PasswordPolicy {
 	_init_.Initialize()
 
@@ -777,7 +799,7 @@ func NewPasswordPolicy(scope constructs.Construct, id *string, config *PasswordP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/password_policy snowflake_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy snowflake_password_policy} Resource.
 func NewPasswordPolicy_Override(p PasswordPolicy, scope constructs.Construct, id *string, config *PasswordPolicyConfig) {
 	_init_.Initialize()
 

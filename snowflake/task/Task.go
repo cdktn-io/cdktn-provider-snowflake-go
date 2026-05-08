@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/task snowflake_task}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/task snowflake_task}.
 type Task interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -2171,7 +2171,7 @@ func (j *jsiiProxy_Task) WhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/task snowflake_task} Resource.
 func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	_init_.Initialize()
 
@@ -2189,7 +2189,7 @@ func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/task snowflake_task} Resource.
 func NewTask_Override(t Task, scope constructs.Construct, id *string, config *TaskConfig) {
 	_init_.Initialize()
 

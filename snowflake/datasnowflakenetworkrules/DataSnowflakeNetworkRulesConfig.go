@@ -22,32 +22,32 @@ type DataSnowflakeNetworkRulesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#id DataSnowflakeNetworkRules#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#id DataSnowflakeNetworkRules#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// in block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#in DataSnowflakeNetworkRules#in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#in DataSnowflakeNetworkRules#in}
 	In *DataSnowflakeNetworkRulesIn `field:"optional" json:"in" yaml:"in"`
 	// Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#like DataSnowflakeNetworkRules#like}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#like DataSnowflakeNetworkRules#like}
 	Like *string `field:"optional" json:"like" yaml:"like"`
 	// limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#limit DataSnowflakeNetworkRules#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#limit DataSnowflakeNetworkRules#limit}
 	Limit *DataSnowflakeNetworkRulesLimit `field:"optional" json:"limit" yaml:"limit"`
 	// Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#starts_with DataSnowflakeNetworkRules#starts_with}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#starts_with DataSnowflakeNetworkRules#starts_with}
 	StartsWith *string `field:"optional" json:"startsWith" yaml:"startsWith"`
 	// (Default: `true`) Runs DESC NETWORK RULE for each network rule returned by SHOW NETWORK RULES.
 	//
 	// The output of describe is saved to the description field. By default this value is set to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#with_describe DataSnowflakeNetworkRules#with_describe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#with_describe DataSnowflakeNetworkRules#with_describe}
 	WithDescribe interface{} `field:"optional" json:"withDescribe" yaml:"withDescribe"`
 }
 

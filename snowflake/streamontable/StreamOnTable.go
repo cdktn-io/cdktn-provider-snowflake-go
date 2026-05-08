@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stream_on_table snowflake_stream_on_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stream_on_table snowflake_stream_on_table}.
 type StreamOnTable interface {
 	cdktn.TerraformResource
 	AppendOnly() *string
@@ -634,7 +634,7 @@ func (j *jsiiProxy_StreamOnTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
 func NewStreamOnTable(scope constructs.Construct, id *string, config *StreamOnTableConfig) StreamOnTable {
 	_init_.Initialize()
 
@@ -652,7 +652,7 @@ func NewStreamOnTable(scope constructs.Construct, id *string, config *StreamOnTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stream_on_table snowflake_stream_on_table} Resource.
 func NewStreamOnTable_Override(s StreamOnTable, scope constructs.Construct, id *string, config *StreamOnTableConfig) {
 	_init_.Initialize()
 

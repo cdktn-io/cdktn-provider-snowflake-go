@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/file_format snowflake_file_format}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/file_format snowflake_file_format}.
 type FileFormat interface {
 	cdktn.TerraformResource
 	AllowDuplicate() interface{}
@@ -1214,7 +1214,7 @@ func (j *jsiiProxy_FileFormat) TrimSpaceInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/file_format snowflake_file_format} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/file_format snowflake_file_format} Resource.
 func NewFileFormat(scope constructs.Construct, id *string, config *FileFormatConfig) FileFormat {
 	_init_.Initialize()
 
@@ -1232,7 +1232,7 @@ func NewFileFormat(scope constructs.Construct, id *string, config *FileFormatCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/file_format snowflake_file_format} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/file_format snowflake_file_format} Resource.
 func NewFileFormat_Override(f FileFormat, scope constructs.Construct, id *string, config *FileFormatConfig) {
 	_init_.Initialize()
 

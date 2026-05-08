@@ -7,15 +7,15 @@ package datasnowflakenetworkrules
 type DataSnowflakeNetworkRulesIn struct {
 	// Returns records for the entire account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#account DataSnowflakeNetworkRules#account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#account DataSnowflakeNetworkRules#account}
 	Account interface{} `field:"optional" json:"account" yaml:"account"`
 	// Returns records for the current database in use or for a specified database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#database DataSnowflakeNetworkRules#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#database DataSnowflakeNetworkRules#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
 	// Returns records for the current schema in use or a specified schema. Use fully qualified name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/network_rules#schema DataSnowflakeNetworkRules#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/network_rules#schema DataSnowflakeNetworkRules#schema}
 	Schema *string `field:"optional" json:"schema" yaml:"schema"`
 }
 

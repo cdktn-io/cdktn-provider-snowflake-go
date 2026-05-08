@@ -7,11 +7,11 @@ package stageexternals3compatible
 type StageExternalS3CompatibleCredentials struct {
 	// Specifies the AWS access key ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_s3_compatible#aws_key_id StageExternalS3Compatible#aws_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_external_s3_compatible#aws_key_id StageExternalS3Compatible#aws_key_id}
 	AwsKeyId *string `field:"required" json:"awsKeyId" yaml:"awsKeyId"`
 	// Specifies the AWS secret access key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/stage_external_s3_compatible#aws_secret_key StageExternalS3Compatible#aws_secret_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_external_s3_compatible#aws_secret_key StageExternalS3Compatible#aws_secret_key}
 	AwsSecretKey *string `field:"required" json:"awsSecretKey" yaml:"awsSecretKey"`
 }
 

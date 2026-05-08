@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest}.
 type CatalogIntegrationIcebergRest interface {
 	cdktn.TerraformResource
 	BearerRestAuthentication() CatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference
@@ -20,6 +20,7 @@ type CatalogIntegrationIcebergRest interface {
 	CatalogNamespace() *string
 	SetCatalogNamespace(val *string)
 	CatalogNamespaceInput() *string
+	CatalogSource() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Comment() *string
@@ -213,6 +214,16 @@ func (j *jsiiProxy_CatalogIntegrationIcebergRest) CatalogNamespaceInput() *strin
 	_jsii_.Get(
 		j,
 		"catalogNamespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogIntegrationIcebergRest) CatalogSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogSource",
 		&returns,
 	)
 	return returns
@@ -589,7 +600,7 @@ func (j *jsiiProxy_CatalogIntegrationIcebergRest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest} Resource.
 func NewCatalogIntegrationIcebergRest(scope constructs.Construct, id *string, config *CatalogIntegrationIcebergRestConfig) CatalogIntegrationIcebergRest {
 	_init_.Initialize()
 
@@ -607,7 +618,7 @@ func NewCatalogIntegrationIcebergRest(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_iceberg_rest snowflake_catalog_integration_iceberg_rest} Resource.
 func NewCatalogIntegrationIcebergRest_Override(c CatalogIntegrationIcebergRest, scope constructs.Construct, id *string, config *CatalogIntegrationIcebergRestConfig) {
 	_init_.Initialize()
 

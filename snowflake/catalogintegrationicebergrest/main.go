@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "bearerRestAuthenticationInput", GoGetter: "BearerRestAuthenticationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogNamespace", GoGetter: "CatalogNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogNamespaceInput", GoGetter: "CatalogNamespaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogSource", GoGetter: "CatalogSource"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},

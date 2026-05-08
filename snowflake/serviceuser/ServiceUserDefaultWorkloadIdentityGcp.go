@@ -7,7 +7,7 @@ package serviceuser
 type ServiceUserDefaultWorkloadIdentityGcp struct {
 	// The GCP service account subject identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/service_user#subject ServiceUser#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/service_user#subject ServiceUser#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
 type DataSnowflakeSystemGetPrivatelinkConfig interface {
 	cdktn.TerraformDataSource
 	AccountName() *string
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
 func NewDataSnowflakeSystemGetPrivatelinkConfig(scope constructs.Construct, id *string, config *DataSnowflakeSystemGetPrivatelinkConfigConfig) DataSnowflakeSystemGetPrivatelinkConfig {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataSnowflakeSystemGetPrivatelinkConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
 func NewDataSnowflakeSystemGetPrivatelinkConfig_Override(d DataSnowflakeSystemGetPrivatelinkConfig, scope constructs.Construct, id *string, config *DataSnowflakeSystemGetPrivatelinkConfigConfig) {
 	_init_.Initialize()
 
