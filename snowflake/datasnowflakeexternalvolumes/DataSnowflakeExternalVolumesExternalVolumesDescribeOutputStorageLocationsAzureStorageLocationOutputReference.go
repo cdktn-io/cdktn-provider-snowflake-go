@@ -43,6 +43,7 @@ type DataSnowflakeExternalVolumesExternalVolumesDescribeOutputStorageLocationsAz
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UsePrivatelinkEndpoint() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataSnowflakeExternalVolumesExternalVolumesDescribeOutputStor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeExternalVolumesExternalVolumesDescribeOutputStorageLocationsAzureStorageLocationOutputReference) UsePrivatelinkEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usePrivatelinkEndpoint",
 		&returns,
 	)
 	return returns

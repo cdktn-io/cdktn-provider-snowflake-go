@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/saml2_integration snowflake_saml2_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/saml2_integration snowflake_saml2_integration}.
 type Saml2Integration interface {
 	cdktn.TerraformResource
 	AllowedEmailPatterns() *[]*string
@@ -779,7 +779,7 @@ func (j *jsiiProxy_Saml2Integration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
 func NewSaml2Integration(scope constructs.Construct, id *string, config *Saml2IntegrationConfig) Saml2Integration {
 	_init_.Initialize()
 
@@ -797,7 +797,7 @@ func NewSaml2Integration(scope constructs.Construct, id *string, config *Saml2In
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource.
 func NewSaml2Integration_Override(s Saml2Integration, scope constructs.Construct, id *string, config *Saml2IntegrationConfig) {
 	_init_.Initialize()
 

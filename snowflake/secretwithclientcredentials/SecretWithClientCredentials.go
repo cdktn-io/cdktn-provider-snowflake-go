@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials}.
 type SecretWithClientCredentials interface {
 	cdktn.TerraformResource
 	ApiAuthentication() *string
@@ -134,6 +134,7 @@ type SecretWithClientCredentials interface {
 	PutTimeouts(value *SecretWithClientCredentialsTimeouts)
 	ResetComment()
 	ResetId()
+	ResetOauthScopes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -526,7 +527,7 @@ func (j *jsiiProxy_SecretWithClientCredentials) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials} Resource.
 func NewSecretWithClientCredentials(scope constructs.Construct, id *string, config *SecretWithClientCredentialsConfig) SecretWithClientCredentials {
 	_init_.Initialize()
 
@@ -544,7 +545,7 @@ func NewSecretWithClientCredentials(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials} Resource.
 func NewSecretWithClientCredentials_Override(s SecretWithClientCredentials, scope constructs.Construct, id *string, config *SecretWithClientCredentialsConfig) {
 	_init_.Initialize()
 
@@ -1076,6 +1077,14 @@ func (s *jsiiProxy_SecretWithClientCredentials) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretWithClientCredentials) ResetOauthScopes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOauthScopes",
 		nil, // no parameters
 	)
 }

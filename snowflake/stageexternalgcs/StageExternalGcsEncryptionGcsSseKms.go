@@ -7,7 +7,7 @@ package stageexternalgcs
 type StageExternalGcsEncryptionGcsSseKms struct {
 	// Specifies the KMS-managed key ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_external_gcs#kms_key_id StageExternalGcs#kms_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_external_gcs#kms_key_id StageExternalGcs#kms_key_id}
 	KmsKeyId *string `field:"optional" json:"kmsKeyId" yaml:"kmsKeyId"`
 }
 

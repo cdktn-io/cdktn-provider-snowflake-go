@@ -37,6 +37,7 @@ type TagShowOutputOutputReference interface {
 	InternalValue() *TagShowOutput
 	SetInternalValue(val *TagShowOutput)
 	Name() *string
+	OnConflict() *string
 	Owner() *string
 	OwnerRoleType() *string
 	Propagate() *string
@@ -183,6 +184,16 @@ func (j *jsiiProxy_TagShowOutputOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagShowOutputOutputReference) OnConflict() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onConflict",
 		&returns,
 	)
 	return returns

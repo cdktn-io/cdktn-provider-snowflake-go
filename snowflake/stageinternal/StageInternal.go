@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_internal snowflake_stage_internal}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_internal snowflake_stage_internal}.
 type StageInternal interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -552,7 +552,7 @@ func (j *jsiiProxy_StageInternal) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_internal snowflake_stage_internal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_internal snowflake_stage_internal} Resource.
 func NewStageInternal(scope constructs.Construct, id *string, config *StageInternalConfig) StageInternal {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewStageInternal(scope constructs.Construct, id *string, config *StageInter
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_internal snowflake_stage_internal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_internal snowflake_stage_internal} Resource.
 func NewStageInternal_Override(s StageInternal, scope constructs.Construct, id *string, config *StageInternalConfig) {
 	_init_.Initialize()
 

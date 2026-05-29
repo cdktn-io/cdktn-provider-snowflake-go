@@ -12,11 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
 type DataSnowflakeSystemGetPrivatelinkConfig interface {
 	cdktn.TerraformDataSource
 	AccountName() *string
 	AccountUrl() *string
+	AppServicePrivatelinkUrl() *string
 	AwsVpceId() *string
 	AzurePlsId() *string
 	// Experimental.
@@ -50,6 +51,13 @@ type DataSnowflakeSystemGetPrivatelinkConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	OcspUrl() *string
+	PrivatelinkAccountPrincipal() *string
+	PrivatelinkConnectionOcspUrls() *string
+	PrivatelinkConnectionUrls() *string
+	PrivatelinkDashedUrlsForDuo() *string
+	PrivatelinkGcpServiceAttachment() *string
+	PrivatelinkSnowflakeManagedStorageVolumeFs() *string
+	PrivatelinkSnowflakeManagedStorageVolumeNfs() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -57,6 +65,7 @@ type DataSnowflakeSystemGetPrivatelinkConfig interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RegionlessAccountUrl() *string
+	RegionlessPrivatelinkOcspUrl() *string
 	RegionlessSnowsightUrl() *string
 	SnowsightUrl() *string
 	// Experimental.
@@ -137,6 +146,16 @@ func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) AccountUrl() *string
 	_jsii_.Get(
 		j,
 		"accountUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) AppServicePrivatelinkUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appServicePrivatelinkUrl",
 		&returns,
 	)
 	return returns
@@ -292,6 +311,76 @@ func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) OcspUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkAccountPrincipal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkAccountPrincipal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkConnectionOcspUrls() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkConnectionOcspUrls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkConnectionUrls() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkConnectionUrls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkDashedUrlsForDuo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkDashedUrlsForDuo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkGcpServiceAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkGcpServiceAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkSnowflakeManagedStorageVolumeFs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkSnowflakeManagedStorageVolumeFs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) PrivatelinkSnowflakeManagedStorageVolumeNfs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privatelinkSnowflakeManagedStorageVolumeNfs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -317,6 +406,16 @@ func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) RegionlessAccountUrl
 	_jsii_.Get(
 		j,
 		"regionlessAccountUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) RegionlessPrivatelinkOcspUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionlessPrivatelinkOcspUrl",
 		&returns,
 	)
 	return returns
@@ -373,7 +472,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGetPrivatelinkConfig) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
 func NewDataSnowflakeSystemGetPrivatelinkConfig(scope constructs.Construct, id *string, config *DataSnowflakeSystemGetPrivatelinkConfigConfig) DataSnowflakeSystemGetPrivatelinkConfig {
 	_init_.Initialize()
 
@@ -391,7 +490,7 @@ func NewDataSnowflakeSystemGetPrivatelinkConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config} Data Source.
 func NewDataSnowflakeSystemGetPrivatelinkConfig_Override(d DataSnowflakeSystemGetPrivatelinkConfig, scope constructs.Construct, id *string, config *DataSnowflakeSystemGetPrivatelinkConfigConfig) {
 	_init_.Initialize()
 

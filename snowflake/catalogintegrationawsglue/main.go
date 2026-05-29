@@ -145,6 +145,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "glueAwsExternalId", GoGetter: "GlueAwsExternalId"},
+			_jsii_.MemberProperty{JsiiProperty: "glueAwsIamUserArn", GoGetter: "GlueAwsIamUserArn"},
 			_jsii_.MemberProperty{JsiiProperty: "glueAwsRoleArn", GoGetter: "GlueAwsRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "glueCatalogId", GoGetter: "GlueCatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "glueRegion", GoGetter: "GlueRegion"},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_scala snowflake_procedure_scala}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_scala snowflake_procedure_scala}.
 type ProcedureScala interface {
 	cdktn.TerraformResource
 	Arguments() ProcedureScalaArgumentsList
@@ -908,7 +908,7 @@ func (j *jsiiProxy_ProcedureScala) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_scala snowflake_procedure_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_scala snowflake_procedure_scala} Resource.
 func NewProcedureScala(scope constructs.Construct, id *string, config *ProcedureScalaConfig) ProcedureScala {
 	_init_.Initialize()
 
@@ -926,7 +926,7 @@ func NewProcedureScala(scope constructs.Construct, id *string, config *Procedure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_scala snowflake_procedure_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_scala snowflake_procedure_scala} Resource.
 func NewProcedureScala_Override(p ProcedureScala, scope constructs.Construct, id *string, config *ProcedureScalaConfig) {
 	_init_.Initialize()
 

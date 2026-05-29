@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/streamlit snowflake_streamlit}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/streamlit snowflake_streamlit}.
 type Streamlit interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -611,7 +611,7 @@ func (j *jsiiProxy_Streamlit) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/streamlit snowflake_streamlit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/streamlit snowflake_streamlit} Resource.
 func NewStreamlit(scope constructs.Construct, id *string, config *StreamlitConfig) Streamlit {
 	_init_.Initialize()
 
@@ -629,7 +629,7 @@ func NewStreamlit(scope constructs.Construct, id *string, config *StreamlitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/streamlit snowflake_streamlit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/streamlit snowflake_streamlit} Resource.
 func NewStreamlit_Override(s Streamlit, scope constructs.Construct, id *string, config *StreamlitConfig) {
 	_init_.Initialize()
 

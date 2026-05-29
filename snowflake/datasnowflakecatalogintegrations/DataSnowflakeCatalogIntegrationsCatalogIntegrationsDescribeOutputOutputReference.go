@@ -35,6 +35,8 @@ type DataSnowflakeCatalogIntegrationsCatalogIntegrationsDescribeOutputOutputRefe
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
+	GlueAwsExternalId() *string
+	GlueAwsIamUserArn() *string
 	GlueAwsRoleArn() *string
 	GlueCatalogId() *string
 	GlueRegion() *string
@@ -178,6 +180,26 @@ func (j *jsiiProxy_DataSnowflakeCatalogIntegrationsCatalogIntegrationsDescribeOu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeCatalogIntegrationsCatalogIntegrationsDescribeOutputOutputReference) GlueAwsExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"glueAwsExternalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeCatalogIntegrationsCatalogIntegrationsDescribeOutputOutputReference) GlueAwsIamUserArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"glueAwsIamUserArn",
 		&returns,
 	)
 	return returns

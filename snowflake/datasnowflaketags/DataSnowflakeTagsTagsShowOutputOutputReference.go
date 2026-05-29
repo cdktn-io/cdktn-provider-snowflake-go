@@ -37,6 +37,7 @@ type DataSnowflakeTagsTagsShowOutputOutputReference interface {
 	InternalValue() *DataSnowflakeTagsTagsShowOutput
 	SetInternalValue(val *DataSnowflakeTagsTagsShowOutput)
 	Name() *string
+	OnConflict() *string
 	Owner() *string
 	OwnerRoleType() *string
 	Propagate() *string
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DataSnowflakeTagsTagsShowOutputOutputReference) Name() *strin
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeTagsTagsShowOutputOutputReference) OnConflict() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onConflict",
 		&returns,
 	)
 	return returns

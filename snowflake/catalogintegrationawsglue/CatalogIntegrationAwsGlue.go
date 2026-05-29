@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue}.
 type CatalogIntegrationAwsGlue interface {
 	cdktn.TerraformResource
 	CatalogNamespace() *string
@@ -575,7 +575,7 @@ func (j *jsiiProxy_CatalogIntegrationAwsGlue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue} Resource.
 func NewCatalogIntegrationAwsGlue(scope constructs.Construct, id *string, config *CatalogIntegrationAwsGlueConfig) CatalogIntegrationAwsGlue {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewCatalogIntegrationAwsGlue(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_aws_glue snowflake_catalog_integration_aws_glue} Resource.
 func NewCatalogIntegrationAwsGlue_Override(c CatalogIntegrationAwsGlue, scope constructs.Construct, id *string, config *CatalogIntegrationAwsGlueConfig) {
 	_init_.Initialize()
 

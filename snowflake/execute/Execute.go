@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/execute snowflake_execute}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/execute snowflake_execute}.
 type Execute interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_Execute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/execute snowflake_execute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/execute snowflake_execute} Resource.
 func NewExecute(scope constructs.Construct, id *string, config *ExecuteConfig) Execute {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewExecute(scope constructs.Construct, id *string, config *ExecuteConfig) E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/execute snowflake_execute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/execute snowflake_execute} Resource.
 func NewExecute_Override(e Execute, scope constructs.Construct, id *string, config *ExecuteConfig) {
 	_init_.Initialize()
 

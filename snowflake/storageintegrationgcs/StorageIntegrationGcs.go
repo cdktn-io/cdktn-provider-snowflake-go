@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs}.
 type StorageIntegrationGcs interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -493,7 +493,7 @@ func (j *jsiiProxy_StorageIntegrationGcs) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs} Resource.
 func NewStorageIntegrationGcs(scope constructs.Construct, id *string, config *StorageIntegrationGcsConfig) StorageIntegrationGcs {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewStorageIntegrationGcs(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs} Resource.
 func NewStorageIntegrationGcs_Override(s StorageIntegrationGcs, scope constructs.Construct, id *string, config *StorageIntegrationGcsConfig) {
 	_init_.Initialize()
 

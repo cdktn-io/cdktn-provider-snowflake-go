@@ -7,7 +7,7 @@ package legacyserviceuser
 type LegacyServiceUserDefaultWorkloadIdentityAws struct {
 	// The ARN of the AWS IAM role to use for workload identity federation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/legacy_service_user#arn LegacyServiceUser#arn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/legacy_service_user#arn LegacyServiceUser#arn}
 	Arn *string `field:"required" json:"arn" yaml:"arn"`
 }
 

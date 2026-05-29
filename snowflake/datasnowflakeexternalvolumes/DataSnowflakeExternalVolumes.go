@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes snowflake_external_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes snowflake_external_volumes}.
 type DataSnowflakeExternalVolumes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataSnowflakeExternalVolumes) WithDescribeInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source.
 func NewDataSnowflakeExternalVolumes(scope constructs.Construct, id *string, config *DataSnowflakeExternalVolumesConfig) DataSnowflakeExternalVolumes {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataSnowflakeExternalVolumes(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source.
 func NewDataSnowflakeExternalVolumes_Override(d DataSnowflakeExternalVolumes, scope constructs.Construct, id *string, config *DataSnowflakeExternalVolumesConfig) {
 	_init_.Initialize()
 

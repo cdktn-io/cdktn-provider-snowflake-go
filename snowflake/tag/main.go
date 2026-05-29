@@ -197,6 +197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "onConflict", GoGetter: "OnConflict"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},
 			_jsii_.MemberProperty{JsiiProperty: "ownerRoleType", GoGetter: "OwnerRoleType"},
 			_jsii_.MemberProperty{JsiiProperty: "propagate", GoGetter: "Propagate"},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/account_role snowflake_account_role}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/account_role snowflake_account_role}.
 type AccountRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_AccountRole) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/account_role snowflake_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/account_role snowflake_account_role} Resource.
 func NewAccountRole(scope constructs.Construct, id *string, config *AccountRoleConfig) AccountRole {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewAccountRole(scope constructs.Construct, id *string, config *AccountRoleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/account_role snowflake_account_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/account_role snowflake_account_role} Resource.
 func NewAccountRole_Override(a AccountRole, scope constructs.Construct, id *string, config *AccountRoleConfig) {
 	_init_.Initialize()
 

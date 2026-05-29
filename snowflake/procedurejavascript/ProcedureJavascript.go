@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
 type ProcedureJavascript interface {
 	cdktn.TerraformResource
 	Arguments() ProcedureJavascriptArgumentsList
@@ -718,7 +718,7 @@ func (j *jsiiProxy_ProcedureJavascript) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript(scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) ProcedureJavascript {
 	_init_.Initialize()
 
@@ -736,7 +736,7 @@ func NewProcedureJavascript(scope constructs.Construct, id *string, config *Proc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript_Override(p ProcedureJavascript, scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package stageinternal
 type StageInternalEncryption struct {
 	// snowflake_full block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_internal#snowflake_full StageInternal#snowflake_full}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_internal#snowflake_full StageInternal#snowflake_full}
 	SnowflakeFull *StageInternalEncryptionSnowflakeFull `field:"optional" json:"snowflakeFull" yaml:"snowflakeFull"`
 	// snowflake_sse block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/stage_internal#snowflake_sse StageInternal#snowflake_sse}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/stage_internal#snowflake_sse StageInternal#snowflake_sse}
 	SnowflakeSse *StageInternalEncryptionSnowflakeSse `field:"optional" json:"snowflakeSse" yaml:"snowflakeSse"`
 }
 
