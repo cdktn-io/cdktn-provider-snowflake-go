@@ -143,6 +143,10 @@ func (j *jsiiProxy_SecondaryDatabase) validateSetLifecycleParameters(val *cdktn.
 	return nil
 }
 
+func (j *jsiiProxy_SecondaryDatabase) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecondaryDatabase) validateSetLogLevelParameters(val *string) error {
 	return nil
 }

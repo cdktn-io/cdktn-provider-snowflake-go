@@ -33,6 +33,7 @@ type ProcedurePythonParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *ProcedurePythonParameters
 	SetInternalValue(val *ProcedurePythonParameters)
+	LogEventLevel() ProcedurePythonParametersLogEventLevelList
 	LogLevel() ProcedurePythonParametersLogLevelList
 	MetricLevel() ProcedurePythonParametersMetricLevelList
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_ProcedurePythonParametersOutputReference) InternalValue() *Pr
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedurePythonParametersOutputReference) LogEventLevel() ProcedurePythonParametersLogEventLevelList {
+	var returns ProcedurePythonParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

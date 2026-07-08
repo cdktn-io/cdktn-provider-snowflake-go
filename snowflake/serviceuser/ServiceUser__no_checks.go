@@ -247,6 +247,10 @@ func (j *jsiiProxy_ServiceUser) validateSetLockTimeoutParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_ServiceUser) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceUser) validateSetLoginNameParameters(val *string) error {
 	return nil
 }

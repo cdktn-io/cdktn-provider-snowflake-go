@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_ownership snowflake_grant_ownership}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_ownership snowflake_grant_ownership}.
 type GrantOwnership interface {
 	cdktn.TerraformResource
 	AccountRoleName() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GrantOwnership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
 func NewGrantOwnership(scope constructs.Construct, id *string, config *GrantOwnershipConfig) GrantOwnership {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGrantOwnership(scope constructs.Construct, id *string, config *GrantOwne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource.
 func NewGrantOwnership_Override(g GrantOwnership, scope constructs.Construct, id *string, config *GrantOwnershipConfig) {
 	_init_.Initialize()
 

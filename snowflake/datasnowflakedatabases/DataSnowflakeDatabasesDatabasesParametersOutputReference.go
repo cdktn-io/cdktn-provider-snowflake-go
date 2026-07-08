@@ -37,6 +37,7 @@ type DataSnowflakeDatabasesDatabasesParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataSnowflakeDatabasesDatabasesParameters
 	SetInternalValue(val *DataSnowflakeDatabasesDatabasesParameters)
+	LogEventLevel() DataSnowflakeDatabasesDatabasesParametersLogEventLevelList
 	LogLevel() DataSnowflakeDatabasesDatabasesParametersLogLevelList
 	MaxDataExtensionTimeInDays() DataSnowflakeDatabasesDatabasesParametersMaxDataExtensionTimeInDaysList
 	QuotedIdentifiersIgnoreCase() DataSnowflakeDatabasesDatabasesParametersQuotedIdentifiersIgnoreCaseList
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeDatabasesDatabasesParametersOutputReference) LogEventLevel() DataSnowflakeDatabasesDatabasesParametersLogEventLevelList {
+	var returns DataSnowflakeDatabasesDatabasesParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

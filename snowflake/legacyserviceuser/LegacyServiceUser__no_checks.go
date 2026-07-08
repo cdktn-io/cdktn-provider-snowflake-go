@@ -247,6 +247,10 @@ func (j *jsiiProxy_LegacyServiceUser) validateSetLockTimeoutParameters(val *floa
 	return nil
 }
 
+func (j *jsiiProxy_LegacyServiceUser) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LegacyServiceUser) validateSetLoginNameParameters(val *string) error {
 	return nil
 }

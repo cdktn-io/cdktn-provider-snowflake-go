@@ -804,6 +804,14 @@ func (j *jsiiProxy_User) validateSetLockTimeoutParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetLogEventLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetLoginNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

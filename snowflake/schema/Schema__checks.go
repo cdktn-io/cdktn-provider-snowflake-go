@@ -440,6 +440,14 @@ func (j *jsiiProxy_Schema) validateSetLifecycleParameters(val *cdktn.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Schema) validateSetLogEventLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Schema) validateSetLogLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

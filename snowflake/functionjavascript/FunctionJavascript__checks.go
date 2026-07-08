@@ -447,6 +447,14 @@ func (j *jsiiProxy_FunctionJavascript) validateSetLifecycleParameters(val *cdktn
 	return nil
 }
 
+func (j *jsiiProxy_FunctionJavascript) validateSetLogEventLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FunctionJavascript) validateSetLogLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

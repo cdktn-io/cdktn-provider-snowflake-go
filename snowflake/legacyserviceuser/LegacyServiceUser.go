@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/legacy_service_user snowflake_legacy_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/legacy_service_user snowflake_legacy_service_user}.
 type LegacyServiceUser interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -151,6 +151,9 @@ type LegacyServiceUser interface {
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LoginName() *string
 	SetLoginName(val *string)
 	LoginNameInput() *string
@@ -372,6 +375,7 @@ type LegacyServiceUser interface {
 	ResetJdbcUseSessionTimezone()
 	ResetJsonIndent()
 	ResetLockTimeout()
+	ResetLogEventLevel()
 	ResetLoginName()
 	ResetLogLevel()
 	ResetMinsToUnlock()
@@ -1256,6 +1260,26 @@ func (j *jsiiProxy_LegacyServiceUser) LockTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"lockTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUser) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUser) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -2162,7 +2186,7 @@ func (j *jsiiProxy_LegacyServiceUser) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
 func NewLegacyServiceUser(scope constructs.Construct, id *string, config *LegacyServiceUserConfig) LegacyServiceUser {
 	_init_.Initialize()
 
@@ -2180,7 +2204,7 @@ func NewLegacyServiceUser(scope constructs.Construct, id *string, config *Legacy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/legacy_service_user snowflake_legacy_service_user} Resource.
 func NewLegacyServiceUser_Override(l LegacyServiceUser, scope constructs.Construct, id *string, config *LegacyServiceUserConfig) {
 	_init_.Initialize()
 
@@ -2621,6 +2645,17 @@ func (j *jsiiProxy_LegacyServiceUser)SetLockTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"lockTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LegacyServiceUser)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -3732,6 +3767,14 @@ func (l *jsiiProxy_LegacyServiceUser) ResetLockTimeout() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLockTimeout",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LegacyServiceUser) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

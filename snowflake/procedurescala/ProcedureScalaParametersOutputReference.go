@@ -33,6 +33,7 @@ type ProcedureScalaParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *ProcedureScalaParameters
 	SetInternalValue(val *ProcedureScalaParameters)
+	LogEventLevel() ProcedureScalaParametersLogEventLevelList
 	LogLevel() ProcedureScalaParametersLogLevelList
 	MetricLevel() ProcedureScalaParametersMetricLevelList
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_ProcedureScalaParametersOutputReference) InternalValue() *Pro
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureScalaParametersOutputReference) LogEventLevel() ProcedureScalaParametersLogEventLevelList {
+	var returns ProcedureScalaParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

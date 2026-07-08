@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python snowflake_function_python}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python snowflake_function_python}.
 type FunctionPython interface {
 	cdktn.TerraformResource
 	Arguments() FunctionPythonArgumentsList
@@ -76,6 +76,9 @@ type FunctionPython interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -186,6 +189,7 @@ type FunctionPython interface {
 	ResetImports()
 	ResetIsAggregate()
 	ResetIsSecure()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMetricLevel()
 	ResetNullInputBehavior()
@@ -554,6 +558,26 @@ func (j *jsiiProxy_FunctionPython) Lifecycle() *cdktn.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_FunctionPython) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionPython) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionPython) LogLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,7 +909,7 @@ func (j *jsiiProxy_FunctionPython) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python snowflake_function_python} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python snowflake_function_python} Resource.
 func NewFunctionPython(scope constructs.Construct, id *string, config *FunctionPythonConfig) FunctionPython {
 	_init_.Initialize()
 
@@ -903,7 +927,7 @@ func NewFunctionPython(scope constructs.Construct, id *string, config *FunctionP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python snowflake_function_python} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python snowflake_function_python} Resource.
 func NewFunctionPython_Override(f FunctionPython, scope constructs.Construct, id *string, config *FunctionPythonConfig) {
 	_init_.Initialize()
 
@@ -1058,6 +1082,17 @@ func (j *jsiiProxy_FunctionPython)SetLifecycle(val *cdktn.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionPython)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -1656,6 +1691,14 @@ func (f *jsiiProxy_FunctionPython) ResetIsSecure() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetIsSecure",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionPython) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

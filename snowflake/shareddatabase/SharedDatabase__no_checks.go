@@ -135,6 +135,10 @@ func (j *jsiiProxy_SharedDatabase) validateSetLifecycleParameters(val *cdktn.Ter
 	return nil
 }
 
+func (j *jsiiProxy_SharedDatabase) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedDatabase) validateSetLogLevelParameters(val *string) error {
 	return nil
 }

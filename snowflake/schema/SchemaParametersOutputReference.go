@@ -37,6 +37,7 @@ type SchemaParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *SchemaParameters
 	SetInternalValue(val *SchemaParameters)
+	LogEventLevel() SchemaParametersLogEventLevelList
 	LogLevel() SchemaParametersLogLevelList
 	MaxDataExtensionTimeInDays() SchemaParametersMaxDataExtensionTimeInDaysList
 	PipeExecutionPaused() SchemaParametersPipeExecutionPausedList
@@ -191,6 +192,16 @@ func (j *jsiiProxy_SchemaParametersOutputReference) InternalValue() *SchemaParam
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemaParametersOutputReference) LogEventLevel() SchemaParametersLogEventLevelList {
+	var returns SchemaParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

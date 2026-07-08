@@ -525,6 +525,14 @@ func (j *jsiiProxy_ProcedurePython) validateSetLifecycleParameters(val *cdktn.Te
 	return nil
 }
 
+func (j *jsiiProxy_ProcedurePython) validateSetLogEventLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProcedurePython) validateSetLogLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

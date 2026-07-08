@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage}.
 type CatalogIntegrationObjectStorage interface {
 	cdktn.TerraformResource
 	CatalogSource() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_CatalogIntegrationObjectStorage) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource.
 func NewCatalogIntegrationObjectStorage(scope constructs.Construct, id *string, config *CatalogIntegrationObjectStorageConfig) CatalogIntegrationObjectStorage {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewCatalogIntegrationObjectStorage(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource.
 func NewCatalogIntegrationObjectStorage_Override(c CatalogIntegrationObjectStorage, scope constructs.Construct, id *string, config *CatalogIntegrationObjectStorageConfig) {
 	_init_.Initialize()
 

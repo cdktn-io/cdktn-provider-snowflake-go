@@ -575,6 +575,30 @@ func (j *jsiiProxy_CurrentAccount) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CurrentAccount) validateSetCortexCodeCliDailyEstCreditLimitPerUserParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CurrentAccount) validateSetCortexCodeDesktopDailyEstCreditLimitPerUserParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CurrentAccount) validateSetCortexCodeSnowsightDailyEstCreditLimitPerUserParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CurrentAccount) validateSetCortexEnabledCrossRegionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -821,6 +845,26 @@ func (j *jsiiProxy_CurrentAccount) validateSetEnableIdentifierFirstLoginParamete
 }
 
 func (j *jsiiProxy_CurrentAccount) validateSetEnableInternalStagesPrivatelinkParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CurrentAccount) validateSetEnablePerAccountAppServicePrivatelinkUrlParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1209,6 +1253,14 @@ func (j *jsiiProxy_CurrentAccount) validateSetListingAutoFulfillmentReplicationR
 }
 
 func (j *jsiiProxy_CurrentAccount) validateSetLockTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CurrentAccount) validateSetLogEventLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

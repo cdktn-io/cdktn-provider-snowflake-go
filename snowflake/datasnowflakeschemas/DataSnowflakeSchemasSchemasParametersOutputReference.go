@@ -37,6 +37,7 @@ type DataSnowflakeSchemasSchemasParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataSnowflakeSchemasSchemasParameters
 	SetInternalValue(val *DataSnowflakeSchemasSchemasParameters)
+	LogEventLevel() DataSnowflakeSchemasSchemasParametersLogEventLevelList
 	LogLevel() DataSnowflakeSchemasSchemasParametersLogLevelList
 	MaxDataExtensionTimeInDays() DataSnowflakeSchemasSchemasParametersMaxDataExtensionTimeInDaysList
 	PipeExecutionPaused() DataSnowflakeSchemasSchemasParametersPipeExecutionPausedList
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataSnowflakeSchemasSchemasParametersOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSchemasSchemasParametersOutputReference) LogEventLevel() DataSnowflakeSchemasSchemasParametersLogEventLevelList {
+	var returns DataSnowflakeSchemasSchemasParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

@@ -33,6 +33,7 @@ type ProcedureJavascriptParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *ProcedureJavascriptParameters
 	SetInternalValue(val *ProcedureJavascriptParameters)
+	LogEventLevel() ProcedureJavascriptParametersLogEventLevelList
 	LogLevel() ProcedureJavascriptParametersLogLevelList
 	MetricLevel() ProcedureJavascriptParametersMetricLevelList
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_ProcedureJavascriptParametersOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureJavascriptParametersOutputReference) LogEventLevel() ProcedureJavascriptParametersLogEventLevelList {
+	var returns ProcedureJavascriptParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

@@ -447,6 +447,14 @@ func (j *jsiiProxy_ProcedureSql) validateSetLifecycleParameters(val *cdktn.Terra
 	return nil
 }
 
+func (j *jsiiProxy_ProcedureSql) validateSetLogEventLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProcedureSql) validateSetLogLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

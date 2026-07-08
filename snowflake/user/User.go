@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user snowflake_user}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/user snowflake_user}.
 type User interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -158,6 +158,9 @@ type User interface {
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LoginName() *string
 	SetLoginName(val *string)
 	LoginNameInput() *string
@@ -389,6 +392,7 @@ type User interface {
 	ResetJsonIndent()
 	ResetLastName()
 	ResetLockTimeout()
+	ResetLogEventLevel()
 	ResetLoginName()
 	ResetLogLevel()
 	ResetMiddleName()
@@ -1316,6 +1320,26 @@ func (j *jsiiProxy_User) LockTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"lockTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -2282,7 +2306,7 @@ func (j *jsiiProxy_User) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user snowflake_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/user snowflake_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -2300,7 +2324,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user snowflake_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/user snowflake_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -2774,6 +2798,17 @@ func (j *jsiiProxy_User)SetLockTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"lockTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -3923,6 +3958,14 @@ func (u *jsiiProxy_User) ResetLockTimeout() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetLockTimeout",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

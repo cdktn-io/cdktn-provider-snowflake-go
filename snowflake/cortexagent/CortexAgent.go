@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/cortex_agent snowflake_cortex_agent}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent snowflake_cortex_agent}.
 type CortexAgent interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_CortexAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource.
 func NewCortexAgent(scope constructs.Construct, id *string, config *CortexAgentConfig) CortexAgent {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewCortexAgent(scope constructs.Construct, id *string, config *CortexAgentC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource.
 func NewCortexAgent_Override(c CortexAgent, scope constructs.Construct, id *string, config *CortexAgentConfig) {
 	_init_.Initialize()
 

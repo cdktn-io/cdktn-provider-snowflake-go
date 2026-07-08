@@ -57,6 +57,7 @@ type DataSnowflakeUsersUsersParametersOutputReference interface {
 	JdbcUseSessionTimezone() DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList
 	JsonIndent() DataSnowflakeUsersUsersParametersJsonIndentList
 	LockTimeout() DataSnowflakeUsersUsersParametersLockTimeoutList
+	LogEventLevel() DataSnowflakeUsersUsersParametersLogEventLevelList
 	LogLevel() DataSnowflakeUsersUsersParametersLogLevelList
 	MultiStatementCount() DataSnowflakeUsersUsersParametersMultiStatementCountList
 	NetworkPolicy() DataSnowflakeUsersUsersParametersNetworkPolicyList
@@ -432,6 +433,16 @@ func (j *jsiiProxy_DataSnowflakeUsersUsersParametersOutputReference) LockTimeout
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeUsersUsersParametersOutputReference) LogEventLevel() DataSnowflakeUsersUsersParametersLogEventLevelList {
+	var returns DataSnowflakeUsersUsersParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

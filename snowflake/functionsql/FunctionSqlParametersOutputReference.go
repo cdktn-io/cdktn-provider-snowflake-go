@@ -33,6 +33,7 @@ type FunctionSqlParametersOutputReference interface {
 	Fqn() *string
 	InternalValue() *FunctionSqlParameters
 	SetInternalValue(val *FunctionSqlParameters)
+	LogEventLevel() FunctionSqlParametersLogEventLevelList
 	LogLevel() FunctionSqlParametersLogLevelList
 	MetricLevel() FunctionSqlParametersMetricLevelList
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_FunctionSqlParametersOutputReference) InternalValue() *Functi
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionSqlParametersOutputReference) LogEventLevel() FunctionSqlParametersLogEventLevelList {
+	var returns FunctionSqlParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

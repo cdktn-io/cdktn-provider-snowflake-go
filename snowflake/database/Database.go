@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/database snowflake_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database snowflake_database}.
 type Database interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -71,6 +71,9 @@ type Database interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -183,6 +186,7 @@ type Database interface {
 	ResetExternalVolume()
 	ResetId()
 	ResetIsTransient()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMaxDataExtensionTimeInDays()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -501,6 +505,26 @@ func (j *jsiiProxy_Database) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Database) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Database) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -857,7 +881,7 @@ func (j *jsiiProxy_Database) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/database snowflake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database snowflake_database} Resource.
 func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig) Database {
 	_init_.Initialize()
 
@@ -875,7 +899,7 @@ func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/database snowflake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database snowflake_database} Resource.
 func NewDatabase_Override(d Database, scope constructs.Construct, id *string, config *DatabaseConfig) {
 	_init_.Initialize()
 
@@ -1030,6 +1054,17 @@ func (j *jsiiProxy_Database)SetLifecycle(val *cdktn.TerraformResourceLifecycle) 
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Database)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -1628,6 +1663,14 @@ func (d *jsiiProxy_Database) ResetIsTransient() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIsTransient",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Database) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

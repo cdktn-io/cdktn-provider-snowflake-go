@@ -5,13 +5,13 @@ package warehouseadaptive
 
 
 type WarehouseAdaptiveTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#create WarehouseAdaptive#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/warehouse_adaptive#create WarehouseAdaptive#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#delete WarehouseAdaptive#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/warehouse_adaptive#delete WarehouseAdaptive#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#read WarehouseAdaptive#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/warehouse_adaptive#read WarehouseAdaptive#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#update WarehouseAdaptive#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/warehouse_adaptive#update WarehouseAdaptive#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

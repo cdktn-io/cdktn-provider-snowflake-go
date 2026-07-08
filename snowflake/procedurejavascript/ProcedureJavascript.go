@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
 type ProcedureJavascript interface {
 	cdktn.TerraformResource
 	Arguments() ProcedureJavascriptArgumentsList
@@ -64,6 +64,9 @@ type ProcedureJavascript interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -162,6 +165,7 @@ type ProcedureJavascript interface {
 	ResetExecuteAs()
 	ResetId()
 	ResetIsSecure()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMetricLevel()
 	ResetNullInputBehavior()
@@ -432,6 +436,26 @@ func (j *jsiiProxy_ProcedureJavascript) Lifecycle() *cdktn.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureJavascript) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureJavascript) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -718,7 +742,7 @@ func (j *jsiiProxy_ProcedureJavascript) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript(scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) ProcedureJavascript {
 	_init_.Initialize()
 
@@ -736,7 +760,7 @@ func NewProcedureJavascript(scope constructs.Construct, id *string, config *Proc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript snowflake_procedure_javascript} Resource.
 func NewProcedureJavascript_Override(p ProcedureJavascript, scope constructs.Construct, id *string, config *ProcedureJavascriptConfig) {
 	_init_.Initialize()
 
@@ -858,6 +882,17 @@ func (j *jsiiProxy_ProcedureJavascript)SetLifecycle(val *cdktn.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProcedureJavascript)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -1388,6 +1423,14 @@ func (p *jsiiProxy_ProcedureJavascript) ResetIsSecure() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIsSecure",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProcedureJavascript) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

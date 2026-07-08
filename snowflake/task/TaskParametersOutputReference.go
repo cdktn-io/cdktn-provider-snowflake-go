@@ -55,6 +55,7 @@ type TaskParametersOutputReference interface {
 	JdbcUseSessionTimezone() TaskParametersJdbcUseSessionTimezoneList
 	JsonIndent() TaskParametersJsonIndentList
 	LockTimeout() TaskParametersLockTimeoutList
+	LogEventLevel() TaskParametersLogEventLevelList
 	LogLevel() TaskParametersLogLevelList
 	MultiStatementCount() TaskParametersMultiStatementCountList
 	NoorderSequenceAsDefault() TaskParametersNoorderSequenceAsDefaultList
@@ -414,6 +415,16 @@ func (j *jsiiProxy_TaskParametersOutputReference) LockTimeout() TaskParametersLo
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TaskParametersOutputReference) LogEventLevel() TaskParametersLogEventLevelList {
+	var returns TaskParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

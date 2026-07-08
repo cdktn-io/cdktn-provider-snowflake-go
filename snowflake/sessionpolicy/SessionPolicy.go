@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/session_policy snowflake_session_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/session_policy snowflake_session_policy}.
 type SessionPolicy interface {
 	cdktn.TerraformResource
 	AllowedSecondaryRoles() SessionPolicyAllowedSecondaryRolesOutputReference
@@ -565,7 +565,7 @@ func (j *jsiiProxy_SessionPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/session_policy snowflake_session_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/session_policy snowflake_session_policy} Resource.
 func NewSessionPolicy(scope constructs.Construct, id *string, config *SessionPolicyConfig) SessionPolicy {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewSessionPolicy(scope constructs.Construct, id *string, config *SessionPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/session_policy snowflake_session_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/session_policy snowflake_session_policy} Resource.
 func NewSessionPolicy_Override(s SessionPolicy, scope constructs.Construct, id *string, config *SessionPolicyConfig) {
 	_init_.Initialize()
 

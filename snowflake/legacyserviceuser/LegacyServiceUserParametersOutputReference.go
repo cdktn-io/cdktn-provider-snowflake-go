@@ -57,6 +57,7 @@ type LegacyServiceUserParametersOutputReference interface {
 	JdbcUseSessionTimezone() LegacyServiceUserParametersJdbcUseSessionTimezoneList
 	JsonIndent() LegacyServiceUserParametersJsonIndentList
 	LockTimeout() LegacyServiceUserParametersLockTimeoutList
+	LogEventLevel() LegacyServiceUserParametersLogEventLevelList
 	LogLevel() LegacyServiceUserParametersLogLevelList
 	MultiStatementCount() LegacyServiceUserParametersMultiStatementCountList
 	NetworkPolicy() LegacyServiceUserParametersNetworkPolicyList
@@ -432,6 +433,16 @@ func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) LockTimeout() Leg
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUserParametersOutputReference) LogEventLevel() LegacyServiceUserParametersLogEventLevelList {
+	var returns LegacyServiceUserParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/task snowflake_task}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/task snowflake_task}.
 type Task interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -137,6 +137,9 @@ type Task interface {
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -368,6 +371,7 @@ type Task interface {
 	ResetJdbcUseSessionTimezone()
 	ResetJsonIndent()
 	ResetLockTimeout()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMultiStatementCount()
 	ResetNoorderSequenceAsDefault()
@@ -1155,6 +1159,26 @@ func (j *jsiiProxy_Task) LockTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"lockTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -2171,7 +2195,7 @@ func (j *jsiiProxy_Task) WhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/task snowflake_task} Resource.
 func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	_init_.Initialize()
 
@@ -2189,7 +2213,7 @@ func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/task snowflake_task} Resource.
 func NewTask_Override(t Task, scope constructs.Construct, id *string, config *TaskConfig) {
 	_init_.Initialize()
 
@@ -2586,6 +2610,17 @@ func (j *jsiiProxy_Task)SetLockTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"lockTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Task)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -3704,6 +3739,14 @@ func (t *jsiiProxy_Task) ResetLockTimeout() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetLockTimeout",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Task) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

@@ -57,6 +57,7 @@ type UserParametersOutputReference interface {
 	JdbcUseSessionTimezone() UserParametersJdbcUseSessionTimezoneList
 	JsonIndent() UserParametersJsonIndentList
 	LockTimeout() UserParametersLockTimeoutList
+	LogEventLevel() UserParametersLogEventLevelList
 	LogLevel() UserParametersLogLevelList
 	MultiStatementCount() UserParametersMultiStatementCountList
 	NetworkPolicy() UserParametersNetworkPolicyList
@@ -432,6 +433,16 @@ func (j *jsiiProxy_UserParametersOutputReference) LockTimeout() UserParametersLo
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserParametersOutputReference) LogEventLevel() UserParametersLogEventLevelList {
+	var returns UserParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

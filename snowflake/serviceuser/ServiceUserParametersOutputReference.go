@@ -57,6 +57,7 @@ type ServiceUserParametersOutputReference interface {
 	JdbcUseSessionTimezone() ServiceUserParametersJdbcUseSessionTimezoneList
 	JsonIndent() ServiceUserParametersJsonIndentList
 	LockTimeout() ServiceUserParametersLockTimeoutList
+	LogEventLevel() ServiceUserParametersLogEventLevelList
 	LogLevel() ServiceUserParametersLogLevelList
 	MultiStatementCount() ServiceUserParametersMultiStatementCountList
 	NetworkPolicy() ServiceUserParametersNetworkPolicyList
@@ -432,6 +433,16 @@ func (j *jsiiProxy_ServiceUserParametersOutputReference) LockTimeout() ServiceUs
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceUserParametersOutputReference) LogEventLevel() ServiceUserParametersLogEventLevelList {
+	var returns ServiceUserParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

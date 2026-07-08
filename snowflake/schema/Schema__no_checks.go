@@ -143,6 +143,10 @@ func (j *jsiiProxy_Schema) validateSetLifecycleParameters(val *cdktn.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Schema) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Schema) validateSetLogLevelParameters(val *string) error {
 	return nil
 }

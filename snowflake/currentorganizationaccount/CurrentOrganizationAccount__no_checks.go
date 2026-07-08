@@ -187,6 +187,18 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetCortexCodeCliDailyEstCreditLimitPerUserParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetCortexCodeDesktopDailyEstCreditLimitPerUserParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetCortexCodeSnowsightDailyEstCreditLimitPerUserParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetCortexEnabledCrossRegionParameters(val *string) error {
 	return nil
 }
@@ -256,6 +268,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableIdentifierFirstL
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableInternalStagesPrivatelinkParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnablePerAccountAppServicePrivatelinkUrlParameters(val interface{}) error {
 	return nil
 }
 
@@ -356,6 +372,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetListingAutoFulfillment
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetLockTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetLogEventLevelParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_java snowflake_procedure_java}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_java snowflake_procedure_java}.
 type ProcedureJava interface {
 	cdktn.TerraformResource
 	Arguments() ProcedureJavaArgumentsList
@@ -72,6 +72,9 @@ type ProcedureJava interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -188,6 +191,7 @@ type ProcedureJava interface {
 	ResetId()
 	ResetImports()
 	ResetIsSecure()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMetricLevel()
 	ResetNullInputBehavior()
@@ -522,6 +526,26 @@ func (j *jsiiProxy_ProcedureJava) Lifecycle() *cdktn.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureJava) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProcedureJava) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -908,7 +932,7 @@ func (j *jsiiProxy_ProcedureJava) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
 func NewProcedureJava(scope constructs.Construct, id *string, config *ProcedureJavaConfig) ProcedureJava {
 	_init_.Initialize()
 
@@ -926,7 +950,7 @@ func NewProcedureJava(scope constructs.Construct, id *string, config *ProcedureJ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
 func NewProcedureJava_Override(p ProcedureJava, scope constructs.Construct, id *string, config *ProcedureJavaConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1094,17 @@ func (j *jsiiProxy_ProcedureJava)SetLifecycle(val *cdktn.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProcedureJava)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -1682,6 +1717,14 @@ func (p *jsiiProxy_ProcedureJava) ResetIsSecure() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIsSecure",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProcedureJava) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

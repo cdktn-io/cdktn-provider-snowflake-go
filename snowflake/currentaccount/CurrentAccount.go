@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/current_account snowflake_current_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/current_account snowflake_current_account}.
 type CurrentAccount interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -89,6 +89,15 @@ type CurrentAccount interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CortexCodeCliDailyEstCreditLimitPerUser() *float64
+	SetCortexCodeCliDailyEstCreditLimitPerUser(val *float64)
+	CortexCodeCliDailyEstCreditLimitPerUserInput() *float64
+	CortexCodeDesktopDailyEstCreditLimitPerUser() *float64
+	SetCortexCodeDesktopDailyEstCreditLimitPerUser(val *float64)
+	CortexCodeDesktopDailyEstCreditLimitPerUserInput() *float64
+	CortexCodeSnowsightDailyEstCreditLimitPerUser() *float64
+	SetCortexCodeSnowsightDailyEstCreditLimitPerUser(val *float64)
+	CortexCodeSnowsightDailyEstCreditLimitPerUserInput() *float64
 	CortexEnabledCrossRegion() *string
 	SetCortexEnabledCrossRegion(val *string)
 	CortexEnabledCrossRegionInput() *string
@@ -148,6 +157,9 @@ type CurrentAccount interface {
 	EnableInternalStagesPrivatelink() interface{}
 	SetEnableInternalStagesPrivatelink(val interface{})
 	EnableInternalStagesPrivatelinkInput() interface{}
+	EnablePerAccountAppServicePrivatelinkUrl() interface{}
+	SetEnablePerAccountAppServicePrivatelinkUrl(val interface{})
+	EnablePerAccountAppServicePrivatelinkUrlInput() interface{}
 	EnableTriSecretAndRekeyOptOutForImageRepository() interface{}
 	SetEnableTriSecretAndRekeyOptOutForImageRepository(val interface{})
 	EnableTriSecretAndRekeyOptOutForImageRepositoryInput() interface{}
@@ -235,6 +247,9 @@ type CurrentAccount interface {
 	LockTimeout() *float64
 	SetLockTimeout(val *float64)
 	LockTimeoutInput() *float64
+	LogEventLevel() *string
+	SetLogEventLevel(val *string)
+	LogEventLevelInput() *string
 	LogLevel() *string
 	SetLogLevel(val *string)
 	LogLevelInput() *string
@@ -498,6 +513,9 @@ type CurrentAccount interface {
 	ResetClientSessionKeepAlive()
 	ResetClientSessionKeepAliveHeartbeatFrequency()
 	ResetClientTimestampTypeMapping()
+	ResetCortexCodeCliDailyEstCreditLimitPerUser()
+	ResetCortexCodeDesktopDailyEstCreditLimitPerUser()
+	ResetCortexCodeSnowsightDailyEstCreditLimitPerUser()
 	ResetCortexEnabledCrossRegion()
 	ResetCortexModelsAllowlist()
 	ResetCsvTimestampFormat()
@@ -515,6 +533,7 @@ type CurrentAccount interface {
 	ResetEnableEgressCostOptimizer()
 	ResetEnableIdentifierFirstLogin()
 	ResetEnableInternalStagesPrivatelink()
+	ResetEnablePerAccountAppServicePrivatelinkUrl()
 	ResetEnableTriSecretAndRekeyOptOutForImageRepository()
 	ResetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage()
 	ResetEnableUnhandledExceptionsReporting()
@@ -540,6 +559,7 @@ type CurrentAccount interface {
 	ResetJsTreatIntegerAsBigint()
 	ResetListingAutoFulfillmentReplicationRefreshSchedule()
 	ResetLockTimeout()
+	ResetLogEventLevel()
 	ResetLogLevel()
 	ResetMaxConcurrencyLevel()
 	ResetMaxDataExtensionTimeInDays()
@@ -1100,6 +1120,66 @@ func (j *jsiiProxy_CurrentAccount) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
+func (j *jsiiProxy_CurrentAccount) CortexCodeCliDailyEstCreditLimitPerUser() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeCliDailyEstCreditLimitPerUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) CortexCodeCliDailyEstCreditLimitPerUserInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeCliDailyEstCreditLimitPerUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) CortexCodeDesktopDailyEstCreditLimitPerUser() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeDesktopDailyEstCreditLimitPerUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) CortexCodeDesktopDailyEstCreditLimitPerUserInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeDesktopDailyEstCreditLimitPerUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) CortexCodeSnowsightDailyEstCreditLimitPerUser() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeSnowsightDailyEstCreditLimitPerUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) CortexCodeSnowsightDailyEstCreditLimitPerUserInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cortexCodeSnowsightDailyEstCreditLimitPerUserInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentAccount) CortexEnabledCrossRegion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1455,6 +1535,26 @@ func (j *jsiiProxy_CurrentAccount) EnableInternalStagesPrivatelinkInput() interf
 	_jsii_.Get(
 		j,
 		"enableInternalStagesPrivatelinkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) EnablePerAccountAppServicePrivatelinkUrl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePerAccountAppServicePrivatelinkUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) EnablePerAccountAppServicePrivatelinkUrlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePerAccountAppServicePrivatelinkUrlInput",
 		&returns,
 	)
 	return returns
@@ -1995,6 +2095,26 @@ func (j *jsiiProxy_CurrentAccount) LockTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"lockTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) LogEventLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentAccount) LogEventLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEventLevelInput",
 		&returns,
 	)
 	return returns
@@ -3271,7 +3391,7 @@ func (j *jsiiProxy_CurrentAccount) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/current_account snowflake_current_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/current_account snowflake_current_account} Resource.
 func NewCurrentAccount(scope constructs.Construct, id *string, config *CurrentAccountConfig) CurrentAccount {
 	_init_.Initialize()
 
@@ -3289,7 +3409,7 @@ func NewCurrentAccount(scope constructs.Construct, id *string, config *CurrentAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/current_account snowflake_current_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/current_account snowflake_current_account} Resource.
 func NewCurrentAccount_Override(c CurrentAccount, scope constructs.Construct, id *string, config *CurrentAccountConfig) {
 	_init_.Initialize()
 
@@ -3553,6 +3673,39 @@ func (j *jsiiProxy_CurrentAccount)SetConnection(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_CurrentAccount)SetCortexCodeCliDailyEstCreditLimitPerUser(val *float64) {
+	if err := j.validateSetCortexCodeCliDailyEstCreditLimitPerUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cortexCodeCliDailyEstCreditLimitPerUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentAccount)SetCortexCodeDesktopDailyEstCreditLimitPerUser(val *float64) {
+	if err := j.validateSetCortexCodeDesktopDailyEstCreditLimitPerUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cortexCodeDesktopDailyEstCreditLimitPerUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentAccount)SetCortexCodeSnowsightDailyEstCreditLimitPerUser(val *float64) {
+	if err := j.validateSetCortexCodeSnowsightDailyEstCreditLimitPerUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cortexCodeSnowsightDailyEstCreditLimitPerUser",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentAccount)SetCortexEnabledCrossRegion(val *string) {
 	if err := j.validateSetCortexEnabledCrossRegionParameters(val); err != nil {
 		panic(err)
@@ -3755,6 +3908,17 @@ func (j *jsiiProxy_CurrentAccount)SetEnableInternalStagesPrivatelink(val interfa
 	_jsii_.Set(
 		j,
 		"enableInternalStagesPrivatelink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentAccount)SetEnablePerAccountAppServicePrivatelinkUrl(val interface{}) {
+	if err := j.validateSetEnablePerAccountAppServicePrivatelinkUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePerAccountAppServicePrivatelinkUrl",
 		val,
 	)
 }
@@ -4049,6 +4213,17 @@ func (j *jsiiProxy_CurrentAccount)SetLockTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"lockTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentAccount)SetLogEventLevel(val *string) {
+	if err := j.validateSetLogEventLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEventLevel",
 		val,
 	)
 }
@@ -5261,6 +5436,30 @@ func (c *jsiiProxy_CurrentAccount) ResetClientTimestampTypeMapping() {
 	)
 }
 
+func (c *jsiiProxy_CurrentAccount) ResetCortexCodeCliDailyEstCreditLimitPerUser() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCortexCodeCliDailyEstCreditLimitPerUser",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentAccount) ResetCortexCodeDesktopDailyEstCreditLimitPerUser() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCortexCodeDesktopDailyEstCreditLimitPerUser",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentAccount) ResetCortexCodeSnowsightDailyEstCreditLimitPerUser() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCortexCodeSnowsightDailyEstCreditLimitPerUser",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentAccount) ResetCortexEnabledCrossRegion() {
 	_jsii_.InvokeVoid(
 		c,
@@ -5393,6 +5592,14 @@ func (c *jsiiProxy_CurrentAccount) ResetEnableInternalStagesPrivatelink() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableInternalStagesPrivatelink",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentAccount) ResetEnablePerAccountAppServicePrivatelinkUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnablePerAccountAppServicePrivatelinkUrl",
 		nil, // no parameters
 	)
 }
@@ -5593,6 +5800,14 @@ func (c *jsiiProxy_CurrentAccount) ResetLockTimeout() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLockTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentAccount) ResetLogEventLevel() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogEventLevel",
 		nil, // no parameters
 	)
 }

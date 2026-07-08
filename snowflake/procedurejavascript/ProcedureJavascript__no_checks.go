@@ -135,6 +135,10 @@ func (j *jsiiProxy_ProcedureJavascript) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_ProcedureJavascript) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProcedureJavascript) validateSetLogLevelParameters(val *string) error {
 	return nil
 }

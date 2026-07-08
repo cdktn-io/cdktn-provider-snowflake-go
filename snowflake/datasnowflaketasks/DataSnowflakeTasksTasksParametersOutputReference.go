@@ -55,6 +55,7 @@ type DataSnowflakeTasksTasksParametersOutputReference interface {
 	JdbcUseSessionTimezone() DataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneList
 	JsonIndent() DataSnowflakeTasksTasksParametersJsonIndentList
 	LockTimeout() DataSnowflakeTasksTasksParametersLockTimeoutList
+	LogEventLevel() DataSnowflakeTasksTasksParametersLogEventLevelList
 	LogLevel() DataSnowflakeTasksTasksParametersLogLevelList
 	MultiStatementCount() DataSnowflakeTasksTasksParametersMultiStatementCountList
 	NoorderSequenceAsDefault() DataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultList
@@ -414,6 +415,16 @@ func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) LockTimeout
 	_jsii_.Get(
 		j,
 		"lockTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeTasksTasksParametersOutputReference) LogEventLevel() DataSnowflakeTasksTasksParametersLogEventLevelList {
+	var returns DataSnowflakeTasksTasksParametersLogEventLevelList
+	_jsii_.Get(
+		j,
+		"logEventLevel",
 		&returns,
 	)
 	return returns

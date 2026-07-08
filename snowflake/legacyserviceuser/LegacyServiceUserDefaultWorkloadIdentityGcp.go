@@ -7,7 +7,7 @@ package legacyserviceuser
 type LegacyServiceUserDefaultWorkloadIdentityGcp struct {
 	// The GCP service account subject identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/legacy_service_user#subject LegacyServiceUser#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/legacy_service_user#subject LegacyServiceUser#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

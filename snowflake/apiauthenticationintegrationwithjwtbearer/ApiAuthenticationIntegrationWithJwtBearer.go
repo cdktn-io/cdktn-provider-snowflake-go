@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer}.
 type ApiAuthenticationIntegrationWithJwtBearer interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -635,7 +635,7 @@ func (j *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer} Resource.
 func NewApiAuthenticationIntegrationWithJwtBearer(scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithJwtBearerConfig) ApiAuthenticationIntegrationWithJwtBearer {
 	_init_.Initialize()
 
@@ -653,7 +653,7 @@ func NewApiAuthenticationIntegrationWithJwtBearer(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer} Resource.
 func NewApiAuthenticationIntegrationWithJwtBearer_Override(a ApiAuthenticationIntegrationWithJwtBearer, scope constructs.Construct, id *string, config *ApiAuthenticationIntegrationWithJwtBearerConfig) {
 	_init_.Initialize()
 

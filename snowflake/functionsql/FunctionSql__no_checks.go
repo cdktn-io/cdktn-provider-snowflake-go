@@ -135,6 +135,10 @@ func (j *jsiiProxy_FunctionSql) validateSetLifecycleParameters(val *cdktn.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_FunctionSql) validateSetLogEventLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionSql) validateSetLogLevelParameters(val *string) error {
 	return nil
 }
