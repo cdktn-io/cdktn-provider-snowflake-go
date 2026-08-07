@@ -59,6 +59,10 @@ func (l *jsiiProxy_LegacyServiceUser) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LegacyServiceUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LegacyServiceUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (l *jsiiProxy_LegacyServiceUser) validateOverrideLogicalIdParameters(newLog
 }
 
 func (l *jsiiProxy_LegacyServiceUser) validatePutDefaultWorkloadIdentityParameters(value *LegacyServiceUserDefaultWorkloadIdentity) error {
+	return nil
+}
+
+func (l *jsiiProxy_LegacyServiceUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

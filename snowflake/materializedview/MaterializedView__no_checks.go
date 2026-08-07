@@ -59,6 +59,10 @@ func (m *jsiiProxy_MaterializedView) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MaterializedView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaterializedView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MaterializedView) validatePutTagParameters(value interface{})
 }
 
 func (m *jsiiProxy_MaterializedView) validatePutTimeoutsParameters(value *MaterializedViewTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaterializedView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

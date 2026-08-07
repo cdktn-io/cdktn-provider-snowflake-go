@@ -59,6 +59,10 @@ func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validateInterpolationF
 	return nil
 }
 
+func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validateOverrideLogica
 }
 
 func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validatePutTimeoutsParameters(value *TableStorageLifecyclePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TableStorageLifecyclePolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataSnowflakeStorageLifecyclePolicies) validatePutInParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeStorageLifecyclePolicies) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeStorageLifecyclePolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

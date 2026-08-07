@@ -47,6 +47,10 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) validatePutInheritedParameters(value *GrantPrivilegesToAccountRoleOnSchemaInherited) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

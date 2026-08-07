@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataSnowflakeTags) validatePutInParameters(value *DataSnowfla
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeTags) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataSnowflakeWarehouses) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeWarehouses) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeWarehouses_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

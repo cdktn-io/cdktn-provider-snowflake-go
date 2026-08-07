@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validateInterpolationF
 	return nil
 }
 
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validateOverrideLogica
 }
 
 func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validatePutTimeoutsParameters(value *AccountAuthenticationPolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

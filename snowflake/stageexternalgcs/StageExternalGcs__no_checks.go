@@ -59,6 +59,10 @@ func (s *jsiiProxy_StageExternalGcs) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_StageExternalGcs) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StageExternalGcs) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (s *jsiiProxy_StageExternalGcs) validatePutFileFormatParameters(value *Stag
 }
 
 func (s *jsiiProxy_StageExternalGcs) validatePutTimeoutsParameters(value *StageExternalGcsTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StageExternalGcs) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

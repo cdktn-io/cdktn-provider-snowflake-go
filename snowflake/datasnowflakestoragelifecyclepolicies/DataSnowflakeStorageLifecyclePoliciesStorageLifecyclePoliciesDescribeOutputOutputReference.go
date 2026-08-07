@@ -5,9 +5,9 @@ package datasnowflakestoragelifecyclepolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakestoragelifecyclepolicies/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestoragelifecyclepolicies/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,12 +31,14 @@ type DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutput
 	SetInternalValue(val *DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutput)
 	Name() *string
 	ReturnType() *string
+	SchemaName() *string
 	Signature() DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutputSignatureList
 	// Experimental.
 	TerraformAttribute() *string
@@ -145,6 +147,16 @@ func (j *jsiiProxy_DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePolicies
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutputOutputReference) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutputOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,6 +192,16 @@ func (j *jsiiProxy_DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePolicies
 	_jsii_.Get(
 		j,
 		"returnType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeStorageLifecyclePoliciesStorageLifecyclePoliciesDescribeOutputOutputReference) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns

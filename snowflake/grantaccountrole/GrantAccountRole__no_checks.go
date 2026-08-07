@@ -59,6 +59,10 @@ func (g *jsiiProxy_GrantAccountRole) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GrantAccountRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrantAccountRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GrantAccountRole) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GrantAccountRole) validatePutTimeoutsParameters(value *GrantAccountRoleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrantAccountRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

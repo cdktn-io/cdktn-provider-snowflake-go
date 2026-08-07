@@ -55,6 +55,10 @@ func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) validateSetAutoRefre
 	return nil
 }
 
+func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) validateSetAwsSnsTopicParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

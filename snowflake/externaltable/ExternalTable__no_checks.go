@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalTable) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_ExternalTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (e *jsiiProxy_ExternalTable) validatePutTagParameters(value interface{}) er
 }
 
 func (e *jsiiProxy_ExternalTable) validatePutTimeoutsParameters(value *ExternalTableTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

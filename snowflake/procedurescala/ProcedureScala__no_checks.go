@@ -59,6 +59,10 @@ func (p *jsiiProxy_ProcedureScala) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_ProcedureScala) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProcedureScala) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (p *jsiiProxy_ProcedureScala) validatePutTargetPathParameters(value *Proced
 }
 
 func (p *jsiiProxy_ProcedureScala) validatePutTimeoutsParameters(value *ProcedureScalaTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProcedureScala) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -15,6 +15,10 @@ func (s *jsiiProxy_SnowflakeProvider) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (s *jsiiProxy_SnowflakeProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateSnowflakeProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

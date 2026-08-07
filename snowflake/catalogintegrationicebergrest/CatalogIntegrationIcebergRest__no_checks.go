@@ -59,6 +59,10 @@ func (c *jsiiProxy_CatalogIntegrationIcebergRest) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_CatalogIntegrationIcebergRest) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogIntegrationIcebergRest) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (c *jsiiProxy_CatalogIntegrationIcebergRest) validatePutSigv4RestAuthentica
 }
 
 func (c *jsiiProxy_CatalogIntegrationIcebergRest) validatePutTimeoutsParameters(value *CatalogIntegrationIcebergRestTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogIntegrationIcebergRest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

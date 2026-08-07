@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "putOn", GoMethod: "PutOn"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIn", GoMethod: "ResetIn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLike", GoMethod: "ResetLike"},

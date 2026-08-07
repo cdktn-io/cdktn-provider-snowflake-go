@@ -59,6 +59,10 @@ func (d *jsiiProxy_DynamicTable) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DynamicTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamicTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DynamicTable) validatePutTargetLagParameters(value *DynamicTa
 }
 
 func (d *jsiiProxy_DynamicTable) validatePutTimeoutsParameters(value *DynamicTableTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamicTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

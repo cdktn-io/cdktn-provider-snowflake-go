@@ -182,6 +182,14 @@ func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validateSetIssuerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

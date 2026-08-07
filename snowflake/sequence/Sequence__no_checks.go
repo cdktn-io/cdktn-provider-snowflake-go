@@ -59,6 +59,10 @@ func (s *jsiiProxy_Sequence) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_Sequence) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sequence) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_Sequence) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (s *jsiiProxy_Sequence) validatePutTimeoutsParameters(value *SequenceTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sequence) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

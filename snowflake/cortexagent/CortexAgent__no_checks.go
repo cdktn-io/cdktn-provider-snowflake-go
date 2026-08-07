@@ -59,6 +59,10 @@ func (c *jsiiProxy_CortexAgent) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_CortexAgent) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CortexAgent) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_CortexAgent) validatePutProfileParameters(value *CortexAgentP
 }
 
 func (c *jsiiProxy_CortexAgent) validatePutTimeoutsParameters(value *CortexAgentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CortexAgent) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

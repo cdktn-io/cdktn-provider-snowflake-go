@@ -5,9 +5,9 @@ package legacyserviceuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/legacyserviceuser/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/legacyserviceuser/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -35,6 +35,9 @@ type LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference interface {
 	Fqn() *string
 	InternalValue() *LegacyServiceUserDefaultWorkloadIdentityAws
 	SetInternalValue(val *LegacyServiceUserDefaultWorkloadIdentityAws)
+	Issuer() *string
+	SetIssuer(val *string)
+	IssuerInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetIssuer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) Issuer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) IssuerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference)SetIssuer(val *string) {
+	if err := j.validateSetIssuerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuer",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (l *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) I
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) ResetIssuer() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIssuer",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LegacyServiceUserDefaultWorkloadIdentityAwsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

@@ -59,6 +59,10 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRole) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GrantPrivilegesToAccountRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrantPrivilegesToAccountRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRole) validatePutOnSchemaObjectParame
 }
 
 func (g *jsiiProxy_GrantPrivilegesToAccountRole) validatePutTimeoutsParameters(value *GrantPrivilegesToAccountRoleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

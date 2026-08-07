@@ -59,6 +59,10 @@ func (s *jsiiProxy_SemanticView) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SemanticView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SemanticView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (s *jsiiProxy_SemanticView) validatePutTablesParameters(value interface{}) 
 }
 
 func (s *jsiiProxy_SemanticView) validatePutTimeoutsParameters(value *SemanticViewTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SemanticView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_ScimIntegration) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_ScimIntegration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ScimIntegration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_ScimIntegration) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_ScimIntegration) validatePutTimeoutsParameters(value *ScimIntegrationTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ScimIntegration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

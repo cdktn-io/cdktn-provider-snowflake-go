@@ -59,6 +59,10 @@ func (s *jsiiProxy_StorageIntegrationAzure) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_StorageIntegrationAzure) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageIntegrationAzure) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_StorageIntegrationAzure) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_StorageIntegrationAzure) validatePutTimeoutsParameters(value *StorageIntegrationAzureTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageIntegrationAzure) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

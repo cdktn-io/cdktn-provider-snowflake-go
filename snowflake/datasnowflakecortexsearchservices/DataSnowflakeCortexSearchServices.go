@@ -5,14 +5,14 @@ package datasnowflakecortexsearchservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakecortexsearchservices/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services}.
 type DataSnowflakeCortexSearchServices interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -94,6 +94,19 @@ type DataSnowflakeCortexSearchServices interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIn(value *DataSnowflakeCortexSearchServicesIn)
 	PutLimit(value *DataSnowflakeCortexSearchServicesLimit)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	ResetIn()
 	ResetLike()
@@ -381,7 +394,7 @@ func (j *jsiiProxy_DataSnowflakeCortexSearchServices) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source.
 func NewDataSnowflakeCortexSearchServices(scope constructs.Construct, id *string, config *DataSnowflakeCortexSearchServicesConfig) DataSnowflakeCortexSearchServices {
 	_init_.Initialize()
 
@@ -399,7 +412,7 @@ func NewDataSnowflakeCortexSearchServices(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source.
 func NewDataSnowflakeCortexSearchServices_Override(d DataSnowflakeCortexSearchServices, scope constructs.Construct, id *string, config *DataSnowflakeCortexSearchServicesConfig) {
 	_init_.Initialize()
 
@@ -793,6 +806,17 @@ func (d *jsiiProxy_DataSnowflakeCortexSearchServices) PutLimit(value *DataSnowfl
 		d,
 		"putLimit",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataSnowflakeCortexSearchServices) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

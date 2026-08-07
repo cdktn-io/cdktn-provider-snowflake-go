@@ -59,6 +59,10 @@ func (c *jsiiProxy_CortexSearchService) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CortexSearchService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CortexSearchService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CortexSearchService) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_CortexSearchService) validatePutTimeoutsParameters(value *CortexSearchServiceTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CortexSearchService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

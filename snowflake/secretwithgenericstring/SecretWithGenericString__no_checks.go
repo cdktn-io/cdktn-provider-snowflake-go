@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretWithGenericString) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SecretWithGenericString) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretWithGenericString) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecretWithGenericString) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_SecretWithGenericString) validatePutTimeoutsParameters(value *SecretWithGenericStringTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretWithGenericString) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

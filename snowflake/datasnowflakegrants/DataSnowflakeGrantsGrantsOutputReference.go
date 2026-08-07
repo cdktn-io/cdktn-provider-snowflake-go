@@ -5,9 +5,9 @@ package datasnowflakegrants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,8 +36,12 @@ type DataSnowflakeGrantsGrantsOutputReference interface {
 	GrantedTo() *string
 	GranteeName() *string
 	GrantOption() cdktn.IResolvable
+	InheritedFrom() *string
+	InheritedFromDatabase() *string
+	InheritedFromSchema() *string
 	InternalValue() *DataSnowflakeGrantsGrants
 	SetInternalValue(val *DataSnowflakeGrantsGrants)
+	IsInherited() cdktn.IResolvable
 	Name() *string
 	Privilege() *string
 	// Experimental.
@@ -187,11 +191,51 @@ func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) GrantOption() cdktn
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) InheritedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inheritedFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) InheritedFromDatabase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inheritedFromDatabase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) InheritedFromSchema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inheritedFromSchema",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) InternalValue() *DataSnowflakeGrantsGrants {
 	var returns *DataSnowflakeGrantsGrants
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeGrantsGrantsOutputReference) IsInherited() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isInherited",
 		&returns,
 	)
 	return returns

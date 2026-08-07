@@ -5,9 +5,9 @@ package grantprivilegestoaccountrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantprivilegestoaccountrole/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/grantprivilegestoaccountrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,6 +36,8 @@ type GrantPrivilegesToAccountRoleOnSchemaOutputReference interface {
 	FutureSchemasInDatabase() *string
 	SetFutureSchemasInDatabase(val *string)
 	FutureSchemasInDatabaseInput() *string
+	Inherited() GrantPrivilegesToAccountRoleOnSchemaInheritedOutputReference
+	InheritedInput() *GrantPrivilegesToAccountRoleOnSchemaInherited
 	InternalValue() *GrantPrivilegesToAccountRoleOnSchema
 	SetInternalValue(val *GrantPrivilegesToAccountRoleOnSchema)
 	SchemaName() *string
@@ -73,8 +75,10 @@ type GrantPrivilegesToAccountRoleOnSchemaOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutInherited(value *GrantPrivilegesToAccountRoleOnSchemaInherited)
 	ResetAllSchemasInDatabase()
 	ResetFutureSchemasInDatabase()
+	ResetInherited()
 	ResetSchemaName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -166,6 +170,26 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) FutureSc
 	_jsii_.Get(
 		j,
 		"futureSchemasInDatabaseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) Inherited() GrantPrivilegesToAccountRoleOnSchemaInheritedOutputReference {
+	var returns GrantPrivilegesToAccountRoleOnSchemaInheritedOutputReference
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) InheritedInput() *GrantPrivilegesToAccountRoleOnSchemaInherited {
+	var returns *GrantPrivilegesToAccountRoleOnSchemaInherited
+	_jsii_.Get(
+		j,
+		"inheritedInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) PutInherited(value *GrantPrivilegesToAccountRoleOnSchemaInherited) {
+	if err := g.validatePutInheritedParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInherited",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) ResetAllSchemasInDatabase() {
 	_jsii_.InvokeVoid(
 		g,
@@ -535,6 +570,14 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) ResetFut
 	_jsii_.InvokeVoid(
 		g,
 		"resetFutureSchemasInDatabase",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnSchemaOutputReference) ResetInherited() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInherited",
 		nil, // no parameters
 	)
 }

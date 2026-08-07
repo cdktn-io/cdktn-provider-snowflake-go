@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validateInterpolation
 	return nil
 }
 
+func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validateOverrideLogic
 }
 
 func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validatePutTimeoutsParameters(value *ApiIntegrationExternalMcpDynamicClientTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

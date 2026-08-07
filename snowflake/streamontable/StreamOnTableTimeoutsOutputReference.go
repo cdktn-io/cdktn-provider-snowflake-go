@@ -5,9 +5,9 @@ package streamontable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/streamontable/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/streamontable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamOnExternalTable) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StreamOnExternalTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamOnExternalTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_StreamOnExternalTable) validatePutBeforeParameters(value *Str
 }
 
 func (s *jsiiProxy_StreamOnExternalTable) validatePutTimeoutsParameters(value *StreamOnExternalTableTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamOnExternalTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

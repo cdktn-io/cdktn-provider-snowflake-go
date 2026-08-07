@@ -59,6 +59,10 @@ func (c *jsiiProxy_CatalogIntegrationObjectStorage) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_CatalogIntegrationObjectStorage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogIntegrationObjectStorage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CatalogIntegrationObjectStorage) validateOverrideLogicalIdPar
 }
 
 func (c *jsiiProxy_CatalogIntegrationObjectStorage) validatePutTimeoutsParameters(value *CatalogIntegrationObjectStorageTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogIntegrationObjectStorage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

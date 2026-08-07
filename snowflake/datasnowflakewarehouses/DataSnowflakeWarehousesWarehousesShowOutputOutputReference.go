@@ -5,9 +5,9 @@ package datasnowflakewarehouses
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakewarehouses/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakewarehouses/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -61,6 +61,7 @@ type DataSnowflakeWarehousesWarehousesShowOutputOutputReference interface {
 	Size() *string
 	StartedClusters() *float64
 	State() *string
+	Tables() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -445,6 +446,16 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) S
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesShowOutputOutputReference) Tables() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tables",
 		&returns,
 	)
 	return returns

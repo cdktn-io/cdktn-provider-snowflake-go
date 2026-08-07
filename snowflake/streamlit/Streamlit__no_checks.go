@@ -59,6 +59,10 @@ func (s *jsiiProxy_Streamlit) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_Streamlit) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Streamlit) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_Streamlit) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (s *jsiiProxy_Streamlit) validatePutTimeoutsParameters(value *StreamlitTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_Streamlit) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

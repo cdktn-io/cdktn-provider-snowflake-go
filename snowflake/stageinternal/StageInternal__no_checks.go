@@ -59,6 +59,10 @@ func (s *jsiiProxy_StageInternal) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_StageInternal) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StageInternal) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (s *jsiiProxy_StageInternal) validatePutFileFormatParameters(value *StageIn
 }
 
 func (s *jsiiProxy_StageInternal) validatePutTimeoutsParameters(value *StageInternalTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StageInternal) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

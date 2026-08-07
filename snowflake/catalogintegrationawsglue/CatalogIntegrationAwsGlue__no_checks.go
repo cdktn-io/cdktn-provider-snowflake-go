@@ -59,6 +59,10 @@ func (c *jsiiProxy_CatalogIntegrationAwsGlue) validateInterpolationForAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CatalogIntegrationAwsGlue) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogIntegrationAwsGlue) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CatalogIntegrationAwsGlue) validateOverrideLogicalIdParameter
 }
 
 func (c *jsiiProxy_CatalogIntegrationAwsGlue) validatePutTimeoutsParameters(value *CatalogIntegrationAwsGlueTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogIntegrationAwsGlue) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

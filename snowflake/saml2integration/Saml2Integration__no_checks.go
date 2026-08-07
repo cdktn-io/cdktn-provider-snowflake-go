@@ -59,6 +59,10 @@ func (s *jsiiProxy_Saml2Integration) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_Saml2Integration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Saml2Integration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_Saml2Integration) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_Saml2Integration) validatePutTimeoutsParameters(value *Saml2IntegrationTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_Saml2Integration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (w *jsiiProxy_WarehouseAdaptive) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WarehouseAdaptive) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WarehouseAdaptive) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -213,6 +221,14 @@ func (w *jsiiProxy_WarehouseAdaptive) validatePutTimeoutsParameters(value *Wareh
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WarehouseAdaptive) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -435,6 +451,14 @@ func (j *jsiiProxy_WarehouseAdaptive) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_WarehouseAdaptive) validateSetQueryThroughputMultiplierParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WarehouseAdaptive) validateSetResourceMonitorParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

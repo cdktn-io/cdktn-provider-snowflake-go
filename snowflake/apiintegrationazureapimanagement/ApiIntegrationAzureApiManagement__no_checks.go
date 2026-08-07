@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validateInterpolationForAtt
 	return nil
 }
 
+func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validateOverrideLogicalIdPa
 }
 
 func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validatePutTimeoutsParameters(value *ApiIntegrationAzureApiManagementTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiIntegrationAzureApiManagement) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

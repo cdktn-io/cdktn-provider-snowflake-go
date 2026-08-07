@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validateInterpolationFo
 	return nil
 }
 
+func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validateOverrideLogical
 }
 
 func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validatePutTimeoutsParameters(value *ApiIntegrationGitRepositoryGithubAppTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

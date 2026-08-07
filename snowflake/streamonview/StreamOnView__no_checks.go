@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamOnView) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_StreamOnView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamOnView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_StreamOnView) validatePutBeforeParameters(value *StreamOnView
 }
 
 func (s *jsiiProxy_StreamOnView) validatePutTimeoutsParameters(value *StreamOnViewTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamOnView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

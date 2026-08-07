@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataSnowflakeImageRepositories) validatePutInParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeImageRepositories) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeImageRepositories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

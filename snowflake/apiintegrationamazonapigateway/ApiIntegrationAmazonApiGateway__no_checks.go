@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validateInterpolationForAttri
 	return nil
 }
 
+func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validateOverrideLogicalIdPara
 }
 
 func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validatePutTimeoutsParameters(value *ApiIntegrationAmazonApiGatewayTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiIntegrationAmazonApiGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

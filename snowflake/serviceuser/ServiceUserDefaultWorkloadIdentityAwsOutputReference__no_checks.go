@@ -67,6 +67,10 @@ func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validateSetIssuerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceUserDefaultWorkloadIdentityAwsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

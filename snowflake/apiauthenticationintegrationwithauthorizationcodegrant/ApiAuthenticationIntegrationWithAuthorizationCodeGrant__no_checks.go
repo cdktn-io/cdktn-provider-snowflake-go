@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) valid
 	return nil
 }
 
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) valid
 }
 
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) validatePutTimeoutsParameters(value *ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithAuthorizationCodeGrant) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

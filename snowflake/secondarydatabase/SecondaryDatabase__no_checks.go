@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecondaryDatabase) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SecondaryDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecondaryDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecondaryDatabase) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_SecondaryDatabase) validatePutTimeoutsParameters(value *SecondaryDatabaseTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecondaryDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,6 +128,14 @@ func (j *jsiiProxy_SecondaryDatabase) validateSetDataRetentionTimeInDaysParamete
 }
 
 func (j *jsiiProxy_SecondaryDatabase) validateSetDefaultDdlCollationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecondaryDatabase) validateSetDefaultNotebookComputePoolCpuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecondaryDatabase) validateSetDefaultNotebookComputePoolGpuParameters(val *string) error {
 	return nil
 }
 

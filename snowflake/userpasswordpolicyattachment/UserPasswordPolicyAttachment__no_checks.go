@@ -59,6 +59,10 @@ func (u *jsiiProxy_UserPasswordPolicyAttachment) validateInterpolationForAttribu
 	return nil
 }
 
+func (u *jsiiProxy_UserPasswordPolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserPasswordPolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (u *jsiiProxy_UserPasswordPolicyAttachment) validateOverrideLogicalIdParame
 }
 
 func (u *jsiiProxy_UserPasswordPolicyAttachment) validatePutTimeoutsParameters(value *UserPasswordPolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserPasswordPolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

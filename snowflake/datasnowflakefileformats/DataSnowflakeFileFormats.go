@@ -5,14 +5,14 @@ package datasnowflakefileformats
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakefileformats/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/file_formats snowflake_file_formats}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats}.
 type DataSnowflakeFileFormats interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -23,9 +23,6 @@ type DataSnowflakeFileFormats interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Database() *string
-	SetDatabase(val *string)
-	DatabaseInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,10 +39,15 @@ type DataSnowflakeFileFormats interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	In() DataSnowflakeFileFormatsInOutputReference
+	InInput() *DataSnowflakeFileFormatsIn
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Like() *string
+	SetLike(val *string)
+	LikeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -54,15 +56,15 @@ type DataSnowflakeFileFormats interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Schema() *string
-	SetSchema(val *string)
-	SchemaInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WithDescribe() interface{}
+	SetWithDescribe(val interface{})
+	WithDescribeInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,10 +90,27 @@ type DataSnowflakeFileFormats interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIn(value *DataSnowflakeFileFormatsIn)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
+	ResetIn()
+	ResetLike()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWithDescribe()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -145,26 +164,6 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormats) Database() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"database",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormats) DatabaseInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInput",
 		&returns,
 	)
 	return returns
@@ -240,11 +239,51 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeFileFormats) In() DataSnowflakeFileFormatsInOutputReference {
+	var returns DataSnowflakeFileFormatsInOutputReference
+	_jsii_.Get(
+		j,
+		"in",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeFileFormats) InInput() *DataSnowflakeFileFormatsIn {
+	var returns *DataSnowflakeFileFormatsIn
+	_jsii_.Get(
+		j,
+		"inInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeFileFormats) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeFileFormats) Like() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"like",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeFileFormats) LikeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"likeInput",
 		&returns,
 	)
 	return returns
@@ -280,26 +319,6 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormats) Schema() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"schema",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormats) SchemaInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"schemaInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataSnowflakeFileFormats) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -330,8 +349,28 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeFileFormats) WithDescribe() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withDescribe",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
+func (j *jsiiProxy_DataSnowflakeFileFormats) WithDescribeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withDescribeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
 func NewDataSnowflakeFileFormats(scope constructs.Construct, id *string, config *DataSnowflakeFileFormatsConfig) DataSnowflakeFileFormats {
 	_init_.Initialize()
 
@@ -349,7 +388,7 @@ func NewDataSnowflakeFileFormats(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
 func NewDataSnowflakeFileFormats_Override(d DataSnowflakeFileFormats, scope constructs.Construct, id *string, config *DataSnowflakeFileFormatsConfig) {
 	_init_.Initialize()
 
@@ -367,17 +406,6 @@ func (j *jsiiProxy_DataSnowflakeFileFormats)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormats)SetDatabase(val *string) {
-	if err := j.validateSetDatabaseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"database",
 		val,
 	)
 }
@@ -420,6 +448,17 @@ func (j *jsiiProxy_DataSnowflakeFileFormats)SetLifecycle(val *cdktn.TerraformRes
 	)
 }
 
+func (j *jsiiProxy_DataSnowflakeFileFormats)SetLike(val *string) {
+	if err := j.validateSetLikeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"like",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataSnowflakeFileFormats)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -428,13 +467,13 @@ func (j *jsiiProxy_DataSnowflakeFileFormats)SetProvider(val cdktn.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormats)SetSchema(val *string) {
-	if err := j.validateSetSchemaParameters(val); err != nil {
+func (j *jsiiProxy_DataSnowflakeFileFormats)SetWithDescribe(val interface{}) {
+	if err := j.validateSetWithDescribeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"schema",
+		"withDescribe",
 		val,
 	)
 }
@@ -724,6 +763,28 @@ func (d *jsiiProxy_DataSnowflakeFileFormats) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (d *jsiiProxy_DataSnowflakeFileFormats) PutIn(value *DataSnowflakeFileFormatsIn) {
+	if err := d.validatePutInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIn",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataSnowflakeFileFormats) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
+	)
+}
+
 func (d *jsiiProxy_DataSnowflakeFileFormats) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -732,10 +793,34 @@ func (d *jsiiProxy_DataSnowflakeFileFormats) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataSnowflakeFileFormats) ResetIn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataSnowflakeFileFormats) ResetLike() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLike",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataSnowflakeFileFormats) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataSnowflakeFileFormats) ResetWithDescribe() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWithDescribe",
 		nil, // no parameters
 	)
 }

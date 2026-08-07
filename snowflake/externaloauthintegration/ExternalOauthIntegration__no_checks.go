@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalOauthIntegration) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_ExternalOauthIntegration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalOauthIntegration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (e *jsiiProxy_ExternalOauthIntegration) validateOverrideLogicalIdParameters
 }
 
 func (e *jsiiProxy_ExternalOauthIntegration) validatePutTimeoutsParameters(value *ExternalOauthIntegrationTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalOauthIntegration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

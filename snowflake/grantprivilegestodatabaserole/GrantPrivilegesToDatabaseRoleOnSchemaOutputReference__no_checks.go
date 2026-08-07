@@ -67,6 +67,10 @@ func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) validateSetInheritedParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrantPrivilegesToDatabaseRoleOnSchemaOutputReference) validateSetInternalValueParameters(val *GrantPrivilegesToDatabaseRoleOnSchema) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalVolume) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_ExternalVolume) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalVolume) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (e *jsiiProxy_ExternalVolume) validatePutStorageLocationParameters(value in
 }
 
 func (e *jsiiProxy_ExternalVolume) validatePutTimeoutsParameters(value *ExternalVolumeTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalVolume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

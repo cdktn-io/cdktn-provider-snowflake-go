@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecondaryConnection) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SecondaryConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecondaryConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecondaryConnection) validateOverrideLogicalIdParameters(newL
 }
 
 func (s *jsiiProxy_SecondaryConnection) validatePutTimeoutsParameters(value *SecondaryConnectionTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecondaryConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

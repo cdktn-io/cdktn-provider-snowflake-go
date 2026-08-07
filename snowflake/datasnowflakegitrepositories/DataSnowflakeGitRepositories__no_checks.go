@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataSnowflakeGitRepositories) validatePutLimitParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeGitRepositories) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeGitRepositories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -122,6 +122,14 @@ func (s *jsiiProxy_SharedDatabase) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SharedDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SharedDatabase) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -213,6 +221,14 @@ func (s *jsiiProxy_SharedDatabase) validatePutTimeoutsParameters(value *SharedDa
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SharedDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -365,6 +381,22 @@ func (j *jsiiProxy_SharedDatabase) validateSetCountParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_SharedDatabase) validateSetDefaultDdlCollationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SharedDatabase) validateSetDefaultNotebookComputePoolCpuParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SharedDatabase) validateSetDefaultNotebookComputePoolGpuParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

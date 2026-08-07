@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataSnowflakeListings) validatePutLimitParameters(value *Data
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeListings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeListings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

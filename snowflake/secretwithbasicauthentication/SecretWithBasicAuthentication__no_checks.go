@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecretWithBasicAuthentication) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SecretWithBasicAuthentication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretWithBasicAuthentication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecretWithBasicAuthentication) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SecretWithBasicAuthentication) validatePutTimeoutsParameters(value *SecretWithBasicAuthenticationTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretWithBasicAuthentication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

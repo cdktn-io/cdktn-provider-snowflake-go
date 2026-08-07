@@ -59,6 +59,10 @@ func (u *jsiiProxy_UserPublicKeys) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (u *jsiiProxy_UserPublicKeys) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserPublicKeys) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (u *jsiiProxy_UserPublicKeys) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (u *jsiiProxy_UserPublicKeys) validatePutTimeoutsParameters(value *UserPublicKeysTimeouts) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserPublicKeys) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

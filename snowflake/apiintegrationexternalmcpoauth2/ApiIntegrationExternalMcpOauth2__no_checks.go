@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validateOverrideLogicalIdPar
 }
 
 func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validatePutTimeoutsParameters(value *ApiIntegrationExternalMcpOauth2Timeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiIntegrationExternalMcpOauth2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

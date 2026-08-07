@@ -59,6 +59,10 @@ func (s *jsiiProxy_SharedDatabase) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SharedDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SharedDatabase) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SharedDatabase) validatePutTimeoutsParameters(value *SharedDatabaseTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SharedDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,6 +120,14 @@ func (j *jsiiProxy_SharedDatabase) validateSetCountParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_SharedDatabase) validateSetDefaultDdlCollationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SharedDatabase) validateSetDefaultNotebookComputePoolCpuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SharedDatabase) validateSetDefaultNotebookComputePoolGpuParameters(val *string) error {
 	return nil
 }
 

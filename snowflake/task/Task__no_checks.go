@@ -59,6 +59,10 @@ func (t *jsiiProxy_Task) validateInterpolationForAttributeParameters(terraformAt
 	return nil
 }
 
+func (t *jsiiProxy_Task) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_Task) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (t *jsiiProxy_Task) validatePutTargetCompletionIntervalParameters(value *Ta
 }
 
 func (t *jsiiProxy_Task) validatePutTimeoutsParameters(value *TaskTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_Task) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

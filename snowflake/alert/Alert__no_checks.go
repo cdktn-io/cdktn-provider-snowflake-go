@@ -59,6 +59,10 @@ func (a *jsiiProxy_Alert) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (a *jsiiProxy_Alert) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_Alert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_Alert) validatePutAlertScheduleParameters(value *AlertAlertSc
 }
 
 func (a *jsiiProxy_Alert) validatePutTimeoutsParameters(value *AlertTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_Alert) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

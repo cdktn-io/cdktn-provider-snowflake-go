@@ -5,9 +5,9 @@ package grantprivilegestoaccountrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantprivilegestoaccountrole/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/grantprivilegestoaccountrole/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -30,6 +30,8 @@ type GrantPrivilegesToAccountRoleOnAccountObjectOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Inherited() GrantPrivilegesToAccountRoleOnAccountObjectInheritedOutputReference
+	InheritedInput() *GrantPrivilegesToAccountRoleOnAccountObjectInherited
 	InternalValue() *GrantPrivilegesToAccountRoleOnAccountObject
 	SetInternalValue(val *GrantPrivilegesToAccountRoleOnAccountObject)
 	ObjectName() *string
@@ -70,6 +72,10 @@ type GrantPrivilegesToAccountRoleOnAccountObjectOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutInherited(value *GrantPrivilegesToAccountRoleOnAccountObjectInherited)
+	ResetInherited()
+	ResetObjectName()
+	ResetObjectType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -120,6 +126,26 @@ func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) Inherited() GrantPrivilegesToAccountRoleOnAccountObjectInheritedOutputReference {
+	var returns GrantPrivilegesToAccountRoleOnAccountObjectInheritedOutputReference
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) InheritedInput() *GrantPrivilegesToAccountRoleOnAccountObjectInherited {
+	var returns *GrantPrivilegesToAccountRoleOnAccountObjectInherited
+	_jsii_.Get(
+		j,
+		"inheritedInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +510,41 @@ func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) I
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) PutInherited(value *GrantPrivilegesToAccountRoleOnAccountObjectInherited) {
+	if err := g.validatePutInheritedParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInherited",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) ResetInherited() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInherited",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) ResetObjectName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetObjectName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) ResetObjectType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetObjectType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GrantPrivilegesToAccountRoleOnAccountObjectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

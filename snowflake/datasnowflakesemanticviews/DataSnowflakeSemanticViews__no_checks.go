@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataSnowflakeSemanticViews) validatePutLimitParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeSemanticViews) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeSemanticViews_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

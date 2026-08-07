@@ -59,6 +59,10 @@ func (s *jsiiProxy_StorageIntegrationAws) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StorageIntegrationAws) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageIntegrationAws) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_StorageIntegrationAws) validateOverrideLogicalIdParameters(ne
 }
 
 func (s *jsiiProxy_StorageIntegrationAws) validatePutTimeoutsParameters(value *StorageIntegrationAwsTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageIntegrationAws) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

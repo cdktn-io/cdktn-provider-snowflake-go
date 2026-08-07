@@ -59,6 +59,10 @@ func (m *jsiiProxy_MaskingPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MaskingPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaskingPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MaskingPolicy) validatePutArgumentParameters(value interface{
 }
 
 func (m *jsiiProxy_MaskingPolicy) validatePutTimeoutsParameters(value *MaskingPolicyTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaskingPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

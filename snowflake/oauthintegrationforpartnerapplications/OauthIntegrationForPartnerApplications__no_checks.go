@@ -59,6 +59,10 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateInterpolation
 	return nil
 }
 
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -79,6 +83,10 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validatePutTimeoutsPa
 	return nil
 }
 
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateOauthIntegrationForPartnerApplications_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,6 +100,10 @@ func validateOauthIntegrationForPartnerApplications_IsTerraformElementParameters
 }
 
 func validateOauthIntegrationForPartnerApplications_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) validateSetAllowedRolesListParameters(val *[]*string) error {
 	return nil
 }
 

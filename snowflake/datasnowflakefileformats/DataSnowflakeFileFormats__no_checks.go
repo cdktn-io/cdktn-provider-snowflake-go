@@ -55,6 +55,14 @@ func (d *jsiiProxy_DataSnowflakeFileFormats) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeFileFormats) validatePutInParameters(value *DataSnowflakeFileFormatsIn) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeFileFormats) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeFileFormats_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -75,10 +83,6 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetDatabaseParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -87,7 +91,11 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetSchemaParameters(val *string) error {
+func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetLikeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeFileFormats) validateSetWithDescribeParameters(val interface{}) error {
 	return nil
 }
 

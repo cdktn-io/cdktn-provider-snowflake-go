@@ -5,15 +5,16 @@ package datasnowflakesecurityintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesecurityintegrations/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakesecurityintegrations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOutputReference interface {
 	cdktn.ComplexObject
 	AllowedEmailPatterns() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsList
+	AllowedRolesList() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructList
 	AllowedUserDomains() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsList
 	AuthType() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeList
 	BlockedRolesList() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructList
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribe
 	_jsii_.Get(
 		j,
 		"allowedEmailPatterns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOutputReference) AllowedRolesList() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructList {
+	var returns DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructList
+	_jsii_.Get(
+		j,
+		"allowedRolesList",
 		&returns,
 	)
 	return returns

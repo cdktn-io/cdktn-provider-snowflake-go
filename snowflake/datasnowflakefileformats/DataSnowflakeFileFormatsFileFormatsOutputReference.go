@@ -5,15 +5,14 @@ package datasnowflakefileformats
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakefileformats/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataSnowflakeFileFormatsFileFormatsOutputReference interface {
 	cdktn.ComplexObject
-	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,14 +28,12 @@ type DataSnowflakeFileFormatsFileFormatsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Database() *string
-	FormatType() *string
+	DescribeOutput() DataSnowflakeFileFormatsFileFormatsDescribeOutputList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeFileFormatsFileFormats
 	SetInternalValue(val *DataSnowflakeFileFormatsFileFormats)
-	Name() *string
-	Schema() *string
+	ShowOutput() DataSnowflakeFileFormatsFileFormatsShowOutputList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,16 +81,6 @@ type jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) Comment() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"comment",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -124,21 +111,11 @@ func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) Database() *string {
-	var returns *string
+func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) DescribeOutput() DataSnowflakeFileFormatsFileFormatsDescribeOutputList {
+	var returns DataSnowflakeFileFormatsFileFormatsDescribeOutputList
 	_jsii_.Get(
 		j,
-		"database",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) FormatType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"formatType",
+		"describeOutput",
 		&returns,
 	)
 	return returns
@@ -164,21 +141,11 @@ func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) Name() *string {
-	var returns *string
+func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) ShowOutput() DataSnowflakeFileFormatsFileFormatsShowOutputList {
+	var returns DataSnowflakeFileFormatsFileFormatsShowOutputList
 	_jsii_.Get(
 		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsOutputReference) Schema() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"schema",
+		"showOutput",
 		&returns,
 	)
 	return returns

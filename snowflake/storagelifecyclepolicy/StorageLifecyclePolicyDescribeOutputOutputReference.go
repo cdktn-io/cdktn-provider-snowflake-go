@@ -5,9 +5,9 @@ package storagelifecyclepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,12 +31,14 @@ type StorageLifecyclePolicyDescribeOutputOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *StorageLifecyclePolicyDescribeOutput
 	SetInternalValue(val *StorageLifecyclePolicyDescribeOutput)
 	Name() *string
 	ReturnType() *string
+	SchemaName() *string
 	Signature() StorageLifecyclePolicyDescribeOutputSignatureList
 	// Experimental.
 	TerraformAttribute() *string
@@ -145,6 +147,16 @@ func (j *jsiiProxy_StorageLifecyclePolicyDescribeOutputOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_StorageLifecyclePolicyDescribeOutputOutputReference) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageLifecyclePolicyDescribeOutputOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,6 +192,16 @@ func (j *jsiiProxy_StorageLifecyclePolicyDescribeOutputOutputReference) ReturnTy
 	_jsii_.Get(
 		j,
 		"returnType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageLifecyclePolicyDescribeOutputOutputReference) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns

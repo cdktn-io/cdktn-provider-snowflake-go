@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobService) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (j *jsiiProxy_JobService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_JobService) validatePutFromSpecificationTemplateParameters(va
 }
 
 func (j *jsiiProxy_JobService) validatePutTimeoutsParameters(value *JobServiceTimeouts) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

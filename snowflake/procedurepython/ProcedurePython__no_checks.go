@@ -59,6 +59,10 @@ func (p *jsiiProxy_ProcedurePython) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_ProcedurePython) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProcedurePython) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (p *jsiiProxy_ProcedurePython) validatePutSecretsParameters(value interface
 }
 
 func (p *jsiiProxy_ProcedurePython) validatePutTimeoutsParameters(value *ProcedurePythonTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProcedurePython) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

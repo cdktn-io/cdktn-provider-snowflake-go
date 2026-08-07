@@ -5,9 +5,9 @@ package stageexternals3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/stageexternals3/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -16,6 +16,9 @@ type StageExternalS3DirectoryOutputReference interface {
 	AutoRefresh() *string
 	SetAutoRefresh(val *string)
 	AutoRefreshInput() *string
+	AwsSnsTopic() *string
+	SetAwsSnsTopic(val *string)
+	AwsSnsTopicInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,6 +77,7 @@ type StageExternalS3DirectoryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAutoRefresh()
+	ResetAwsSnsTopic()
 	ResetRefreshOnCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -105,6 +109,26 @@ func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) AutoRefreshInput() *
 	_jsii_.Get(
 		j,
 		"autoRefreshInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) AwsSnsTopic() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSnsTopic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageExternalS3DirectoryOutputReference) AwsSnsTopicInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSnsTopicInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +279,17 @@ func (j *jsiiProxy_StageExternalS3DirectoryOutputReference)SetAutoRefresh(val *s
 	_jsii_.Set(
 		j,
 		"autoRefresh",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StageExternalS3DirectoryOutputReference)SetAwsSnsTopic(val *string) {
+	if err := j.validateSetAwsSnsTopicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsSnsTopic",
 		val,
 	)
 }
@@ -526,6 +561,14 @@ func (s *jsiiProxy_StageExternalS3DirectoryOutputReference) ResetAutoRefresh() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAutoRefresh",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StageExternalS3DirectoryOutputReference) ResetAwsSnsTopic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAwsSnsTopic",
 		nil, // no parameters
 	)
 }

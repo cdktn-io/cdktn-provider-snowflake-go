@@ -59,6 +59,10 @@ func (p *jsiiProxy_PrimaryConnection) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PrimaryConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrimaryConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (p *jsiiProxy_PrimaryConnection) validateOverrideLogicalIdParameters(newLog
 }
 
 func (p *jsiiProxy_PrimaryConnection) validatePutTimeoutsParameters(value *PrimaryConnectionTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrimaryConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

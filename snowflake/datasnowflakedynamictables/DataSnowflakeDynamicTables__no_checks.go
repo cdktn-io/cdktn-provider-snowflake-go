@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataSnowflakeDynamicTables) validatePutLimitParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeDynamicTables) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeDynamicTables_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

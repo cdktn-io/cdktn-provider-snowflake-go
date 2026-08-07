@@ -59,6 +59,10 @@ func (g *jsiiProxy_GrantPrivilegesToShare) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GrantPrivilegesToShare) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrantPrivilegesToShare) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (g *jsiiProxy_GrantPrivilegesToShare) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GrantPrivilegesToShare) validatePutTimeoutsParameters(value *GrantPrivilegesToShareTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrantPrivilegesToShare) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

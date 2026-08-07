@@ -5,16 +5,19 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/provider/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs snowflake}.
 type SnowflakeProvider interface {
 	cdktn.TerraformProvider
+	Account() *string
+	SetAccount(val *string)
+	AccountInput() *string
 	AccountName() *string
 	SetAccountName(val *string)
 	AccountNameInput() *string
@@ -244,6 +247,20 @@ type SnowflakeProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAccount()
 	ResetAccountName()
 	ResetAlias()
 	ResetAuthenticator()
@@ -340,6 +357,26 @@ type SnowflakeProvider interface {
 // The jsii proxy struct for SnowflakeProvider
 type jsiiProxy_SnowflakeProvider struct {
 	internal.Type__cdktnTerraformProvider
+}
+
+func (j *jsiiProxy_SnowflakeProvider) Account() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"account",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) AccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SnowflakeProvider) AccountName() *string {
@@ -1803,7 +1840,7 @@ func (j *jsiiProxy_SnowflakeProvider) WorkloadIdentityProviderInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs snowflake} Resource.
 func NewSnowflakeProvider(scope constructs.Construct, id *string, config *SnowflakeProviderConfig) SnowflakeProvider {
 	_init_.Initialize()
 
@@ -1821,7 +1858,7 @@ func NewSnowflakeProvider(scope constructs.Construct, id *string, config *Snowfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs snowflake} Resource.
 func NewSnowflakeProvider_Override(s SnowflakeProvider, scope constructs.Construct, id *string, config *SnowflakeProviderConfig) {
 	_init_.Initialize()
 
@@ -1829,6 +1866,14 @@ func NewSnowflakeProvider_Override(s SnowflakeProvider, scope constructs.Constru
 		"@cdktn/provider-snowflake.provider.SnowflakeProvider",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SnowflakeProvider)SetAccount(val *string) {
+	_jsii_.Set(
+		j,
+		"account",
+		val,
 	)
 }
 
@@ -2540,6 +2585,25 @@ func (s *jsiiProxy_SnowflakeProvider) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SnowflakeProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := s.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
+	)
+}
+
+func (s *jsiiProxy_SnowflakeProvider) ResetAccount() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccount",
+		nil, // no parameters
 	)
 }
 

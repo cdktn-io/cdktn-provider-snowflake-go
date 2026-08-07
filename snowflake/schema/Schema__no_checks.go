@@ -59,6 +59,10 @@ func (s *jsiiProxy_Schema) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (s *jsiiProxy_Schema) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Schema) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_Schema) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (s *jsiiProxy_Schema) validatePutTimeoutsParameters(value *SchemaTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_Schema) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,6 +128,14 @@ func (j *jsiiProxy_Schema) validateSetDataRetentionTimeInDaysParameters(val *flo
 }
 
 func (j *jsiiProxy_Schema) validateSetDefaultDdlCollationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Schema) validateSetDefaultNotebookComputePoolCpuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Schema) validateSetDefaultNotebookComputePoolGpuParameters(val *string) error {
 	return nil
 }
 

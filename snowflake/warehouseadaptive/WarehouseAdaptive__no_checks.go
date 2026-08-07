@@ -59,6 +59,10 @@ func (w *jsiiProxy_WarehouseAdaptive) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WarehouseAdaptive) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WarehouseAdaptive) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (w *jsiiProxy_WarehouseAdaptive) validateOverrideLogicalIdParameters(newLog
 }
 
 func (w *jsiiProxy_WarehouseAdaptive) validatePutTimeoutsParameters(value *WarehouseAdaptiveTimeouts) error {
+	return nil
+}
+
+func (w *jsiiProxy_WarehouseAdaptive) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (j *jsiiProxy_WarehouseAdaptive) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_WarehouseAdaptive) validateSetQueryThroughputMultiplierParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_WarehouseAdaptive) validateSetResourceMonitorParameters(val *string) error {
 	return nil
 }
 

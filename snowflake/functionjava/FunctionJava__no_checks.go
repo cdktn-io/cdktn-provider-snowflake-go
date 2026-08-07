@@ -59,6 +59,10 @@ func (f *jsiiProxy_FunctionJava) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (f *jsiiProxy_FunctionJava) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionJava) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (f *jsiiProxy_FunctionJava) validatePutTargetPathParameters(value *Function
 }
 
 func (f *jsiiProxy_FunctionJava) validatePutTimeoutsParameters(value *FunctionJavaTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FunctionJava) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

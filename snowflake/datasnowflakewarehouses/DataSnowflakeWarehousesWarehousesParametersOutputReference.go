@@ -5,9 +5,9 @@ package datasnowflakewarehouses
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakewarehouses/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakewarehouses/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,7 @@ type DataSnowflakeWarehousesWarehousesParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FallbackWarehouse() DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakeWarehousesWarehousesParameters
@@ -107,6 +108,16 @@ func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeWarehousesWarehousesParametersOutputReference) FallbackWarehouse() DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList {
+	var returns DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList
+	_jsii_.Get(
+		j,
+		"fallbackWarehouse",
 		&returns,
 	)
 	return returns

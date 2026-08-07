@@ -59,6 +59,10 @@ func (t *jsiiProxy_TableConstraint) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (t *jsiiProxy_TableConstraint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TableConstraint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (t *jsiiProxy_TableConstraint) validatePutForeignKeyPropertiesParameters(va
 }
 
 func (t *jsiiProxy_TableConstraint) validatePutTimeoutsParameters(value *TableConstraintTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TableConstraint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

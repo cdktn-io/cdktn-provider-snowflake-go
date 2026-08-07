@@ -59,6 +59,10 @@ func (f *jsiiProxy_FailoverGroup) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (f *jsiiProxy_FailoverGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FailoverGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (f *jsiiProxy_FailoverGroup) validatePutReplicationScheduleParameters(value
 }
 
 func (f *jsiiProxy_FailoverGroup) validatePutTimeoutsParameters(value *FailoverGroupTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FailoverGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (c *jsiiProxy_CurrentOrganizationAccount) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CurrentOrganizationAccount) validateOverrideLogicalIdParamete
 }
 
 func (c *jsiiProxy_CurrentOrganizationAccount) validatePutTimeoutsParameters(value *CurrentOrganizationAccountTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -240,6 +248,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDefaultNotebookCompute
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDefaultNullOrderingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDefaultStreamlitComputePoolParameters(val *string) error {
 	return nil
 }
 

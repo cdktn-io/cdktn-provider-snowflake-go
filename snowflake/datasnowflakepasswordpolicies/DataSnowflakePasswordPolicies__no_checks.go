@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataSnowflakePasswordPolicies) validatePutOnParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakePasswordPolicies) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakePasswordPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

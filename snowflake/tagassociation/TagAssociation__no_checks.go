@@ -59,6 +59,10 @@ func (t *jsiiProxy_TagAssociation) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (t *jsiiProxy_TagAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (t *jsiiProxy_TagAssociation) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (t *jsiiProxy_TagAssociation) validatePutTimeoutsParameters(value *TagAssociationTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

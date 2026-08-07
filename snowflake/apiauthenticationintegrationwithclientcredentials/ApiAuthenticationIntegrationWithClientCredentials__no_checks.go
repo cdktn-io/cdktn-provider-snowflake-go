@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validateIn
 	return nil
 }
 
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validateOv
 }
 
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validatePutTimeoutsParameters(value *ApiAuthenticationIntegrationWithClientCredentialsTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithClientCredentials) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

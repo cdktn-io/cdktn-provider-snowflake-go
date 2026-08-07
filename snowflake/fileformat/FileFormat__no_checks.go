@@ -59,6 +59,10 @@ func (f *jsiiProxy_FileFormat) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (f *jsiiProxy_FileFormat) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FileFormat) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (f *jsiiProxy_FileFormat) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (f *jsiiProxy_FileFormat) validatePutTimeoutsParameters(value *FileFormatTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FileFormat) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

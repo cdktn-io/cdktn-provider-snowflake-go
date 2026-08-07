@@ -59,6 +59,10 @@ func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validateInterpolationFor
 	return nil
 }
 
+func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validateOverrideLogicalI
 }
 
 func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validatePutTimeoutsParameters(value *TableColumnMaskingPolicyApplicationTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TableColumnMaskingPolicyApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

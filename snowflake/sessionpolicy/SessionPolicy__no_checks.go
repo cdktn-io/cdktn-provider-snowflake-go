@@ -59,6 +59,10 @@ func (s *jsiiProxy_SessionPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SessionPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SessionPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_SessionPolicy) validatePutBlockedSecondaryRolesParameters(val
 }
 
 func (s *jsiiProxy_SessionPolicy) validatePutTimeoutsParameters(value *SessionPolicyTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SessionPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountPasswordPolicyAttachment) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_AccountPasswordPolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountPasswordPolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AccountPasswordPolicyAttachment) validateOverrideLogicalIdPar
 }
 
 func (a *jsiiProxy_AccountPasswordPolicyAttachment) validatePutTimeoutsParameters(value *AccountPasswordPolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountPasswordPolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

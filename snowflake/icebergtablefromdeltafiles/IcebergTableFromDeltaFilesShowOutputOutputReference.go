@@ -5,9 +5,9 @@ package icebergtablefromdeltafiles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromdeltafiles/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromdeltafiles/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -50,7 +50,7 @@ type IcebergTableFromDeltaFilesShowOutputOutputReference interface {
 	NameMapping() *string
 	Owner() *string
 	OwnerRoleType() *string
-	PartitionSpecs() *string
+	PartitionSpecs() IcebergTableFromDeltaFilesShowOutputPartitionSpecsList
 	SchemaName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -329,8 +329,8 @@ func (j *jsiiProxy_IcebergTableFromDeltaFilesShowOutputOutputReference) OwnerRol
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTableFromDeltaFilesShowOutputOutputReference) PartitionSpecs() *string {
-	var returns *string
+func (j *jsiiProxy_IcebergTableFromDeltaFilesShowOutputOutputReference) PartitionSpecs() IcebergTableFromDeltaFilesShowOutputPartitionSpecsList {
+	var returns IcebergTableFromDeltaFilesShowOutputPartitionSpecsList
 	_jsii_.Get(
 		j,
 		"partitionSpecs",

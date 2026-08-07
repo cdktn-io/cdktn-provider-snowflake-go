@@ -5,14 +5,15 @@ package oauthintegrationforpartnerapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/oauthintegrationforpartnerapplications/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/oauthintegrationforpartnerapplications/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference interface {
 	cdktn.ComplexObject
+	AllowedRolesList() OauthIntegrationForPartnerApplicationsDescribeOutputAllowedRolesListStructList
 	BlockedRolesList() OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructList
 	Comment() OauthIntegrationForPartnerApplicationsDescribeOutputCommentList
 	// the index of the complex object in a list.
@@ -94,6 +95,16 @@ type OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference interfa
 // The jsii proxy struct for OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference
 type jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) AllowedRolesList() OauthIntegrationForPartnerApplicationsDescribeOutputAllowedRolesListStructList {
+	var returns OauthIntegrationForPartnerApplicationsDescribeOutputAllowedRolesListStructList
+	_jsii_.Get(
+		j,
+		"allowedRolesList",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference) BlockedRolesList() OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructList {

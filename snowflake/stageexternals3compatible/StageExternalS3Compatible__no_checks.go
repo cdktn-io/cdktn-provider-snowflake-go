@@ -59,6 +59,10 @@ func (s *jsiiProxy_StageExternalS3Compatible) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_StageExternalS3Compatible) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StageExternalS3Compatible) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (s *jsiiProxy_StageExternalS3Compatible) validatePutFileFormatParameters(va
 }
 
 func (s *jsiiProxy_StageExternalS3Compatible) validatePutTimeoutsParameters(value *StageExternalS3CompatibleTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StageExternalS3Compatible) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

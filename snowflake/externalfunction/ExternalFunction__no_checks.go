@@ -59,6 +59,10 @@ func (e *jsiiProxy_ExternalFunction) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_ExternalFunction) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalFunction) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (e *jsiiProxy_ExternalFunction) validatePutHeaderParameters(value interface
 }
 
 func (e *jsiiProxy_ExternalFunction) validatePutTimeoutsParameters(value *ExternalFunctionTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalFunction) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

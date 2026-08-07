@@ -26,42 +26,42 @@ type CortexAgentConfig struct {
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#database CortexAgent#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#database CortexAgent#database}
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// Specifies the identifier for the Cortex agent.
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#name CortexAgent#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#name CortexAgent#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The schema in which to create the Cortex agent.
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#schema CortexAgent#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#schema CortexAgent#schema}
 	Schema *string `field:"required" json:"schema" yaml:"schema"`
 	// Specifies a YAML object containing the settings for the Cortex agent.
 	//
 	// The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. Using `$$` in this field is disallowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#specification CortexAgent#specification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#specification CortexAgent#specification}
 	Specification *string `field:"required" json:"specification" yaml:"specification"`
 	// Specifies a comment for the Cortex agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#comment CortexAgent#comment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#comment CortexAgent#comment}
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#id CortexAgent#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#id CortexAgent#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#profile CortexAgent#profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#profile CortexAgent#profile}
 	Profile *CortexAgentProfile `field:"optional" json:"profile" yaml:"profile"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/cortex_agent#timeouts CortexAgent#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#timeouts CortexAgent#timeouts}
 	Timeouts *CortexAgentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

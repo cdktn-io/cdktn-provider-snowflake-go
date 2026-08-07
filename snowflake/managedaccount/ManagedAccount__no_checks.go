@@ -59,6 +59,10 @@ func (m *jsiiProxy_ManagedAccount) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_ManagedAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_ManagedAccount) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (m *jsiiProxy_ManagedAccount) validatePutTimeoutsParameters(value *ManagedAccountTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

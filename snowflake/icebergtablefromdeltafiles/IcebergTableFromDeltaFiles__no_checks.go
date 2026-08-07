@@ -59,6 +59,10 @@ func (i *jsiiProxy_IcebergTableFromDeltaFiles) validateInterpolationForAttribute
 	return nil
 }
 
+func (i *jsiiProxy_IcebergTableFromDeltaFiles) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IcebergTableFromDeltaFiles) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IcebergTableFromDeltaFiles) validateOverrideLogicalIdParamete
 }
 
 func (i *jsiiProxy_IcebergTableFromDeltaFiles) validatePutTimeoutsParameters(value *IcebergTableFromDeltaFilesTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IcebergTableFromDeltaFiles) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

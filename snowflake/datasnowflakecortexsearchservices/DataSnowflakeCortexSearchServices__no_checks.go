@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataSnowflakeCortexSearchServices) validatePutLimitParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeCortexSearchServices) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeCortexSearchServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

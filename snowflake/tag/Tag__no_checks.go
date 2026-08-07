@@ -59,6 +59,10 @@ func (t *jsiiProxy_Tag) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (t *jsiiProxy_Tag) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_Tag) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (t *jsiiProxy_Tag) validatePutOnConflictParameters(value *TagOnConflict) er
 }
 
 func (t *jsiiProxy_Tag) validatePutTimeoutsParameters(value *TagTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_Tag) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

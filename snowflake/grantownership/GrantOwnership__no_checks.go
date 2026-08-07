@@ -59,6 +59,10 @@ func (g *jsiiProxy_GrantOwnership) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GrantOwnership) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrantOwnership) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (g *jsiiProxy_GrantOwnership) validatePutOnParameters(value *GrantOwnership
 }
 
 func (g *jsiiProxy_GrantOwnership) validatePutTimeoutsParameters(value *GrantOwnershipTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrantOwnership) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

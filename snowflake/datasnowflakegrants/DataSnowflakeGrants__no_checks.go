@@ -75,6 +75,14 @@ func (d *jsiiProxy_DataSnowflakeGrants) validatePutGrantsToParameters(value *Dat
 	return nil
 }
 
+func (d *jsiiProxy_DataSnowflakeGrants) validatePutInheritedGrantsInParameters(value *DataSnowflakeGrantsInheritedGrantsIn) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeGrants) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataSnowflakeGrants_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

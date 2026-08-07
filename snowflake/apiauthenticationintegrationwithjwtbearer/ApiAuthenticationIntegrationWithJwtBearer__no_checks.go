@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validateInterpolat
 	return nil
 }
 
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validateOverrideLo
 }
 
 func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validatePutTimeoutsParameters(value *ApiAuthenticationIntegrationWithJwtBearerTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiAuthenticationIntegrationWithJwtBearer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

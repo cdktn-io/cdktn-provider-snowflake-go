@@ -59,6 +59,10 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) validateInterpolationForAttribut
 	return nil
 }
 
+func (u *jsiiProxy_UserProgrammaticAccessToken) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserProgrammaticAccessToken) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (u *jsiiProxy_UserProgrammaticAccessToken) validateOverrideLogicalIdParamet
 }
 
 func (u *jsiiProxy_UserProgrammaticAccessToken) validatePutTimeoutsParameters(value *UserProgrammaticAccessTokenTimeouts) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserProgrammaticAccessToken) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

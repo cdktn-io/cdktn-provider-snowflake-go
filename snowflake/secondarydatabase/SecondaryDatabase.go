@@ -5,14 +5,14 @@ package secondarydatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondarydatabase/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/secondarydatabase/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database snowflake_secondary_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database}.
 type SecondaryDatabase interface {
 	cdktn.TerraformResource
 	AsReplicaOf() *string
@@ -42,6 +42,12 @@ type SecondaryDatabase interface {
 	DefaultDdlCollation() *string
 	SetDefaultDdlCollation(val *string)
 	DefaultDdlCollationInput() *string
+	DefaultNotebookComputePoolCpu() *string
+	SetDefaultNotebookComputePoolCpu(val *string)
+	DefaultNotebookComputePoolCpuInput() *string
+	DefaultNotebookComputePoolGpu() *string
+	SetDefaultNotebookComputePoolGpu(val *string)
+	DefaultNotebookComputePoolGpuInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,9 +165,45 @@ type SecondaryDatabase interface {
 	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Wraps a write-only attribute's already-mapped value so that `ProviderFeature.WRITE_ONLY_ATTRIBUTES` usage is registered at *resolve* time instead of at mutation time (setter/constructor). Called by generated bindings from `synthesizeAttributes()` and `synthesizeHclAttributes()`, e.g. `secret_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretKeyWo))`; not intended to be called directly.
+	//
+	// `undefined` passes through completely unchanged, so the existing
+	// undefined-filtering that omits unset attributes from synthesized
+	// output (see `resolve()` in `tokens/private/resolve.ts`, and the
+	// `value.value !== undefined` filter in generated
+	// `synthesizeHclAttributes()`) keeps working untouched. `null` is also
+	// passed through unchanged: it already renders as an explicit
+	// null-out and must not arm the validation either.
+	//
+	// Any other value - including one that will itself resolve to nothing
+	// (e.g. a `Lazy`/`IResolvable` producer with no value to contribute) -
+	// is wrapped in a token whose `resolve()` defers to the real resolver
+	// first and registers usage only if what comes back is not
+	// `null`/`undefined`; the resolved value is then returned unchanged,
+	// so what actually renders is untouched by this wrapper. A producer
+	// that resolves to `undefined` therefore neither registers usage nor
+	// leaves anything behind in the synthesized attribute - the omission
+	// behaves exactly as if the attribute had never been set.
+	//
+	// Registration goes through `_registerResolveDiscoveredProviderFeatureUsage`
+	// rather than `registerProviderFeatureUsage`: usage here is only known at
+	// resolve time, and a given element can be resolved across many
+	// synthesis passes over its lifetime (repeated `app.synth()` calls,
+	// tests reusing a construct tree), so it must represent only the CURRENT
+	// pass rather than accumulate forever. Every validation-enabled entry
+	// point (`App.synth`; `Testing.synth`/`synthHcl` with validations;
+	// `StackSynthesizer.synthesize`) runs a prepare step that deactivates any
+	// stale registration and then resolves every element's `toTerraform()`
+	// before that same entry point's validations run - see
+	// `TerraformStack._runPreparingResolve` - so whatever this closure
+	// (re-)registers during that prepare step is always visible to the
+	// validation that reads it afterwards, and nothing left over from an
+	// earlier pass leaks into the current one.
+	// Experimental.
+	MarkWriteOnlyAttribute(value interface{}) interface{}
 	// Move the resource corresponding to "id" to this resource.
 	//
-	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Note that the resource being moved from must be marked as moved using its instance function.
 	// Experimental.
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
@@ -174,10 +216,25 @@ type SecondaryDatabase interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SecondaryDatabaseTimeouts)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCatalog()
 	ResetComment()
 	ResetDataRetentionTimeInDays()
 	ResetDefaultDdlCollation()
+	ResetDefaultNotebookComputePoolCpu()
+	ResetDefaultNotebookComputePoolGpu()
 	ResetEnableConsoleOutput()
 	ResetExternalVolume()
 	ResetId()
@@ -360,6 +417,46 @@ func (j *jsiiProxy_SecondaryDatabase) DefaultDdlCollationInput() *string {
 	_jsii_.Get(
 		j,
 		"defaultDdlCollationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecondaryDatabase) DefaultNotebookComputePoolCpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolCpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecondaryDatabase) DefaultNotebookComputePoolCpuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolCpuInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecondaryDatabase) DefaultNotebookComputePoolGpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolGpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecondaryDatabase) DefaultNotebookComputePoolGpuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolGpuInput",
 		&returns,
 	)
 	return returns
@@ -856,7 +953,7 @@ func (j *jsiiProxy_SecondaryDatabase) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase(scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) SecondaryDatabase {
 	_init_.Initialize()
 
@@ -874,7 +971,7 @@ func NewSecondaryDatabase(scope constructs.Construct, id *string, config *Second
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase_Override(s SecondaryDatabase, scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) {
 	_init_.Initialize()
 
@@ -958,6 +1055,28 @@ func (j *jsiiProxy_SecondaryDatabase)SetDefaultDdlCollation(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultDdlCollation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecondaryDatabase)SetDefaultNotebookComputePoolCpu(val *string) {
+	if err := j.validateSetDefaultNotebookComputePoolCpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultNotebookComputePoolCpu",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecondaryDatabase)SetDefaultNotebookComputePoolGpu(val *string) {
+	if err := j.validateSetDefaultNotebookComputePoolGpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultNotebookComputePoolGpu",
 		val,
 	)
 }
@@ -1504,6 +1623,22 @@ func (s *jsiiProxy_SecondaryDatabase) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (s *jsiiProxy_SecondaryDatabase) MarkWriteOnlyAttribute(value interface{}) interface{} {
+	if err := s.validateMarkWriteOnlyAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"markWriteOnlyAttribute",
+		[]interface{}{value},
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SecondaryDatabase) MoveFromId(id *string) {
 	if err := s.validateMoveFromIdParameters(id); err != nil {
 		panic(err)
@@ -1559,6 +1694,17 @@ func (s *jsiiProxy_SecondaryDatabase) PutTimeouts(value *SecondaryDatabaseTimeou
 	)
 }
 
+func (s *jsiiProxy_SecondaryDatabase) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := s.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
+	)
+}
+
 func (s *jsiiProxy_SecondaryDatabase) ResetCatalog() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1587,6 +1733,22 @@ func (s *jsiiProxy_SecondaryDatabase) ResetDefaultDdlCollation() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultDdlCollation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecondaryDatabase) ResetDefaultNotebookComputePoolCpu() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultNotebookComputePoolCpu",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecondaryDatabase) ResetDefaultNotebookComputePoolGpu() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultNotebookComputePoolGpu",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (i *jsiiProxy_IcebergTableFromFiles) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_IcebergTableFromFiles) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IcebergTableFromFiles) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IcebergTableFromFiles) validateOverrideLogicalIdParameters(ne
 }
 
 func (i *jsiiProxy_IcebergTableFromFiles) validatePutTimeoutsParameters(value *IcebergTableFromFilesTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IcebergTableFromFiles) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamOnDirectoryTable) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_StreamOnDirectoryTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamOnDirectoryTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_StreamOnDirectoryTable) validateOverrideLogicalIdParameters(n
 }
 
 func (s *jsiiProxy_StreamOnDirectoryTable) validatePutTimeoutsParameters(value *StreamOnDirectoryTableTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamOnDirectoryTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

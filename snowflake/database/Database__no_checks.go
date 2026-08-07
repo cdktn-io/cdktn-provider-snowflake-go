@@ -59,6 +59,10 @@ func (d *jsiiProxy_Database) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_Database) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Database) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_Database) validatePutReplicationParameters(value *DatabaseRep
 }
 
 func (d *jsiiProxy_Database) validatePutTimeoutsParameters(value *DatabaseTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_Database) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,6 +128,14 @@ func (j *jsiiProxy_Database) validateSetDataRetentionTimeInDaysParameters(val *f
 }
 
 func (j *jsiiProxy_Database) validateSetDefaultDdlCollationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Database) validateSetDefaultNotebookComputePoolCpuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Database) validateSetDefaultNotebookComputePoolGpuParameters(val *string) error {
 	return nil
 }
 

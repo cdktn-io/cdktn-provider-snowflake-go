@@ -5,9 +5,9 @@ package datasnowflakepasswordpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -29,6 +29,7 @@ type DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutput
@@ -46,6 +47,7 @@ type DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference 
 	PasswordMinNumericChars() *float64
 	PasswordMinSpecialChars() *float64
 	PasswordMinUpperCaseChars() *float64
+	SchemaName() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -128,6 +130,16 @@ func (j *jsiiProxy_DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
 		&returns,
 	)
 	return returns
@@ -278,6 +290,16 @@ func (j *jsiiProxy_DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOu
 	_jsii_.Get(
 		j,
 		"passwordMinUpperCaseChars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
 		&returns,
 	)
 	return returns

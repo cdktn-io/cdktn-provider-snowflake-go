@@ -122,6 +122,14 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateInterpolation
 	return nil
 }
 
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -218,6 +226,14 @@ func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validatePutTimeoutsPa
 	return nil
 }
 
+func (o *jsiiProxy_OauthIntegrationForPartnerApplications) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateOauthIntegrationForPartnerApplications_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -253,6 +269,14 @@ func validateOauthIntegrationForPartnerApplications_IsTerraformElementParameters
 func validateOauthIntegrationForPartnerApplications_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OauthIntegrationForPartnerApplications) validateSetAllowedRolesListParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
