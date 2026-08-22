@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs}.
 type StageExternalGcs interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -658,7 +658,7 @@ func (j *jsiiProxy_StageExternalGcs) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs} Resource.
 func NewStageExternalGcs(scope constructs.Construct, id *string, config *StageExternalGcsConfig) StageExternalGcs {
 	_init_.Initialize()
 
@@ -676,7 +676,7 @@ func NewStageExternalGcs(scope constructs.Construct, id *string, config *StageEx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_gcs snowflake_stage_external_gcs} Resource.
 func NewStageExternalGcs_Override(s StageExternalGcs, scope constructs.Construct, id *string, config *StageExternalGcsConfig) {
 	_init_.Initialize()
 

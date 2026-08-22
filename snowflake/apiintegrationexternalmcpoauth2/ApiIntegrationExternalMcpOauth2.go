@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2}.
 type ApiIntegrationExternalMcpOauth2 interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -682,7 +682,7 @@ func (j *jsiiProxy_ApiIntegrationExternalMcpOauth2) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2} Resource.
 func NewApiIntegrationExternalMcpOauth2(scope constructs.Construct, id *string, config *ApiIntegrationExternalMcpOauth2Config) ApiIntegrationExternalMcpOauth2 {
 	_init_.Initialize()
 
@@ -700,7 +700,7 @@ func NewApiIntegrationExternalMcpOauth2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_oauth2 snowflake_api_integration_external_mcp_oauth2} Resource.
 func NewApiIntegrationExternalMcpOauth2_Override(a ApiIntegrationExternalMcpOauth2, scope constructs.Construct, id *string, config *ApiIntegrationExternalMcpOauth2Config) {
 	_init_.Initialize()
 

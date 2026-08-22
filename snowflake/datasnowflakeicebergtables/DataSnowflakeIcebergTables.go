@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables}.
 type DataSnowflakeIcebergTables interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataSnowflakeIcebergTables) WithParametersInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source.
 func NewDataSnowflakeIcebergTables(scope constructs.Construct, id *string, config *DataSnowflakeIcebergTablesConfig) DataSnowflakeIcebergTables {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataSnowflakeIcebergTables(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source.
 func NewDataSnowflakeIcebergTables_Override(d DataSnowflakeIcebergTables, scope constructs.Construct, id *string, config *DataSnowflakeIcebergTablesConfig) {
 	_init_.Initialize()
 

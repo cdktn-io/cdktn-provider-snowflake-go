@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/semantic_views snowflake_semantic_views}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/semantic_views snowflake_semantic_views}.
 type DataSnowflakeSemanticViews interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataSnowflakeSemanticViews) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/semantic_views snowflake_semantic_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/semantic_views snowflake_semantic_views} Data Source.
 func NewDataSnowflakeSemanticViews(scope constructs.Construct, id *string, config *DataSnowflakeSemanticViewsConfig) DataSnowflakeSemanticViews {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataSnowflakeSemanticViews(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/semantic_views snowflake_semantic_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/semantic_views snowflake_semantic_views} Data Source.
 func NewDataSnowflakeSemanticViews_Override(d DataSnowflakeSemanticViews, scope constructs.Construct, id *string, config *DataSnowflakeSemanticViewsConfig) {
 	_init_.Initialize()
 

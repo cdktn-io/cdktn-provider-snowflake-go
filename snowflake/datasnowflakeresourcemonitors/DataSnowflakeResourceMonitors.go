@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/resource_monitors snowflake_resource_monitors}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/resource_monitors snowflake_resource_monitors}.
 type DataSnowflakeResourceMonitors interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataSnowflakeResourceMonitors) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
 func NewDataSnowflakeResourceMonitors(scope constructs.Construct, id *string, config *DataSnowflakeResourceMonitorsConfig) DataSnowflakeResourceMonitors {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataSnowflakeResourceMonitors(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/resource_monitors snowflake_resource_monitors} Data Source.
 func NewDataSnowflakeResourceMonitors_Override(d DataSnowflakeResourceMonitors, scope constructs.Construct, id *string, config *DataSnowflakeResourceMonitorsConfig) {
 	_init_.Initialize()
 

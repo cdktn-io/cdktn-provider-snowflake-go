@@ -7,15 +7,15 @@ package datasnowflakemcpservers
 type DataSnowflakeMcpServersIn struct {
 	// Returns records for the entire account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers#account DataSnowflakeMcpServers#account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers#account DataSnowflakeMcpServers#account}
 	Account interface{} `field:"optional" json:"account" yaml:"account"`
 	// Returns records for the current database in use or for a specified database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers#database DataSnowflakeMcpServers#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers#database DataSnowflakeMcpServers#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
 	// Returns records for the current schema in use or a specified schema. Use fully qualified name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers#schema DataSnowflakeMcpServers#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers#schema DataSnowflakeMcpServers#schema}
 	Schema *string `field:"optional" json:"schema" yaml:"schema"`
 }
 

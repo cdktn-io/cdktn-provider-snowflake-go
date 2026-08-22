@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/network_rule snowflake_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/network_rule snowflake_network_rule}.
 type NetworkRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -587,7 +587,7 @@ func (j *jsiiProxy_NetworkRule) ValueListInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleConfig) NetworkRule {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewNetworkRule(scope constructs.Construct, id *string, config *NetworkRuleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/network_rule snowflake_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/network_rule snowflake_network_rule} Resource.
 func NewNetworkRule_Override(n NetworkRule, scope constructs.Construct, id *string, config *NetworkRuleConfig) {
 	_init_.Initialize()
 

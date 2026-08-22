@@ -111,6 +111,14 @@ func (j *jsiiProxy_AccountSessionPolicyAttachment) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AccountSessionPolicyAttachment) validateSetForAllPersonUsersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountSessionPolicyAttachment) validateSetForAllServiceUsersParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountSessionPolicyAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

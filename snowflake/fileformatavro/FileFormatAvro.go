@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_avro snowflake_file_format_avro}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_avro snowflake_file_format_avro}.
 type FileFormatAvro interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -625,7 +625,7 @@ func (j *jsiiProxy_FileFormatAvro) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_avro snowflake_file_format_avro} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_avro snowflake_file_format_avro} Resource.
 func NewFileFormatAvro(scope constructs.Construct, id *string, config *FileFormatAvroConfig) FileFormatAvro {
 	_init_.Initialize()
 
@@ -643,7 +643,7 @@ func NewFileFormatAvro(scope constructs.Construct, id *string, config *FileForma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_avro snowflake_file_format_avro} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_avro snowflake_file_format_avro} Resource.
 func NewFileFormatAvro_Override(f FileFormatAvro, scope constructs.Construct, id *string, config *FileFormatAvroConfig) {
 	_init_.Initialize()
 

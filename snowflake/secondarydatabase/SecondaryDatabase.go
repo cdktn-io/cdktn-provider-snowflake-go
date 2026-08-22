@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_database snowflake_secondary_database}.
 type SecondaryDatabase interface {
 	cdktn.TerraformResource
 	AsReplicaOf() *string
@@ -953,7 +953,7 @@ func (j *jsiiProxy_SecondaryDatabase) UserTaskTimeoutMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase(scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) SecondaryDatabase {
 	_init_.Initialize()
 
@@ -971,7 +971,7 @@ func NewSecondaryDatabase(scope constructs.Construct, id *string, config *Second
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_database snowflake_secondary_database} Resource.
 func NewSecondaryDatabase_Override(s SecondaryDatabase, scope constructs.Construct, id *string, config *SecondaryDatabaseConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
 type UserPasswordPolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_UserPasswordPolicyAttachment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
 func NewUserPasswordPolicyAttachment(scope constructs.Construct, id *string, config *UserPasswordPolicyAttachmentConfig) UserPasswordPolicyAttachment {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewUserPasswordPolicyAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment} Resource.
 func NewUserPasswordPolicyAttachment_Override(u UserPasswordPolicyAttachment, scope constructs.Construct, id *string, config *UserPasswordPolicyAttachmentConfig) {
 	_init_.Initialize()
 

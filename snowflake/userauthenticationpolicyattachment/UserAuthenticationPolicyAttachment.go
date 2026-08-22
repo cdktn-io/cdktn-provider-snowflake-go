@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment}.
 type UserAuthenticationPolicyAttachment interface {
 	cdktn.TerraformResource
 	AuthenticationPolicyName() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_UserAuthenticationPolicyAttachment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
 func NewUserAuthenticationPolicyAttachment(scope constructs.Construct, id *string, config *UserAuthenticationPolicyAttachmentConfig) UserAuthenticationPolicyAttachment {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewUserAuthenticationPolicyAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_authentication_policy_attachment snowflake_user_authentication_policy_attachment} Resource.
 func NewUserAuthenticationPolicyAttachment_Override(u UserAuthenticationPolicyAttachment, scope constructs.Construct, id *string, config *UserAuthenticationPolicyAttachmentConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool snowflake_compute_pool}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool snowflake_compute_pool}.
 type ComputePool interface {
 	cdktn.TerraformResource
 	AutoResume() *string
@@ -21,6 +21,9 @@ type ComputePool interface {
 	AutoSuspendSecs() *float64
 	SetAutoSuspendSecs(val *float64)
 	AutoSuspendSecsInput() *float64
+	BackupInstanceFamilies() *[]*string
+	SetBackupInstanceFamilies(val *[]*string)
+	BackupInstanceFamiliesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Comment() *string
@@ -191,6 +194,7 @@ type ComputePool interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAutoResume()
 	ResetAutoSuspendSecs()
+	ResetBackupInstanceFamilies()
 	ResetComment()
 	ResetForApplication()
 	ResetId()
@@ -261,6 +265,26 @@ func (j *jsiiProxy_ComputePool) AutoSuspendSecsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"autoSuspendSecsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePool) BackupInstanceFamilies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"backupInstanceFamilies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePool) BackupInstanceFamiliesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"backupInstanceFamiliesInput",
 		&returns,
 	)
 	return returns
@@ -637,7 +661,7 @@ func (j *jsiiProxy_ComputePool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool snowflake_compute_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool snowflake_compute_pool} Resource.
 func NewComputePool(scope constructs.Construct, id *string, config *ComputePoolConfig) ComputePool {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewComputePool(scope constructs.Construct, id *string, config *ComputePoolC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool snowflake_compute_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool snowflake_compute_pool} Resource.
 func NewComputePool_Override(c ComputePool, scope constructs.Construct, id *string, config *ComputePoolConfig) {
 	_init_.Initialize()
 
@@ -684,6 +708,17 @@ func (j *jsiiProxy_ComputePool)SetAutoSuspendSecs(val *float64) {
 	_jsii_.Set(
 		j,
 		"autoSuspendSecs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePool)SetBackupInstanceFamilies(val *[]*string) {
+	if err := j.validateSetBackupInstanceFamiliesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupInstanceFamilies",
 		val,
 	)
 }
@@ -1247,6 +1282,14 @@ func (c *jsiiProxy_ComputePool) ResetAutoSuspendSecs() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoSuspendSecs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePool) ResetBackupInstanceFamilies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBackupInstanceFamilies",
 		nil, // no parameters
 	)
 }

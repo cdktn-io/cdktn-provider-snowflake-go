@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_scala snowflake_function_scala}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_scala snowflake_function_scala}.
 type FunctionScala interface {
 	cdktn.TerraformResource
 	Arguments() FunctionScalaArgumentsList
@@ -958,7 +958,7 @@ func (j *jsiiProxy_FunctionScala) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_scala snowflake_function_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_scala snowflake_function_scala} Resource.
 func NewFunctionScala(scope constructs.Construct, id *string, config *FunctionScalaConfig) FunctionScala {
 	_init_.Initialize()
 
@@ -976,7 +976,7 @@ func NewFunctionScala(scope constructs.Construct, id *string, config *FunctionSc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_scala snowflake_function_scala} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_scala snowflake_function_scala} Resource.
 func NewFunctionScala_Override(f FunctionScala, scope constructs.Construct, id *string, config *FunctionScalaConfig) {
 	_init_.Initialize()
 

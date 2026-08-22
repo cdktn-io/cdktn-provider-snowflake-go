@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app}.
 type ApiIntegrationGitRepositoryGithubApp interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -542,7 +542,7 @@ func (j *jsiiProxy_ApiIntegrationGitRepositoryGithubApp) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource.
 func NewApiIntegrationGitRepositoryGithubApp(scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryGithubAppConfig) ApiIntegrationGitRepositoryGithubApp {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewApiIntegrationGitRepositoryGithubApp(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource.
 func NewApiIntegrationGitRepositoryGithubApp_Override(a ApiIntegrationGitRepositoryGithubApp, scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryGithubAppConfig) {
 	_init_.Initialize()
 

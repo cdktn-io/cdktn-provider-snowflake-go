@@ -7,13 +7,13 @@ package datasnowflakesessionpolicies
 type DataSnowflakeSessionPoliciesLimit struct {
 	// The maximum number of rows to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#rows DataSnowflakeSessionPolicies#rows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#rows DataSnowflakeSessionPolicies#rows}
 	Rows *float64 `field:"required" json:"rows" yaml:"rows"`
 	// Specifies a **case-sensitive** pattern that is used to match object name.
 	//
 	// After the first match, the limit on the number of rows will be applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#from DataSnowflakeSessionPolicies#from}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#from DataSnowflakeSessionPolicies#from}
 	From *string `field:"optional" json:"from" yaml:"from"`
 }
 

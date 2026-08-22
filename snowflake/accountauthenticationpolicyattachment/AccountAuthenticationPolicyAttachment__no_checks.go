@@ -115,6 +115,14 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) validateSetCountParame
 	return nil
 }
 
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) validateSetForAllPersonUsersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) validateSetForAllServiceUsersParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

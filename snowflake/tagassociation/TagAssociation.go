@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/tag_association snowflake_tag_association}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/tag_association snowflake_tag_association}.
 type TagAssociation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_TagAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/tag_association snowflake_tag_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/tag_association snowflake_tag_association} Resource.
 func NewTagAssociation(scope constructs.Construct, id *string, config *TagAssociationConfig) TagAssociation {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewTagAssociation(scope constructs.Construct, id *string, config *TagAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/tag_association snowflake_tag_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/tag_association snowflake_tag_association} Resource.
 func NewTagAssociation_Override(t TagAssociation, scope constructs.Construct, id *string, config *TagAssociationConfig) {
 	_init_.Initialize()
 

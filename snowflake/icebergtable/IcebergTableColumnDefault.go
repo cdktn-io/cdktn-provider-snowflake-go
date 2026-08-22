@@ -7,7 +7,7 @@ package icebergtable
 type IcebergTableColumnDefault struct {
 	// The default expression value for the column.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table#expression IcebergTable#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#expression IcebergTable#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 

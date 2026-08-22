@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_javascript snowflake_function_javascript}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_javascript snowflake_function_javascript}.
 type FunctionJavascript interface {
 	cdktn.TerraformResource
 	Arguments() FunctionJavascriptArgumentsList
@@ -791,7 +791,7 @@ func (j *jsiiProxy_FunctionJavascript) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
 func NewFunctionJavascript(scope constructs.Construct, id *string, config *FunctionJavascriptConfig) FunctionJavascript {
 	_init_.Initialize()
 
@@ -809,7 +809,7 @@ func NewFunctionJavascript(scope constructs.Construct, id *string, config *Funct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_javascript snowflake_function_javascript} Resource.
 func NewFunctionJavascript_Override(f FunctionJavascript, scope constructs.Construct, id *string, config *FunctionJavascriptConfig) {
 	_init_.Initialize()
 

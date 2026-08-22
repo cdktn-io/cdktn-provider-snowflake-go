@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_java snowflake_function_java}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_java snowflake_function_java}.
 type FunctionJava interface {
 	cdktn.TerraformResource
 	Arguments() FunctionJavaArgumentsList
@@ -959,7 +959,7 @@ func (j *jsiiProxy_FunctionJava) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_java snowflake_function_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_java snowflake_function_java} Resource.
 func NewFunctionJava(scope constructs.Construct, id *string, config *FunctionJavaConfig) FunctionJava {
 	_init_.Initialize()
 
@@ -977,7 +977,7 @@ func NewFunctionJava(scope constructs.Construct, id *string, config *FunctionJav
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/function_java snowflake_function_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/function_java snowflake_function_java} Resource.
 func NewFunctionJava_Override(f FunctionJava, scope constructs.Construct, id *string, config *FunctionJavaConfig) {
 	_init_.Initialize()
 

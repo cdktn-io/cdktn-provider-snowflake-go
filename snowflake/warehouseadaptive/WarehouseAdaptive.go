@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive}.
 type WarehouseAdaptive interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -603,7 +603,7 @@ func (j *jsiiProxy_WarehouseAdaptive) WarehouseType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource.
 func NewWarehouseAdaptive(scope constructs.Construct, id *string, config *WarehouseAdaptiveConfig) WarehouseAdaptive {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewWarehouseAdaptive(scope constructs.Construct, id *string, config *Wareho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource.
 func NewWarehouseAdaptive_Override(w WarehouseAdaptive, scope constructs.Construct, id *string, config *WarehouseAdaptiveConfig) {
 	_init_.Initialize()
 

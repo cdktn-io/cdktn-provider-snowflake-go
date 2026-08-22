@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest}.
 type IcebergTableFromRest interface {
 	cdktn.TerraformResource
 	AutoRefresh() *string
@@ -792,7 +792,7 @@ func (j *jsiiProxy_IcebergTableFromRest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest} Resource.
 func NewIcebergTableFromRest(scope constructs.Construct, id *string, config *IcebergTableFromRestConfig) IcebergTableFromRest {
 	_init_.Initialize()
 
@@ -810,7 +810,7 @@ func NewIcebergTableFromRest(scope constructs.Construct, id *string, config *Ice
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_rest snowflake_iceberg_table_from_rest} Resource.
 func NewIcebergTableFromRest_Override(i IcebergTableFromRest, scope constructs.Construct, id *string, config *IcebergTableFromRestConfig) {
 	_init_.Initialize()
 

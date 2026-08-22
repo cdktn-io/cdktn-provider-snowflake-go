@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/secrets snowflake_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/secrets snowflake_secrets}.
 type DataSnowflakeSecrets interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataSnowflakeSecrets) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/secrets snowflake_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/secrets snowflake_secrets} Data Source.
 func NewDataSnowflakeSecrets(scope constructs.Construct, id *string, config *DataSnowflakeSecretsConfig) DataSnowflakeSecrets {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataSnowflakeSecrets(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/secrets snowflake_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/secrets snowflake_secrets} Data Source.
 func NewDataSnowflakeSecrets_Override(d DataSnowflakeSecrets, scope constructs.Construct, id *string, config *DataSnowflakeSecretsConfig) {
 	_init_.Initialize()
 

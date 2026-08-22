@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers snowflake_mcp_servers}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers snowflake_mcp_servers}.
 type DataSnowflakeMcpServers interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataSnowflakeMcpServers) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers snowflake_mcp_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers snowflake_mcp_servers} Data Source.
 func NewDataSnowflakeMcpServers(scope constructs.Construct, id *string, config *DataSnowflakeMcpServersConfig) DataSnowflakeMcpServers {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataSnowflakeMcpServers(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/mcp_servers snowflake_mcp_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/mcp_servers snowflake_mcp_servers} Data Source.
 func NewDataSnowflakeMcpServers_Override(d DataSnowflakeMcpServers, scope constructs.Construct, id *string, config *DataSnowflakeMcpServersConfig) {
 	_init_.Initialize()
 

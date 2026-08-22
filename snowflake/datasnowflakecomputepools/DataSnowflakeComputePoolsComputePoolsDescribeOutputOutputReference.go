@@ -17,6 +17,7 @@ type DataSnowflakeComputePoolsComputePoolsDescribeOutputOutputReference interfac
 	Application() *string
 	AutoResume() cdktn.IResolvable
 	AutoSuspendSecs() *float64
+	BackupInstanceFamilies() *[]*string
 	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsDescribeOutputOutputRefe
 	_jsii_.Get(
 		j,
 		"autoSuspendSecs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeComputePoolsComputePoolsDescribeOutputOutputReference) BackupInstanceFamilies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"backupInstanceFamilies",
 		&returns,
 	)
 	return returns

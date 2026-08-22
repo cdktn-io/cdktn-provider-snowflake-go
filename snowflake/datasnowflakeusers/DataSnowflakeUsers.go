@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/users snowflake_users}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/users snowflake_users}.
 type DataSnowflakeUsers interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataSnowflakeUsers) WithParametersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/users snowflake_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/users snowflake_users} Data Source.
 func NewDataSnowflakeUsers(scope constructs.Construct, id *string, config *DataSnowflakeUsersConfig) DataSnowflakeUsers {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataSnowflakeUsers(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/users snowflake_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/users snowflake_users} Data Source.
 func NewDataSnowflakeUsers_Override(d DataSnowflakeUsers, scope constructs.Construct, id *string, config *DataSnowflakeUsersConfig) {
 	_init_.Initialize()
 

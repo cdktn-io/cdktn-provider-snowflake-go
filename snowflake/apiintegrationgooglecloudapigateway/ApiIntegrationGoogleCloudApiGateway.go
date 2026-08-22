@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway}.
 type ApiIntegrationGoogleCloudApiGateway interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -565,7 +565,7 @@ func (j *jsiiProxy_ApiIntegrationGoogleCloudApiGateway) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway} Resource.
 func NewApiIntegrationGoogleCloudApiGateway(scope constructs.Construct, id *string, config *ApiIntegrationGoogleCloudApiGatewayConfig) ApiIntegrationGoogleCloudApiGateway {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewApiIntegrationGoogleCloudApiGateway(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_google_cloud_api_gateway snowflake_api_integration_google_cloud_api_gateway} Resource.
 func NewApiIntegrationGoogleCloudApiGateway_Override(a ApiIntegrationGoogleCloudApiGateway, scope constructs.Construct, id *string, config *ApiIntegrationGoogleCloudApiGatewayConfig) {
 	_init_.Initialize()
 

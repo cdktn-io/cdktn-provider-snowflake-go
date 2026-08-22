@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
 type TableColumnMaskingPolicyApplication interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_TableColumnMaskingPolicyApplication) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource.
 func NewTableColumnMaskingPolicyApplication(scope constructs.Construct, id *string, config *TableColumnMaskingPolicyApplicationConfig) TableColumnMaskingPolicyApplication {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewTableColumnMaskingPolicyApplication(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource.
 func NewTableColumnMaskingPolicyApplication_Override(t TableColumnMaskingPolicyApplication, scope constructs.Construct, id *string, config *TableColumnMaskingPolicyApplicationConfig) {
 	_init_.Initialize()
 

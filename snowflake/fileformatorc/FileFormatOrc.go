@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc snowflake_file_format_orc}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc snowflake_file_format_orc}.
 type FileFormatOrc interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_FileFormatOrc) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc snowflake_file_format_orc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc snowflake_file_format_orc} Resource.
 func NewFileFormatOrc(scope constructs.Construct, id *string, config *FileFormatOrcConfig) FileFormatOrc {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewFileFormatOrc(scope constructs.Construct, id *string, config *FileFormat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc snowflake_file_format_orc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc snowflake_file_format_orc} Resource.
 func NewFileFormatOrc_Override(f FileFormatOrc, scope constructs.Construct, id *string, config *FileFormatOrcConfig) {
 	_init_.Initialize()
 

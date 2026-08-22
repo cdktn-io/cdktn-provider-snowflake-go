@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws}.
 type StorageIntegrationAws interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -660,7 +660,7 @@ func (j *jsiiProxy_StorageIntegrationAws) UsePrivatelinkEndpointInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws} Resource.
 func NewStorageIntegrationAws(scope constructs.Construct, id *string, config *StorageIntegrationAwsConfig) StorageIntegrationAws {
 	_init_.Initialize()
 
@@ -678,7 +678,7 @@ func NewStorageIntegrationAws(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws} Resource.
 func NewStorageIntegrationAws_Override(s StorageIntegrationAws, scope constructs.Construct, id *string, config *StorageIntegrationAwsConfig) {
 	_init_.Initialize()
 

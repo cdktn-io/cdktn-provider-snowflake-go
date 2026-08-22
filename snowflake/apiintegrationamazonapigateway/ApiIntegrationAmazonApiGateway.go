@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway}.
 type ApiIntegrationAmazonApiGateway interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_ApiIntegrationAmazonApiGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway} Resource.
 func NewApiIntegrationAmazonApiGateway(scope constructs.Construct, id *string, config *ApiIntegrationAmazonApiGatewayConfig) ApiIntegrationAmazonApiGateway {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewApiIntegrationAmazonApiGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_amazon_api_gateway snowflake_api_integration_amazon_api_gateway} Resource.
 func NewApiIntegrationAmazonApiGateway_Override(a ApiIntegrationAmazonApiGateway, scope constructs.Construct, id *string, config *ApiIntegrationAmazonApiGatewayConfig) {
 	_init_.Initialize()
 

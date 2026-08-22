@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_parquet snowflake_file_format_parquet}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_parquet snowflake_file_format_parquet}.
 type FileFormatParquet interface {
 	cdktn.TerraformResource
 	BinaryAsText() *string
@@ -697,7 +697,7 @@ func (j *jsiiProxy_FileFormatParquet) UseVectorizedScannerInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_parquet snowflake_file_format_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_parquet snowflake_file_format_parquet} Resource.
 func NewFileFormatParquet(scope constructs.Construct, id *string, config *FileFormatParquetConfig) FileFormatParquet {
 	_init_.Initialize()
 
@@ -715,7 +715,7 @@ func NewFileFormatParquet(scope constructs.Construct, id *string, config *FileFo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_parquet snowflake_file_format_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_parquet snowflake_file_format_parquet} Resource.
 func NewFileFormatParquet_Override(f FileFormatParquet, scope constructs.Construct, id *string, config *FileFormatParquetConfig) {
 	_init_.Initialize()
 

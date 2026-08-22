@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files}.
 type IcebergTableFromDeltaFiles interface {
 	cdktn.TerraformResource
 	AutoRefresh() *string
@@ -648,7 +648,7 @@ func (j *jsiiProxy_IcebergTableFromDeltaFiles) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files} Resource.
 func NewIcebergTableFromDeltaFiles(scope constructs.Construct, id *string, config *IcebergTableFromDeltaFilesConfig) IcebergTableFromDeltaFiles {
 	_init_.Initialize()
 
@@ -666,7 +666,7 @@ func NewIcebergTableFromDeltaFiles(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_delta_files snowflake_iceberg_table_from_delta_files} Resource.
 func NewIcebergTableFromDeltaFiles_Override(i IcebergTableFromDeltaFiles, scope constructs.Construct, id *string, config *IcebergTableFromDeltaFilesConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/scim_integration snowflake_scim_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/scim_integration snowflake_scim_integration}.
 type ScimIntegration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -589,7 +589,7 @@ func (j *jsiiProxy_ScimIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/scim_integration snowflake_scim_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/scim_integration snowflake_scim_integration} Resource.
 func NewScimIntegration(scope constructs.Construct, id *string, config *ScimIntegrationConfig) ScimIntegration {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewScimIntegration(scope constructs.Construct, id *string, config *ScimInte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/scim_integration snowflake_scim_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/scim_integration snowflake_scim_integration} Resource.
 func NewScimIntegration_Override(s ScimIntegration, scope constructs.Construct, id *string, config *ScimIntegrationConfig) {
 	_init_.Initialize()
 

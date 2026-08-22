@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/image_repository snowflake_image_repository}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/image_repository snowflake_image_repository}.
 type ImageRepository interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_ImageRepository) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/image_repository snowflake_image_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/image_repository snowflake_image_repository} Resource.
 func NewImageRepository(scope constructs.Construct, id *string, config *ImageRepositoryConfig) ImageRepository {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewImageRepository(scope constructs.Construct, id *string, config *ImageRep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/image_repository snowflake_image_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/image_repository snowflake_image_repository} Resource.
 func NewImageRepository_Override(i ImageRepository, scope constructs.Construct, id *string, config *ImageRepositoryConfig) {
 	_init_.Initialize()
 

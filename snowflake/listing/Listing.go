@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/listing snowflake_listing}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/listing snowflake_listing}.
 type Listing interface {
 	cdktn.TerraformResource
 	ApplicationPackage() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_Listing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/listing snowflake_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/listing snowflake_listing} Resource.
 func NewListing(scope constructs.Construct, id *string, config *ListingConfig) Listing {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewListing(scope constructs.Construct, id *string, config *ListingConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/listing snowflake_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/listing snowflake_listing} Resource.
 func NewListing_Override(l Listing, scope constructs.Construct, id *string, config *ListingConfig) {
 	_init_.Initialize()
 

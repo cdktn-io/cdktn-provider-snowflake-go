@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2}.
 type ApiIntegrationGitRepositoryOauth2 interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -730,7 +730,7 @@ func (j *jsiiProxy_ApiIntegrationGitRepositoryOauth2) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2} Resource.
 func NewApiIntegrationGitRepositoryOauth2(scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryOauth2Config) ApiIntegrationGitRepositoryOauth2 {
 	_init_.Initialize()
 
@@ -748,7 +748,7 @@ func NewApiIntegrationGitRepositoryOauth2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_oauth2 snowflake_api_integration_git_repository_oauth2} Resource.
 func NewApiIntegrationGitRepositoryOauth2_Override(a ApiIntegrationGitRepositoryOauth2, scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryOauth2Config) {
 	_init_.Initialize()
 

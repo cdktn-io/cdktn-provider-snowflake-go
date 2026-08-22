@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info}.
 type DataSnowflakeSystemGetSnowflakePlatformInfo interface {
 	cdktn.TerraformDataSource
 	AwsVpcIds() *[]*string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGetSnowflakePlatformInfo) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info} Data Source.
 func NewDataSnowflakeSystemGetSnowflakePlatformInfo(scope constructs.Construct, id *string, config *DataSnowflakeSystemGetSnowflakePlatformInfoConfig) DataSnowflakeSystemGetSnowflakePlatformInfo {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataSnowflakeSystemGetSnowflakePlatformInfo(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_snowflake_platform_info snowflake_system_get_snowflake_platform_info} Data Source.
 func NewDataSnowflakeSystemGetSnowflakePlatformInfo_Override(d DataSnowflakeSystemGetSnowflakePlatformInfo, scope constructs.Construct, id *string, config *DataSnowflakeSystemGetSnowflakePlatformInfoConfig) {
 	_init_.Initialize()
 

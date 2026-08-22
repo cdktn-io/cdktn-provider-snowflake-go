@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/tags snowflake_tags}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/tags snowflake_tags}.
 type DataSnowflakeTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/tags snowflake_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/tags snowflake_tags} Data Source.
 func NewDataSnowflakeTags(scope constructs.Construct, id *string, config *DataSnowflakeTagsConfig) DataSnowflakeTags {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeTags(scope constructs.Construct, id *string, config *DataSn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/tags snowflake_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/tags snowflake_tags} Data Source.
 func NewDataSnowflakeTags_Override(d DataSnowflakeTags, scope constructs.Construct, id *string, config *DataSnowflakeTagsConfig) {
 	_init_.Initialize()
 

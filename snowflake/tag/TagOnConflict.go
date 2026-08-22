@@ -7,13 +7,13 @@ package tag
 type TagOnConflict struct {
 	// The order of the values in the ALLOWED_VALUES property of the tag determines which value is used when there is a conflict.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/tag#allowed_values_sequence Tag#allowed_values_sequence}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/tag#allowed_values_sequence Tag#allowed_values_sequence}
 	AllowedValuesSequence interface{} `field:"optional" json:"allowedValuesSequence" yaml:"allowedValuesSequence"`
 	// Whenever there is a conflict, the value of tag is set to custom_value.
 	//
 	// If `allowed_values` are set, the value set in this field should be one of the values in the `allowed_values` list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/tag#custom_value Tag#custom_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/tag#custom_value Tag#custom_value}
 	CustomValue *string `field:"optional" json:"customValue" yaml:"customValue"`
 }
 

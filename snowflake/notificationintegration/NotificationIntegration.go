@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/notification_integration snowflake_notification_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/notification_integration snowflake_notification_integration}.
 type NotificationIntegration interface {
 	cdktn.TerraformResource
 	AwsSnsExternalId() *string
@@ -803,7 +803,7 @@ func (j *jsiiProxy_NotificationIntegration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/notification_integration snowflake_notification_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/notification_integration snowflake_notification_integration} Resource.
 func NewNotificationIntegration(scope constructs.Construct, id *string, config *NotificationIntegrationConfig) NotificationIntegration {
 	_init_.Initialize()
 
@@ -821,7 +821,7 @@ func NewNotificationIntegration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/notification_integration snowflake_notification_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/notification_integration snowflake_notification_integration} Resource.
 func NewNotificationIntegration_Override(n NotificationIntegration, scope constructs.Construct, id *string, config *NotificationIntegrationConfig) {
 	_init_.Initialize()
 

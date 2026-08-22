@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/api_integrations snowflake_api_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/api_integrations snowflake_api_integrations}.
 type DataSnowflakeApiIntegrations interface {
 	cdktn.TerraformDataSource
 	ApiIntegrations() DataSnowflakeApiIntegrationsApiIntegrationsList
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeApiIntegrations) WithDescribeInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/api_integrations snowflake_api_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/api_integrations snowflake_api_integrations} Data Source.
 func NewDataSnowflakeApiIntegrations(scope constructs.Construct, id *string, config *DataSnowflakeApiIntegrationsConfig) DataSnowflakeApiIntegrations {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeApiIntegrations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/api_integrations snowflake_api_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/api_integrations snowflake_api_integrations} Data Source.
 func NewDataSnowflakeApiIntegrations_Override(d DataSnowflakeApiIntegrations, scope constructs.Construct, id *string, config *DataSnowflakeApiIntegrationsConfig) {
 	_init_.Initialize()
 

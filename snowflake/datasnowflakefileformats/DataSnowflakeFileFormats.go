@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/file_formats snowflake_file_formats}.
 type DataSnowflakeFileFormats interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataSnowflakeFileFormats) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
 func NewDataSnowflakeFileFormats(scope constructs.Construct, id *string, config *DataSnowflakeFileFormatsConfig) DataSnowflakeFileFormats {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataSnowflakeFileFormats(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/file_formats snowflake_file_formats} Data Source.
 func NewDataSnowflakeFileFormats_Override(d DataSnowflakeFileFormats, scope constructs.Construct, id *string, config *DataSnowflakeFileFormatsConfig) {
 	_init_.Initialize()
 

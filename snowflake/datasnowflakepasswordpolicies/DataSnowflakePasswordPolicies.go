@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/password_policies snowflake_password_policies}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/password_policies snowflake_password_policies}.
 type DataSnowflakePasswordPolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataSnowflakePasswordPolicies) WithDescribeInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/password_policies snowflake_password_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/password_policies snowflake_password_policies} Data Source.
 func NewDataSnowflakePasswordPolicies(scope constructs.Construct, id *string, config *DataSnowflakePasswordPoliciesConfig) DataSnowflakePasswordPolicies {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataSnowflakePasswordPolicies(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/password_policies snowflake_password_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/password_policies snowflake_password_policies} Data Source.
 func NewDataSnowflakePasswordPolicies_Override(d DataSnowflakePasswordPolicies, scope constructs.Construct, id *string, config *DataSnowflakePasswordPoliciesConfig) {
 	_init_.Initialize()
 

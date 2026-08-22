@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/masking_policies snowflake_masking_policies}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/masking_policies snowflake_masking_policies}.
 type DataSnowflakeMaskingPolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataSnowflakeMaskingPolicies) WithDescribeInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source.
 func NewDataSnowflakeMaskingPolicies(scope constructs.Construct, id *string, config *DataSnowflakeMaskingPoliciesConfig) DataSnowflakeMaskingPolicies {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataSnowflakeMaskingPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source.
 func NewDataSnowflakeMaskingPolicies_Override(d DataSnowflakeMaskingPolicies, scope constructs.Construct, id *string, config *DataSnowflakeMaskingPoliciesConfig) {
 	_init_.Initialize()
 

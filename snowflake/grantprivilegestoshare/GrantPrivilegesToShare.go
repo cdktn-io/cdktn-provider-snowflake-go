@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
 type GrantPrivilegesToShare interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -606,7 +606,7 @@ func (j *jsiiProxy_GrantPrivilegesToShare) ToShareInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
 func NewGrantPrivilegesToShare(scope constructs.Construct, id *string, config *GrantPrivilegesToShareConfig) GrantPrivilegesToShare {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewGrantPrivilegesToShare(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource.
 func NewGrantPrivilegesToShare_Override(g GrantPrivilegesToShare, scope constructs.Construct, id *string, config *GrantPrivilegesToShareConfig) {
 	_init_.Initialize()
 

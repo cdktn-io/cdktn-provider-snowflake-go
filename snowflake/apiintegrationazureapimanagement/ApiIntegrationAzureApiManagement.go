@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management}.
 type ApiIntegrationAzureApiManagement interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_ApiIntegrationAzureApiManagement) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management} Resource.
 func NewApiIntegrationAzureApiManagement(scope constructs.Construct, id *string, config *ApiIntegrationAzureApiManagementConfig) ApiIntegrationAzureApiManagement {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewApiIntegrationAzureApiManagement(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management} Resource.
 func NewApiIntegrationAzureApiManagement_Override(a ApiIntegrationAzureApiManagement, scope constructs.Construct, id *string, config *ApiIntegrationAzureApiManagementConfig) {
 	_init_.Initialize()
 

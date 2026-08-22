@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files}.
 type IcebergTableFromFiles interface {
 	cdktn.TerraformResource
 	Catalog() *string
@@ -624,7 +624,7 @@ func (j *jsiiProxy_IcebergTableFromFiles) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files} Resource.
 func NewIcebergTableFromFiles(scope constructs.Construct, id *string, config *IcebergTableFromFilesConfig) IcebergTableFromFiles {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewIcebergTableFromFiles(scope constructs.Construct, id *string, config *Ic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_files snowflake_iceberg_table_from_files} Resource.
 func NewIcebergTableFromFiles_Override(i IcebergTableFromFiles, scope constructs.Construct, id *string, config *IcebergTableFromFilesConfig) {
 	_init_.Initialize()
 

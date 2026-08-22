@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_csv snowflake_file_format_csv}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_csv snowflake_file_format_csv}.
 type FileFormatCsv interface {
 	cdktn.TerraformResource
 	BinaryFormat() *string
@@ -1057,7 +1057,7 @@ func (j *jsiiProxy_FileFormatCsv) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_csv snowflake_file_format_csv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_csv snowflake_file_format_csv} Resource.
 func NewFileFormatCsv(scope constructs.Construct, id *string, config *FileFormatCsvConfig) FileFormatCsv {
 	_init_.Initialize()
 
@@ -1075,7 +1075,7 @@ func NewFileFormatCsv(scope constructs.Construct, id *string, config *FileFormat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_csv snowflake_file_format_csv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_csv snowflake_file_format_csv} Resource.
 func NewFileFormatCsv_Override(f FileFormatCsv, scope constructs.Construct, id *string, config *FileFormatCsvConfig) {
 	_init_.Initialize()
 

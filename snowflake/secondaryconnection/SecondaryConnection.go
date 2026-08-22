@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_connection snowflake_secondary_connection}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_connection snowflake_secondary_connection}.
 type SecondaryConnection interface {
 	cdktn.TerraformResource
 	AsReplicaOf() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_SecondaryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource.
 func NewSecondaryConnection(scope constructs.Construct, id *string, config *SecondaryConnectionConfig) SecondaryConnection {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewSecondaryConnection(scope constructs.Construct, id *string, config *Seco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource.
 func NewSecondaryConnection_Override(s SecondaryConnection, scope constructs.Construct, id *string, config *SecondaryConnectionConfig) {
 	_init_.Initialize()
 

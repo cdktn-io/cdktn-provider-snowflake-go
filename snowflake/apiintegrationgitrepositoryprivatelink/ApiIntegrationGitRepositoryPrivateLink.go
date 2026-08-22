@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link}.
 type ApiIntegrationGitRepositoryPrivateLink interface {
 	cdktn.TerraformResource
 	AllAllowedAuthenticationSecrets() interface{}
@@ -661,7 +661,7 @@ func (j *jsiiProxy_ApiIntegrationGitRepositoryPrivateLink) UsePrivatelinkEndpoin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link} Resource.
 func NewApiIntegrationGitRepositoryPrivateLink(scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryPrivateLinkConfig) ApiIntegrationGitRepositoryPrivateLink {
 	_init_.Initialize()
 
@@ -679,7 +679,7 @@ func NewApiIntegrationGitRepositoryPrivateLink(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_private_link snowflake_api_integration_git_repository_private_link} Resource.
 func NewApiIntegrationGitRepositoryPrivateLink_Override(a ApiIntegrationGitRepositoryPrivateLink, scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryPrivateLinkConfig) {
 	_init_.Initialize()
 

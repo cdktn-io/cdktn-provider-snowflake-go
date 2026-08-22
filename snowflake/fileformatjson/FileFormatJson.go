@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_json snowflake_file_format_json}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_json snowflake_file_format_json}.
 type FileFormatJson interface {
 	cdktn.TerraformResource
 	AllowDuplicate() *string
@@ -913,7 +913,7 @@ func (j *jsiiProxy_FileFormatJson) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_json snowflake_file_format_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_json snowflake_file_format_json} Resource.
 func NewFileFormatJson(scope constructs.Construct, id *string, config *FileFormatJsonConfig) FileFormatJson {
 	_init_.Initialize()
 
@@ -931,7 +931,7 @@ func NewFileFormatJson(scope constructs.Construct, id *string, config *FileForma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_json snowflake_file_format_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_json snowflake_file_format_json} Resource.
 func NewFileFormatJson_Override(f FileFormatJson, scope constructs.Construct, id *string, config *FileFormatJsonConfig) {
 	_init_.Initialize()
 

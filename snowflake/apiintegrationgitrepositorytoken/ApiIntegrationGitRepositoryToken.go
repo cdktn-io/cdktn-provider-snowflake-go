@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token}.
 type ApiIntegrationGitRepositoryToken interface {
 	cdktn.TerraformResource
 	AllAllowedAuthenticationSecrets() interface{}
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ApiIntegrationGitRepositoryToken) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token} Resource.
 func NewApiIntegrationGitRepositoryToken(scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryTokenConfig) ApiIntegrationGitRepositoryToken {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewApiIntegrationGitRepositoryToken(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_token snowflake_api_integration_git_repository_token} Resource.
 func NewApiIntegrationGitRepositoryToken_Override(a ApiIntegrationGitRepositoryToken, scope constructs.Construct, id *string, config *ApiIntegrationGitRepositoryTokenConfig) {
 	_init_.Initialize()
 

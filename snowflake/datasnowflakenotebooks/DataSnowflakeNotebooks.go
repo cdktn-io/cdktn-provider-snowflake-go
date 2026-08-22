@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/notebooks snowflake_notebooks}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/notebooks snowflake_notebooks}.
 type DataSnowflakeNotebooks interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataSnowflakeNotebooks) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/notebooks snowflake_notebooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/notebooks snowflake_notebooks} Data Source.
 func NewDataSnowflakeNotebooks(scope constructs.Construct, id *string, config *DataSnowflakeNotebooksConfig) DataSnowflakeNotebooks {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataSnowflakeNotebooks(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/notebooks snowflake_notebooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/notebooks snowflake_notebooks} Data Source.
 func NewDataSnowflakeNotebooks_Override(d DataSnowflakeNotebooks, scope constructs.Construct, id *string, config *DataSnowflakeNotebooksConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server snowflake_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server snowflake_mcp_server}.
 type McpServer interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_McpServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server snowflake_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server snowflake_mcp_server} Resource.
 func NewMcpServer(scope constructs.Construct, id *string, config *McpServerConfig) McpServer {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewMcpServer(scope constructs.Construct, id *string, config *McpServerConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server snowflake_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server snowflake_mcp_server} Resource.
 func NewMcpServer_Override(m McpServer, scope constructs.Construct, id *string, config *McpServerConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment}.
 type TableStorageLifecyclePolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_TableStorageLifecyclePolicyAttachment) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment} Resource.
 func NewTableStorageLifecyclePolicyAttachment(scope constructs.Construct, id *string, config *TableStorageLifecyclePolicyAttachmentConfig) TableStorageLifecyclePolicyAttachment {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewTableStorageLifecyclePolicyAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment} Resource.
 func NewTableStorageLifecyclePolicyAttachment_Override(t TableStorageLifecyclePolicyAttachment, scope constructs.Construct, id *string, config *TableStorageLifecyclePolicyAttachmentConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible}.
 type StageExternalS3Compatible interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -658,7 +658,7 @@ func (j *jsiiProxy_StageExternalS3Compatible) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
 func NewStageExternalS3Compatible(scope constructs.Construct, id *string, config *StageExternalS3CompatibleConfig) StageExternalS3Compatible {
 	_init_.Initialize()
 
@@ -676,7 +676,7 @@ func NewStageExternalS3Compatible(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3_compatible snowflake_stage_external_s3_compatible} Resource.
 func NewStageExternalS3Compatible_Override(s StageExternalS3Compatible, scope constructs.Construct, id *string, config *StageExternalS3CompatibleConfig) {
 	_init_.Initialize()
 

@@ -22,36 +22,36 @@ type DataSnowflakeSessionPoliciesConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#id DataSnowflakeSessionPolicies#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#id DataSnowflakeSessionPolicies#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// in block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#in DataSnowflakeSessionPolicies#in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#in DataSnowflakeSessionPolicies#in}
 	In *DataSnowflakeSessionPoliciesIn `field:"optional" json:"in" yaml:"in"`
 	// Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#like DataSnowflakeSessionPolicies#like}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#like DataSnowflakeSessionPolicies#like}
 	Like *string `field:"optional" json:"like" yaml:"like"`
 	// limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#limit DataSnowflakeSessionPolicies#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#limit DataSnowflakeSessionPolicies#limit}
 	Limit *DataSnowflakeSessionPoliciesLimit `field:"optional" json:"limit" yaml:"limit"`
 	// on block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#on DataSnowflakeSessionPolicies#on}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#on DataSnowflakeSessionPolicies#on}
 	On *DataSnowflakeSessionPoliciesOn `field:"optional" json:"on" yaml:"on"`
 	// Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#starts_with DataSnowflakeSessionPolicies#starts_with}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#starts_with DataSnowflakeSessionPolicies#starts_with}
 	StartsWith *string `field:"optional" json:"startsWith" yaml:"startsWith"`
 	// (Default: `true`) Runs DESC SESSION POLICY for each object returned by SHOW SESSION POLICIES.
 	//
 	// The output of describe is saved to the describe_output field. By default this value is set to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/session_policies#with_describe DataSnowflakeSessionPolicies#with_describe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/session_policies#with_describe DataSnowflakeSessionPolicies#with_describe}
 	WithDescribe interface{} `field:"optional" json:"withDescribe" yaml:"withDescribe"`
 }
 

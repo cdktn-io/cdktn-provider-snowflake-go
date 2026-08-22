@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment}.
 type AccountPasswordPolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AccountPasswordPolicyAttachment) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment} Resource.
 func NewAccountPasswordPolicyAttachment(scope constructs.Construct, id *string, config *AccountPasswordPolicyAttachmentConfig) AccountPasswordPolicyAttachment {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewAccountPasswordPolicyAttachment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_password_policy_attachment snowflake_account_password_policy_attachment} Resource.
 func NewAccountPasswordPolicyAttachment_Override(a AccountPasswordPolicyAttachment, scope constructs.Construct, id *string, config *AccountPasswordPolicyAttachmentConfig) {
 	_init_.Initialize()
 

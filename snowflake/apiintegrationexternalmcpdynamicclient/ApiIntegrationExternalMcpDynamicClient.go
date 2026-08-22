@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client}.
 type ApiIntegrationExternalMcpDynamicClient interface {
 	cdktn.TerraformResource
 	ApiAllowedPrefixes() *[]*string
@@ -565,7 +565,7 @@ func (j *jsiiProxy_ApiIntegrationExternalMcpDynamicClient) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client} Resource.
 func NewApiIntegrationExternalMcpDynamicClient(scope constructs.Construct, id *string, config *ApiIntegrationExternalMcpDynamicClientConfig) ApiIntegrationExternalMcpDynamicClient {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewApiIntegrationExternalMcpDynamicClient(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client} Resource.
 func NewApiIntegrationExternalMcpDynamicClient_Override(a ApiIntegrationExternalMcpDynamicClient, scope constructs.Construct, id *string, config *ApiIntegrationExternalMcpDynamicClientConfig) {
 	_init_.Initialize()
 

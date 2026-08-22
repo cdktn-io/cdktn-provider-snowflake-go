@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/procedure_java snowflake_procedure_java}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/procedure_java snowflake_procedure_java}.
 type ProcedureJava interface {
 	cdktn.TerraformResource
 	Arguments() ProcedureJavaArgumentsList
@@ -981,7 +981,7 @@ func (j *jsiiProxy_ProcedureJava) TraceLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
 func NewProcedureJava(scope constructs.Construct, id *string, config *ProcedureJavaConfig) ProcedureJava {
 	_init_.Initialize()
 
@@ -999,7 +999,7 @@ func NewProcedureJava(scope constructs.Construct, id *string, config *ProcedureJ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/procedure_java snowflake_procedure_java} Resource.
 func NewProcedureJava_Override(p ProcedureJava, scope constructs.Construct, id *string, config *ProcedureJavaConfig) {
 	_init_.Initialize()
 

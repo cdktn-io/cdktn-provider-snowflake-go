@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/schemas snowflake_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/schemas snowflake_schemas}.
 type DataSnowflakeSchemas interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataSnowflakeSchemas) WithParametersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/schemas snowflake_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/schemas snowflake_schemas} Data Source.
 func NewDataSnowflakeSchemas(scope constructs.Construct, id *string, config *DataSnowflakeSchemasConfig) DataSnowflakeSchemas {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataSnowflakeSchemas(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/schemas snowflake_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/schemas snowflake_schemas} Data Source.
 func NewDataSnowflakeSchemas_Override(d DataSnowflakeSchemas, scope constructs.Construct, id *string, config *DataSnowflakeSchemasConfig) {
 	_init_.Initialize()
 

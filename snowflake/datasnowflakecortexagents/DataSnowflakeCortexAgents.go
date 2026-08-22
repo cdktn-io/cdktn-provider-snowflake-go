@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_agents snowflake_cortex_agents}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/cortex_agents snowflake_cortex_agents}.
 type DataSnowflakeCortexAgents interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataSnowflakeCortexAgents) WithDescribeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_agents snowflake_cortex_agents} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/cortex_agents snowflake_cortex_agents} Data Source.
 func NewDataSnowflakeCortexAgents(scope constructs.Construct, id *string, config *DataSnowflakeCortexAgentsConfig) DataSnowflakeCortexAgents {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataSnowflakeCortexAgents(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/cortex_agents snowflake_cortex_agents} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/cortex_agents snowflake_cortex_agents} Data Source.
 func NewDataSnowflakeCortexAgents_Override(d DataSnowflakeCortexAgents, scope constructs.Construct, id *string, config *DataSnowflakeCortexAgentsConfig) {
 	_init_.Initialize()
 

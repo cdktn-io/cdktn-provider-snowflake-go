@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive}.
 type WarehouseInteractive interface {
 	cdktn.TerraformResource
 	AutoResume() *string
@@ -771,7 +771,7 @@ func (j *jsiiProxy_WarehouseInteractive) WarehouseType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive} Resource.
 func NewWarehouseInteractive(scope constructs.Construct, id *string, config *WarehouseInteractiveConfig) WarehouseInteractive {
 	_init_.Initialize()
 
@@ -789,7 +789,7 @@ func NewWarehouseInteractive(scope constructs.Construct, id *string, config *War
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/warehouse_interactive snowflake_warehouse_interactive} Resource.
 func NewWarehouseInteractive_Override(w WarehouseInteractive, scope constructs.Construct, id *string, config *WarehouseInteractiveConfig) {
 	_init_.Initialize()
 

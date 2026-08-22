@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/authentication_policy snowflake_authentication_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/authentication_policy snowflake_authentication_policy}.
 type AuthenticationPolicy interface {
 	cdktn.TerraformResource
 	AuthenticationMethods() *[]*string
@@ -734,7 +734,7 @@ func (j *jsiiProxy_AuthenticationPolicy) WorkloadIdentityPolicyInput() *Authenti
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
 func NewAuthenticationPolicy(scope constructs.Construct, id *string, config *AuthenticationPolicyConfig) AuthenticationPolicy {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewAuthenticationPolicy(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/authentication_policy snowflake_authentication_policy} Resource.
 func NewAuthenticationPolicy_Override(a AuthenticationPolicy, scope constructs.Construct, id *string, config *AuthenticationPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_xml snowflake_file_format_xml}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_xml snowflake_file_format_xml}.
 type FileFormatXml interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -697,7 +697,7 @@ func (j *jsiiProxy_FileFormatXml) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_xml snowflake_file_format_xml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_xml snowflake_file_format_xml} Resource.
 func NewFileFormatXml(scope constructs.Construct, id *string, config *FileFormatXmlConfig) FileFormatXml {
 	_init_.Initialize()
 
@@ -715,7 +715,7 @@ func NewFileFormatXml(scope constructs.Construct, id *string, config *FileFormat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_xml snowflake_file_format_xml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_xml snowflake_file_format_xml} Resource.
 func NewFileFormatXml_Override(f FileFormatXml, scope constructs.Construct, id *string, config *FileFormatXmlConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
 type CortexSearchService interface {
 	cdktn.TerraformResource
 	Attributes() *[]*string
@@ -658,7 +658,7 @@ func (j *jsiiProxy_CortexSearchService) WarehouseInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
 func NewCortexSearchService(scope constructs.Construct, id *string, config *CortexSearchServiceConfig) CortexSearchService {
 	_init_.Initialize()
 
@@ -676,7 +676,7 @@ func NewCortexSearchService(scope constructs.Construct, id *string, config *Cort
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
 func NewCortexSearchService_Override(c CortexSearchService, scope constructs.Construct, id *string, config *CortexSearchServiceConfig) {
 	_init_.Initialize()
 

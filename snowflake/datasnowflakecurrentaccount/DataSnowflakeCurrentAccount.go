@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/current_account snowflake_current_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/current_account snowflake_current_account}.
 type DataSnowflakeCurrentAccount interface {
 	cdktn.TerraformDataSource
 	Account() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataSnowflakeCurrentAccount) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/current_account snowflake_current_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/current_account snowflake_current_account} Data Source.
 func NewDataSnowflakeCurrentAccount(scope constructs.Construct, id *string, config *DataSnowflakeCurrentAccountConfig) DataSnowflakeCurrentAccount {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataSnowflakeCurrentAccount(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/current_account snowflake_current_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/current_account snowflake_current_account} Data Source.
 func NewDataSnowflakeCurrentAccount_Override(d DataSnowflakeCurrentAccount, scope constructs.Construct, id *string, config *DataSnowflakeCurrentAccountConfig) {
 	_init_.Initialize()
 

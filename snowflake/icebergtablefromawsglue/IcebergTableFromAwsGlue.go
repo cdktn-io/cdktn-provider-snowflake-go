@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue}.
 type IcebergTableFromAwsGlue interface {
 	cdktn.TerraformResource
 	AutoRefresh() *string
@@ -672,7 +672,7 @@ func (j *jsiiProxy_IcebergTableFromAwsGlue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue} Resource.
 func NewIcebergTableFromAwsGlue(scope constructs.Construct, id *string, config *IcebergTableFromAwsGlueConfig) IcebergTableFromAwsGlue {
 	_init_.Initialize()
 
@@ -690,7 +690,7 @@ func NewIcebergTableFromAwsGlue(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table_from_aws_glue snowflake_iceberg_table_from_aws_glue} Resource.
 func NewIcebergTableFromAwsGlue_Override(i IcebergTableFromAwsGlue, scope constructs.Construct, id *string, config *IcebergTableFromAwsGlueConfig) {
 	_init_.Initialize()
 

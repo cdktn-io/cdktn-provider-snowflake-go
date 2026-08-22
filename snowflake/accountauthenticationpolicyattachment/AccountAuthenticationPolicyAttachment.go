@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}.
 type AccountAuthenticationPolicyAttachment interface {
 	cdktn.TerraformResource
 	AuthenticationPolicy() *string
@@ -34,6 +34,12 @@ type AccountAuthenticationPolicyAttachment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForAllPersonUsers() interface{}
+	SetForAllPersonUsers(val interface{})
+	ForAllPersonUsersInput() interface{}
+	ForAllServiceUsers() interface{}
+	SetForAllServiceUsers(val interface{})
+	ForAllServiceUsersInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -162,6 +168,8 @@ type AccountAuthenticationPolicyAttachment interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetForAllPersonUsers()
+	ResetForAllServiceUsers()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -259,6 +267,46 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) DependsOn() *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForAllPersonUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forAllPersonUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForAllPersonUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forAllPersonUsersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForAllServiceUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forAllServiceUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) ForAllServiceUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forAllServiceUsersInput",
 		&returns,
 	)
 	return returns
@@ -415,7 +463,7 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
 func NewAccountAuthenticationPolicyAttachment(scope constructs.Construct, id *string, config *AccountAuthenticationPolicyAttachmentConfig) AccountAuthenticationPolicyAttachment {
 	_init_.Initialize()
 
@@ -433,7 +481,7 @@ func NewAccountAuthenticationPolicyAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource.
 func NewAccountAuthenticationPolicyAttachment_Override(a AccountAuthenticationPolicyAttachment, scope constructs.Construct, id *string, config *AccountAuthenticationPolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -481,6 +529,28 @@ func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetDependsOn(val *[]*st
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetForAllPersonUsers(val interface{}) {
+	if err := j.validateSetForAllPersonUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forAllPersonUsers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountAuthenticationPolicyAttachment)SetForAllServiceUsers(val interface{}) {
+	if err := j.validateSetForAllServiceUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forAllServiceUsers",
 		val,
 	)
 }
@@ -922,6 +992,22 @@ func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) RegisterProviderFeatur
 		a,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) ResetForAllPersonUsers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForAllPersonUsers",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountAuthenticationPolicyAttachment) ResetForAllServiceUsers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForAllServiceUsers",
+		nil, // no parameters
 	)
 }
 

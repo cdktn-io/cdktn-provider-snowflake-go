@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies}.
 type DataSnowflakeStorageLifecyclePolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataSnowflakeStorageLifecyclePolicies) WithDescribeInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source.
 func NewDataSnowflakeStorageLifecyclePolicies(scope constructs.Construct, id *string, config *DataSnowflakeStorageLifecyclePoliciesConfig) DataSnowflakeStorageLifecyclePolicies {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataSnowflakeStorageLifecyclePolicies(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source.
 func NewDataSnowflakeStorageLifecyclePolicies_Override(d DataSnowflakeStorageLifecyclePolicies, scope constructs.Construct, id *string, config *DataSnowflakeStorageLifecyclePoliciesConfig) {
 	_init_.Initialize()
 

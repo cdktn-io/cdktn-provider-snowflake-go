@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/managed_account snowflake_managed_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/managed_account snowflake_managed_account}.
 type ManagedAccount interface {
 	cdktn.TerraformResource
 	AdminName() *string
@@ -575,7 +575,7 @@ func (j *jsiiProxy_ManagedAccount) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/managed_account snowflake_managed_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/managed_account snowflake_managed_account} Resource.
 func NewManagedAccount(scope constructs.Construct, id *string, config *ManagedAccountConfig) ManagedAccount {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewManagedAccount(scope constructs.Construct, id *string, config *ManagedAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/managed_account snowflake_managed_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/managed_account snowflake_managed_account} Resource.
 func NewManagedAccount_Override(m ManagedAccount, scope constructs.Construct, id *string, config *ManagedAccountConfig) {
 	_init_.Initialize()
 

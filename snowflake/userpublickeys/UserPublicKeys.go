@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_public_keys snowflake_user_public_keys}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_public_keys snowflake_user_public_keys}.
 type UserPublicKeys interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_UserPublicKeys) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource.
 func NewUserPublicKeys(scope constructs.Construct, id *string, config *UserPublicKeysConfig) UserPublicKeys {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewUserPublicKeys(scope constructs.Construct, id *string, config *UserPubli
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource.
 func NewUserPublicKeys_Override(u UserPublicKeys, scope constructs.Construct, id *string, config *UserPublicKeysConfig) {
 	_init_.Initialize()
 

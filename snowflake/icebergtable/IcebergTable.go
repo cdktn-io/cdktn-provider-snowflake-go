@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table snowflake_iceberg_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table snowflake_iceberg_table}.
 type IcebergTable interface {
 	cdktn.TerraformResource
 	AggregationPolicy() IcebergTableAggregationPolicyOutputReference
@@ -1080,7 +1080,7 @@ func (j *jsiiProxy_IcebergTable) UniqueConstraintInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table snowflake_iceberg_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table snowflake_iceberg_table} Resource.
 func NewIcebergTable(scope constructs.Construct, id *string, config *IcebergTableConfig) IcebergTable {
 	_init_.Initialize()
 
@@ -1098,7 +1098,7 @@ func NewIcebergTable(scope constructs.Construct, id *string, config *IcebergTabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/iceberg_table snowflake_iceberg_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table snowflake_iceberg_table} Resource.
 func NewIcebergTable_Override(i IcebergTable, scope constructs.Construct, id *string, config *IcebergTableConfig) {
 	_init_.Initialize()
 

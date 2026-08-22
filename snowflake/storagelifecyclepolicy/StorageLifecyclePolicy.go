@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}.
 type StorageLifecyclePolicy interface {
 	cdktn.TerraformResource
 	ArchiveForDays() *float64
@@ -612,7 +612,7 @@ func (j *jsiiProxy_StorageLifecyclePolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource.
 func NewStorageLifecyclePolicy(scope constructs.Construct, id *string, config *StorageLifecyclePolicyConfig) StorageLifecyclePolicy {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewStorageLifecyclePolicy(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource.
 func NewStorageLifecyclePolicy_Override(s StorageLifecyclePolicy, scope constructs.Construct, id *string, config *StorageLifecyclePolicyConfig) {
 	_init_.Initialize()
 

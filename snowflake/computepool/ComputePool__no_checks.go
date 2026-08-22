@@ -111,6 +111,10 @@ func (j *jsiiProxy_ComputePool) validateSetAutoSuspendSecsParameters(val *float6
 	return nil
 }
 
+func (j *jsiiProxy_ComputePool) validateSetBackupInstanceFamiliesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePool) validateSetCommentParameters(val *string) error {
 	return nil
 }

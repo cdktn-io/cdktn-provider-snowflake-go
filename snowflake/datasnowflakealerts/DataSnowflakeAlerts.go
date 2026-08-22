@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/alerts snowflake_alerts}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/alerts snowflake_alerts}.
 type DataSnowflakeAlerts interface {
 	cdktn.TerraformDataSource
 	Alerts() DataSnowflakeAlertsAlertsList
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataSnowflakeAlerts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/alerts snowflake_alerts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/alerts snowflake_alerts} Data Source.
 func NewDataSnowflakeAlerts(scope constructs.Construct, id *string, config *DataSnowflakeAlertsConfig) DataSnowflakeAlerts {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataSnowflakeAlerts(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/alerts snowflake_alerts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/alerts snowflake_alerts} Data Source.
 func NewDataSnowflakeAlerts_Override(d DataSnowflakeAlerts, scope constructs.Construct, id *string, config *DataSnowflakeAlertsConfig) {
 	_init_.Initialize()
 

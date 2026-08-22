@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_constraint snowflake_table_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_constraint snowflake_table_constraint}.
 type TableConstraint interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -676,7 +676,7 @@ func (j *jsiiProxy_TableConstraint) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint(scope constructs.Construct, id *string, config *TableConstraintConfig) TableConstraint {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewTableConstraint(scope constructs.Construct, id *string, config *TableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_constraint snowflake_table_constraint} Resource.
 func NewTableConstraint_Override(t TableConstraint, scope constructs.Construct, id *string, config *TableConstraintConfig) {
 	_init_.Initialize()
 

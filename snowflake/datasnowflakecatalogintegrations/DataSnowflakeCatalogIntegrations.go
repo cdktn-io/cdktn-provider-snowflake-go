@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations}.
 type DataSnowflakeCatalogIntegrations interface {
 	cdktn.TerraformDataSource
 	CatalogIntegrations() DataSnowflakeCatalogIntegrationsCatalogIntegrationsList
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeCatalogIntegrations) WithDescribeInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations} Data Source.
 func NewDataSnowflakeCatalogIntegrations(scope constructs.Construct, id *string, config *DataSnowflakeCatalogIntegrationsConfig) DataSnowflakeCatalogIntegrations {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeCatalogIntegrations(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/catalog_integrations snowflake_catalog_integrations} Data Source.
 func NewDataSnowflakeCatalogIntegrations_Override(d DataSnowflakeCatalogIntegrations, scope constructs.Construct, id *string, config *DataSnowflakeCatalogIntegrationsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/network_policies snowflake_network_policies}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/network_policies snowflake_network_policies}.
 type DataSnowflakeNetworkPolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeNetworkPolicies) WithDescribeInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/network_policies snowflake_network_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/network_policies snowflake_network_policies} Data Source.
 func NewDataSnowflakeNetworkPolicies(scope constructs.Construct, id *string, config *DataSnowflakeNetworkPoliciesConfig) DataSnowflakeNetworkPolicies {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeNetworkPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/network_policies snowflake_network_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/network_policies snowflake_network_policies} Data Source.
 func NewDataSnowflakeNetworkPolicies_Override(d DataSnowflakeNetworkPolicies, scope constructs.Construct, id *string, config *DataSnowflakeNetworkPoliciesConfig) {
 	_init_.Initialize()
 

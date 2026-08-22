@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance snowflake_postgres_instance}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/postgres_instance snowflake_postgres_instance}.
 type PostgresInstance interface {
 	cdktn.TerraformResource
 	AuthenticationAuthority() *string
@@ -684,7 +684,7 @@ func (j *jsiiProxy_PostgresInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource.
 func NewPostgresInstance(scope constructs.Construct, id *string, config *PostgresInstanceConfig) PostgresInstance {
 	_init_.Initialize()
 
@@ -702,7 +702,7 @@ func NewPostgresInstance(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource.
 func NewPostgresInstance_Override(p PostgresInstance, scope constructs.Construct, id *string, config *PostgresInstanceConfig) {
 	_init_.Initialize()
 

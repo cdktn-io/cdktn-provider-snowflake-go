@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy}.
 type DataSnowflakeSystemGetAwsSnsIamPolicy interface {
 	cdktn.TerraformDataSource
 	AwsSnsTopicArn() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataSnowflakeSystemGetAwsSnsIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy} Data Source.
 func NewDataSnowflakeSystemGetAwsSnsIamPolicy(scope constructs.Construct, id *string, config *DataSnowflakeSystemGetAwsSnsIamPolicyConfig) DataSnowflakeSystemGetAwsSnsIamPolicy {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataSnowflakeSystemGetAwsSnsIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy} Data Source.
 func NewDataSnowflakeSystemGetAwsSnsIamPolicy_Override(d DataSnowflakeSystemGetAwsSnsIamPolicy, scope constructs.Construct, id *string, config *DataSnowflakeSystemGetAwsSnsIamPolicyConfig) {
 	_init_.Initialize()
 

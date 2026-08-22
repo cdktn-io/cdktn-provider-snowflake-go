@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}.
 type UserProgrammaticAccessToken interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -639,7 +639,7 @@ func (j *jsiiProxy_UserProgrammaticAccessToken) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) UserProgrammaticAccessToken {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewUserProgrammaticAccessToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource.
 func NewUserProgrammaticAccessToken_Override(u UserProgrammaticAccessToken, scope constructs.Construct, id *string, config *UserProgrammaticAccessTokenConfig) {
 	_init_.Initialize()
 
