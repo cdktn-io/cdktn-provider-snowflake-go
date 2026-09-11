@@ -13,9 +13,9 @@ import (
 
 type IcebergTableUniqueConstraintOutputReference interface {
 	cdktn.ComplexObject
-	Column() *[]*string
-	SetColumn(val *[]*string)
-	ColumnInput() *[]*string
+	Columns() *[]*string
+	SetColumns(val *[]*string)
+	ColumnsInput() *[]*string
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -114,21 +114,21 @@ type jsiiProxy_IcebergTableUniqueConstraintOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) Column() *[]*string {
+func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) Columns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"column",
+		"columns",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) ColumnInput() *[]*string {
+func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) ColumnsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"columnInput",
+		"columnsInput",
 		&returns,
 	)
 	return returns
@@ -392,13 +392,13 @@ func NewIcebergTableUniqueConstraintOutputReference_Override(i IcebergTableUniqu
 	)
 }
 
-func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference)SetColumn(val *[]*string) {
-	if err := j.validateSetColumnParameters(val); err != nil {
+func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference)SetColumns(val *[]*string) {
+	if err := j.validateSetColumnsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"column",
+		"columns",
 		val,
 	)
 }

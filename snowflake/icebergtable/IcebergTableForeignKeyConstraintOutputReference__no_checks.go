@@ -51,7 +51,7 @@ func (i *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetColumnParameters(val *[]*string) error {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetColumnsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -103,7 +103,7 @@ func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetO
 	return nil
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetRefColumnParameters(val *[]*string) error {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetRefColumnsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -136,6 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isCurrent", GoGetter: "IsCurrent"},
 			_jsii_.MemberProperty{JsiiProperty: "isDefault", GoGetter: "IsDefault"},
+			_jsii_.MemberProperty{JsiiProperty: "isFromOrganizationUserGroup", GoGetter: "IsFromOrganizationUserGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "isInherited", GoGetter: "IsInherited"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},

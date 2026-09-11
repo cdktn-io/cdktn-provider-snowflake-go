@@ -13,9 +13,9 @@ import (
 
 type IcebergTablePrimaryKeyConstraintOutputReference interface {
 	cdktn.ComplexObject
-	Column() *[]*string
-	SetColumn(val *[]*string)
-	ColumnInput() *[]*string
+	Columns() *[]*string
+	SetColumns(val *[]*string)
+	ColumnsInput() *[]*string
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -114,21 +114,21 @@ type jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference) Column() *[]*string {
+func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference) Columns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"column",
+		"columns",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference) ColumnInput() *[]*string {
+func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference) ColumnsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"columnInput",
+		"columnsInput",
 		&returns,
 	)
 	return returns
@@ -392,13 +392,13 @@ func NewIcebergTablePrimaryKeyConstraintOutputReference_Override(i IcebergTableP
 	)
 }
 
-func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference)SetColumn(val *[]*string) {
-	if err := j.validateSetColumnParameters(val); err != nil {
+func (j *jsiiProxy_IcebergTablePrimaryKeyConstraintOutputReference)SetColumns(val *[]*string) {
+	if err := j.validateSetColumnsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"column",
+		"columns",
 		val,
 	)
 }

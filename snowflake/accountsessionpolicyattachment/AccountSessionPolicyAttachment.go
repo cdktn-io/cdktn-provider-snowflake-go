@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
 type AccountSessionPolicyAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_AccountSessionPolicyAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment} Resource.
 func NewAccountSessionPolicyAttachment(scope constructs.Construct, id *string, config *AccountSessionPolicyAttachmentConfig) AccountSessionPolicyAttachment {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewAccountSessionPolicyAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment} Resource.
 func NewAccountSessionPolicyAttachment_Override(a AccountSessionPolicyAttachment, scope constructs.Construct, id *string, config *AccountSessionPolicyAttachmentConfig) {
 	_init_.Initialize()
 

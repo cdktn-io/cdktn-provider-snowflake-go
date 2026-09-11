@@ -13,9 +13,9 @@ import (
 
 type IcebergTableForeignKeyConstraintOutputReference interface {
 	cdktn.ComplexObject
-	Column() *[]*string
-	SetColumn(val *[]*string)
-	ColumnInput() *[]*string
+	Columns() *[]*string
+	SetColumns(val *[]*string)
+	ColumnsInput() *[]*string
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -62,9 +62,9 @@ type IcebergTableForeignKeyConstraintOutputReference interface {
 	OnUpdate() *string
 	SetOnUpdate(val *string)
 	OnUpdateInput() *string
-	RefColumn() *[]*string
-	SetRefColumn(val *[]*string)
-	RefColumnInput() *[]*string
+	RefColumns() *[]*string
+	SetRefColumns(val *[]*string)
+	RefColumnsInput() *[]*string
 	Rely() *string
 	SetRely(val *string)
 	RelyInput() *string
@@ -115,7 +115,7 @@ type IcebergTableForeignKeyConstraintOutputReference interface {
 	ResetName()
 	ResetOnDelete()
 	ResetOnUpdate()
-	ResetRefColumn()
+	ResetRefColumns()
 	ResetRely()
 	ResetValidate()
 	// Produce the Token's value at resolution time.
@@ -133,21 +133,21 @@ type jsiiProxy_IcebergTableForeignKeyConstraintOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) Column() *[]*string {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) Columns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"column",
+		"columns",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) ColumnInput() *[]*string {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) ColumnsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"columnInput",
+		"columnsInput",
 		&returns,
 	)
 	return returns
@@ -383,21 +383,21 @@ func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) OnUpdateInpu
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) RefColumn() *[]*string {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) RefColumns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"refColumn",
+		"refColumns",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) RefColumnInput() *[]*string {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) RefColumnsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"refColumnInput",
+		"refColumnsInput",
 		&returns,
 	)
 	return returns
@@ -511,13 +511,13 @@ func NewIcebergTableForeignKeyConstraintOutputReference_Override(i IcebergTableF
 	)
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference)SetColumn(val *[]*string) {
-	if err := j.validateSetColumnParameters(val); err != nil {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference)SetColumns(val *[]*string) {
+	if err := j.validateSetColumnsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"column",
+		"columns",
 		val,
 	)
 }
@@ -654,13 +654,13 @@ func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference)SetOnUpdate(v
 	)
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference)SetRefColumn(val *[]*string) {
-	if err := j.validateSetRefColumnParameters(val); err != nil {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference)SetRefColumns(val *[]*string) {
+	if err := j.validateSetRefColumnsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"refColumn",
+		"refColumns",
 		val,
 	)
 }
@@ -978,10 +978,10 @@ func (i *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) ResetOnUpdat
 	)
 }
 
-func (i *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) ResetRefColumn() {
+func (i *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) ResetRefColumns() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetRefColumn",
+		"resetRefColumns",
 		nil, // no parameters
 	)
 }

@@ -101,7 +101,7 @@ func (i *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetColumnParameters(val *[]*string) error {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetColumnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetO
 	return nil
 }
 
-func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetRefColumnParameters(val *[]*string) error {
+func (j *jsiiProxy_IcebergTableForeignKeyConstraintOutputReference) validateSetRefColumnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

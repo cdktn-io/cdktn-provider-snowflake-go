@@ -39,6 +39,7 @@ type DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference interface {
 	SetInternalValue(val *DataSnowflakeAccountRolesAccountRolesShowOutput)
 	IsCurrent() cdktn.IResolvable
 	IsDefault() cdktn.IResolvable
+	IsFromOrganizationUserGroup() cdktn.IResolvable
 	IsInherited() cdktn.IResolvable
 	Name() *string
 	Owner() *string
@@ -204,6 +205,16 @@ func (j *jsiiProxy_DataSnowflakeAccountRolesAccountRolesShowOutputOutputReferenc
 	_jsii_.Get(
 		j,
 		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference) IsFromOrganizationUserGroup() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isFromOrganizationUserGroup",
 		&returns,
 	)
 	return returns

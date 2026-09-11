@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/hybrid_table snowflake_hybrid_table}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/hybrid_table snowflake_hybrid_table}.
 type HybridTable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -695,7 +695,7 @@ func (j *jsiiProxy_HybridTable) UniqueConstraintInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/hybrid_table snowflake_hybrid_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/hybrid_table snowflake_hybrid_table} Resource.
 func NewHybridTable(scope constructs.Construct, id *string, config *HybridTableConfig) HybridTable {
 	_init_.Initialize()
 
@@ -713,7 +713,7 @@ func NewHybridTable(scope constructs.Construct, id *string, config *HybridTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/hybrid_table snowflake_hybrid_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/hybrid_table snowflake_hybrid_table} Resource.
 func NewHybridTable_Override(h HybridTable, scope constructs.Construct, id *string, config *HybridTableConfig) {
 	_init_.Initialize()
 

@@ -51,7 +51,7 @@ func (i *jsiiProxy_IcebergTableUniqueConstraintOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) validateSetColumnParameters(val *[]*string) error {
+func (j *jsiiProxy_IcebergTableUniqueConstraintOutputReference) validateSetColumnsParameters(val *[]*string) error {
 	return nil
 }
 
