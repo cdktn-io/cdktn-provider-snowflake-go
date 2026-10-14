@@ -111,7 +111,15 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetActivePythonProfilerPa
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetAllowBindValuesAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetAllowClientMfaCachingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetAllowedSpcsWorkloadTypesParameters(val *string) error {
 	return nil
 }
 
@@ -223,6 +231,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetCsvTimestampFormatPara
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDataMetricScheduleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDataRetentionTimeInDaysParameters(val *float64) error {
 	return nil
 }
@@ -232,6 +244,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDateInputFormatParamet
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDateOutputFormatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDefaultDbtVersionParameters(val *string) error {
 	return nil
 }
 
@@ -267,11 +283,35 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDisableUserPrivilegeGr
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetDisallowedSpcsWorkloadTypesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableAutomaticSensitiveDataClassificationLogParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableBudgetEventLoggingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableCortexAnalystParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableDataCompactionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableEgressCostOptimizerParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableGetDdlUseDataTypeAliasParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableIcebergMergeOnReadParameters(val interface{}) error {
 	return nil
 }
 
@@ -283,7 +323,19 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableInternalStagesPr
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableNotebookCreationInPersonalDbParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnablePerAccountAppServicePrivatelinkUrlParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcementParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetEnableTagPropagationEventLoggingParameters(val interface{}) error {
 	return nil
 }
 
@@ -344,6 +396,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetGeometryOutputFormatPa
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetHybridTableLockTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetIcebergVersionDefaultParameters(val *float64) error {
 	return nil
 }
 
@@ -475,6 +531,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetQuotedIdentifiersIgnor
 	return nil
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetReadConsistencyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetReplaceInvalidCharactersParameters(val interface{}) error {
 	return nil
 }
@@ -492,6 +552,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetResourceMonitorParamet
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetRowsPerResultsetParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetRowTimestampDefaultParameters(val interface{}) error {
 	return nil
 }
 
@@ -516,6 +580,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetSessionPolicyParameter
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetSimulatedDataSharingConsumerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetSqlTraceQueryTextParameters(val *string) error {
 	return nil
 }
 
@@ -620,6 +688,10 @@ func (j *jsiiProxy_CurrentOrganizationAccount) validateSetUserTaskMinimumTrigger
 }
 
 func (j *jsiiProxy_CurrentOrganizationAccount) validateSetUserTaskTimeoutMsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) validateSetUseWorkspacesForSqlParameters(val *string) error {
 	return nil
 }
 

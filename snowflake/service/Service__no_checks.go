@@ -179,6 +179,10 @@ func (j *jsiiProxy_Service) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Service) validateSetServiceCallerTokenValiditySecsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewServiceParameters(scope constructs.Construct, id *string, config *ServiceConfig) error {
 	return nil
 }

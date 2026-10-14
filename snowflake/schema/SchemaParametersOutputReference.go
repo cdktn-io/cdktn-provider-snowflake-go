@@ -31,6 +31,8 @@ type SchemaParametersOutputReference interface {
 	CreationStack() *[]*string
 	DataRetentionTimeInDays() SchemaParametersDataRetentionTimeInDaysList
 	DefaultDdlCollation() SchemaParametersDefaultDdlCollationList
+	DefaultNotebookComputePoolCpu() SchemaParametersDefaultNotebookComputePoolCpuList
+	DefaultNotebookComputePoolGpu() SchemaParametersDefaultNotebookComputePoolGpuList
 	EnableConsoleOutput() SchemaParametersEnableConsoleOutputList
 	ExternalVolume() SchemaParametersExternalVolumeList
 	// Experimental.
@@ -152,6 +154,26 @@ func (j *jsiiProxy_SchemaParametersOutputReference) DefaultDdlCollation() Schema
 	_jsii_.Get(
 		j,
 		"defaultDdlCollation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemaParametersOutputReference) DefaultNotebookComputePoolCpu() SchemaParametersDefaultNotebookComputePoolCpuList {
+	var returns SchemaParametersDefaultNotebookComputePoolCpuList
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolCpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemaParametersOutputReference) DefaultNotebookComputePoolGpu() SchemaParametersDefaultNotebookComputePoolGpuList {
+	var returns SchemaParametersDefaultNotebookComputePoolGpuList
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolGpu",
 		&returns,
 	)
 	return returns

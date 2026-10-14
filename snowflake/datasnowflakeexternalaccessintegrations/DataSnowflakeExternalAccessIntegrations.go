@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations}.
 type DataSnowflakeExternalAccessIntegrations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeExternalAccessIntegrations) WithDescribeInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations} Data Source.
 func NewDataSnowflakeExternalAccessIntegrations(scope constructs.Construct, id *string, config *DataSnowflakeExternalAccessIntegrationsConfig) DataSnowflakeExternalAccessIntegrations {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeExternalAccessIntegrations(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/external_access_integrations snowflake_external_access_integrations} Data Source.
 func NewDataSnowflakeExternalAccessIntegrations_Override(d DataSnowflakeExternalAccessIntegrations, scope constructs.Construct, id *string, config *DataSnowflakeExternalAccessIntegrationsConfig) {
 	_init_.Initialize()
 

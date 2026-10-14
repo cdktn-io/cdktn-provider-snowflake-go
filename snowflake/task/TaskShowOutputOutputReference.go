@@ -37,6 +37,7 @@ type TaskShowOutputOutputReference interface {
 	DatabaseName() *string
 	Definition() *string
 	ErrorIntegration() *string
+	ExecuteAsUser() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -217,6 +218,16 @@ func (j *jsiiProxy_TaskShowOutputOutputReference) ErrorIntegration() *string {
 	_jsii_.Get(
 		j,
 		"errorIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TaskShowOutputOutputReference) ExecuteAsUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executeAsUser",
 		&returns,
 	)
 	return returns

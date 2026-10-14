@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service snowflake_service}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service}.
 type Service interface {
 	cdktn.TerraformResource
 	AutoResume() *string
@@ -84,6 +84,7 @@ type Service interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parameters() ServiceParametersList
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -100,6 +101,9 @@ type Service interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	ServiceCallerTokenValiditySecs() *float64
+	SetServiceCallerTokenValiditySecs(val *float64)
+	ServiceCallerTokenValiditySecsInput() *float64
 	ServiceType() *string
 	ShowOutput() ServiceShowOutputList
 	// Experimental.
@@ -219,6 +223,7 @@ type Service interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueryWarehouse()
+	ResetServiceCallerTokenValiditySecs()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -627,6 +632,16 @@ func (j *jsiiProxy_Service) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Service) Parameters() ServiceParametersList {
+	var returns ServiceParametersList
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Service) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -692,6 +707,26 @@ func (j *jsiiProxy_Service) SchemaInput() *string {
 	_jsii_.Get(
 		j,
 		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) ServiceCallerTokenValiditySecs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceCallerTokenValiditySecs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) ServiceCallerTokenValiditySecsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceCallerTokenValiditySecsInput",
 		&returns,
 	)
 	return returns
@@ -768,7 +803,7 @@ func (j *jsiiProxy_Service) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service snowflake_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -786,7 +821,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service snowflake_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1039,17 @@ func (j *jsiiProxy_Service)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Service)SetServiceCallerTokenValiditySecs(val *float64) {
+	if err := j.validateSetServiceCallerTokenValiditySecsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceCallerTokenValiditySecs",
 		val,
 	)
 }
@@ -1513,6 +1559,14 @@ func (s *jsiiProxy_Service) ResetQueryWarehouse() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetQueryWarehouse",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Service) ResetServiceCallerTokenValiditySecs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceCallerTokenValiditySecs",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed}.
 type OpenflowDeploymentSnowflakeManaged interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_OpenflowDeploymentSnowflakeManaged) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed} Resource.
 func NewOpenflowDeploymentSnowflakeManaged(scope constructs.Construct, id *string, config *OpenflowDeploymentSnowflakeManagedConfig) OpenflowDeploymentSnowflakeManaged {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewOpenflowDeploymentSnowflakeManaged(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_snowflake_managed snowflake_openflow_deployment_snowflake_managed} Resource.
 func NewOpenflowDeploymentSnowflakeManaged_Override(o OpenflowDeploymentSnowflakeManaged, scope constructs.Construct, id *string, config *OpenflowDeploymentSnowflakeManagedConfig) {
 	_init_.Initialize()
 

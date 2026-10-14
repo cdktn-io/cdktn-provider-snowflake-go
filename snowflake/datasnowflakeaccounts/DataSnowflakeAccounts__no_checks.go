@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataSnowflakeAccounts) validateSetWithHistoryParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataSnowflakeAccounts) validateSetWithParametersParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataSnowflakeAccountsParameters(scope constructs.Construct, id *string, config *DataSnowflakeAccountsConfig) error {
 	return nil
 }

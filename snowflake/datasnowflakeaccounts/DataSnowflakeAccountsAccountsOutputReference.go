@@ -32,6 +32,7 @@ type DataSnowflakeAccountsAccountsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataSnowflakeAccountsAccounts
 	SetInternalValue(val *DataSnowflakeAccountsAccounts)
+	Parameters() DataSnowflakeAccountsAccountsParametersList
 	ShowOutput() DataSnowflakeAccountsAccountsShowOutputList
 	// Experimental.
 	TerraformAttribute() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataSnowflakeAccountsAccountsOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsOutputReference) Parameters() DataSnowflakeAccountsAccountsParametersList {
+	var returns DataSnowflakeAccountsAccountsParametersList
+	_jsii_.Get(
+		j,
+		"parameters",
 		&returns,
 	)
 	return returns

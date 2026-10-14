@@ -117,6 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "dateFormat", GoGetter: "DateFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "disableAutoConvert", GoGetter: "DisableAutoConvert"},
+			_jsii_.MemberProperty{JsiiProperty: "disableSnowflakeData", GoGetter: "DisableSnowflakeData"},
 			_jsii_.MemberProperty{JsiiProperty: "emptyFieldAsNull", GoGetter: "EmptyFieldAsNull"},
 			_jsii_.MemberProperty{JsiiProperty: "enableOctal", GoGetter: "EnableOctal"},
 			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},

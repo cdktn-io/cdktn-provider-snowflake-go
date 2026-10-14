@@ -41,6 +41,7 @@ type DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputOutputRe
 	Owner() *string
 	OwnerRoleType() *string
 	SchemaName() *string
+	TargetScopes() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -223,6 +224,16 @@ func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShow
 	_jsii_.Get(
 		j,
 		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputOutputReference) TargetScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetScopes",
 		&returns,
 	)
 	return returns

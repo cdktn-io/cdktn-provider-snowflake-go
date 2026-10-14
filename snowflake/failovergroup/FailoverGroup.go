@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group snowflake_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group}.
 type FailoverGroup interface {
 	cdktn.TerraformResource
 	AllowedAccounts() *[]*string
@@ -72,6 +72,9 @@ type FailoverGroup interface {
 	ObjectTypes() *[]*string
 	SetObjectTypes(val *[]*string)
 	ObjectTypesInput() *[]*string
+	OptimizedRefresh() interface{}
+	SetOptimizedRefresh(val interface{})
+	OptimizedRefreshInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -84,6 +87,9 @@ type FailoverGroup interface {
 	RawOverrides() interface{}
 	ReplicationSchedule() FailoverGroupReplicationScheduleOutputReference
 	ReplicationScheduleInput() *FailoverGroupReplicationSchedule
+	RpoAssurance() interface{}
+	SetRpoAssurance(val interface{})
+	RpoAssuranceInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -195,10 +201,12 @@ type FailoverGroup interface {
 	ResetId()
 	ResetIgnoreEditionCheck()
 	ResetObjectTypes()
+	ResetOptimizedRefresh()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReplicationSchedule()
+	ResetRpoAssurance()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -517,6 +525,26 @@ func (j *jsiiProxy_FailoverGroup) ObjectTypesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_FailoverGroup) OptimizedRefresh() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optimizedRefresh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FailoverGroup) OptimizedRefreshInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optimizedRefreshInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FailoverGroup) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -562,6 +590,26 @@ func (j *jsiiProxy_FailoverGroup) ReplicationScheduleInput() *FailoverGroupRepli
 	_jsii_.Get(
 		j,
 		"replicationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FailoverGroup) RpoAssurance() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rpoAssurance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FailoverGroup) RpoAssuranceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rpoAssuranceInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +666,7 @@ func (j *jsiiProxy_FailoverGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group snowflake_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group} Resource.
 func NewFailoverGroup(scope constructs.Construct, id *string, config *FailoverGroupConfig) FailoverGroup {
 	_init_.Initialize()
 
@@ -636,7 +684,7 @@ func NewFailoverGroup(scope constructs.Construct, id *string, config *FailoverGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group snowflake_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group} Resource.
 func NewFailoverGroup_Override(f FailoverGroup, scope constructs.Construct, id *string, config *FailoverGroupConfig) {
 	_init_.Initialize()
 
@@ -784,6 +832,17 @@ func (j *jsiiProxy_FailoverGroup)SetObjectTypes(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_FailoverGroup)SetOptimizedRefresh(val interface{}) {
+	if err := j.validateSetOptimizedRefreshParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optimizedRefresh",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FailoverGroup)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -799,6 +858,17 @@ func (j *jsiiProxy_FailoverGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FailoverGroup)SetRpoAssurance(val interface{}) {
+	if err := j.validateSetRpoAssuranceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rpoAssurance",
 		val,
 	)
 }
@@ -1280,6 +1350,14 @@ func (f *jsiiProxy_FailoverGroup) ResetObjectTypes() {
 	)
 }
 
+func (f *jsiiProxy_FailoverGroup) ResetOptimizedRefresh() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetOptimizedRefresh",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FailoverGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1292,6 +1370,14 @@ func (f *jsiiProxy_FailoverGroup) ResetReplicationSchedule() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetReplicationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FailoverGroup) ResetRpoAssurance() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRpoAssurance",
 		nil, // no parameters
 	)
 }

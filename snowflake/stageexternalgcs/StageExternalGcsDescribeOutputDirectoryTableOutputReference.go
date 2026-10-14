@@ -14,6 +14,7 @@ import (
 type StageExternalGcsDescribeOutputDirectoryTableOutputReference interface {
 	cdktn.ComplexObject
 	AutoRefresh() cdktn.IResolvable
+	AwsSnsTopic() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,6 +30,7 @@ type StageExternalGcsDescribeOutputDirectoryTableOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DirectoryNotificationChannel() *string
 	Enable() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -92,6 +94,16 @@ func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) AwsSnsTopic() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSnsTopic",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -117,6 +129,16 @@ func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StageExternalGcsDescribeOutputDirectoryTableOutputReference) DirectoryNotificationChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryNotificationChannel",
 		&returns,
 	)
 	return returns

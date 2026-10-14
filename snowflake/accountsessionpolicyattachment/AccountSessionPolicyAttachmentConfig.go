@@ -26,28 +26,28 @@ type AccountSessionPolicyAttachmentConfig struct {
 	//
 	// Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
 	SessionPolicyName *string `field:"required" json:"sessionPolicyName" yaml:"sessionPolicyName"`
 	// If true, attaches the session policy to all person users in the current account.
 	//
 	// Conflicts with `for_all_service_users`. When neither field is set, the policy is attached account-wide.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment#for_all_person_users AccountSessionPolicyAttachment#for_all_person_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/account_session_policy_attachment#for_all_person_users AccountSessionPolicyAttachment#for_all_person_users}
 	ForAllPersonUsers interface{} `field:"optional" json:"forAllPersonUsers" yaml:"forAllPersonUsers"`
 	// If true, attaches the session policy to all service users in the current account.
 	//
 	// Conflicts with `for_all_person_users`. When neither field is set, the policy is attached account-wide.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment#for_all_service_users AccountSessionPolicyAttachment#for_all_service_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/account_session_policy_attachment#for_all_service_users AccountSessionPolicyAttachment#for_all_service_users}
 	ForAllServiceUsers interface{} `field:"optional" json:"forAllServiceUsers" yaml:"forAllServiceUsers"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
 	Timeouts *AccountSessionPolicyAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

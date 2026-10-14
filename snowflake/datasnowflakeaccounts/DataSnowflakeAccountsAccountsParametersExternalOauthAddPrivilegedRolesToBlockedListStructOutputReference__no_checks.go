@@ -1,0 +1,77 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datasnowflakeaccounts
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateSetInternalValueParameters(val *DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStruct) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataSnowflakeAccountsAccountsParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration snowflake_external_access_integration}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/external_access_integration snowflake_external_access_integration}.
 type ExternalAccessIntegration interface {
 	cdktn.TerraformResource
 	AllowedApiAuthenticationIntegrations() ExternalAccessIntegrationAllowedApiAuthenticationIntegrationsOutputReference
@@ -566,7 +566,7 @@ func (j *jsiiProxy_ExternalAccessIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource.
 func NewExternalAccessIntegration(scope constructs.Construct, id *string, config *ExternalAccessIntegrationConfig) ExternalAccessIntegration {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewExternalAccessIntegration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource.
 func NewExternalAccessIntegration_Override(e ExternalAccessIntegration, scope constructs.Construct, id *string, config *ExternalAccessIntegrationConfig) {
 	_init_.Initialize()
 

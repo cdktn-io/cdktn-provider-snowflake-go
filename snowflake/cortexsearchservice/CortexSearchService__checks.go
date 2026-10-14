@@ -282,6 +282,14 @@ func (j *jsiiProxy_CortexSearchService) validateSetAttributesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_CortexSearchService) validateSetAutoSuspendParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CortexSearchService) validateSetCommentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -421,6 +429,14 @@ func (j *jsiiProxy_CortexSearchService) validateSetNameParameters(val *string) e
 }
 
 func (j *jsiiProxy_CortexSearchService) validateSetOnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CortexSearchService) validateSetPrimaryKeyParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

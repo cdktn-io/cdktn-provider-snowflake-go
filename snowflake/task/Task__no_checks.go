@@ -211,6 +211,10 @@ func (j *jsiiProxy_Task) validateSetErrorOnNondeterministicUpdateParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Task) validateSetExecuteAsUserParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Task) validateSetFinalizeParameters(val *string) error {
 	return nil
 }

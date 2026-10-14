@@ -107,6 +107,10 @@ func (j *jsiiProxy_CortexSearchService) validateSetAttributesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_CortexSearchService) validateSetAutoSuspendParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CortexSearchService) validateSetCommentParameters(val *string) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_CortexSearchService) validateSetNameParameters(val *string) e
 }
 
 func (j *jsiiProxy_CortexSearchService) validateSetOnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CortexSearchService) validateSetPrimaryKeyParameters(val *[]*string) error {
 	return nil
 }
 

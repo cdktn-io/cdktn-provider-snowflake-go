@@ -544,6 +544,14 @@ func (j *jsiiProxy_Service) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Service) validateSetServiceCallerTokenValiditySecsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewServiceParameters(scope constructs.Construct, id *string, config *ServiceConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

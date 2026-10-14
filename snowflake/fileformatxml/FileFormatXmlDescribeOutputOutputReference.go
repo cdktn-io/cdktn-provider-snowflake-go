@@ -30,6 +30,7 @@ type FileFormatXmlDescribeOutputOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DisableAutoConvert() cdktn.IResolvable
+	DisableSnowflakeData() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_FileFormatXmlDescribeOutputOutputReference) DisableAutoConver
 	_jsii_.Get(
 		j,
 		"disableAutoConvert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FileFormatXmlDescribeOutputOutputReference) DisableSnowflakeData() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"disableSnowflakeData",
 		&returns,
 	)
 	return returns

@@ -34,6 +34,7 @@ type DataSnowflakeFileFormatsFileFormatsDescribeOutputOutputReference interface 
 	CreationStack() *[]*string
 	DateFormat() *string
 	DisableAutoConvert() cdktn.IResolvable
+	DisableSnowflakeData() cdktn.IResolvable
 	EmptyFieldAsNull() cdktn.IResolvable
 	EnableOctal() cdktn.IResolvable
 	Encoding() *string
@@ -200,6 +201,16 @@ func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsDescribeOutputOutputRefere
 	_jsii_.Get(
 		j,
 		"disableAutoConvert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeFileFormatsFileFormatsDescribeOutputOutputReference) DisableSnowflakeData() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"disableSnowflakeData",
 		&returns,
 	)
 	return returns

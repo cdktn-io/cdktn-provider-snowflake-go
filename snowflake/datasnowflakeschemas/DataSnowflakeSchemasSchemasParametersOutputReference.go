@@ -31,6 +31,8 @@ type DataSnowflakeSchemasSchemasParametersOutputReference interface {
 	CreationStack() *[]*string
 	DataRetentionTimeInDays() DataSnowflakeSchemasSchemasParametersDataRetentionTimeInDaysList
 	DefaultDdlCollation() DataSnowflakeSchemasSchemasParametersDefaultDdlCollationList
+	DefaultNotebookComputePoolCpu() DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolCpuList
+	DefaultNotebookComputePoolGpu() DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolGpuList
 	EnableConsoleOutput() DataSnowflakeSchemasSchemasParametersEnableConsoleOutputList
 	ExternalVolume() DataSnowflakeSchemasSchemasParametersExternalVolumeList
 	// Experimental.
@@ -152,6 +154,26 @@ func (j *jsiiProxy_DataSnowflakeSchemasSchemasParametersOutputReference) Default
 	_jsii_.Get(
 		j,
 		"defaultDdlCollation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSchemasSchemasParametersOutputReference) DefaultNotebookComputePoolCpu() DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolCpuList {
+	var returns DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolCpuList
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolCpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeSchemasSchemasParametersOutputReference) DefaultNotebookComputePoolGpu() DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolGpuList {
+	var returns DataSnowflakeSchemasSchemasParametersDefaultNotebookComputePoolGpuList
+	_jsii_.Get(
+		j,
+		"defaultNotebookComputePoolGpu",
 		&returns,
 	)
 	return returns

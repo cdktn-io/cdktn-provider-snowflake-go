@@ -60,7 +60,9 @@ type DataSnowflakeUsersUsersDescribeOutputOutputReference interface {
 	RsaPublicKey() *string
 	RsaPublicKey2() *string
 	RsaPublicKey2Fp() *string
+	RsaPublicKey2LastSetTime() *string
 	RsaPublicKeyFp() *string
+	RsaPublicKeyLastSetTime() *string
 	SnowflakeLock() cdktn.IResolvable
 	SnowflakeSupport() cdktn.IResolvable
 	// Experimental.
@@ -441,11 +443,31 @@ func (j *jsiiProxy_DataSnowflakeUsersUsersDescribeOutputOutputReference) RsaPubl
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeUsersUsersDescribeOutputOutputReference) RsaPublicKey2LastSetTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaPublicKey2LastSetTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSnowflakeUsersUsersDescribeOutputOutputReference) RsaPublicKeyFp() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"rsaPublicKeyFp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSnowflakeUsersUsersDescribeOutputOutputReference) RsaPublicKeyLastSetTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaPublicKeyLastSetTime",
 		&returns,
 	)
 	return returns

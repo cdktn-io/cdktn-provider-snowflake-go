@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/accounts snowflake_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts snowflake_accounts}.
 type DataSnowflakeAccounts interface {
 	cdktn.TerraformDataSource
 	Accounts() DataSnowflakeAccountsAccountsList
@@ -63,6 +63,9 @@ type DataSnowflakeAccounts interface {
 	WithHistory() interface{}
 	SetWithHistory(val interface{})
 	WithHistoryInput() interface{}
+	WithParameters() interface{}
+	SetWithParameters(val interface{})
+	WithParametersInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,6 +110,7 @@ type DataSnowflakeAccounts interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWithHistory()
+	ResetWithParameters()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -345,8 +349,28 @@ func (j *jsiiProxy_DataSnowflakeAccounts) WithHistoryInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataSnowflakeAccounts) WithParameters() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withParameters",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/accounts snowflake_accounts} Data Source.
+func (j *jsiiProxy_DataSnowflakeAccounts) WithParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts snowflake_accounts} Data Source.
 func NewDataSnowflakeAccounts(scope constructs.Construct, id *string, config *DataSnowflakeAccountsConfig) DataSnowflakeAccounts {
 	_init_.Initialize()
 
@@ -364,7 +388,7 @@ func NewDataSnowflakeAccounts(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/accounts snowflake_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts snowflake_accounts} Data Source.
 func NewDataSnowflakeAccounts_Override(d DataSnowflakeAccounts, scope constructs.Construct, id *string, config *DataSnowflakeAccountsConfig) {
 	_init_.Initialize()
 
@@ -450,6 +474,17 @@ func (j *jsiiProxy_DataSnowflakeAccounts)SetWithHistory(val interface{}) {
 	_jsii_.Set(
 		j,
 		"withHistory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataSnowflakeAccounts)SetWithParameters(val interface{}) {
+	if err := j.validateSetWithParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"withParameters",
 		val,
 	)
 }
@@ -778,6 +813,14 @@ func (d *jsiiProxy_DataSnowflakeAccounts) ResetWithHistory() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetWithHistory",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataSnowflakeAccounts) ResetWithParameters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWithParameters",
 		nil, // no parameters
 	)
 }

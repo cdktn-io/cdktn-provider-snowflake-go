@@ -155,7 +155,15 @@ func (j *jsiiProxy_FailoverGroup) validateSetObjectTypesParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_FailoverGroup) validateSetOptimizedRefreshParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FailoverGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FailoverGroup) validateSetRpoAssuranceParameters(val interface{}) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake}.
 type SnowflakeProvider interface {
 	cdktn.TerraformProvider
 	Account() *string
@@ -79,6 +79,9 @@ type SnowflakeProvider interface {
 	EnableSingleUseRefreshTokens() interface{}
 	SetEnableSingleUseRefreshTokens(val interface{})
 	EnableSingleUseRefreshTokensInput() interface{}
+	ExperimentalFeaturesDisabled() *[]*string
+	SetExperimentalFeaturesDisabled(val *[]*string)
+	ExperimentalFeaturesDisabledInput() *[]*string
 	ExperimentalFeaturesEnabled() *[]*string
 	SetExperimentalFeaturesEnabled(val *[]*string)
 	ExperimentalFeaturesEnabledInput() *[]*string
@@ -283,6 +286,7 @@ type SnowflakeProvider interface {
 	ResetDisableTelemetry()
 	ResetDriverTracing()
 	ResetEnableSingleUseRefreshTokens()
+	ResetExperimentalFeaturesDisabled()
 	ResetExperimentalFeaturesEnabled()
 	ResetExternalBrowserTimeout()
 	ResetHost()
@@ -778,6 +782,26 @@ func (j *jsiiProxy_SnowflakeProvider) EnableSingleUseRefreshTokensInput() interf
 	_jsii_.Get(
 		j,
 		"enableSingleUseRefreshTokensInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) ExperimentalFeaturesDisabled() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"experimentalFeaturesDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnowflakeProvider) ExperimentalFeaturesDisabledInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"experimentalFeaturesDisabledInput",
 		&returns,
 	)
 	return returns
@@ -1864,7 +1888,7 @@ func (j *jsiiProxy_SnowflakeProvider) WorkloadIdentityProviderInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake} Resource.
 func NewSnowflakeProvider(scope constructs.Construct, id *string, config *SnowflakeProviderConfig) SnowflakeProvider {
 	_init_.Initialize()
 
@@ -1882,7 +1906,7 @@ func NewSnowflakeProvider(scope constructs.Construct, id *string, config *Snowfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake} Resource.
 func NewSnowflakeProvider_Override(s SnowflakeProvider, scope constructs.Construct, id *string, config *SnowflakeProviderConfig) {
 	_init_.Initialize()
 
@@ -2067,6 +2091,14 @@ func (j *jsiiProxy_SnowflakeProvider)SetEnableSingleUseRefreshTokens(val interfa
 	_jsii_.Set(
 		j,
 		"enableSingleUseRefreshTokens",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnowflakeProvider)SetExperimentalFeaturesDisabled(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"experimentalFeaturesDisabled",
 		val,
 	)
 }
@@ -2787,6 +2819,14 @@ func (s *jsiiProxy_SnowflakeProvider) ResetEnableSingleUseRefreshTokens() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableSingleUseRefreshTokens",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnowflakeProvider) ResetExperimentalFeaturesDisabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExperimentalFeaturesDisabled",
 		nil, // no parameters
 	)
 }

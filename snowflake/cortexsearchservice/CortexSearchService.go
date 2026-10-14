@@ -12,12 +12,15 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
 type CortexSearchService interface {
 	cdktn.TerraformResource
 	Attributes() *[]*string
 	SetAttributes(val *[]*string)
 	AttributesInput() *[]*string
+	AutoSuspend() *float64
+	SetAutoSuspend(val *float64)
+	AutoSuspendInput() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Comment() *string
@@ -69,6 +72,9 @@ type CortexSearchService interface {
 	On() *string
 	SetOn(val *string)
 	OnInput() *string
+	PrimaryKey() *[]*string
+	SetPrimaryKey(val *[]*string)
+	PrimaryKeyInput() *[]*string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -193,12 +199,14 @@ type CortexSearchService interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAttributes()
+	ResetAutoSuspend()
 	ResetComment()
 	ResetEmbeddingModel()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrimaryKey()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -242,6 +250,26 @@ func (j *jsiiProxy_CortexSearchService) AttributesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"attributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CortexSearchService) AutoSuspend() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoSuspend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CortexSearchService) AutoSuspendInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoSuspendInput",
 		&returns,
 	)
 	return returns
@@ -497,6 +525,26 @@ func (j *jsiiProxy_CortexSearchService) OnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CortexSearchService) PrimaryKey() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"primaryKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CortexSearchService) PrimaryKeyInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"primaryKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CortexSearchService) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -658,7 +706,7 @@ func (j *jsiiProxy_CortexSearchService) WarehouseInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
 func NewCortexSearchService(scope constructs.Construct, id *string, config *CortexSearchServiceConfig) CortexSearchService {
 	_init_.Initialize()
 
@@ -676,7 +724,7 @@ func NewCortexSearchService(scope constructs.Construct, id *string, config *Cort
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource.
 func NewCortexSearchService_Override(c CortexSearchService, scope constructs.Construct, id *string, config *CortexSearchServiceConfig) {
 	_init_.Initialize()
 
@@ -694,6 +742,17 @@ func (j *jsiiProxy_CortexSearchService)SetAttributes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"attributes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CortexSearchService)SetAutoSuspend(val *float64) {
+	if err := j.validateSetAutoSuspendParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoSuspend",
 		val,
 	)
 }
@@ -809,6 +868,17 @@ func (j *jsiiProxy_CortexSearchService)SetOn(val *string) {
 	_jsii_.Set(
 		j,
 		"on",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CortexSearchService)SetPrimaryKey(val *[]*string) {
+	if err := j.validateSetPrimaryKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryKey",
 		val,
 	)
 }
@@ -1275,6 +1345,14 @@ func (c *jsiiProxy_CortexSearchService) ResetAttributes() {
 	)
 }
 
+func (c *jsiiProxy_CortexSearchService) ResetAutoSuspend() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoSuspend",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CortexSearchService) ResetComment() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1303,6 +1381,14 @@ func (c *jsiiProxy_CortexSearchService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CortexSearchService) ResetPrimaryKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrimaryKey",
 		nil, // no parameters
 	)
 }

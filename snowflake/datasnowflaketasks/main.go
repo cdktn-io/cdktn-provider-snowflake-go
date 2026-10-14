@@ -4177,6 +4177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
 			_jsii_.MemberProperty{JsiiProperty: "definition", GoGetter: "Definition"},
 			_jsii_.MemberProperty{JsiiProperty: "errorIntegration", GoGetter: "ErrorIntegration"},
+			_jsii_.MemberProperty{JsiiProperty: "executeAsUser", GoGetter: "ExecuteAsUser"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc}.
 type OpenflowDeploymentByoc interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -637,7 +637,7 @@ func (j *jsiiProxy_OpenflowDeploymentByoc) VpcTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc} Resource.
 func NewOpenflowDeploymentByoc(scope constructs.Construct, id *string, config *OpenflowDeploymentByocConfig) OpenflowDeploymentByoc {
 	_init_.Initialize()
 
@@ -655,7 +655,7 @@ func NewOpenflowDeploymentByoc(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc} Resource.
 func NewOpenflowDeploymentByoc_Override(o OpenflowDeploymentByoc, scope constructs.Construct, id *string, config *OpenflowDeploymentByocConfig) {
 	_init_.Initialize()
 

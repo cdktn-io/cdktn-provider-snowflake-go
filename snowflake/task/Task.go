@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/task snowflake_task}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/task snowflake_task}.
 type Task interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -100,6 +100,9 @@ type Task interface {
 	ErrorOnNondeterministicUpdate() interface{}
 	SetErrorOnNondeterministicUpdate(val interface{})
 	ErrorOnNondeterministicUpdateInput() interface{}
+	ExecuteAsUser() *string
+	SetExecuteAsUser(val *string)
+	ExecuteAsUserInput() *string
 	Finalize() *string
 	SetFinalize(val *string)
 	FinalizeInput() *string
@@ -412,6 +415,7 @@ type Task interface {
 	ResetErrorIntegration()
 	ResetErrorOnNondeterministicMerge()
 	ResetErrorOnNondeterministicUpdate()
+	ResetExecuteAsUser()
 	ResetFinalize()
 	ResetGeographyOutputFormat()
 	ResetGeometryOutputFormat()
@@ -998,6 +1002,26 @@ func (j *jsiiProxy_Task) ErrorOnNondeterministicUpdateInput() interface{} {
 	_jsii_.Get(
 		j,
 		"errorOnNondeterministicUpdateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) ExecuteAsUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executeAsUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Task) ExecuteAsUserInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executeAsUserInput",
 		&returns,
 	)
 	return returns
@@ -2244,7 +2268,7 @@ func (j *jsiiProxy_Task) WhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/task snowflake_task} Resource.
 func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	_init_.Initialize()
 
@@ -2262,7 +2286,7 @@ func NewTask(scope constructs.Construct, id *string, config *TaskConfig) Task {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/task snowflake_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/task snowflake_task} Resource.
 func NewTask_Override(t Task, scope constructs.Construct, id *string, config *TaskConfig) {
 	_init_.Initialize()
 
@@ -2552,6 +2576,17 @@ func (j *jsiiProxy_Task)SetErrorOnNondeterministicUpdate(val interface{}) {
 	_jsii_.Set(
 		j,
 		"errorOnNondeterministicUpdate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Task)SetExecuteAsUser(val *string) {
+	if err := j.validateSetExecuteAsUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executeAsUser",
 		val,
 	)
 }
@@ -3751,6 +3786,14 @@ func (t *jsiiProxy_Task) ResetErrorOnNondeterministicUpdate() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetErrorOnNondeterministicUpdate",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Task) ResetExecuteAsUser() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetExecuteAsUser",
 		nil, // no parameters
 	)
 }

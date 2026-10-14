@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/current_organization_account snowflake_current_organization_account}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/current_organization_account snowflake_current_organization_account}.
 type CurrentOrganizationAccount interface {
 	cdktn.TerraformResource
 	AbortDetachedQuery() interface{}
@@ -21,9 +21,15 @@ type CurrentOrganizationAccount interface {
 	ActivePythonProfiler() *string
 	SetActivePythonProfiler(val *string)
 	ActivePythonProfilerInput() *string
+	AllowBindValuesAccess() interface{}
+	SetAllowBindValuesAccess(val interface{})
+	AllowBindValuesAccessInput() interface{}
 	AllowClientMfaCaching() interface{}
 	SetAllowClientMfaCaching(val interface{})
 	AllowClientMfaCachingInput() interface{}
+	AllowedSpcsWorkloadTypes() *string
+	SetAllowedSpcsWorkloadTypes(val *string)
+	AllowedSpcsWorkloadTypesInput() *string
 	AllowIdToken() interface{}
 	SetAllowIdToken(val interface{})
 	AllowIdTokenInput() interface{}
@@ -111,6 +117,9 @@ type CurrentOrganizationAccount interface {
 	CsvTimestampFormat() *string
 	SetCsvTimestampFormat(val *string)
 	CsvTimestampFormatInput() *string
+	DataMetricSchedule() *string
+	SetDataMetricSchedule(val *string)
+	DataMetricScheduleInput() *string
 	DataRetentionTimeInDays() *float64
 	SetDataRetentionTimeInDays(val *float64)
 	DataRetentionTimeInDaysInput() *float64
@@ -120,6 +129,9 @@ type CurrentOrganizationAccount interface {
 	DateOutputFormat() *string
 	SetDateOutputFormat(val *string)
 	DateOutputFormatInput() *string
+	DefaultDbtVersion() *string
+	SetDefaultDbtVersion(val *string)
+	DefaultDbtVersionInput() *string
 	DefaultDdlCollation() *string
 	SetDefaultDdlCollation(val *string)
 	DefaultDdlCollationInput() *string
@@ -148,21 +160,48 @@ type CurrentOrganizationAccount interface {
 	DisableUserPrivilegeGrants() interface{}
 	SetDisableUserPrivilegeGrants(val interface{})
 	DisableUserPrivilegeGrantsInput() interface{}
+	DisallowedSpcsWorkloadTypes() *string
+	SetDisallowedSpcsWorkloadTypes(val *string)
+	DisallowedSpcsWorkloadTypesInput() *string
 	EnableAutomaticSensitiveDataClassificationLog() interface{}
 	SetEnableAutomaticSensitiveDataClassificationLog(val interface{})
 	EnableAutomaticSensitiveDataClassificationLogInput() interface{}
+	EnableBudgetEventLogging() interface{}
+	SetEnableBudgetEventLogging(val interface{})
+	EnableBudgetEventLoggingInput() interface{}
+	EnableCortexAnalyst() interface{}
+	SetEnableCortexAnalyst(val interface{})
+	EnableCortexAnalystInput() interface{}
+	EnableDataCompaction() interface{}
+	SetEnableDataCompaction(val interface{})
+	EnableDataCompactionInput() interface{}
 	EnableEgressCostOptimizer() interface{}
 	SetEnableEgressCostOptimizer(val interface{})
 	EnableEgressCostOptimizerInput() interface{}
+	EnableGetDdlUseDataTypeAlias() interface{}
+	SetEnableGetDdlUseDataTypeAlias(val interface{})
+	EnableGetDdlUseDataTypeAliasInput() interface{}
+	EnableIcebergMergeOnRead() interface{}
+	SetEnableIcebergMergeOnRead(val interface{})
+	EnableIcebergMergeOnReadInput() interface{}
 	EnableIdentifierFirstLogin() interface{}
 	SetEnableIdentifierFirstLogin(val interface{})
 	EnableIdentifierFirstLoginInput() interface{}
 	EnableInternalStagesPrivatelink() interface{}
 	SetEnableInternalStagesPrivatelink(val interface{})
 	EnableInternalStagesPrivatelinkInput() interface{}
+	EnableNotebookCreationInPersonalDb() interface{}
+	SetEnableNotebookCreationInPersonalDb(val interface{})
+	EnableNotebookCreationInPersonalDbInput() interface{}
 	EnablePerAccountAppServicePrivatelinkUrl() interface{}
 	SetEnablePerAccountAppServicePrivatelinkUrl(val interface{})
 	EnablePerAccountAppServicePrivatelinkUrlInput() interface{}
+	EnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement() interface{}
+	SetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement(val interface{})
+	EnableSpcsBlockStorageSnowflakeFullEncryptionEnforcementInput() interface{}
+	EnableTagPropagationEventLogging() interface{}
+	SetEnableTagPropagationEventLogging(val interface{})
+	EnableTagPropagationEventLoggingInput() interface{}
 	EnableTriSecretAndRekeyOptOutForImageRepository() interface{}
 	SetEnableTriSecretAndRekeyOptOutForImageRepository(val interface{})
 	EnableTriSecretAndRekeyOptOutForImageRepositoryInput() interface{}
@@ -216,6 +255,9 @@ type CurrentOrganizationAccount interface {
 	HybridTableLockTimeout() *float64
 	SetHybridTableLockTimeout(val *float64)
 	HybridTableLockTimeoutInput() *float64
+	IcebergVersionDefault() *float64
+	SetIcebergVersionDefault(val *float64)
+	IcebergVersionDefaultInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -322,6 +364,9 @@ type CurrentOrganizationAccount interface {
 	QuotedIdentifiersIgnoreCaseInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	ReadConsistencyMode() *string
+	SetReadConsistencyMode(val *string)
+	ReadConsistencyModeInput() *string
 	ReplaceInvalidCharacters() interface{}
 	SetReplaceInvalidCharacters(val interface{})
 	ReplaceInvalidCharactersInput() interface{}
@@ -337,6 +382,9 @@ type CurrentOrganizationAccount interface {
 	RowsPerResultset() *float64
 	SetRowsPerResultset(val *float64)
 	RowsPerResultsetInput() *float64
+	RowTimestampDefault() interface{}
+	SetRowTimestampDefault(val interface{})
+	RowTimestampDefaultInput() interface{}
 	S3StageVpceDnsName() *string
 	SetS3StageVpceDnsName(val *string)
 	S3StageVpceDnsNameInput() *string
@@ -356,6 +404,9 @@ type CurrentOrganizationAccount interface {
 	SimulatedDataSharingConsumer() *string
 	SetSimulatedDataSharingConsumer(val *string)
 	SimulatedDataSharingConsumerInput() *string
+	SqlTraceQueryText() *string
+	SetSqlTraceQueryText(val *string)
+	SqlTraceQueryTextInput() *string
 	SsoLoginPage() interface{}
 	SetSsoLoginPage(val interface{})
 	SsoLoginPageInput() interface{}
@@ -442,6 +493,9 @@ type CurrentOrganizationAccount interface {
 	UserTaskTimeoutMs() *float64
 	SetUserTaskTimeoutMs(val *float64)
 	UserTaskTimeoutMsInput() *float64
+	UseWorkspacesForSql() *string
+	SetUseWorkspacesForSql(val *string)
+	UseWorkspacesForSqlInput() *string
 	WeekOfYearPolicy() *float64
 	SetWeekOfYearPolicy(val *float64)
 	WeekOfYearPolicyInput() *float64
@@ -543,7 +597,9 @@ type CurrentOrganizationAccount interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAbortDetachedQuery()
 	ResetActivePythonProfiler()
+	ResetAllowBindValuesAccess()
 	ResetAllowClientMfaCaching()
+	ResetAllowedSpcsWorkloadTypes()
 	ResetAllowIdToken()
 	ResetAutocommit()
 	ResetBaseLocationPrefix()
@@ -569,9 +625,11 @@ type CurrentOrganizationAccount interface {
 	ResetCortexEnabledCrossRegion()
 	ResetCortexModelsAllowlist()
 	ResetCsvTimestampFormat()
+	ResetDataMetricSchedule()
 	ResetDataRetentionTimeInDays()
 	ResetDateInputFormat()
 	ResetDateOutputFormat()
+	ResetDefaultDbtVersion()
 	ResetDefaultDdlCollation()
 	ResetDefaultNotebookComputePoolCpu()
 	ResetDefaultNotebookComputePoolGpu()
@@ -580,11 +638,20 @@ type CurrentOrganizationAccount interface {
 	ResetDefaultStreamlitNotebookWarehouse()
 	ResetDisableUiDownloadButton()
 	ResetDisableUserPrivilegeGrants()
+	ResetDisallowedSpcsWorkloadTypes()
 	ResetEnableAutomaticSensitiveDataClassificationLog()
+	ResetEnableBudgetEventLogging()
+	ResetEnableCortexAnalyst()
+	ResetEnableDataCompaction()
 	ResetEnableEgressCostOptimizer()
+	ResetEnableGetDdlUseDataTypeAlias()
+	ResetEnableIcebergMergeOnRead()
 	ResetEnableIdentifierFirstLogin()
 	ResetEnableInternalStagesPrivatelink()
+	ResetEnableNotebookCreationInPersonalDb()
 	ResetEnablePerAccountAppServicePrivatelinkUrl()
+	ResetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement()
+	ResetEnableTagPropagationEventLogging()
 	ResetEnableTriSecretAndRekeyOptOutForImageRepository()
 	ResetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage()
 	ResetEnableUnhandledExceptionsReporting()
@@ -600,6 +667,7 @@ type CurrentOrganizationAccount interface {
 	ResetGeographyOutputFormat()
 	ResetGeometryOutputFormat()
 	ResetHybridTableLockTimeout()
+	ResetIcebergVersionDefault()
 	ResetId()
 	ResetInitialReplicationSizeLimitInTb()
 	ResetJdbcTreatDecimalAsInt()
@@ -632,17 +700,20 @@ type CurrentOrganizationAccount interface {
 	ResetPythonProfilerTargetStage()
 	ResetQueryTag()
 	ResetQuotedIdentifiersIgnoreCase()
+	ResetReadConsistencyMode()
 	ResetReplaceInvalidCharacters()
 	ResetRequireStorageIntegrationForStageCreation()
 	ResetRequireStorageIntegrationForStageOperation()
 	ResetResourceMonitor()
 	ResetRowsPerResultset()
+	ResetRowTimestampDefault()
 	ResetS3StageVpceDnsName()
 	ResetSearchPath()
 	ResetServerlessTaskMaxStatementSize()
 	ResetServerlessTaskMinStatementSize()
 	ResetSessionPolicy()
 	ResetSimulatedDataSharingConsumer()
+	ResetSqlTraceQueryText()
 	ResetSsoLoginPage()
 	ResetStatementQueuedTimeoutInSeconds()
 	ResetStatementTimeoutInSeconds()
@@ -670,6 +741,7 @@ type CurrentOrganizationAccount interface {
 	ResetUserTaskManagedInitialWarehouseSize()
 	ResetUserTaskMinimumTriggerIntervalInSeconds()
 	ResetUserTaskTimeoutMs()
+	ResetUseWorkspacesForSql()
 	ResetWeekOfYearPolicy()
 	ResetWeekStart()
 	SynthesizeAttributes() *map[string]interface{}
@@ -739,6 +811,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) ActivePythonProfilerInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) AllowBindValuesAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowBindValuesAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) AllowBindValuesAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowBindValuesAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) AllowClientMfaCaching() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -754,6 +846,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) AllowClientMfaCachingInput() inte
 	_jsii_.Get(
 		j,
 		"allowClientMfaCachingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) AllowedSpcsWorkloadTypes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedSpcsWorkloadTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) AllowedSpcsWorkloadTypesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedSpcsWorkloadTypesInput",
 		&returns,
 	)
 	return returns
@@ -1299,6 +1411,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) CsvTimestampFormatInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) DataMetricSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataMetricSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) DataMetricScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataMetricScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) DataRetentionTimeInDays() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1354,6 +1486,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) DateOutputFormatInput() *string {
 	_jsii_.Get(
 		j,
 		"dateOutputFormatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) DefaultDbtVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultDbtVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) DefaultDbtVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultDbtVersionInput",
 		&returns,
 	)
 	return returns
@@ -1529,6 +1681,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) DisableUserPrivilegeGrantsInput()
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) DisallowedSpcsWorkloadTypes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"disallowedSpcsWorkloadTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) DisallowedSpcsWorkloadTypesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"disallowedSpcsWorkloadTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) EnableAutomaticSensitiveDataClassificationLog() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1549,6 +1721,66 @@ func (j *jsiiProxy_CurrentOrganizationAccount) EnableAutomaticSensitiveDataClass
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableBudgetEventLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableBudgetEventLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableBudgetEventLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableBudgetEventLoggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableCortexAnalyst() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCortexAnalyst",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableCortexAnalystInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCortexAnalystInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableDataCompaction() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataCompaction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableDataCompactionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataCompactionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) EnableEgressCostOptimizer() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1564,6 +1796,46 @@ func (j *jsiiProxy_CurrentOrganizationAccount) EnableEgressCostOptimizerInput() 
 	_jsii_.Get(
 		j,
 		"enableEgressCostOptimizerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableGetDdlUseDataTypeAlias() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGetDdlUseDataTypeAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableGetDdlUseDataTypeAliasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGetDdlUseDataTypeAliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableIcebergMergeOnRead() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIcebergMergeOnRead",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableIcebergMergeOnReadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIcebergMergeOnReadInput",
 		&returns,
 	)
 	return returns
@@ -1609,6 +1881,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) EnableInternalStagesPrivatelinkIn
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableNotebookCreationInPersonalDb() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNotebookCreationInPersonalDb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableNotebookCreationInPersonalDbInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNotebookCreationInPersonalDbInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) EnablePerAccountAppServicePrivatelinkUrl() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1624,6 +1916,46 @@ func (j *jsiiProxy_CurrentOrganizationAccount) EnablePerAccountAppServicePrivate
 	_jsii_.Get(
 		j,
 		"enablePerAccountAppServicePrivatelinkUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSpcsBlockStorageSnowflakeFullEncryptionEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableSpcsBlockStorageSnowflakeFullEncryptionEnforcementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSpcsBlockStorageSnowflakeFullEncryptionEnforcementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableTagPropagationEventLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTagPropagationEventLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) EnableTagPropagationEventLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTagPropagationEventLoggingInput",
 		&returns,
 	)
 	return returns
@@ -1954,6 +2286,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) HybridTableLockTimeoutInput() *fl
 	_jsii_.Get(
 		j,
 		"hybridTableLockTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) IcebergVersionDefault() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"icebergVersionDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) IcebergVersionDefaultInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"icebergVersionDefaultInput",
 		&returns,
 	)
 	return returns
@@ -2609,6 +2961,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) ReadConsistencyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readConsistencyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) ReadConsistencyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readConsistencyModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) ReplaceInvalidCharacters() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2704,6 +3076,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) RowsPerResultsetInput() *float64 
 	_jsii_.Get(
 		j,
 		"rowsPerResultsetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) RowTimestampDefault() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rowTimestampDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) RowTimestampDefaultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rowTimestampDefaultInput",
 		&returns,
 	)
 	return returns
@@ -2834,6 +3226,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) SimulatedDataSharingConsumerInput
 	_jsii_.Get(
 		j,
 		"simulatedDataSharingConsumerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) SqlTraceQueryText() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlTraceQueryText",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) SqlTraceQueryTextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlTraceQueryTextInput",
 		&returns,
 	)
 	return returns
@@ -3409,6 +3821,26 @@ func (j *jsiiProxy_CurrentOrganizationAccount) UserTaskTimeoutMsInput() *float64
 	return returns
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount) UseWorkspacesForSql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"useWorkspacesForSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount) UseWorkspacesForSqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"useWorkspacesForSqlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount) WeekOfYearPolicy() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -3450,7 +3882,7 @@ func (j *jsiiProxy_CurrentOrganizationAccount) WeekStartInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) CurrentOrganizationAccount {
 	_init_.Initialize()
 
@@ -3468,7 +3900,7 @@ func NewCurrentOrganizationAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/current_organization_account snowflake_current_organization_account} Resource.
 func NewCurrentOrganizationAccount_Override(c CurrentOrganizationAccount, scope constructs.Construct, id *string, config *CurrentOrganizationAccountConfig) {
 	_init_.Initialize()
 
@@ -3501,6 +3933,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetActivePythonProfiler(val *strin
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetAllowBindValuesAccess(val interface{}) {
+	if err := j.validateSetAllowBindValuesAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowBindValuesAccess",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetAllowClientMfaCaching(val interface{}) {
 	if err := j.validateSetAllowClientMfaCachingParameters(val); err != nil {
 		panic(err)
@@ -3508,6 +3951,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetAllowClientMfaCaching(val inter
 	_jsii_.Set(
 		j,
 		"allowClientMfaCaching",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetAllowedSpcsWorkloadTypes(val *string) {
+	if err := j.validateSetAllowedSpcsWorkloadTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedSpcsWorkloadTypes",
 		val,
 	)
 }
@@ -3809,6 +4263,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetCsvTimestampFormat(val *string)
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetDataMetricSchedule(val *string) {
+	if err := j.validateSetDataMetricScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataMetricSchedule",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetDataRetentionTimeInDays(val *float64) {
 	if err := j.validateSetDataRetentionTimeInDaysParameters(val); err != nil {
 		panic(err)
@@ -3838,6 +4303,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetDateOutputFormat(val *string) {
 	_jsii_.Set(
 		j,
 		"dateOutputFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetDefaultDbtVersion(val *string) {
+	if err := j.validateSetDefaultDbtVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultDbtVersion",
 		val,
 	)
 }
@@ -3938,6 +4414,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetDisableUserPrivilegeGrants(val 
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetDisallowedSpcsWorkloadTypes(val *string) {
+	if err := j.validateSetDisallowedSpcsWorkloadTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disallowedSpcsWorkloadTypes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableAutomaticSensitiveDataClassificationLog(val interface{}) {
 	if err := j.validateSetEnableAutomaticSensitiveDataClassificationLogParameters(val); err != nil {
 		panic(err)
@@ -3949,6 +4436,39 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableAutomaticSensitiveDataCla
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableBudgetEventLogging(val interface{}) {
+	if err := j.validateSetEnableBudgetEventLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableBudgetEventLogging",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableCortexAnalyst(val interface{}) {
+	if err := j.validateSetEnableCortexAnalystParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableCortexAnalyst",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableDataCompaction(val interface{}) {
+	if err := j.validateSetEnableDataCompactionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataCompaction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableEgressCostOptimizer(val interface{}) {
 	if err := j.validateSetEnableEgressCostOptimizerParameters(val); err != nil {
 		panic(err)
@@ -3956,6 +4476,28 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableEgressCostOptimizer(val i
 	_jsii_.Set(
 		j,
 		"enableEgressCostOptimizer",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableGetDdlUseDataTypeAlias(val interface{}) {
+	if err := j.validateSetEnableGetDdlUseDataTypeAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGetDdlUseDataTypeAlias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableIcebergMergeOnRead(val interface{}) {
+	if err := j.validateSetEnableIcebergMergeOnReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableIcebergMergeOnRead",
 		val,
 	)
 }
@@ -3982,6 +4524,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableInternalStagesPrivatelink
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableNotebookCreationInPersonalDb(val interface{}) {
+	if err := j.validateSetEnableNotebookCreationInPersonalDbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNotebookCreationInPersonalDb",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetEnablePerAccountAppServicePrivatelinkUrl(val interface{}) {
 	if err := j.validateSetEnablePerAccountAppServicePrivatelinkUrlParameters(val); err != nil {
 		panic(err)
@@ -3989,6 +4542,28 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetEnablePerAccountAppServicePriva
 	_jsii_.Set(
 		j,
 		"enablePerAccountAppServicePrivatelinkUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement(val interface{}) {
+	if err := j.validateSetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSpcsBlockStorageSnowflakeFullEncryptionEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetEnableTagPropagationEventLogging(val interface{}) {
+	if err := j.validateSetEnableTagPropagationEventLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableTagPropagationEventLogging",
 		val,
 	)
 }
@@ -4162,6 +4737,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetHybridTableLockTimeout(val *flo
 	_jsii_.Set(
 		j,
 		"hybridTableLockTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetIcebergVersionDefault(val *float64) {
+	if err := j.validateSetIcebergVersionDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"icebergVersionDefault",
 		val,
 	)
 }
@@ -4526,6 +5112,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetQuotedIdentifiersIgnoreCase(val
 	)
 }
 
+func (j *jsiiProxy_CurrentOrganizationAccount)SetReadConsistencyMode(val *string) {
+	if err := j.validateSetReadConsistencyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readConsistencyMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CurrentOrganizationAccount)SetReplaceInvalidCharacters(val interface{}) {
 	if err := j.validateSetReplaceInvalidCharactersParameters(val); err != nil {
 		panic(err)
@@ -4577,6 +5174,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetRowsPerResultset(val *float64) 
 	_jsii_.Set(
 		j,
 		"rowsPerResultset",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetRowTimestampDefault(val interface{}) {
+	if err := j.validateSetRowTimestampDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowTimestampDefault",
 		val,
 	)
 }
@@ -4643,6 +5251,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetSimulatedDataSharingConsumer(va
 	_jsii_.Set(
 		j,
 		"simulatedDataSharingConsumer",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetSqlTraceQueryText(val *string) {
+	if err := j.validateSetSqlTraceQueryTextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sqlTraceQueryText",
 		val,
 	)
 }
@@ -4929,6 +5548,17 @@ func (j *jsiiProxy_CurrentOrganizationAccount)SetUserTaskTimeoutMs(val *float64)
 	_jsii_.Set(
 		j,
 		"userTaskTimeoutMs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurrentOrganizationAccount)SetUseWorkspacesForSql(val *string) {
+	if err := j.validateSetUseWorkspacesForSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useWorkspacesForSql",
 		val,
 	)
 }
@@ -5362,10 +5992,26 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetActivePythonProfiler() {
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetAllowBindValuesAccess() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowBindValuesAccess",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetAllowClientMfaCaching() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowClientMfaCaching",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetAllowedSpcsWorkloadTypes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowedSpcsWorkloadTypes",
 		nil, // no parameters
 	)
 }
@@ -5570,6 +6216,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetCsvTimestampFormat() {
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetDataMetricSchedule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDataMetricSchedule",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetDataRetentionTimeInDays() {
 	_jsii_.InvokeVoid(
 		c,
@@ -5590,6 +6244,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetDateOutputFormat() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDateOutputFormat",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetDefaultDbtVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultDbtVersion",
 		nil, // no parameters
 	)
 }
@@ -5658,6 +6320,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetDisableUserPrivilegeGrants()
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetDisallowedSpcsWorkloadTypes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisallowedSpcsWorkloadTypes",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableAutomaticSensitiveDataClassificationLog() {
 	_jsii_.InvokeVoid(
 		c,
@@ -5666,10 +6336,50 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableAutomaticSensitiveData
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableBudgetEventLogging() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableBudgetEventLogging",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableCortexAnalyst() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableCortexAnalyst",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableDataCompaction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableDataCompaction",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableEgressCostOptimizer() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableEgressCostOptimizer",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableGetDdlUseDataTypeAlias() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableGetDdlUseDataTypeAlias",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableIcebergMergeOnRead() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableIcebergMergeOnRead",
 		nil, // no parameters
 	)
 }
@@ -5690,10 +6400,34 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableInternalStagesPrivatel
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableNotebookCreationInPersonalDb() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableNotebookCreationInPersonalDb",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnablePerAccountAppServicePrivatelinkUrl() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnablePerAccountAppServicePrivatelinkUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableSpcsBlockStorageSnowflakeFullEncryptionEnforcement",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetEnableTagPropagationEventLogging() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableTagPropagationEventLogging",
 		nil, // no parameters
 	)
 }
@@ -5814,6 +6548,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetHybridTableLockTimeout() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetHybridTableLockTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetIcebergVersionDefault() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIcebergVersionDefault",
 		nil, // no parameters
 	)
 }
@@ -6058,6 +6800,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetQuotedIdentifiersIgnoreCase(
 	)
 }
 
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetReadConsistencyMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReadConsistencyMode",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CurrentOrganizationAccount) ResetReplaceInvalidCharacters() {
 	_jsii_.InvokeVoid(
 		c,
@@ -6094,6 +6844,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetRowsPerResultset() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRowsPerResultset",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetRowTimestampDefault() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRowTimestampDefault",
 		nil, // no parameters
 	)
 }
@@ -6142,6 +6900,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetSimulatedDataSharingConsumer
 	_jsii_.InvokeVoid(
 		c,
 		"resetSimulatedDataSharingConsumer",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetSqlTraceQueryText() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSqlTraceQueryText",
 		nil, // no parameters
 	)
 }
@@ -6358,6 +7124,14 @@ func (c *jsiiProxy_CurrentOrganizationAccount) ResetUserTaskTimeoutMs() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetUserTaskTimeoutMs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurrentOrganizationAccount) ResetUseWorkspacesForSql() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUseWorkspacesForSql",
 		nil, // no parameters
 	)
 }

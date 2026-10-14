@@ -38,14 +38,18 @@ type CortexSearchServiceDescribeOutputOutputReference interface {
 	EmbeddingModel() *string
 	// Experimental.
 	Fqn() *string
+	FullIndexBuildIntervalDays() *float64
 	IndexingError() *string
 	IndexingState() *string
 	InternalValue() *CortexSearchServiceDescribeOutput
 	SetInternalValue(val *CortexSearchServiceDescribeOutput)
 	Name() *string
+	PrimaryKeyColumns() *[]*string
 	SchemaName() *string
+	ScoringProfileCount() *float64
 	SearchColumn() *string
 	ServiceQueryUrl() *string
+	ServingState() *string
 	SourceDataNumRows() *float64
 	TargetLag() *string
 	// Experimental.
@@ -216,6 +220,16 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) Fqn() *stri
 	return returns
 }
 
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) FullIndexBuildIntervalDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fullIndexBuildIntervalDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) IndexingError() *string {
 	var returns *string
 	_jsii_.Get(
@@ -256,11 +270,31 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) Name() *str
 	return returns
 }
 
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) PrimaryKeyColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"primaryKeyColumns",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) SchemaName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) ScoringProfileCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scoringProfileCount",
 		&returns,
 	)
 	return returns
@@ -281,6 +315,16 @@ func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) ServiceQuer
 	_jsii_.Get(
 		j,
 		"serviceQueryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CortexSearchServiceDescribeOutputOutputReference) ServingState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servingState",
 		&returns,
 	)
 	return returns

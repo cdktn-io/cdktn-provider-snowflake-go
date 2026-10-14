@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions}.
 type DataSnowflakeOpenflowConnectorDefinitions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataSnowflakeOpenflowConnectorDefinitions) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions} Data Source.
 func NewDataSnowflakeOpenflowConnectorDefinitions(scope constructs.Construct, id *string, config *DataSnowflakeOpenflowConnectorDefinitionsConfig) DataSnowflakeOpenflowConnectorDefinitions {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataSnowflakeOpenflowConnectorDefinitions(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_connector_definitions snowflake_openflow_connector_definitions} Data Source.
 func NewDataSnowflakeOpenflowConnectorDefinitions_Override(d DataSnowflakeOpenflowConnectorDefinitions, scope constructs.Construct, id *string, config *DataSnowflakeOpenflowConnectorDefinitionsConfig) {
 	_init_.Initialize()
 
