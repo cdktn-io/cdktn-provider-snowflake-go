@@ -5,10 +5,10 @@ package datasnowflakeopenflowconnectordefinitions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowconnectordefinitions/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowconnectordefinitions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

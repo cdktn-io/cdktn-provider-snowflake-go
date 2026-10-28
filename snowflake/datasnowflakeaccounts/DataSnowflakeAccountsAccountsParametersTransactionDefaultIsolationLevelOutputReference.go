@@ -5,9 +5,9 @@ package datasnowflakeaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeaccounts/internal"
+	"github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeaccounts/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
