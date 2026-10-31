@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes}.
 type DataSnowflakeOpenflowRuntimes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataSnowflakeOpenflowRuntimes) WithDescribeInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes} Data Source.
 func NewDataSnowflakeOpenflowRuntimes(scope constructs.Construct, id *string, config *DataSnowflakeOpenflowRuntimesConfig) DataSnowflakeOpenflowRuntimes {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataSnowflakeOpenflowRuntimes(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_runtimes snowflake_openflow_runtimes} Data Source.
 func NewDataSnowflakeOpenflowRuntimes_Override(d DataSnowflakeOpenflowRuntimes, scope constructs.Construct, id *string, config *DataSnowflakeOpenflowRuntimesConfig) {
 	_init_.Initialize()
 

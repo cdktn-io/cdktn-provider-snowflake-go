@@ -22,34 +22,34 @@ type DataSnowflakeOpenflowDeploymentsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#id DataSnowflakeOpenflowDeployments#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#id DataSnowflakeOpenflowDeployments#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#like DataSnowflakeOpenflowDeployments#like}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#like DataSnowflakeOpenflowDeployments#like}
 	Like *string `field:"optional" json:"like" yaml:"like"`
 	// limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#limit DataSnowflakeOpenflowDeployments#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#limit DataSnowflakeOpenflowDeployments#limit}
 	Limit *DataSnowflakeOpenflowDeploymentsLimit `field:"optional" json:"limit" yaml:"limit"`
 	// Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#starts_with DataSnowflakeOpenflowDeployments#starts_with}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#starts_with DataSnowflakeOpenflowDeployments#starts_with}
 	StartsWith *string `field:"optional" json:"startsWith" yaml:"startsWith"`
 	// (Default: `true`) Runs DESC OPENFLOW DEPLOYMENT for each deployment returned by SHOW OPENFLOW DEPLOYMENTS.
 	//
 	// The output of describe is saved to the description field. By default this value is set to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#with_describe DataSnowflakeOpenflowDeployments#with_describe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#with_describe DataSnowflakeOpenflowDeployments#with_describe}
 	WithDescribe interface{} `field:"optional" json:"withDescribe" yaml:"withDescribe"`
 	// (Default: `true`) Runs SHOW PARAMETERS IN OPENFLOW DEPLOYMENT for each deployment returned by SHOW OPENFLOW DEPLOYMENTS.
 	//
 	// The output is saved to the parameters field. By default this value is set to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments#with_parameters DataSnowflakeOpenflowDeployments#with_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments#with_parameters DataSnowflakeOpenflowDeployments#with_parameters}
 	WithParameters interface{} `field:"optional" json:"withParameters" yaml:"withParameters"`
 }
 

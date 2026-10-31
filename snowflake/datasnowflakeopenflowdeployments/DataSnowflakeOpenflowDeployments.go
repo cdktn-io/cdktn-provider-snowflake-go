@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments snowflake_openflow_deployments}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments snowflake_openflow_deployments}.
 type DataSnowflakeOpenflowDeployments interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataSnowflakeOpenflowDeployments) WithParametersInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments snowflake_openflow_deployments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments snowflake_openflow_deployments} Data Source.
 func NewDataSnowflakeOpenflowDeployments(scope constructs.Construct, id *string, config *DataSnowflakeOpenflowDeploymentsConfig) DataSnowflakeOpenflowDeployments {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataSnowflakeOpenflowDeployments(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/openflow_deployments snowflake_openflow_deployments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/openflow_deployments snowflake_openflow_deployments} Data Source.
 func NewDataSnowflakeOpenflowDeployments_Override(d DataSnowflakeOpenflowDeployments, scope constructs.Construct, id *string, config *DataSnowflakeOpenflowDeploymentsConfig) {
 	_init_.Initialize()
 

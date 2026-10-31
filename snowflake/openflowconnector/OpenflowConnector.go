@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_connector snowflake_openflow_connector}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector snowflake_openflow_connector}.
 type OpenflowConnector interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -588,7 +588,7 @@ func (j *jsiiProxy_OpenflowConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_connector snowflake_openflow_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector snowflake_openflow_connector} Resource.
 func NewOpenflowConnector(scope constructs.Construct, id *string, config *OpenflowConnectorConfig) OpenflowConnector {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewOpenflowConnector(scope constructs.Construct, id *string, config *Openfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_connector snowflake_openflow_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector snowflake_openflow_connector} Resource.
 func NewOpenflowConnector_Override(o OpenflowConnector, scope constructs.Construct, id *string, config *OpenflowConnectorConfig) {
 	_init_.Initialize()
 

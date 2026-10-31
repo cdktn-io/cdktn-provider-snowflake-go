@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_runtime snowflake_openflow_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_runtime snowflake_openflow_runtime}.
 type OpenflowRuntime interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -681,7 +681,7 @@ func (j *jsiiProxy_OpenflowRuntime) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_runtime snowflake_openflow_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_runtime snowflake_openflow_runtime} Resource.
 func NewOpenflowRuntime(scope constructs.Construct, id *string, config *OpenflowRuntimeConfig) OpenflowRuntime {
 	_init_.Initialize()
 
@@ -699,7 +699,7 @@ func NewOpenflowRuntime(scope constructs.Construct, id *string, config *Openflow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_runtime snowflake_openflow_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_runtime snowflake_openflow_runtime} Resource.
 func NewOpenflowRuntime_Override(o OpenflowRuntime, scope constructs.Construct, id *string, config *OpenflowRuntimeConfig) {
 	_init_.Initialize()
 

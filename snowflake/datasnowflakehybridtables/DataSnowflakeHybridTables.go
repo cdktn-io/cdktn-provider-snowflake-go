@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/hybrid_tables snowflake_hybrid_tables}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/hybrid_tables snowflake_hybrid_tables}.
 type DataSnowflakeHybridTables interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -490,7 +490,7 @@ func (j *jsiiProxy_DataSnowflakeHybridTables) WithParametersInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/hybrid_tables snowflake_hybrid_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/hybrid_tables snowflake_hybrid_tables} Data Source.
 func NewDataSnowflakeHybridTables(scope constructs.Construct, id *string, config *DataSnowflakeHybridTablesConfig) DataSnowflakeHybridTables {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewDataSnowflakeHybridTables(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/hybrid_tables snowflake_hybrid_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/hybrid_tables snowflake_hybrid_tables} Data Source.
 func NewDataSnowflakeHybridTables_Override(d DataSnowflakeHybridTables, scope constructs.Construct, id *string, config *DataSnowflakeHybridTablesConfig) {
 	_init_.Initialize()
 

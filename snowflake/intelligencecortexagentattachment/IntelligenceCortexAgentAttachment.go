@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}.
 type IntelligenceCortexAgentAttachment interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IntelligenceCortexAgentAttachment) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource.
 func NewIntelligenceCortexAgentAttachment(scope constructs.Construct, id *string, config *IntelligenceCortexAgentAttachmentConfig) IntelligenceCortexAgentAttachment {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIntelligenceCortexAgentAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource.
 func NewIntelligenceCortexAgentAttachment_Override(i IntelligenceCortexAgentAttachment, scope constructs.Construct, id *string, config *IntelligenceCortexAgentAttachmentConfig) {
 	_init_.Initialize()
 

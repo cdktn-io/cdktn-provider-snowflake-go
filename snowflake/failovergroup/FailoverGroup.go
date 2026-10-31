@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group snowflake_failover_group}.
 type FailoverGroup interface {
 	cdktn.TerraformResource
 	AllowedAccounts() *[]*string
@@ -666,7 +666,7 @@ func (j *jsiiProxy_FailoverGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group snowflake_failover_group} Resource.
 func NewFailoverGroup(scope constructs.Construct, id *string, config *FailoverGroupConfig) FailoverGroup {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewFailoverGroup(scope constructs.Construct, id *string, config *FailoverGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group snowflake_failover_group} Resource.
 func NewFailoverGroup_Override(f FailoverGroup, scope constructs.Construct, id *string, config *FailoverGroupConfig) {
 	_init_.Initialize()
 

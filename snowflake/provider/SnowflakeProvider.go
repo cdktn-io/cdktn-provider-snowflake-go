@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs snowflake}.
 type SnowflakeProvider interface {
 	cdktn.TerraformProvider
 	Account() *string
@@ -1888,7 +1888,7 @@ func (j *jsiiProxy_SnowflakeProvider) WorkloadIdentityProviderInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs snowflake} Resource.
 func NewSnowflakeProvider(scope constructs.Construct, id *string, config *SnowflakeProviderConfig) SnowflakeProvider {
 	_init_.Initialize()
 
@@ -1906,7 +1906,7 @@ func NewSnowflakeProvider(scope constructs.Construct, id *string, config *Snowfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs snowflake} Resource.
 func NewSnowflakeProvider_Override(s SnowflakeProvider, scope constructs.Construct, id *string, config *SnowflakeProviderConfig) {
 	_init_.Initialize()
 
